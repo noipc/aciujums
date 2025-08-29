@@ -6,7 +6,8 @@ export default $config({
         return {
             providers: {
                 aws: {
-                    profile: "nipc-prod"
+                    profile: "nipc-prod",
+                    region: "us-east-1"
                 }
             },
             name: "aciujums",

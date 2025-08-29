@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useEffect } from 'react';
+import SearchDropdown from './SearchDropdown';
 
 export default function Header() {
     useEffect(() => {
@@ -26,8 +27,39 @@ export default function Header() {
         });
     }, []);
 
+    useEffect(() => {
+        function handleClickOutside(event) {
+            const menuButton = document.getElementById('menuButton');
+            const menuDropDown = document.getElementById('menuDropDown');
+
+            if (!menuButton || !menuDropDown) return;
+
+            if (
+                !menuButton.contains(event.target) &&
+                !menuDropDown.contains(event.target)
+            ) {
+                if (menuButton.classList.contains('is-active')) {
+                    // Remove active classes and show bars icon
+                    menuButton.classList.remove('is-active');
+                    menuDropDown.classList.remove('d-block');
+
+                    const barsIcon = menuButton.querySelector('.fa-bars');
+                    const timesIcon = menuButton.querySelector('.fa-times');
+                    if (barsIcon) barsIcon.classList.remove('d-none');
+                    if (timesIcon) timesIcon.classList.add('d-none');
+                }
+            }
+        }
+
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
     return (
-        <div className="header">
+        <header className="header">
             <div className="logo">
                 <span className="d-block logo-circle"></span>
                 <h1>
@@ -35,25 +67,11 @@ export default function Header() {
                 </h1>
             </div>
             <div id="main-menu" className="main-menu">
-                <ul>
-                    <li>
-                        <form id="ajSearch" action="/paieska" method="GET" className="form-inline nav-form">
-                            <div className="d-inline-block search-input-wrapper">
-                                <input type="text" name="ieskoti" id="searchInput" className="search-input" placeholder="Ieškoti organizacijų..." />
-                                <i id="searchInputCloseBtn" className="d-inline-block fas fa-times"></i>
-                            </div>
-                            <button id="searchLink" className="btn-circle btn-search" type="submit" aria-label="Search Link">
-                                <i className="fas fa-search fa-2x"></i>
-                            </button>
-                        </form>
-                    </li>
-                    <li>
-                        <button id="menuButton" className="btn-circle" type="button" aria-label="Main Menu Link">
-                            <i className="fas fa-bars fa-2x"></i>
-                            <i className="fas fa-times fa-2x d-none"></i>
-                        </button>
-                    </li>
-                </ul>
+                <SearchDropdown />
+                <button id="menuButton" className="btn-circle" type="button" aria-label="Main Menu Link">
+                    <i className="fas fa-bars fa-2x"></i>
+                    <i className="fas fa-times fa-2x d-none"></i>
+                </button>
                 <div id="menuDropDown" className="card menu-drop-down">
                     <ul>
                         <li className="menu-item-paieska"><Link href="/paieska"><span>Paieška</span></Link></li>
@@ -63,6 +81,6 @@ export default function Header() {
                     </ul>
                 </div>
             </div>
-        </div>
+        </header>
     );
 }

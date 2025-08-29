@@ -1,0 +1,16 @@
+node_modules
+data
+python
+python_src
+savivaldybes
+vmi
+*.zip
+*.csv
+sst-*.ts
+.DS_Store
+*.sh
+lambda-layer/
+links.json
+map.html
+text.html
+vmi.ipynb

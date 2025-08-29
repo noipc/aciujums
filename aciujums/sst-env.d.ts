@@ -7,6 +7,7 @@ declare module "sst" {
   export interface Resource {
     "Aciujums-nextjs": {
       "type": "sst.aws.Nextjs"
+      "url": string
     }
   }
 }

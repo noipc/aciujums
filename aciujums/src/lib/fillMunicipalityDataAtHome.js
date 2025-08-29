@@ -9,9 +9,9 @@ export function FillMunicipalityData({ data }) {
         let totalRecipientsCount = 0;
 
         data.forEach((entry) => {
-            totalFundsSum += entry.total_funds || 0;
-            totalFundersSum += entry.total_funders || 0;
-            totalRecipientsCount += entry.total_recipients || 0;
+            // totalFundsSum += entry.total_funds || 0;
+            // totalFundersSum += entry.total_funders || 0;
+            // totalRecipientsCount += entry.total_recipients || 0;
 
             const elements = document.querySelectorAll('.armonica-content-item');
 
@@ -36,21 +36,21 @@ export function FillMunicipalityData({ data }) {
         });
 
         // Fill the aggregated data
-        const fundsInfoElement = document.getElementById('funds-info-value');
-        const fundersInfoElement = document.getElementById('funders-info-value');
-        const recipientsInfoElement = document.getElementById('recipients-info-value');
+        // const fundsInfoElement = document.getElementById('funds-info-value');
+        // const fundersInfoElement = document.getElementById('funders-info-value');
+        // const recipientsInfoElement = document.getElementById('recipients-info-value');
 
-        if (fundsInfoElement) {
-            fundsInfoElement.textContent = `€ ${totalFundsSum.toLocaleString('lt-LT', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-        }
+        // if (fundsInfoElement) {
+        //     fundsInfoElement.textContent = `€ ${totalFundsSum.toLocaleString('lt-LT', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+        // }
 
-        if (fundersInfoElement) {
-            fundersInfoElement.textContent = `${totalFundersSum.toLocaleString('lt-LT')}`;
-        }
+        // if (fundersInfoElement) {
+        //     fundersInfoElement.textContent = `${totalFundersSum.toLocaleString('lt-LT')}`;
+        // }
 
-        if (recipientsInfoElement) {
-            recipientsInfoElement.textContent = `${totalRecipientsCount.toLocaleString('lt-LT')}`;
-        }
+        // if (recipientsInfoElement) {
+        //     recipientsInfoElement.textContent = `${totalRecipientsCount.toLocaleString('lt-LT')}`;
+        // }
     }, [data]);
 
     return null;

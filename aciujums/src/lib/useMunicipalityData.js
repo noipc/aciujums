@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { loadMunicipalityData, fetchAndStoreMunicipalityData } from './indexedDB';
+import { loadMunicipalityData, fetchAndStoreMunicipalityData } from '@/lib/indexedDB';
 
 export function useMunicipalityData(municipality, year) {
     const [data, setData] = useState(null);
@@ -8,15 +8,21 @@ export function useMunicipalityData(municipality, year) {
     useEffect(() => {
         async function loadData() {
             setLoading(true);
+
             const cachedData = await loadMunicipalityData(municipality);
-            if (cachedData) {
-                setData(cachedData);
+
+            if (cachedData && cachedData.latestYear === year) {
+                // If cached data matches the selected year, use it
+                setData(cachedData.data || []);
             } else {
+                // Otherwise, fetch fresh data and overwrite
                 const apiData = await fetchAndStoreMunicipalityData(municipality, year);
-                setData(apiData);
+                setData(apiData?.data || []);
             }
+
             setLoading(false);
         }
+
         if (municipality && year) {
             loadData();
         }

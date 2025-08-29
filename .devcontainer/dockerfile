@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
     gnupg \
     nano \
     git \
+    zip \
     systemctl \
     software-properties-common \
     && rm -rf /var/lib/apt/lists/*
@@ -26,7 +27,8 @@ RUN pip install --no-cache-dir \
     jupyter \
     notebook \
     duckdb \
-    boto3
+    boto3 \
+    openpyxl 
 
 # Install React and other JS dependencies globally
 RUN npm install -g create-react-app
