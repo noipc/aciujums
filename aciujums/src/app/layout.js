@@ -2,7 +2,8 @@
 import { Geist, Geist_Mono, Mona_Sans } from "next/font/google";
 import { YearContext } from '../lib/yearContext';
 import { useState, useEffect } from 'react';
-import { fetchAndStoreIndexData, fetchAndStoreSearchIndex} from '../lib/indexedDB';
+import { getIndexDataWithCache, getSearchIndexWithCache} from '../lib/indexedDB';
+import LoadingSpinner from "@/components/LoadingSpinner";
 import "./globals.css";
 import "./custom.css";
 
@@ -31,8 +32,8 @@ export default function RootLayout({ children }) {
     useEffect(() => {
         async function loadData() {
             const [indexData] = await Promise.all([
-                fetchAndStoreIndexData(),
-                fetchAndStoreSearchIndex()
+                getIndexDataWithCache(),
+                getSearchIndexWithCache()
             ]);
 
             if (indexData && indexData.length > 0) {
@@ -52,13 +53,15 @@ export default function RootLayout({ children }) {
             </head>
             <body className={`${geistSans.variable} ${geistMono.variable}`}>
                 <Header />
-                {loading || !year ? (
-                    <div className="p-6 text-xl">Loading index data…</div>
-                    ) : (
-                    <YearContext.Provider value={{ year, setYear }}>
-                        {children}
-                    </YearContext.Provider>
-                )}
+                <main>
+                    {loading || !year ? (
+                        <LoadingSpinner />
+                        ) : (
+                        <YearContext.Provider value={{ year, setYear }}>
+                            {children}
+                        </YearContext.Provider>
+                    )}
+                </main>
                 <Footer />
             </body>
         </html>

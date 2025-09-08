@@ -12,7 +12,10 @@ export default function SearchDropdown() {
     const inputRef = useRef();
 
     useEffect(() => {
-        if (query.length < 3) {
+
+        let cancelled = false;
+
+        if (query.trim().length < 3) {
             setSuggestions([]);
             return;
         }
@@ -21,25 +24,44 @@ export default function SearchDropdown() {
             const db = await initDB();
             const tx = db.transaction('searchIndex');
             const store = tx.objectStore('searchIndex');
-            const nameIndex = store.index('name');
-            const nameRange = IDBKeyRange.bound(query, query + '\uffff');
+
+            const prefix = query.trim();
+            const nameIndex = store.index('entity_name');
+            const nameRange = IDBKeyRange.bound(prefix, prefix + '\uffff');
             const nameMatches = await nameIndex.getAll(nameRange, 5);
 
-            const idIndex = store.index('legal_id');
             let idMatches = [];
+            if (/^\d+$/.test(prefix) && prefix.length >= 3) {
 
-            if (/^\d+$/.test(query)) {
-                const idRange = IDBKeyRange.bound(query, query + '\uffff');
-                idMatches = await idIndex.getAll(idRange, 5);
+                const LEGAL_ID_DIGITS = 9;
+                const p = prefix.slice(0, LEGAL_ID_DIGITS);
+
+                const exp = Math.max(0, LEGAL_ID_DIGITS - p.length);
+                const scale = Math.pow(10, exp);
+                const lower = Number(p) * scale;              // inclusive
+                const upper = (Number(p) + 1) * scale;        // exclusive
+                
+                const keyRange = IDBKeyRange.bound(lower, upper, false, true);
+                idMatches = await store.getAll(keyRange, 5);
+
+            }  else if (/^\d+$/.test(prefix) && prefix.length === 9) {
+                // Optional: also allow exact hit when user typed full id
+                const exact = await store.get(Number(prefix));
+                if (exact) idMatches = [exact];
             }
 
-            const combined = [...nameMatches, ...idMatches];
-            const uniqueMap = new Map();
-            combined.forEach(entry => uniqueMap.set(entry.legal_id, entry));
-            setSuggestions(Array.from(uniqueMap.values()).slice(0, 5));
+            // dedupe (prefer exact id first)
+            const unique = new Map();
+            [...idMatches, ...nameMatches].forEach(entry => {
+                if (entry && entry.legal_id != null) unique.set(entry.legal_id, entry);
+            });
+
+            if (!cancelled) setSuggestions(Array.from(unique.values()).slice(0, 5));
         }
 
         loadSuggestions();
+
+        return () => { cancelled = true; };
 
     }, [query]);
 
@@ -95,6 +117,7 @@ export default function SearchDropdown() {
         >
             <div className="search-input-wrapper">
                 <input
+                    id="searchInput"
                     ref={inputRef}
                     type="text"
                     placeholder="Ieškoti organizacijų..."

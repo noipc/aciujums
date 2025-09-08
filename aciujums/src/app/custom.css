@@ -23,7 +23,6 @@ figure,
 footer,
 header,
 hgroup,
-main,
 nav,
 section {
     display: block
@@ -37,7 +36,7 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #f3eee9
+    background-color: #f3eee9;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -240,6 +239,7 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
+    appearance: button;
     -webkit-appearance: button
 }
 
@@ -268,6 +268,7 @@ input[type=date],
 input[type=time],
 input[type=datetime-local],
 input[type=month] {
+    appearance: listbox;
     -webkit-appearance: listbox
 }
 
@@ -306,6 +307,7 @@ progress {
 
 [type=search] {
     outline-offset: -2px;
+    appearance: none;
     -webkit-appearance: none
 }
 
@@ -7919,32 +7921,38 @@ a.text-dark:focus {
 }
 
 .fa-rotate-90 {
+    filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
     transform: rotate(90deg)
 }
 
 .fa-rotate-180 {
+    filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
     transform: rotate(180deg)
 }
 
 .fa-rotate-270 {
+    filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
     transform: rotate(270deg)
 }
 
 .fa-flip-horizontal {
+    filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
     transform: scale(-1, 1)
 }
 
 .fa-flip-vertical {
+    filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
     transform: scale(1, -1)
 }
 
 .fa-flip-both,
 .fa-flip-horizontal.fa-flip-vertical {
+    filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
     transform: scale(-1, -1)
 }
@@ -19866,7 +19874,7 @@ ol li {
     }
 }
 
-.nav-form {} 
+/* .nav-form {} */
 
 .search-wrapper {
     display: none;
@@ -20107,6 +20115,7 @@ ol li {
     .search-wrapper {
         display: block;
     }
+
     .menu-drop-down {
         position: absolute;
         background-color: #f6f7ff;
@@ -20302,6 +20311,7 @@ ol li {
     color: #97bf04 !important;
     font-weight: 600;
     background-color: #021013;
+    appearance: none;
     -webkit-appearance: none;
     border: none;
     transition: background-color .4s
@@ -21250,7 +21260,6 @@ a:hover {
     top: 45px;
     left: 0;
     display: none;
-    height: 200px;
     width: 100%;
     background-color: #ffffff;
     border-radius: 25px;
@@ -21259,4 +21268,73 @@ a:hover {
 
 .search-wrapper:focus-within .search-dropdown-card {
     display: block;
+}
+
+/* Container centers the spinner in viewport */
+.loading-spinner-container {
+    height: 100%;
+    width: 100%;
+    margin: auto
+}
+.loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Row of dots */
+.loading-dots {
+    display: flex;
+    gap: 0.6rem;
+}
+
+/* Each dot */
+.loading-dots div {
+    width: 12px;
+    height: 12px;
+    background-color: #97bf04;
+    /* Tailwind blue-600 */
+    border-radius: 50%;
+    animation: fly-in 1s ease-in-out infinite;
+}
+
+/* Delay each dot so they follow one after another */
+.loading-dots div:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.loading-dots div:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.loading-dots div:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.loading-dots div:nth-child(4) {
+    animation-delay: 0.45s;
+}
+
+/* Keyframes for flying in from right to left */
+@keyframes fly-in {
+    0% {
+        transform: translateX(100%) scale(0.3);
+        opacity: 0;
+    }
+
+    40% {
+        transform: translateX(0) scale(1.1);
+        opacity: 1;
+    }
+
+    60% {
+        transform: translateX(0) scale(1);
+    }
+
+    100% {
+        transform: translateX(-100%) scale(0.3);
+        opacity: 0;
+    }
 }

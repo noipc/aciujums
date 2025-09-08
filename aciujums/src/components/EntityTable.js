@@ -1,6 +1,7 @@
 import { useMemo, useState, useEffect } from 'react';
 import { useMunicipalityData } from '@/lib/useMunicipalityData'; // already exists
 import CustomDropdown from '@/components/CustomDropdown';
+import LoadingSpinner from './LoadingSpinner';
 
 
 export default function EntityTable({ municipality, initialYear, availableYears }) {
@@ -10,7 +11,6 @@ export default function EntityTable({ municipality, initialYear, availableYears 
     const [filterYear, setFilterYear]   = useState(localYear);
     const itemsPerPage                  = 100;
 
-    console.log(municipality, localYear)
 
     const { data, loading } = useMunicipalityData(municipality, localYear);
 
@@ -58,7 +58,7 @@ export default function EntityTable({ municipality, initialYear, availableYears 
 
     const totalPages = Math.ceil(filteredEntities.length / itemsPerPage);
 
-    if (!data || loading) return <div>Loading table...</div>;
+    if (!data || loading) return <LoadingSpinner />;
 
     return (
         <div>
@@ -119,7 +119,7 @@ export default function EntityTable({ municipality, initialYear, availableYears 
             </div>
 
             {/* Pagination Controls */}
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-center mb-2">
                 <div className="pagination align-items-center mt-4">
                     <button className="btn-circle" disabled={currentPage === 1} onClick={() => setCurrentPage(currentPage - 1)}><i className="fa fa-chevron-left"></i></button>
                     <span className="mx-2">{currentPage} iš {totalPages}</span>
