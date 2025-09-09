@@ -23,14 +23,13 @@ jobs:
     defaults:
       run:
         working-directory: ${{ env.PROJECT_DIR }}
-        
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       
       - name: Sanity check config is here
         run: |
-          cd aciujums
           pwd
           ls -la
           test -f sst.config.ts && echo "Found sst.config.ts"
