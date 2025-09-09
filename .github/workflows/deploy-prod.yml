@@ -20,6 +20,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Sanity check config is here
+        run: |
+          cd aciujums
+          ls -la
+          test -f sst.config.ts && echo "Found sst.config.ts"
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
