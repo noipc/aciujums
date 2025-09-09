@@ -32,8 +32,8 @@ jobs:
       - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::${{ vars.AWS_ACCOUNT_ID }}:role/aciujums-deploy-dev
-          aws-region: ${{ vars.AWS_REGION }}
-          
+          role-to-assume: arn:aws:iam::${{ vars.ACCOUNT_ID }}:role/aciujums-deploy-dev
+          aws-region: ${{ vars.REGION }}
+
       - name: Deploy SST (stage=dev)
         run: npx sst deploy --stage dev
