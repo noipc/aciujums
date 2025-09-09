@@ -36,6 +36,8 @@ export default function RootLayout({ children }) {
                 getSearchIndexWithCache()
             ]);
 
+            console.log("GIT testing")
+
             if (indexData && indexData.length > 0) {
                 const years = indexData.map(item => item.year);
                 setYear(Math.max(...years));
