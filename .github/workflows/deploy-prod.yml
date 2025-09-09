@@ -16,7 +16,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: production   # add approval rules if you want
+    environment: prod 
     steps:
       - uses: actions/checkout@v4
 
