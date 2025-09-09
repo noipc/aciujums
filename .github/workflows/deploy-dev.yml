@@ -23,6 +23,7 @@ jobs:
       
       - name: Sanity check config is here
         run: |
+          cd aciujums
           pwd
           ls -la
           test -f sst.config.ts && echo "Found sst.config.ts"
