@@ -13,10 +13,17 @@ concurrency:
   group: deploy-dev
   cancel-in-progress: true
 
+env:
+  PROJECT_DIR: aciujums/aciujums
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: dev
+    defaults:
+      run:
+        working-directory: ${{ env.PROJECT_DIR }}
+        
     steps:
       - name: Checkout
         uses: actions/checkout@v4
