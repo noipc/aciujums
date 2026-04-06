@@ -3,7 +3,6 @@ data
 python
 python_src
 savivaldybess
-/vmi
 *.zip
 *.csv
 sst-*.ts
