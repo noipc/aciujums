@@ -50,6 +50,9 @@ jobs:
           aws s3 sync s3://sst-state-stfvbzbwauro/ci-state/dev/ .sst/ \
             --exclude "platform/*" || true
 
+      - name: Install SST platform deps
+        run: npx sst install
+
       - name: Deploy SST (stage=dev)
         run: npx sst deploy --stage dev
         env:
