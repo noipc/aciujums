@@ -13,21 +13,15 @@ concurrency:
   group: deploy-dev
   cancel-in-progress: true
 
-env:
-  PROJECT_DIR: aciujums
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: dev
-    defaults:
-      run:
-        working-directory: ${{ env.PROJECT_DIR }}
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Sanity check config is here
         run: |
           pwd
@@ -40,8 +34,15 @@ jobs:
           node-version: 22
           cache: 'npm'
 
-      - name: Install deps
+      - name: Install root deps (SST)
         run: npm ci
+
+      - name: Install Next.js deps
+        working-directory: aciujums
+        run: npm ci
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v5
 
       - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
