@@ -1,6 +1,9 @@
 {
   "dependencies": {
-    "chart.js": "^4.5.0",
-    "create-next-app": "^15.2.3"
+    "sst": "3.10.11"
+  },
+  "devDependencies": {
+    "aws-cdk-lib": "2.142.1",
+    "constructs": "10.3.0"
   }
 }
