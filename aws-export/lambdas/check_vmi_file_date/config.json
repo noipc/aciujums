@@ -1,0 +1,44 @@
+{
+    "FunctionName": "check_vmi_file_date",
+    "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:check_vmi_file_date",
+    "Runtime": "python3.13",
+    "Role": "arn:aws:iam::876391798236:role/service-role/check_vmi_file_date-role-4qbz6kxm",
+    "Handler": "lambda_function.lambda_handler",
+    "CodeSize": 1168,
+    "Description": "",
+    "Timeout": 30,
+    "MemorySize": 128,
+    "LastModified": "2025-08-03T15:10:07.000+0000",
+    "CodeSha256": "PmgQvIgbIZhnU0crjqNA6dQMw1dN/eS0ONupvPg8WV0=",
+    "Version": "$LATEST",
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "7f4ac3aa-be52-4d7d-93d0-866be16942d8",
+    "Layers": [
+        {
+            "Arn": "arn:aws:lambda:eu-central-1:336392948345:layer:AWSSDKPandas-Python313-Arm64:3",
+            "CodeSize": 41401555
+        }
+    ],
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Zip",
+    "Architectures": [
+        "arm64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "RuntimeVersionConfig": {
+        "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:e98d73bbf7ba05363c1fd7a0648df71a7ae0134731648fe554a78e485827cedb"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/check_vmi_file_date"
+    }
+}

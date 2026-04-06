@@ -1,0 +1,38 @@
+{
+    "FunctionName": "SSTBootstrap-CustomS3AutoDeleteObjectsCustomResour-yRDIpXyJVZWm",
+    "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:SSTBootstrap-CustomS3AutoDeleteObjectsCustomResour-yRDIpXyJVZWm",
+    "Runtime": "nodejs22.x",
+    "Role": "arn:aws:iam::876391798236:role/SSTBootstrap-CustomS3AutoDeleteObjectsCustomResourc-zOpvCElX2Cgu",
+    "Handler": "index.handler",
+    "CodeSize": 2237,
+    "Description": "Lambda function for auto-deleting objects in sstbootstrap-eucentral134f82fae-oznhoehwzew1 S3 bucket.",
+    "Timeout": 900,
+    "MemorySize": 128,
+    "LastModified": "2025-12-17T00:38:35.380+0000",
+    "CodeSha256": "CmExGfRutCJNjHF3sEx3R54UZAAtK6f8UFQLjaIRpsQ=",
+    "Version": "$LATEST",
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "904e0fe9-d912-4fbe-a23f-27a903ee4029",
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Zip",
+    "Architectures": [
+        "x86_64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "RuntimeVersionConfig": {
+        "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:d16c83c0a8a33f01d0039330bdf4f8f429ff40686e670a93d7fbf2b2d77cb783"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/SSTBootstrap-CustomS3AutoDeleteObjectsCustomResour-yRDIpXyJVZWm"
+    }
+}

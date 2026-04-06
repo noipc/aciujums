@@ -1,0 +1,1 @@
+arn:aws:iam::876391798236:role/SSTBootstrap-MetadataHandlerServiceRole24408145-UA2x9EhQUr2j

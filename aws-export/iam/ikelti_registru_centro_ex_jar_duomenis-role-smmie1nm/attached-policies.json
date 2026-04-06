@@ -1,0 +1,8 @@
+{
+    "AttachedPolicies": [
+        {
+            "PolicyName": "AWSLambdaBasicExecutionRole-3604853c-7705-41ad-b754-3404ec380947",
+            "PolicyArn": "arn:aws:iam::876391798236:policy/service-role/AWSLambdaBasicExecutionRole-3604853c-7705-41ad-b754-3404ec380947"
+        }
+    ]
+}

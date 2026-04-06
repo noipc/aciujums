@@ -1,0 +1,12 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/apie-mus/page": "app/apie-mus/page.js",
+  "/naujienos/page": "app/naujienos/page.js",
+  "/organizacijos/[legal_id]/page": "app/organizacijos/[legal_id]/page.js",
+  "/paieska/page": "app/paieska/page.js",
+  "/page": "app/page.js",
+  "/savivaldybes/[municipality]/page": "app/savivaldybes/[municipality]/page.js",
+  "/naujienos/[slug]/page": "app/naujienos/[slug]/page.js",
+  "/naudinga-informacija/page": "app/naudinga-informacija/page.js"
+}

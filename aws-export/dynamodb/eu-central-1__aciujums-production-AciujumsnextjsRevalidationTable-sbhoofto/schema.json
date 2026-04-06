@@ -1,0 +1,82 @@
+{
+    "Table": {
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "path",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "revalidatedAt",
+                "AttributeType": "N"
+            },
+            {
+                "AttributeName": "tag",
+                "AttributeType": "S"
+            }
+        ],
+        "TableName": "aciujums-production-AciujumsnextjsRevalidationTable-sbhoofto",
+        "KeySchema": [
+            {
+                "AttributeName": "tag",
+                "KeyType": "HASH"
+            },
+            {
+                "AttributeName": "path",
+                "KeyType": "RANGE"
+            }
+        ],
+        "TableStatus": "ACTIVE",
+        "CreationDateTime": "2025-06-16T20:32:23.149000+00:00",
+        "ProvisionedThroughput": {
+            "NumberOfDecreasesToday": 0,
+            "ReadCapacityUnits": 0,
+            "WriteCapacityUnits": 0
+        },
+        "TableSizeBytes": 7599,
+        "ItemCount": 81,
+        "TableArn": "arn:aws:dynamodb:eu-central-1:876391798236:table/aciujums-production-AciujumsnextjsRevalidationTable-sbhoofto",
+        "TableId": "94d4a7dc-1455-4f56-a9a2-d3e77ea53b8b",
+        "BillingModeSummary": {
+            "BillingMode": "PAY_PER_REQUEST",
+            "LastUpdateToPayPerRequestDateTime": "2025-06-16T20:32:23.149000+00:00"
+        },
+        "GlobalSecondaryIndexes": [
+            {
+                "IndexName": "revalidate",
+                "KeySchema": [
+                    {
+                        "AttributeName": "path",
+                        "KeyType": "HASH"
+                    },
+                    {
+                        "AttributeName": "revalidatedAt",
+                        "KeyType": "RANGE"
+                    }
+                ],
+                "Projection": {
+                    "ProjectionType": "ALL"
+                },
+                "IndexStatus": "ACTIVE",
+                "ProvisionedThroughput": {
+                    "NumberOfDecreasesToday": 0,
+                    "ReadCapacityUnits": 0,
+                    "WriteCapacityUnits": 0
+                },
+                "IndexSizeBytes": 7599,
+                "ItemCount": 81,
+                "IndexArn": "arn:aws:dynamodb:eu-central-1:876391798236:table/aciujums-production-AciujumsnextjsRevalidationTable-sbhoofto/index/revalidate",
+                "WarmThroughput": {
+                    "ReadUnitsPerSecond": 12000,
+                    "WriteUnitsPerSecond": 4000,
+                    "Status": "ACTIVE"
+                }
+            }
+        ],
+        "DeletionProtectionEnabled": false,
+        "WarmThroughput": {
+            "ReadUnitsPerSecond": 12000,
+            "WriteUnitsPerSecond": 4000,
+            "Status": "ACTIVE"
+        }
+    }
+}

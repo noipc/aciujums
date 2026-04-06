@@ -1,0 +1,46 @@
+{
+    "FunctionName": "aci-production-AciujumsnextjsRevalidationSeederFunction-batmxrcu",
+    "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:aci-production-AciujumsnextjsRevalidationSeederFunction-batmxrcu",
+    "Runtime": "nodejs20.x",
+    "Role": "arn:aws:iam::876391798236:role/aciujum-production-AciujumsnextjsRevalidationSeederRole-hzarhbtt",
+    "Handler": "index.handler",
+    "CodeSize": 3292,
+    "Description": "Aciujums-nextjs ISR revalidation data seeder",
+    "Timeout": 900,
+    "MemorySize": 128,
+    "LastModified": "2025-06-16T20:46:56.000+0000",
+    "CodeSha256": "xkkHnrWMR6eje9ch5kzRB9yed8XNJbPA0uJy69rpdac=",
+    "Version": "$LATEST",
+    "Environment": {
+        "Variables": {
+            "SST_RESOURCE_App": "{\"name\":\"aciujums\",\"stage\":\"production\"}",
+            "SST_KEY": "twstf1laEOpav9oe4FC67sQyB3YJetQXlp2mFtdz2dQ=",
+            "SST_KEY_FILE": "resource.enc",
+            "CACHE_DYNAMO_TABLE": "aciujums-production-AciujumsnextjsRevalidationTable-sbhoofto"
+        }
+    },
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "788a9de6-7edc-45e8-bfba-f1eafa3508b8",
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Zip",
+    "Architectures": [
+        "x86_64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "RuntimeVersionConfig": {
+        "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:2d788b26ac416854c5eb831c9f46cb2e0a0ddcee84b1a9b114acbdfdb644c8c1"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/aci-production-AciujumsnextjsRevalidationSeederFunction-wuhuokxr"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "Targets": [
+        {
+            "Id": "ragwtw2h1tvnb4qir3b",
+            "Arn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_registru_centro_ex_nvo_duomenis"
+        },
+        {
+            "Id": "wvei1p1a0n2z2fp9ysej",
+            "Arn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_registru_centro_ex_paramos_gaveju_duomenis"
+        }
+    ]
+}

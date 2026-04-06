@@ -1,0 +1,12 @@
+{
+    "CommonPrefixes": [
+        {
+            "Prefix": "data_processing_logs/"
+        },
+        {
+            "Prefix": "ingestion_process_logs/"
+        }
+    ],
+    "RequestCharged": null,
+    "Prefix": ""
+}

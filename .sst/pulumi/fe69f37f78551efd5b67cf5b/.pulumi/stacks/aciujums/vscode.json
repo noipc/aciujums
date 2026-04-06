@@ -1,0 +1,534 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/aciujums/vscode",
+        "latest": {
+            "manifest": {
+                "time": "2025-04-06T19:08:13.218922564Z",
+                "magic": "77be084e65c763fde87b290a0a6ba5aaacad687cde41d20d76768df34b0db77a",
+                "version": "v3.146.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:/Q5ge5hsRWY=:v1:u9HSYxoNSUYFItq2:lV8W6h3lFaY3MyG1UemvTv7VTs37zg=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:vscode::aciujums::pulumi:pulumi:Stack::aciujums-vscode",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "outputs": {
+                        "_protect": false
+                    },
+                    "created": "2025-04-06T16:22:29.29021299Z",
+                    "modified": "2025-04-06T16:22:29.29021299Z",
+                    "sourcePosition": "project:///../../platform/node_modules/@pulumi/runtime/stack.ts#38,23"
+                },
+                {
+                    "urn": "urn:pulumi:vscode::aciujums::sst:aws:Nextjs::Aciujums-nextjs",
+                    "custom": false,
+                    "type": "sst:aws:Nextjs",
+                    "outputs": {
+                        "_dev": {
+                            "autostart": true,
+                            "aws": {
+                                "role": "arn:aws:iam::349836630030:role/aciujums-vscode-AciujumsnextjsDevServerRole-dzwokfta"
+                            },
+                            "command": "npm run dev",
+                            "directory": ".",
+                            "links": []
+                        },
+                        "_metadata": {
+                            "mode": "placeholder",
+                            "path": ".",
+                            "server": {
+                                "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                                "ciphertext": "v1:b9auI5FRGibypoYI:bXSBs4QIRLH/zQbEX+hiIhJ81c7nxl7NquJU3zFoZBre5D7QKatKuuHB2rUKhO+a6IPpHv92HNY0RJJpaKagF4kkIinrrXDMItZ54OVFtJvoet9wyC67+wplOa4W5ztCgi+65gUZ824wAUfayjUuB92GwQbx1rX56A=="
+                            }
+                        }
+                    },
+                    "parent": "urn:pulumi:vscode::aciujums::pulumi:pulumi:Stack::aciujums-vscode",
+                    "created": "2025-04-06T16:22:36.761971969Z",
+                    "modified": "2025-04-06T16:22:36.761971969Z",
+                    "sourcePosition": "project:///../../../file:/workspaces/aciujums/aciujums/.sst/platform/src/components/aws/ssr-site.ts#515,5"
+                },
+                {
+                    "urn": "urn:pulumi:vscode::aciujums::sst:sst:LinkRef::Aciujums-nextjsLinkRef",
+                    "custom": false,
+                    "type": "sst:sst:LinkRef",
+                    "outputs": {
+                        "properties": {
+                            "type": "sst.aws.Nextjs"
+                        },
+                        "target": "Aciujums-nextjs"
+                    },
+                    "parent": "urn:pulumi:vscode::aciujums::pulumi:pulumi:Stack::aciujums-vscode",
+                    "created": "2025-04-06T16:22:36.783721149Z",
+                    "modified": "2025-04-06T16:22:36.783721149Z",
+                    "sourcePosition": "project:///../../../file:/workspaces/aciujums/aciujums/.sst/platform/src/components/link.ts#25,7"
+                },
+                {
+                    "urn": "urn:pulumi:vscode::aciujums::pulumi:providers:aws::default_6_66_2",
+                    "custom": true,
+                    "id": "37347a08-e7a3-49af-acd2-8881c80e91d4",
+                    "type": "pulumi:providers:aws",
+                    "inputs": {
+                        "__internal": {},
+                        "defaultTags": "{\"tags\":{\"sst:app\":\"aciujums\",\"sst:stage\":\"vscode\"}}",
+                        "region": "us-east-1",
+                        "skipCredentialsValidation": "false",
+                        "skipRegionValidation": "true",
+                        "version": "6.66.2"
+                    },
+                    "outputs": {
+                        "defaultTags": "{\"tags\":{\"sst:app\":\"aciujums\",\"sst:stage\":\"vscode\"}}",
+                        "region": "us-east-1",
+                        "skipCredentialsValidation": "false",
+                        "skipRegionValidation": "true",
+                        "version": "6.66.2"
+                    },
+                    "created": "2025-04-06T16:22:36.772051086Z",
+                    "modified": "2025-04-06T16:22:36.772051086Z"
+                },
+                {
+                    "urn": "urn:pulumi:vscode::aciujums::sst:aws:Nextjs$sst:aws:Function::Aciujums-nextjsDevServer",
+                    "custom": false,
+                    "type": "sst:aws:Function",
+                    "outputs": {
+                        "_metadata": {
+                            "dev": false,
+                            "handler": "index.handler"
+                        }
+                    },
+                    "parent": "urn:pulumi:vscode::aciujums::sst:aws:Nextjs::Aciujums-nextjs",
+                    "created": "2025-04-06T16:22:36.824396896Z",
+                    "modified": "2025-04-06T16:22:36.824396896Z",
+                    "sourcePosition": "project:///../../../file:/workspaces/aciujums/aciujums/.sst/platform/src/components/aws/function.ts#1404,5"
+                },
+                {
+                    "urn": "urn:pulumi:vscode::aciujums::pulumi:providers:random::default_4_16_6",
+                    "custom": true,
+                    "id": "7cb4e992-7384-478c-aca5-f258a80c66be",
+                    "type": "pulumi:providers:random",
+                    "inputs": {
+                        "__internal": {},
+                        "version": "4.16.6"
+                    },
+                    "outputs": {
+                        "version": "4.16.6"
+                    },
+                    "created": "2025-04-06T16:22:37.190446089Z",
+                    "modified": "2025-04-06T16:22:37.190446089Z"
+                },
+                {
+                    "urn": "urn:pulumi:vscode::aciujums::sst:aws:Nextjs$sst:aws:Function$aws:cloudwatch/logGroup:LogGroup::Aciujums-nextjsDevServerLogGroup",
+                    "custom": true,
+                    "id": "/aws/lambda/aciujums-vscode-AciujumsnextjsDevServerFunction-fueekose",
+                    "type": "aws:cloudwatch/logGroup:LogGroup",
+                    "inputs": {
+                        "__defaults": [
+                            "skipDestroy"
+                        ],
+                        "name": "/aws/lambda/aciujums-vscode-AciujumsnextjsDevServerFunction-fueekose",
+                        "retentionInDays": 30,
+                        "skipDestroy": false,
+                        "tags": {
+                            "sst:app": "aciujums",
+                            "sst:stage": "vscode"
+                        },
+                        "tagsAll": {
+                            "sst:app": "aciujums",
+                            "sst:stage": "vscode"
+                        }
+                    },
+                    "outputs": {
+                        "arn": "arn:aws:logs:us-east-1:349836630030:log-group:/aws/lambda/aciujums-vscode-AciujumsnextjsDevServerFunction-fueekose",
+                        "id": "/aws/lambda/aciujums-vscode-AciujumsnextjsDevServerFunction-fueekose",
+                        "kmsKeyId": "",
+                        "logGroupClass": "STANDARD",
+                        "name": "/aws/lambda/aciujums-vscode-AciujumsnextjsDevServerFunction-fueekose",
+                        "namePrefix": "",
+                        "retentionInDays": 30,
+                        "skipDestroy": false,
+                        "tags": {
+                            "sst:app": "aciujums",
+                            "sst:stage": "vscode"
+                        },
+                        "tagsAll": {
+                            "sst:app": "aciujums",
+                            "sst:stage": "vscode"
+                        }
+                    },
+                    "parent": "urn:pulumi:vscode::aciujums::sst:aws:Nextjs$sst:aws:Function::Aciujums-nextjsDevServer",
+                    "provider": "urn:pulumi:vscode::aciujums::pulumi:providers:aws::default_6_66_2::37347a08-e7a3-49af-acd2-8881c80e91d4",
+                    "propertyDependencies": {
+                        "name": [],
+                        "retentionInDays": []
+                    },
+                    "created": "2025-04-06T16:22:38.197094566Z",
+                    "modified": "2025-04-06T16:22:38.197094566Z",
+                    "sourcePosition": "project:///../../platform/node_modules/@pulumi/cloudwatch/logGroup.ts#139,9",
+                    "ignoreChanges": [
+                        "name"
+                    ]
+                },
+                {
+                    "urn": "urn:pulumi:vscode::aciujums::random:index/randomBytes:RandomBytes::LambdaEncryptionKey",
+                    "custom": true,
+                    "id": "yURDhZXnz5+Q1JLI048ucf/qmBcH2/E9Uk0hcTq0XkQ=",
+                    "type": "random:index/randomBytes:RandomBytes",
+                    "inputs": {
+                        "length": 32
+                    },
+                    "outputs": {
+                        "base64": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:BbI9Vo+bcRZ+HXfc:JALXZSigzxTR1xAPh0CIQfTF2fq5PXuRehQoDwVDypvRQshKfkTgB5+R862ehl+H/HaW4ncS8kv+v2MFI0w="
+                        },
+                        "hex": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:HV+OYOgTQTcegy83:0Zwc0/R2zL0d1b8n0GnR+G/ABYTOdWLJI3bujNOrO6StRxtoOLoA8AOjOU51EFCkwyT413gKDFVHzd0wWr5ugTLTWNGAkPDX0pPEdQvwsdBLPw=="
+                        },
+                        "length": 32
+                    },
+                    "parent": "urn:pulumi:vscode::aciujums::pulumi:pulumi:Stack::aciujums-vscode",
+                    "provider": "urn:pulumi:vscode::aciujums::pulumi:providers:random::default_4_16_6::7cb4e992-7384-478c-aca5-f258a80c66be",
+                    "propertyDependencies": {
+                        "length": []
+                    },
+                    "additionalSecretOutputs": [
+                        "base64",
+                        "hex"
+                    ],
+                    "created": "2025-04-06T16:22:37.303358811Z",
+                    "modified": "2025-04-06T16:22:37.303358811Z",
+                    "sourcePosition": "project:///../../../file:/workspaces/aciujums/aciujums/.sst/platform/src/util/lazy.ts#8,16"
+                },
+                {
+                    "urn": "urn:pulumi:vscode::aciujums::sst:aws:Nextjs$sst:aws:Function$aws:iam/role:Role::Aciujums-nextjsDevServerRole",
+                    "custom": true,
+                    "id": "aciujums-vscode-AciujumsnextjsDevServerRole-dzwokfta",
+                    "type": "aws:iam/role:Role",
+                    "inputs": {
+                        "__defaults": [
+                            "forceDetachPolicies",
+                            "maxSessionDuration",
+                            "path"
+                        ],
+                        "assumeRolePolicy": "{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Effect\": \"Allow\",\n      \"Action\": \"sts:AssumeRole\",\n      \"Principal\": {\n        \"AWS\": \"arn:aws:iam::349836630030:root\",\n        \"Service\": \"lambda.amazonaws.com\"\n      }\n    }\n  ]\n}",
+                        "forceDetachPolicies": false,
+                        "inlinePolicies": [],
+                        "managedPolicyArns": [
+                            "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                        ],
+                        "maxSessionDuration": 3600,
+                        "name": "aciujums-vscode-AciujumsnextjsDevServerRole-dzwokfta",
+                        "path": "/",
+                        "tags": {
+                            "sst:app": "aciujums",
+                            "sst:stage": "vscode"
+                        },
+                        "tagsAll": {
+                            "sst:app": "aciujums",
+                            "sst:stage": "vscode"
+                        }
+                    },
+                    "outputs": {
+                        "arn": "arn:aws:iam::349836630030:role/aciujums-vscode-AciujumsnextjsDevServerRole-dzwokfta",
+                        "assumeRolePolicy": "{\"Statement\":[{\"Action\":\"sts:AssumeRole\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::349836630030:root\",\"Service\":\"lambda.amazonaws.com\"}}],\"Version\":\"2012-10-17\"}",
+                        "createDate": "2025-04-06T16:22:37Z",
+                        "description": "",
+                        "forceDetachPolicies": false,
+                        "id": "aciujums-vscode-AciujumsnextjsDevServerRole-dzwokfta",
+                        "inlinePolicies": [],
+                        "managedPolicyArns": [
+                            "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                        ],
+                        "maxSessionDuration": 3600,
+                        "name": "aciujums-vscode-AciujumsnextjsDevServerRole-dzwokfta",
+                        "namePrefix": "",
+                        "path": "/",
+                        "permissionsBoundary": "",
+                        "tags": {
+                            "sst:app": "aciujums",
+                            "sst:stage": "vscode"
+                        },
+                        "tagsAll": {
+                            "sst:app": "aciujums",
+                            "sst:stage": "vscode"
+                        },
+                        "uniqueId": "AROAVC47DLAHJILUM3G2X"
+                    },
+                    "parent": "urn:pulumi:vscode::aciujums::sst:aws:Nextjs$sst:aws:Function::Aciujums-nextjsDevServer",
+                    "provider": "urn:pulumi:vscode::aciujums::pulumi:providers:aws::default_6_66_2::37347a08-e7a3-49af-acd2-8881c80e91d4",
+                    "propertyDependencies": {
+                        "assumeRolePolicy": [],
+                        "inlinePolicies": [],
+                        "managedPolicyArns": [],
+                        "name": []
+                    },
+                    "created": "2025-04-06T16:22:38.666459445Z",
+                    "modified": "2025-04-06T16:22:38.666459445Z",
+                    "sourcePosition": "project:///../../../file:/workspaces/aciujums/aciujums/.sst/platform/src/components/aws/function.ts#1873,14",
+                    "ignoreChanges": [
+                        "name"
+                    ]
+                },
+                {
+                    "urn": "urn:pulumi:vscode::aciujums::sst:aws:Nextjs$sst:aws:Function$aws:s3/bucketObjectv2:BucketObjectv2::Aciujums-nextjsDevServerCode",
+                    "custom": true,
+                    "id": "assets/Aciujums-nextjsDevServer-code-38463c46b9ec9f4fb8ffc3f35dec2b95ba194b9d10122b4c6f7d947bf91cb2c4.zip",
+                    "type": "aws:s3/bucketObjectv2:BucketObjectv2",
+                    "inputs": {
+                        "__defaults": [
+                            "forceDestroy"
+                        ],
+                        "bucket": "sst-asset-zvokmvafnvma",
+                        "forceDestroy": false,
+                        "key": "assets/Aciujums-nextjsDevServer-code-38463c46b9ec9f4fb8ffc3f35dec2b95ba194b9d10122b4c6f7d947bf91cb2c4.zip",
+                        "source": {
+                            "4dabf18193072939515e22adb298388d": "0def7320c3a5731c473e5ecbe6d01bc7",
+                            "hash": "d55c86c9dcca38f5159dc11ebf3b3d7ff342ce8e1f6e31497e40eba9258e9c26",
+                            "path": "/workspaces/aciujums/aciujums/.sst/artifacts/Aciujums-nextjsDevServer/code.zip"
+                        },
+                        "tags": {
+                            "sst:app": "aciujums",
+                            "sst:stage": "vscode"
+                        },
+                        "tagsAll": {
+                            "sst:app": "aciujums",
+                            "sst:stage": "vscode"
+                        }
+                    },
+                    "outputs": {
+                        "acl": null,
+                        "arn": "arn:aws:s3:::sst-asset-zvokmvafnvma/assets/Aciujums-nextjsDevServer-code-38463c46b9ec9f4fb8ffc3f35dec2b95ba194b9d10122b4c6f7d947bf91cb2c4.zip",
+                        "bucket": "sst-asset-zvokmvafnvma",
+                        "bucketKeyEnabled": false,
+                        "cacheControl": "",
+                        "checksumAlgorithm": null,
+                        "checksumCrc32": "",
+                        "checksumCrc32c": "",
+                        "checksumSha1": "",
+                        "checksumSha256": "",
+                        "content": null,
+                        "contentBase64": null,
+                        "contentDisposition": "",
+                        "contentEncoding": "",
+                        "contentLanguage": "",
+                        "contentType": "application/octet-stream",
+                        "etag": "9df5b18988d3d877d2e37585a0a8a250",
+                        "forceDestroy": false,
+                        "id": "assets/Aciujums-nextjsDevServer-code-38463c46b9ec9f4fb8ffc3f35dec2b95ba194b9d10122b4c6f7d947bf91cb2c4.zip",
+                        "key": "assets/Aciujums-nextjsDevServer-code-38463c46b9ec9f4fb8ffc3f35dec2b95ba194b9d10122b4c6f7d947bf91cb2c4.zip",
+                        "kmsKeyId": null,
+                        "metadata": null,
+                        "objectLockLegalHoldStatus": "",
+                        "objectLockMode": "",
+                        "objectLockRetainUntilDate": "",
+                        "overrideProvider": null,
+                        "serverSideEncryption": "AES256",
+                        "source": {
+                            "4dabf18193072939515e22adb298388d": "0def7320c3a5731c473e5ecbe6d01bc7",
+                            "hash": "d55c86c9dcca38f5159dc11ebf3b3d7ff342ce8e1f6e31497e40eba9258e9c26",
+                            "path": "/workspaces/aciujums/aciujums/.sst/artifacts/Aciujums-nextjsDevServer/code.zip"
+                        },
+                        "sourceHash": null,
+                        "storageClass": "STANDARD",
+                        "tags": {
+                            "sst:app": "aciujums",
+                            "sst:stage": "vscode"
+                        },
+                        "tagsAll": {
+                            "sst:app": "aciujums",
+                            "sst:stage": "vscode"
+                        },
+                        "versionId": "",
+                        "websiteRedirect": ""
+                    },
+                    "parent": "urn:pulumi:vscode::aciujums::sst:aws:Nextjs$sst:aws:Function::Aciujums-nextjsDevServer",
+                    "provider": "urn:pulumi:vscode::aciujums::pulumi:providers:aws::default_6_66_2::37347a08-e7a3-49af-acd2-8881c80e91d4",
+                    "propertyDependencies": {
+                        "bucket": [],
+                        "key": [],
+                        "source": []
+                    },
+                    "created": "2025-04-06T16:22:39.099318922Z",
+                    "modified": "2025-04-06T16:22:39.099318922Z",
+                    "sourcePosition": "project:///../../platform/node_modules/@pulumi/s3/bucketObjectv2.ts#429,9"
+                },
+                {
+                    "urn": "urn:pulumi:vscode::aciujums::sst:aws:Nextjs$sst:aws:Function$aws:lambda/function:Function::Aciujums-nextjsDevServerFunction",
+                    "custom": true,
+                    "id": "aciujums-vscode-AciujumsnextjsDevServerFunction-vtfevccn",
+                    "type": "aws:lambda/function:Function",
+                    "inputs": {
+                        "__defaults": [
+                            "reservedConcurrentExecutions",
+                            "skipDestroy"
+                        ],
+                        "architectures": [
+                            "x86_64"
+                        ],
+                        "description": "Aciujums-nextjs dev server",
+                        "environment": {
+                            "__defaults": [],
+                            "variables": {
+                                "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                                "ciphertext": "v1:vro+9zi1hnPuf6nz:TzoZ344SEUMIgjG3/44eb1tDJ6aM3/vjUB6tRLfDCvpluyykOqdcJX0c+kQg+Q9LfjXHSfCCmmD/3+hohQpxG31n1iGBuj0qq6kofxq21sVJAgCUGTjFXhOhyWdFsaXpNV9KRB87+tCRqSeea6smp6DsFwzMwfaVeCyIDklitSO/dhyNDAe0qJdGmFBc+IoYRfcIi8eeHaulW8tl96HxWT96mYZI9pMC3Qw="
+                            }
+                        },
+                        "ephemeralStorage": {
+                            "__defaults": [],
+                            "size": 512
+                        },
+                        "handler": "index.handler",
+                        "loggingConfig": {
+                            "__defaults": [
+                                "applicationLogLevel",
+                                "systemLogLevel"
+                            ],
+                            "applicationLogLevel": "",
+                            "logFormat": "Text",
+                            "logGroup": "/aws/lambda/aciujums-vscode-AciujumsnextjsDevServerFunction-fueekose",
+                            "systemLogLevel": ""
+                        },
+                        "memorySize": 128,
+                        "name": "aciujums-vscode-AciujumsnextjsDevServerFunction-vtfevccn",
+                        "packageType": "Zip",
+                        "publish": false,
+                        "reservedConcurrentExecutions": -1,
+                        "role": "arn:aws:iam::349836630030:role/aciujums-vscode-AciujumsnextjsDevServerRole-dzwokfta",
+                        "runtime": "nodejs20.x",
+                        "s3Bucket": "sst-asset-zvokmvafnvma",
+                        "s3Key": "assets/Aciujums-nextjsDevServer-code-38463c46b9ec9f4fb8ffc3f35dec2b95ba194b9d10122b4c6f7d947bf91cb2c4.zip",
+                        "skipDestroy": false,
+                        "tags": {
+                            "sst:app": "aciujums",
+                            "sst:stage": "vscode"
+                        },
+                        "tagsAll": {
+                            "sst:app": "aciujums",
+                            "sst:stage": "vscode"
+                        },
+                        "timeout": 20
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":600000000000,\"update\":600000000000}}",
+                        "architectures": [
+                            "x86_64"
+                        ],
+                        "arn": "arn:aws:lambda:us-east-1:349836630030:function:aciujums-vscode-AciujumsnextjsDevServerFunction-vtfevccn",
+                        "code": null,
+                        "codeSha256": "1VyGydzKOPUVncEevzs9f/NCzo4fbjFJfkDrqSWOnCY=",
+                        "codeSigningConfigArn": "",
+                        "deadLetterConfig": null,
+                        "description": "Aciujums-nextjs dev server",
+                        "environment": {
+                            "variables": {
+                                "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                                "ciphertext": "v1:e5Gv3Ikw5P0D+lj/:yhw9gnvoOROoSTj0AfsO1tXmAD1NOOah/233R2VyCH5PPjTwJPPlZfn546viU6t+Vv69odKTzqAnvA4oBDv/lq+fwMB5x1bw4yjKrOUeAwOgNak71vDXquxSb+SXTw2veREcFwJka1cMeyf7rVTmwuvaSNP1XQFilP/910ecDWUHiADBWu4QA7D4XQkSIBOTaW1uDB+t3aCOJc8WhEWqU2+o3a+pVOCuOEs="
+                            }
+                        },
+                        "ephemeralStorage": {
+                            "size": 512
+                        },
+                        "fileSystemConfig": null,
+                        "handler": "index.handler",
+                        "id": "aciujums-vscode-AciujumsnextjsDevServerFunction-vtfevccn",
+                        "imageConfig": null,
+                        "imageUri": "",
+                        "invokeArn": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:349836630030:function:aciujums-vscode-AciujumsnextjsDevServerFunction-vtfevccn/invocations",
+                        "kmsKeyArn": "",
+                        "lastModified": "2025-04-06T16:22:48.712+0000",
+                        "layers": null,
+                        "loggingConfig": {
+                            "applicationLogLevel": "",
+                            "logFormat": "Text",
+                            "logGroup": "/aws/lambda/aciujums-vscode-AciujumsnextjsDevServerFunction-fueekose",
+                            "systemLogLevel": ""
+                        },
+                        "memorySize": 128,
+                        "name": "aciujums-vscode-AciujumsnextjsDevServerFunction-vtfevccn",
+                        "packageType": "Zip",
+                        "publish": false,
+                        "qualifiedArn": "arn:aws:lambda:us-east-1:349836630030:function:aciujums-vscode-AciujumsnextjsDevServerFunction-vtfevccn:$LATEST",
+                        "qualifiedInvokeArn": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:349836630030:function:aciujums-vscode-AciujumsnextjsDevServerFunction-vtfevccn:$LATEST/invocations",
+                        "replaceSecurityGroupsOnDestroy": null,
+                        "replacementSecurityGroupIds": null,
+                        "reservedConcurrentExecutions": -1,
+                        "role": "arn:aws:iam::349836630030:role/aciujums-vscode-AciujumsnextjsDevServerRole-dzwokfta",
+                        "runtime": "nodejs20.x",
+                        "s3Bucket": "sst-asset-zvokmvafnvma",
+                        "s3Key": "assets/Aciujums-nextjsDevServer-code-38463c46b9ec9f4fb8ffc3f35dec2b95ba194b9d10122b4c6f7d947bf91cb2c4.zip",
+                        "s3ObjectVersion": null,
+                        "signingJobArn": "",
+                        "signingProfileVersionArn": "",
+                        "skipDestroy": false,
+                        "snapStart": null,
+                        "sourceCodeHash": "",
+                        "sourceCodeSize": 391,
+                        "tags": {
+                            "sst:app": "aciujums",
+                            "sst:stage": "vscode"
+                        },
+                        "tagsAll": {
+                            "sst:app": "aciujums",
+                            "sst:stage": "vscode"
+                        },
+                        "timeout": 20,
+                        "tracingConfig": {
+                            "mode": "PassThrough"
+                        },
+                        "version": "$LATEST",
+                        "vpcConfig": null
+                    },
+                    "parent": "urn:pulumi:vscode::aciujums::sst:aws:Nextjs$sst:aws:Function::Aciujums-nextjsDevServer",
+                    "dependencies": [
+                        "urn:pulumi:vscode::aciujums::sst:aws:Nextjs$sst:aws:Function$aws:s3/bucketObjectv2:BucketObjectv2::Aciujums-nextjsDevServerCode",
+                        "urn:pulumi:vscode::aciujums::random:index/randomBytes:RandomBytes::LambdaEncryptionKey",
+                        "urn:pulumi:vscode::aciujums::sst:aws:Nextjs$sst:aws:Function$aws:cloudwatch/logGroup:LogGroup::Aciujums-nextjsDevServerLogGroup",
+                        "urn:pulumi:vscode::aciujums::sst:aws:Nextjs$sst:aws:Function$aws:iam/role:Role::Aciujums-nextjsDevServerRole"
+                    ],
+                    "provider": "urn:pulumi:vscode::aciujums::pulumi:providers:aws::default_6_66_2::37347a08-e7a3-49af-acd2-8881c80e91d4",
+                    "propertyDependencies": {
+                        "architectures": [],
+                        "description": [],
+                        "environment": [
+                            "urn:pulumi:vscode::aciujums::random:index/randomBytes:RandomBytes::LambdaEncryptionKey"
+                        ],
+                        "ephemeralStorage": [],
+                        "handler": [],
+                        "loggingConfig": [
+                            "urn:pulumi:vscode::aciujums::sst:aws:Nextjs$sst:aws:Function$aws:cloudwatch/logGroup:LogGroup::Aciujums-nextjsDevServerLogGroup"
+                        ],
+                        "memorySize": [],
+                        "name": [],
+                        "packageType": [],
+                        "publish": [],
+                        "role": [
+                            "urn:pulumi:vscode::aciujums::sst:aws:Nextjs$sst:aws:Function$aws:iam/role:Role::Aciujums-nextjsDevServerRole"
+                        ],
+                        "runtime": [],
+                        "s3Bucket": [
+                            "urn:pulumi:vscode::aciujums::sst:aws:Nextjs$sst:aws:Function$aws:s3/bucketObjectv2:BucketObjectv2::Aciujums-nextjsDevServerCode"
+                        ],
+                        "s3Key": [
+                            "urn:pulumi:vscode::aciujums::sst:aws:Nextjs$sst:aws:Function$aws:s3/bucketObjectv2:BucketObjectv2::Aciujums-nextjsDevServerCode"
+                        ],
+                        "timeout": []
+                    },
+                    "created": "2025-04-06T16:22:55.108441163Z",
+                    "modified": "2025-04-06T16:22:55.108441163Z",
+                    "sourcePosition": "project:///../../platform/node_modules/@pulumi/lambda/function.ts#551,9",
+                    "ignoreChanges": [
+                        "name"
+                    ]
+                }
+            ],
+            "metadata": {}
+        }
+    }
+}

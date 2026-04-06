@@ -1,0 +1,88 @@
+{
+    "Items": [
+        {
+            "entity_name": {
+                "S": "Kelmės Jono Graičiūno gimnazija"
+            },
+            "legal_id": {
+                "N": "190091584"
+            }
+        },
+        {
+            "entity_name": {
+                "S": "Krašto apsaugos oro erdvės kontrolės sistemos veteranų klubas"
+            },
+            "legal_id": {
+                "N": "300547855"
+            }
+        },
+        {
+            "entity_name": {
+                "S": "Labdaros ir paramos fondas \"SENOLIŲ UŽUOVĖJA\""
+            },
+            "legal_id": {
+                "N": "302554275"
+            }
+        },
+        {
+            "entity_name": {
+                "S": "Vilniaus miesto socialinės paramos centro profesinė sąjunga"
+            },
+            "legal_id": {
+                "N": "300127698"
+            }
+        },
+        {
+            "entity_name": {
+                "S": "VšĮ Geroprotektorių tyrimo ir informacijos centras"
+            },
+            "legal_id": {
+                "N": "300544300"
+            }
+        },
+        {
+            "entity_name": {
+                "S": "Looking at the Stars paramos fondas"
+            },
+            "legal_id": {
+                "N": "306049263"
+            }
+        },
+        {
+            "entity_name": {
+                "S": "Mėgėjų kontora"
+            },
+            "legal_id": {
+                "N": "300705223"
+            }
+        },
+        {
+            "entity_name": {
+                "S": "VšĮ \"Musė maišė\""
+            },
+            "legal_id": {
+                "N": "304072683"
+            }
+        },
+        {
+            "entity_name": {
+                "S": "Daugiabučio namo savininkų bendrija \"Viltis\""
+            },
+            "legal_id": {
+                "N": "151425417"
+            }
+        },
+        {
+            "entity_name": {
+                "S": "Laisvalaikio ir jojimo sporto klubas \"Ristūnas\""
+            },
+            "legal_id": {
+                "N": "302700278"
+            }
+        }
+    ],
+    "Count": 16292,
+    "ScannedCount": 16292,
+    "ConsumedCapacity": null,
+    "NextToken": "eyJFeGNsdXNpdmVTdGFydEtleSI6IG51bGwsICJib3RvX3RydW5jYXRlX2Ftb3VudCI6IDEwfQ=="
+}

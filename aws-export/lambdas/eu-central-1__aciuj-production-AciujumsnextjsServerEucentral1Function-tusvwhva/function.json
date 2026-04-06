@@ -1,0 +1,61 @@
+{
+    "Configuration": {
+        "FunctionName": "aciuj-production-AciujumsnextjsServerEucentral1Function-tusvwhva",
+        "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:aciuj-production-AciujumsnextjsServerEucentral1Function-tusvwhva",
+        "Runtime": "nodejs20.x",
+        "Role": "arn:aws:iam::876391798236:role/aciujums-production-AciujumsnextjsServerEucentral1Role-fcaudhxz",
+        "Handler": "server-index.handler",
+        "CodeSize": 7976348,
+        "Description": "Aciujums-nextjs server",
+        "Timeout": 20,
+        "MemorySize": 1024,
+        "LastModified": "2025-06-16T20:47:04.000+0000",
+        "CodeSha256": "/bjJTFqgpHLuxZb4elctAxxHHcU+iuoVblo/A5BZevc=",
+        "Version": "$LATEST",
+        "Environment": {
+            "Variables": {
+                "CACHE_BUCKET_KEY_PREFIX": "_cache",
+                "CACHE_BUCKET_NAME": "aciujums-production-aciujumsnextjsassetsbucket-sefuvmux",
+                "REVALIDATION_QUEUE_REGION": "eu-central-1",
+                "SST_RESOURCE_App": "{\"name\":\"aciujums\",\"stage\":\"production\"}",
+                "SST_KEY": "twstf1laEOpav9oe4FC67sQyB3YJetQXlp2mFtdz2dQ=",
+                "REVALIDATION_QUEUE_URL": "https://sqs.eu-central-1.amazonaws.com/876391798236/aciujums-production-AciujumsnextjsRevalidationEventsQueue-bbccbcot.fifo",
+                "SST_KEY_FILE": "resource.enc",
+                "CACHE_DYNAMO_TABLE": "aciujums-production-AciujumsnextjsRevalidationTable-sbhoofto",
+                "CACHE_BUCKET_REGION": "eu-central-1"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "ecc15095-66b3-40ac-ab19-f82bb88a5e92",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:2d788b26ac416854c5eb831c9f46cb2e0a0ddcee84b1a9b114acbdfdb644c8c1"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/aciuj-production-AciujumsnextjsServerEucentral1Function-bcedczab"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/876391798236/aciuj-production-AciujumsnextjsServerEucentral1Function-tusvwhva-7d3e4127-617b-48e0-8dbe-4011fcaf5b30?versionId=nKJKqHwau7aEPn7P_qExZjpSI.Gcryn4&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEI7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJIMEYCIQDaRJCjEmdA3GYIXmRbYwnGBU%2Fses0Xqrjxc%2F8zgjtbDwIhAIwzew7tvEwlMwP4Yyrp8mKvbxdNjq1GnLwY9F6zBZJPKosCCFcQAxoMNjgwNjg2NTU5NDM0Igz8LhCWsXQHkZ%2B%2FM4Iq6AEZK%2BPxYrR36hvufVwCIaaHRfiUmiehGuPuww0sT8N%2B8rMOoGz8EVpe0sP98uY3HDlSHv6cJrKjZW0A%2FFzN5kBr%2BZhP6pLZW%2Bis%2FTTMZb3NheQRdtATC%2BEuMbU%2FyluiK2KCAubDu3WdcoWl6ZyhdAbqO4JPhkF5UpRMKHHRAO8LDBVwTT5DcgdtYNYoZ3jQursMWt6RcxX8k%2Ftw0qziwyUIKdoyebg%2BlLudRvxJEeXSnmbqD%2Fd8hQUMsX%2FhmXobp%2Fxx0M6dE0i%2Fls7TVhoHr5iYhVo1XHvUHvhxQDhVlflA6D1yBlQo5cwsMMjCtM4GOowBj832i%2BR7T3qB3ZVy4jIK%2FKu9mXbac%2FFZWh9EQ0kGLOGn4VrtWA2HpnD7zJ70bhAajMQe5GjNeIGmhJ%2F%2FkX43yOYi4PmnjsnA%2FJMTs8X5HRwNrszowVe4p6tpE2w72BLFXsWFwE8KWG1xBcwl8OWEfDL%2FPVZlX9Kk%2FLtTq8gpfWo2Zbz7ETdNmPmyzmU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T142727Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZ47AUUDFFUHWQWV3%2F20260401%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=246d9a307a19b1c0ab19103d78209ea562f2b6d19b7eacb3328d99865a3f42e8"
+    },
+    "Tags": {
+        "sst:app": "aciujums",
+        "sst:stage": "production"
+    }
+}

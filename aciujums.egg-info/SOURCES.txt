@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+aciujums.egg-info/PKG-INFO
+aciujums.egg-info/SOURCES.txt
+aciujums.egg-info/dependency_links.txt
+aciujums.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../functions/api/get-app-settings/index.mjs"],
+  "sourcesContent": ["import { S3Client, GetObjectCommand } from \"@aws-sdk/client-s3\";\n\nconst s3 = new S3Client({});\n\nexport const handler = async (event) => {\n    try {\n        const response = await s3.send(new GetObjectCommand({\n            Bucket: 'nipc-dl-analytics',\n            Key: 'aciujums/app-settings.json',\n        }));\n\n        const body = await response.Body.transformToString();\n        const settings = JSON.parse(body);\n\n        return {\n            statusCode: 200,\n            body: JSON.stringify(settings),\n        };\n    } catch (err) {\n        console.error(err);\n        return {\n            statusCode: 500,\n            body: JSON.stringify({ error: 'Internal Server Error' }),\n        };\n    }\n};\n"],
+  "mappings": ";;;;;;;;;;AAAA,SAAS,UAAU,wBAAwB;AAE3C,IAAM,KAAK,IAAI,SAAS,CAAC,CAAC;AAEnB,IAAM,UAAU,8BAAO,UAAU;AACpC,MAAI;AACA,UAAM,WAAW,MAAM,GAAG,KAAK,IAAI,iBAAiB;AAAA,MAChD,QAAQ;AAAA,MACR,KAAK;AAAA,IACT,CAAC,CAAC;AAEF,UAAM,OAAO,MAAM,SAAS,KAAK,kBAAkB;AACnD,UAAM,WAAW,KAAK,MAAM,IAAI;AAEhC,WAAO;AAAA,MACH,YAAY;AAAA,MACZ,MAAM,KAAK,UAAU,QAAQ;AAAA,IACjC;AAAA,EACJ,SAAS,KAAK;AACV,YAAQ,MAAM,GAAG;AACjB,WAAO;AAAA,MACH,YAAY;AAAA,MACZ,MAAM,KAAK,UAAU,EAAE,OAAO,wBAAwB,CAAC;AAAA,IAC3D;AAAA,EACJ;AACJ,GArBuB;",
+  "names": []
+}

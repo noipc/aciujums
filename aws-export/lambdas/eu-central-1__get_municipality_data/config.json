@@ -1,0 +1,38 @@
+{
+    "FunctionName": "get_municipality_data",
+    "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:get_municipality_data",
+    "Runtime": "nodejs22.x",
+    "Role": "arn:aws:iam::876391798236:role/Aciujums-Lambda-GetS3Object-Role",
+    "Handler": "index.handler",
+    "CodeSize": 728,
+    "Description": "",
+    "Timeout": 30,
+    "MemorySize": 128,
+    "LastModified": "2025-03-22T19:06:04.000+0000",
+    "CodeSha256": "rVMsHT1X/zXlCtctIr5eEn20n1hBHf4Ked/rNxsmMGw=",
+    "Version": "$LATEST",
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "49db91e3-ac3b-4571-8fb5-48fda15762bf",
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Zip",
+    "Architectures": [
+        "arm64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "RuntimeVersionConfig": {
+        "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:5e3c80f22edec71979fb474ea310e6e652f1e127086be7eb20d12b0b26666cc1"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/get_municipality_data"
+    }
+}

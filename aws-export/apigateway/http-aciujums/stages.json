@@ -1,0 +1,30 @@
+{
+    "Items": [
+        {
+            "AutoDeploy": true,
+            "CreatedDate": "2025-03-22T17:01:11+00:00",
+            "DefaultRouteSettings": {
+                "DetailedMetricsEnabled": false
+            },
+            "DeploymentId": "2lh1eq",
+            "LastDeploymentStatusMessage": "Successfully deployed stage with deployment ID '2lh1eq'",
+            "LastUpdatedDate": "2025-03-26T08:45:11+00:00",
+            "RouteSettings": {},
+            "StageName": "api",
+            "StageVariables": {},
+            "Tags": {}
+        },
+        {
+            "CreatedDate": "2023-11-25T23:34:47+00:00",
+            "DefaultRouteSettings": {
+                "DetailedMetricsEnabled": false
+            },
+            "DeploymentId": "7jkt3h",
+            "LastUpdatedDate": "2025-03-22T17:00:29+00:00",
+            "RouteSettings": {},
+            "StageName": "default",
+            "StageVariables": {},
+            "Tags": {}
+        }
+    ]
+}

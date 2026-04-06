@@ -1,0 +1,370 @@
+Updating (dev):
+@ updating........................
+
+@ updating.....................................
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (0s) [diff: ]
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role CheckCsvStructureRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role CheckVmiFileDateRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role RcExJarDownloaderRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role RcJarDownloaderRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role RcParamosGavejaiDownloaderRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role VmiDownloaderRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role RcJarNoFaDownloaderRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role RcExNvoDownloaderRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role RcExParamosGavejaiDownloaderRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role RcNvoDownloaderRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role RcProcessorRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role VmiProcessorRole
+@ updating....
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role SendAlertRole
+@ updating.....
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role CheckCsvStructureRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role CheckVmiFileDateRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role RcExJarDownloaderRole
+@ updating....
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role RcJarDownloaderRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role RcParamosGavejaiDownloaderRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role VmiDownloaderRole
+@ updating....
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role RcJarNoFaDownloaderRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role RcExNvoDownloaderRole
+@ updating....
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role RcExParamosGavejaiDownloaderRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role AciujumsApiRouteDrnnvfHandlerRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role AciujumsApiRouteZzafaeHandlerRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role RcNvoDownloaderRole
+@ updating....
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role RcProcessorRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role VmiProcessorRole
+@ updating....
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role SendAlertRole
+@ updating.....
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (10s) [diff: ]; Next.js version : 16.2.2
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (10s) [diff: ]; OpenNext v3.5.3
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (10s) [diff: ]; 
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (10s) [diff: ]; ┌─────────────────────────────────┐
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (10s) [diff: ]; │ OpenNext — Building Next.js app │
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (10s) [diff: ]; └─────────────────────────────────┘
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (10s) [diff: ]; 
+@ updating....
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (10s) [diff: ]; 
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (10s) [diff: ]; > aciujums@0.1.0 build
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (10s) [diff: ]; > next build
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (10s) [diff: ]; 
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role AciujumsApiRouteCnszxtHandlerRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role AciujumsApiRouteMswwvfHandlerRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role AciujumsApiRouteDrnnvfHandlerRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role AciujumsApiRouteZzafaeHandlerRole
+@ updating....
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role AciujumsApiRouteBvcwahHandlerRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role AciujumsApiRouteCnszxtHandlerRole
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role AciujumsApiRouteMswwvfHandlerRole
+@ updating....
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role AciujumsApiRouteBvcwahHandlerRole
+@ updating.....
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role AciujumsApiRouteZuffzrHandlerRole
+@ updating....
+    pulumi:pulumi:Stack aciujums-dev running read aws:iam:Role AciujumsApiRouteZuffzrHandlerRole
+@ updating.....
+ +  aws:cloudwatch:LogSubscriptionFilter CsvValidationAlertFilter creating (0s) 
+@ updating....
+ +  aws:cloudwatch:LogSubscriptionFilter CsvValidationAlertFilter created (1s) 
+@ updating.......
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (23s) [diff: ]; ▲ Next.js 16.2.2 (Turbopack)
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (23s) [diff: ]; - Environments: .env.local
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (23s) [diff: ]; - Experiments (use with caution):
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (23s) [diff: ];   · staleTimes
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (23s) [diff: ]; 
+@ updating....
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (24s) [diff: ];   Creating an optimized production build ...
+@ updating............................
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (48s) [diff: ]; ✓ Compiled successfully in 22.3s
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (48s) [diff: ];   Running TypeScript ...
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (49s) [diff: ];   Finished TypeScript in 834ms ...
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (49s) [diff: ];   Collecting page data using 11 workers ...
+@ updating.............
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (59s) [diff: ];   Generating static pages using 11 workers (0/10) ...
+@ updating..............
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (69s) [diff: ];   Generating static pages using 11 workers (2/10) 
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (69s) [diff: ];   Generating static pages using 11 workers (4/10) 
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (69s) [diff: ];   Generating static pages using 11 workers (7/10) 
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (69s) [diff: ]; ✓ Generating static pages using 11 workers (10/10) in 10.4s
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (69s) [diff: ];   Finalizing page optimization ...
+@ updating..........
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; 
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; Route (app)                       Revalidate  Expire
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; ┌ ○ /                                     1d      1y
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; ├ ○ /_not-found                           1d      1y
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; ├ ○ /apie-mus                             1d      1y
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; ├ ○ /naudinga-informacija                 1d      1y
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; ├ ○ /naujienos                            1d      1y
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; ├ ƒ /naujienos/[slug]
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; ├ ƒ /organizacijos/[legal_id]
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; ├ ○ /paieska                              1d      1y
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; ├ ○ /robots.txt
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; ├ ƒ /savivaldybes/[municipality]
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; └ ○ /sitemap.xml
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; 
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; 
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; ○  (Static)   prerendered as static content
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; ƒ  (Dynamic)  server-rendered on demand
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; 
+@ updating....
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; 
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; ┌──────────────────────────────┐
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; │ OpenNext — Generating bundle │
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; └──────────────────────────────┘
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (77s) [diff: ]; 
+@ updating.............
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (88s) [diff: ]; Bundling middleware function...
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (88s) [diff: ]; Bundling static assets...
+@ updating....
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (89s) [diff: ]; Bundling cache assets...
+@ updating..........
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (96s) [diff: ]; Building server function: default...
+@ updating.......................
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (116s) [diff: ]; Applying code patches: 11.995s
+@ updating.....
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (117s) [diff: ]; Bundling revalidation function...
+@ updating....
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (118s) [diff: ]; Bundling image optimization function...
+@ updating.....
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (121s) [diff: ]; Installing dependencies for image-optimization-function...
+@ updating.........................................
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (159s) [diff: ]; Dependencies installed for image-optimization-function
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (159s) [diff: ]; Bundling warmer function...
+@ updating....
+ ++ command:local:Command Aciujums-nextjsBuilder creating replacement (161s) [diff: ]; OpenNext build complete.
+@ updating......
+ ++ command:local:Command Aciujums-nextjsBuilder created replacement (164s) [diff: ]; OpenNext build complete.
+@ updating....
+ +- command:local:Command Aciujums-nextjsBuilder replacing (0s) [diff: ]; OpenNext build complete.
+ +- command:local:Command Aciujums-nextjsBuilder replaced (0.00s) [diff: ]; OpenNext build complete.
+@ updating...........
+ ~  pulumi-nodejs:dynamic:Resource Aciujums-nextjsAssetFiles.sst.aws.BucketFiles updating (0s) [diff: ~files]
+ ++ aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode creating replacement (0s) [diff: ~key,source]
+@ updating....
+ ++ aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode created replacement (1s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode replacing (0s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode replaced (0.00s) [diff: ~key,source]
+@ updating....
+ ~  aws:lambda:Function Aciujums-nextjsRevalidationSeederFunction updating (0s) [diff: ~s3Key]
+ ++ aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunctionCode creating replacement (0s) [diff: ~key,source]
+@ updating....
+ ~  pulumi-nodejs:dynamic:Resource Aciujums-nextjsAssetFiles.sst.aws.BucketFiles updated (2s) [diff: ~files]
+ ++ aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunctionCode created replacement (0.75s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunctionCode replacing (0s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunctionCode replaced (0.00s) [diff: ~key,source]
+@ updating....
+ ~  aws:lambda:Function Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunctionFunction updating (0s) [diff: ~s3Key]
+@ updating........
+ ~  aws:lambda:Function Aciujums-nextjsRevalidationSeederFunction updated (6s) [diff: ~s3Key]
+ ++ aws:lambda:Invocation Aciujums-nextjsRevalidationSeed creating replacement (0s) [diff: ~triggers]
+@ updating....
+ ~  aws:lambda:Function Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunctionFunction updated (6s) [diff: ~s3Key]
+@ updating....
+ ++ aws:s3:BucketObjectv2 Aciujums-nextjsServerEucentral1Code creating replacement (0s) [diff: ~key,source]
+ ++ aws:lambda:Invocation Aciujums-nextjsRevalidationSeed created replacement (1s) [diff: ~triggers]
+ +- aws:lambda:Invocation Aciujums-nextjsRevalidationSeed replacing (0s) [diff: ~triggers]
+ +- aws:lambda:Invocation Aciujums-nextjsRevalidationSeed replaced (0.00s) [diff: ~triggers]
+@ updating....
+ ++ aws:s3:BucketObjectv2 Aciujums-nextjsServerEucentral1Code created replacement (1s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 Aciujums-nextjsServerEucentral1Code replacing (0s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 Aciujums-nextjsServerEucentral1Code replaced (0.00s) [diff: ~key,source]
+ ~  aws:lambda:Function Aciujums-nextjsServerEucentral1Function updating (0s) [diff: ~s3Key]
+@ updating....
+ ++ aws:s3:BucketObjectv2 Aciujums-nextjsImageOptimizerCode creating replacement (0s) [diff: ~key,source]
+@ updating.......
+ ++ aws:s3:BucketObjectv2 Aciujums-nextjsImageOptimizerCode created replacement (3s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 Aciujums-nextjsImageOptimizerCode replacing (0s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 Aciujums-nextjsImageOptimizerCode replaced (0.00s) [diff: ~key,source]
+ ~  aws:lambda:Function Aciujums-nextjsImageOptimizerFunction updating (0s) [diff: ~s3Key]
+@ updating....
+ ~  aws:lambda:Function Aciujums-nextjsServerEucentral1Function updated (6s) [diff: ~s3Key]
+@ updating.........
+ ~  aws:lambda:Function Aciujums-nextjsImageOptimizerFunction updated (6s) [diff: ~s3Key]
+ ~  pulumi-nodejs:dynamic:Resource Aciujums-nextjsKvKeys.sst.aws.KvKeys updating (0s) [diff: ~entries]
+@ updating....
+ ~  pulumi-nodejs:dynamic:Resource Aciujums-nextjsKvKeys.sst.aws.KvKeys updated (1s) [diff: ~entries]
+ ~  pulumi-nodejs:dynamic:Resource Aciujums-nextjsInvalidation.sst.aws.DistributionInvalidation updating (0s) [diff: ~version]
+@ updating....
+ ~  pulumi-nodejs:dynamic:Resource Aciujums-nextjsInvalidation.sst.aws.DistributionInvalidation updated (0.90s) [diff: ~version]
+@ updating....
+ -  aws:iam:Role Aciujums-nextjsDevServerRole deleting (0s) 
+ -  aws:cloudwatch:LogGroup Aciujums-nextjsDevServerLogGroup deleting (0s) 
+ -  aws:cloudwatch:LogGroup Aciujums-nextjsDevServerLogGroup deleted (0.55s) 
+@ updating....
+ -  aws:iam:Role Aciujums-nextjsDevServerRole deleted (1s) 
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 RcExJarDownloaderSourcemap0 deleting original (0s)[retain] 
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteZuffzrHandlerCode deleting original (0s) 
+ -- aws:s3:BucketObjectv2 RcJarNoFaDownloaderSourcemap0 deleting original (0s)[retain] 
+ -- aws:s3:BucketObjectv2 RcJarNoFaDownloaderCode deleting original (0s) 
+ -- aws:lambda:Invocation Aciujums-nextjsRevalidationSeed deleting original (0s) [diff: ~triggers]
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteZzafaeHandlerSourcemap0 deleting original (0s)[retain] 
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsServerEucentral1Code deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsServerEucentral1Code deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 RcJarDownloaderCode deleting original (0s) 
+ -- command:local:Command Aciujums-nextjsBuilder deleting original (0s) [diff: ]; OpenNext build complete.
+ -- command:local:Command Aciujums-nextjsBuilder deleting original (0s) [diff: ]; OpenNext build complete.
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteCnszxtHandlerCode deleting original (0s) 
+ -- aws:s3:BucketObjectv2 RcParamosGavejaiDownloaderSourcemap0 deleting original (0s)[retain] 
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsServerEucentral1Code deleting original (0s) [diff: ~key,source]
+ -- aws:lambda:Invocation Aciujums-nextjsRevalidationSeed deleting original (0s) [diff: ~triggers]
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsImageOptimizerCode deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsImageOptimizerCode deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsImageOptimizerCode deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteMswwvfHandlerCode deleting original (0s) 
+ -- aws:s3:BucketObjectv2 RcNvoDownloaderCode deleting original (0s) 
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunctionCode deleting original (0s) [diff: ~key,source]
+ -  sst:aws:Function Aciujums-nextjsDevServer deleting (0s) 
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunctionCode deleting original (0s) [diff: ~key,source]
+ -- command:local:Command Aciujums-nextjsBuilder deleting original (0s) [diff: ]; OpenNext build complete.
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsServerEucentral1Code deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 RcExParamosGavejaiDownloaderCode deleting original (0s) 
+ -- command:local:Command Aciujums-nextjsBuilder deleting original (0s) [diff: ]; OpenNext build complete.
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteZuffzrHandlerSourcemap0 deleting original (0s)[retain] 
+ -- command:local:Command Aciujums-nextjsBuilder deleting original (0s) [diff: ]; OpenNext build complete.
+ -- aws:s3:BucketObjectv2 RcExNvoDownloaderSourcemap0 deleting original (0s)[retain] 
+ -- aws:s3:BucketObjectv2 RcParamosGavejaiDownloaderCode deleting original (0s) 
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteDrnnvfHandlerSourcemap0 deleting original (0s)[retain] 
+ -- aws:s3:BucketObjectv2 RcExParamosGavejaiDownloaderSourcemap0 deleting original (0s)[retain] 
+ -- aws:s3:BucketObjectv2 RcExJarDownloaderCode deleting original (0s) 
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunctionCode deleting original (0s) [diff: ~key,source]
+ -- aws:lambda:Invocation Aciujums-nextjsRevalidationSeed deleting original (0s) [diff: ~triggers]
+ -- aws:s3:BucketObjectv2 VmiDownloaderCode deleting original (0s) 
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteBvcwahHandlerCode deleting original (0s) 
+ -- command:local:Command Aciujums-nextjsBuilder deleting original (0s) [diff: ]; OpenNext build complete.
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteDrnnvfHandlerCode deleting original (0s) 
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode deleting original (0s) [diff: ~key,source]
+ -- command:local:Command Aciujums-nextjsBuilder deleting original (0s) [diff: ]; OpenNext build complete.
+ -- command:local:Command Aciujums-nextjsBuilder deleting original (0s) [diff: ]; OpenNext build complete.
+ -- command:local:Command Aciujums-nextjsBuilder deleting original (0s) [diff: ]; OpenNext build complete.
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode deleted original (0.37s) [diff: ~key,source]
+@ updating....
+ -- aws:s3:BucketObjectv2 RcExJarDownloaderSourcemap0 deleted original (0.68s)[retain] 
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteZuffzrHandlerCode deleted original (0.94s) 
+ -- aws:s3:BucketObjectv2 RcJarNoFaDownloaderSourcemap0 deleted original (1s)[retain] 
+ -- aws:s3:BucketObjectv2 RcJarNoFaDownloaderCode deleted original (1s) 
+ -- aws:lambda:Invocation Aciujums-nextjsRevalidationSeed deleted original (1s) [diff: ~triggers]
+@ updating....
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteZzafaeHandlerSourcemap0 deleted original (1s)[retain] 
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsServerEucentral1Code deleted original (1s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsServerEucentral1Code deleted original (2s) [diff: ~key,source]
+@ updating....
+ -- aws:s3:BucketObjectv2 RcJarDownloaderCode deleted original (2s) 
+ -- command:local:Command Aciujums-nextjsBuilder deleted original (2s) [diff: ]; OpenNext build complete.
+ -- command:local:Command Aciujums-nextjsBuilder deleted original (3s) [diff: ]; OpenNext build complete.
+@ updating....
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteCnszxtHandlerCode deleted original (3s) 
+ -- aws:s3:BucketObjectv2 RcParamosGavejaiDownloaderSourcemap0 deleted original (3s)[retain] 
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsServerEucentral1Code deleted original (3s) [diff: ~key,source]
+ -- aws:lambda:Invocation Aciujums-nextjsRevalidationSeed deleted original (4s) [diff: ~triggers]
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsImageOptimizerCode deleted original (4s) [diff: ~key,source]
+@ updating....
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsImageOptimizerCode deleted original (4s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsImageOptimizerCode deleted original (4s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode deleted original (4s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteMswwvfHandlerCode deleted original (5s) 
+ -- aws:s3:BucketObjectv2 RcNvoDownloaderCode deleted original (5s) 
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunctionCode deleted original (5s) [diff: ~key,source]
+@ updating....
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunctionCode deleted original (5s) [diff: ~key,source]
+ -- command:local:Command Aciujums-nextjsBuilder deleted original (5s) [diff: ]; OpenNext build complete.
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsServerEucentral1Code deleted original (6s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode deleted original (6s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode deleted original (6s) [diff: ~key,source]
+@ updating....
+ -- aws:s3:BucketObjectv2 RcExParamosGavejaiDownloaderCode deleted original (6s) 
+ -- command:local:Command Aciujums-nextjsBuilder deleted original (6s) [diff: ]; OpenNext build complete.
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteZuffzrHandlerSourcemap0 deleted original (6s)[retain] 
+ -- command:local:Command Aciujums-nextjsBuilder deleted original (7s) [diff: ]; OpenNext build complete.
+ -- aws:s3:BucketObjectv2 RcExNvoDownloaderSourcemap0 deleted original (7s)[retain] 
+@ updating....
+ -- aws:s3:BucketObjectv2 RcParamosGavejaiDownloaderCode deleted original (7s) 
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteDrnnvfHandlerSourcemap0 deleted original (7s)[retain] 
+ -- aws:s3:BucketObjectv2 RcExParamosGavejaiDownloaderSourcemap0 deleted original (7s)[retain] 
+ -- aws:s3:BucketObjectv2 RcExJarDownloaderCode deleted original (8s) 
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunctionCode deleted original (8s) [diff: ~key,source]
+@ updating....
+ -- aws:lambda:Invocation Aciujums-nextjsRevalidationSeed deleted original (8s) [diff: ~triggers]
+ -- aws:s3:BucketObjectv2 VmiDownloaderCode deleted original (8s) 
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteBvcwahHandlerCode deleted original (9s) 
+ -- command:local:Command Aciujums-nextjsBuilder deleted original (9s) [diff: ]; OpenNext build complete.
+@ updating....
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteDrnnvfHandlerCode deleted original (9s) 
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode deleted original (10s) [diff: ~key,source]
+@ updating....
+ -- command:local:Command Aciujums-nextjsBuilder deleted original (10s) [diff: ]; OpenNext build complete.
+ -- command:local:Command Aciujums-nextjsBuilder deleted original (10s) [diff: ]; OpenNext build complete.
+ -- command:local:Command Aciujums-nextjsBuilder deleted original (11s) [diff: ]; OpenNext build complete.
+@ updating....
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteBvcwahHandlerSourcemap0 deleting original (0s)[retain] 
+ -- aws:lambda:Invocation Aciujums-nextjsRevalidationSeed deleted original [diff: ~triggers]
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunctionCode deleted original [diff: ~key,source]
+@ updating....
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode deleted original [diff: ~key,source]
+ -- command:local:Command Aciujums-nextjsBuilder deleted original [diff: ]; OpenNext build complete.
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode deleted original [diff: ~key,source]
+@ updating....
+ -- aws:s3:BucketObjectv2 VmiDownloaderSourcemap0 deleting original (0s)[retain] 
+ -- aws:s3:BucketObjectv2 RcNvoDownloaderSourcemap0 deleting original (0s)[retain] 
+ -- aws:s3:BucketObjectv2 RcExNvoDownloaderCode deleting original (0s) 
+ -- aws:s3:BucketObjectv2 RcJarDownloaderSourcemap0 deleting original (0s)[retain] 
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteMswwvfHandlerSourcemap0 deleting original (0s)[retain] 
+@ updating....
+ -- command:local:Command Aciujums-nextjsBuilder deleted original [diff: ]; OpenNext build complete.
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsImageOptimizerCode deleted original [diff: ~key,source]
+ -- aws:lambda:Invocation Aciujums-nextjsRevalidationSeed deleted original [diff: ~triggers]
+ -- command:local:Command Aciujums-nextjsBuilder deleted original [diff: ]; OpenNext build complete.
+ -- aws:s3:BucketObjectv2 SendAlertCode deleting original (0s) 
+@ updating....
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunctionCode deleted original [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteZzafaeHandlerCode deleting original (0s) 
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteCnszxtHandlerSourcemap0 deleting original (0s)[retain] 
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsImageOptimizerCode deleted original [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsServerEucentral1Code deleted original [diff: ~key,source]
+@ updating........
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteBvcwahHandlerSourcemap0 deleted original (8s)[retain] 
+ -- aws:lambda:Invocation Aciujums-nextjsRevalidationSeed deleted original (5s) [diff: ~triggers]
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunctionCode deleted original (5s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode deleted original (7s) [diff: ~key,source]
+ -- command:local:Command Aciujums-nextjsBuilder deleted original (5s) [diff: ]; OpenNext build complete.
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationSeederCode deleted original (8s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 VmiDownloaderSourcemap0 deleted original (7s)[retain] 
+ -- aws:s3:BucketObjectv2 RcNvoDownloaderSourcemap0 deleted original (7s)[retain] 
+@ updating....
+ -- aws:s3:BucketObjectv2 RcExNvoDownloaderCode deleted original (7s) 
+ -- aws:s3:BucketObjectv2 RcJarDownloaderSourcemap0 deleted original (7s)[retain] 
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteMswwvfHandlerSourcemap0 deleted original (8s)[retain] 
+@ updating....
+ -- command:local:Command Aciujums-nextjsBuilder deleted original (7s) [diff: ]; OpenNext build complete.
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsImageOptimizerCode deleted original (6s) [diff: ~key,source]
+ -- aws:lambda:Invocation Aciujums-nextjsRevalidationSeed deleted original (8s) [diff: ~triggers]
+ -- command:local:Command Aciujums-nextjsBuilder deleted original (8s) [diff: ]; OpenNext build complete.
+@ updating....
+ -- aws:s3:BucketObjectv2 SendAlertCode deleted original (8s) 
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunctionCode deleted original (8s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteZzafaeHandlerCode deleted original (8s) 
+ -- aws:s3:BucketObjectv2 AciujumsApiRouteCnszxtHandlerSourcemap0 deleted original (8s)[retain] 
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsImageOptimizerCode deleted original (8s) [diff: ~key,source]
+@ updating....
+ -- aws:s3:BucketObjectv2 Aciujums-nextjsServerEucentral1Code deleted original (8s) [diff: ~key,source]
+@ updating.....
+    pulumi:pulumi:Stack aciujums-dev  
+Outputs:
+    _protect: false
+    apiUrl  : "https://we5h20t1ee.execute-api.eu-central-1.amazonaws.com"
+
+Resources:
+    + 1 created
+    ~ 7 updated
+    - 3 deleted
+    +-6 replaced
+    17 changes. 231 unchanged
+
+Duration: 4m22s
+

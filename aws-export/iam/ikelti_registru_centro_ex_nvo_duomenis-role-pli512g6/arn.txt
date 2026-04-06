@@ -1,0 +1,1 @@
+arn:aws:iam::876391798236:role/service-role/ikelti_registru_centro_ex_nvo_duomenis-role-pli512g6

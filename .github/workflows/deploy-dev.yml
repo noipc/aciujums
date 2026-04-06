@@ -51,3 +51,5 @@ jobs:
 
       - name: Deploy SST (stage=dev)
         run: npx sst deploy --stage dev
+        env:
+          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}

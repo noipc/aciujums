@@ -1,0 +1,35 @@
+{
+    "FunctionName": "get_index_data",
+    "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:get_index_data",
+    "Runtime": "nodejs14.x",
+    "Role": "arn:aws:iam::876391798236:role/Aciujums-Lambda-GetS3Object-Role",
+    "Handler": "index.handler",
+    "CodeSize": 452,
+    "Description": "",
+    "Timeout": 30,
+    "MemorySize": 128,
+    "LastModified": "2025-03-22T21:44:16.000+0000",
+    "CodeSha256": "YjFu/n5cA2GrafjeRpKUPpChtKTLGS05o2zna8y3AKc=",
+    "Version": "$LATEST",
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "b4313023-2914-4419-be69-cd118f613333",
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Zip",
+    "Architectures": [
+        "arm64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/get_index_data"
+    }
+}

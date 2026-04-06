@@ -2,8 +2,12 @@
 // Centralized IndexedDB helpers with cache-first logic for all stores
 // Uses idb (https://github.com/jakearchibald/idb)
 
+if (process.env.NODE_ENV !== 'production' && !process.env.NEXT_PUBLIC_API_URL) {
+    console.warn('[indexedDB] NEXT_PUBLIC_API_URL is not set — falling back to hardcoded endpoint.');
+}
+const API_BASE = (process.env.NEXT_PUBLIC_API_URL ?? 'https://gplb8fov1k.execute-api.eu-central-1.amazonaws.com/api').replace(/\/$/, '');
+
 import { openDB } from 'idb';
-import { Eagle_Lake } from 'next/font/google';
 
 /**
  * Cache staleness helper (days → ms)
@@ -97,12 +101,12 @@ export async function getAllIndexData() {
 
 export async function fetchAndStoreIndexData() {
     try {
-        const res = await fetch('https://gplb8fov1k.execute-api.eu-central-1.amazonaws.com/api/index_data');
+        const res = await fetch(`${API_BASE}/index_data`);
         const json = await res.json();
         await saveIndexDataByYear(json.data);
         return json.data;
     } catch (err) {
-        console.error('Error fetching index data:', err);
+        process.env.NODE_ENV !== 'production' && console.error('Error fetching index data:', err);
         return [];
     }
 }
@@ -114,7 +118,6 @@ export async function getIndexDataWithCache({ force = false, maxAgeDays = 30 } =
 
     if (fresh) {
         const all = await getAllIndexData();
-        console.log("Loading.........")
         return all.flatMap((x) => x.data);
     }
     return await fetchAndStoreIndexData();
@@ -141,12 +144,12 @@ export async function loadMunicipalityData(municipality) {
 
 export async function fetchAndStoreMunicipalityData(municipality, year) {
     try {
-        const res = await fetch(`https://gplb8fov1k.execute-api.eu-central-1.amazonaws.com/api/municipality_data?municipality=${municipality}&year=${year}`);
+        const res = await fetch(`${API_BASE}/municipality_data?municipality=${municipality}&year=${year}`);
         const json = await res.json();
         await saveMunicipalityData(municipality, { data: json, latestYear: year });
         return { data: json, latestYear: year };
     } catch (err) {
-        console.error('Error fetching municipality data:', err);
+        process.env.NODE_ENV !== 'production' && console.error('Error fetching municipality data:', err);
         return null;
     }
 }
@@ -172,12 +175,12 @@ export async function loadEntityData(legal_id) {
 
 export async function fetchAndStoreEntityData(legal_id) {
     try {
-        const res = await fetch(`https://gplb8fov1k.execute-api.eu-central-1.amazonaws.com/api/entity_data?legal_id=${legal_id}`);
+        const res = await fetch(`${API_BASE}/entity_data?legal_id=${legal_id}`);
         const json = await res.json();
         await saveEntityData(legal_id, json);
         return json;
     } catch (err) {
-        console.error('Error fetching entity data:', err);
+        process.env.NODE_ENV !== 'production' && console.error('Error fetching entity data:', err);
         return null;
     }
 }
@@ -198,9 +201,8 @@ export async function getEntityDataWithCache(legal_id, { force = false, maxAgeDa
  * - Metadata record: { legal_id: -1, cachedAt: Number }
  */
 export async function fetchAndStoreSearchIndex() {
-    console.log("LOADING...")
     try {
-        const res = await fetch('https://gplb8fov1k.execute-api.eu-central-1.amazonaws.com/api/search_index');
+        const res = await fetch(`${API_BASE}/search_index`);
         const data = await res.json();
 
         const db = await initDB();
@@ -225,7 +227,7 @@ export async function fetchAndStoreSearchIndex() {
         await tx.done;
 
     } catch (err) {
-        console.error('Error fetching search index:', err);
+        process.env.NODE_ENV !== 'production' && console.error('Error fetching search index:', err);
         return null;
     }
 }
@@ -242,11 +244,9 @@ export async function getSearchIndexWithCache({ force = false, maxAgeDays = 30 }
     const fresh = !force && meta?.cachedAt && !isStale(meta.cachedAt, maxAgeDays);
 
     if (fresh) {
-        const store = db.transaction('searchIndex').objectStore('searchIndex');
-        const keys = await store.getAllKeys();
+        const all = await db.getAll('searchIndex');
         const result = {};
-        for (const key of keys) {
-            const row = await store.get(key);
+        for (const row of all) {
             if (row?.legal_id != null) result[row.legal_id] = row.entity_name;
         }
         return result;
@@ -284,6 +284,11 @@ export async function searchEntitiesByNamePrefix(prefix, limit = 5) {
     }
 
     return results;
+}
+
+export async function getAllSearchEntries() {
+    const db = await initDB();
+    return db.getAll('searchIndex'); // [{ legal_id, entity_name }]
 }
 
 /* =========================

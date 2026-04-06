@@ -1,0 +1,32 @@
+{
+    "Rules": [
+        {
+            "Name": "SSTBootstrap-MetadataRule1BDDB4A9-dBq8DSNBtQrr",
+            "Arn": "arn:aws:events:eu-central-1:876391798236:rule/SSTBootstrap-MetadataRule1BDDB4A9-dBq8DSNBtQrr",
+            "EventPattern": "{\"detail-type\":[\"CloudFormation Stack Status Change\"],\"source\":[\"aws.cloudformation\"],\"detail\":{\"status-details\":{\"status\":[\"CREATE_COMPLETE\",\"UPDATE_COMPLETE\",\"UPDATE_ROLLBACK_COMPLETE\",\"ROLLBACK_COMPLETE\",\"DELETE_COMPLETE\"]}}}",
+            "State": "ENABLED",
+            "EventBusName": "default"
+        },
+        {
+            "Name": "monthly-trigger",
+            "Arn": "arn:aws:events:eu-central-1:876391798236:rule/monthly-trigger",
+            "State": "ENABLED",
+            "ScheduleExpression": "cron(0 6 3 1-12 ? *)",
+            "EventBusName": "default"
+        },
+        {
+            "Name": "monthly-trigger-2",
+            "Arn": "arn:aws:events:eu-central-1:876391798236:rule/monthly-trigger-2",
+            "State": "ENABLED",
+            "ScheduleExpression": "cron(0 6 3 1-12 ? *)",
+            "EventBusName": "default"
+        },
+        {
+            "Name": "trigger-vmi-processing",
+            "Arn": "arn:aws:events:eu-central-1:876391798236:rule/trigger-vmi-processing",
+            "EventPattern": "{\"source\":[\"check_vmi_file_date\"],\"detail-type\":[\"vmi_processing\"]}",
+            "State": "ENABLED",
+            "EventBusName": "default"
+        }
+    ]
+}

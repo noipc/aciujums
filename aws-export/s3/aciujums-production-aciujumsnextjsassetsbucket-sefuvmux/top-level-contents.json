@@ -1,0 +1,12 @@
+{
+    "CommonPrefixes": [
+        {
+            "Prefix": "_assets/"
+        },
+        {
+            "Prefix": "_cache/"
+        }
+    ],
+    "RequestCharged": null,
+    "Prefix": ""
+}

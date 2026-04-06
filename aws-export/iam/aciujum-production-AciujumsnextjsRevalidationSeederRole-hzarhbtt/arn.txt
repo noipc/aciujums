@@ -1,0 +1,1 @@
+arn:aws:iam::876391798236:role/aciujum-production-AciujumsnextjsRevalidationSeederRole-hzarhbtt

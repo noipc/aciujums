@@ -1,0 +1,18 @@
+{
+    "CommonPrefixes": [
+        {
+            "Prefix": "app/"
+        },
+        {
+            "Prefix": "eventlog/"
+        },
+        {
+            "Prefix": "snapshot/"
+        },
+        {
+            "Prefix": "update/"
+        }
+    ],
+    "RequestCharged": null,
+    "Prefix": ""
+}

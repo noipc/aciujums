@@ -1,0 +1,47 @@
+{
+    "FunctionName": "nvo-tarybos--vscode-nvotarybosappImageOptimizerFunction-ooercxxa",
+    "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos--vscode-nvotarybosappImageOptimizerFunction-ooercxxa",
+    "Runtime": "nodejs20.x",
+    "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-vscode-nvotarybosappImageOptimizerRole-msmswzmz",
+    "Handler": "index.handler",
+    "CodeSize": 12274103,
+    "Description": "nvo_tarybos_app image optimizer",
+    "Timeout": 25,
+    "MemorySize": 1536,
+    "LastModified": "2026-02-05T13:38:34.000+0000",
+    "CodeSha256": "TX6ZmK5UxId0r7i6rgZfM9jrbfNjDdZh9oHog7ZKhrs=",
+    "Version": "$LATEST",
+    "Environment": {
+        "Variables": {
+            "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"vscode\"}",
+            "BUCKET_KEY_PREFIX": "_assets",
+            "SST_KEY": "7Mz0S2JRvS+/lw22gBtuTATxtSpGfwP9pnXdXu661rU=",
+            "SST_KEY_FILE": "resource.enc",
+            "BUCKET_NAME": "nvo-tarybos-app-vscode-nvotarybosappassetsbucket-cvocewsb"
+        }
+    },
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "5d045020-c559-4fa0-9b8e-996aa03d4e5a",
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Zip",
+    "Architectures": [
+        "arm64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "RuntimeVersionConfig": {
+        "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:2e3f7cf349db89189069e40578cf0238792926a80ade780bf28d6f495a74047b"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/nvo-tarybos--vscode-nvotarybosappImageOptimizerFunction-rfwtxmaw"
+    }
+}

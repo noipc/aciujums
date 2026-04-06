@@ -1,0 +1,58 @@
+{
+    "RoleName": "nvo-tarybos-app-dev-nvotarybosappServerEucentral1Role-nmttknch",
+    "PolicyName": "inline",
+    "PolicyDocument": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Action": "cloudfront:CreateInvalidation",
+                "Effect": "Allow",
+                "Resource": "*"
+            },
+            {
+                "Action": [
+                    "s3:PutObject",
+                    "s3:GetObject",
+                    "s3:DeleteObject"
+                ],
+                "Effect": "Allow",
+                "Resource": "arn:aws:s3:::nvo-tarybos-app-dev-nvotarybosappassetsbucket-rzohscke/*"
+            },
+            {
+                "Action": "s3:ListBucket",
+                "Effect": "Allow",
+                "Resource": "arn:aws:s3:::nvo-tarybos-app-dev-nvotarybosappassetsbucket-rzohscke"
+            },
+            {
+                "Action": [
+                    "sqs:SendMessage",
+                    "sqs:GetQueueUrl",
+                    "sqs:GetQueueAttributes"
+                ],
+                "Effect": "Allow",
+                "Resource": "arn:aws:sqs:eu-central-1:876391798236:nvo-tarybos-app-dev-nvotarybosappRevalidationEventsQueue-wmsdmawh.fifo"
+            },
+            {
+                "Action": [
+                    "dynamodb:UpdateItem",
+                    "dynamodb:Scan",
+                    "dynamodb:Query",
+                    "dynamodb:PutItem",
+                    "dynamodb:GetShardIterator",
+                    "dynamodb:GetRecords",
+                    "dynamodb:GetItem",
+                    "dynamodb:DescribeTable",
+                    "dynamodb:DeleteItem",
+                    "dynamodb:ConditionCheckItem",
+                    "dynamodb:BatchWriteItem",
+                    "dynamodb:BatchGetItem"
+                ],
+                "Effect": "Allow",
+                "Resource": [
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/nvo-tarybos-app-dev-nvotarybosappRevalidationTable-mhwuvwbo/*",
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/nvo-tarybos-app-dev-nvotarybosappRevalidationTable-mhwuvwbo"
+                ]
+            }
+        ]
+    }
+}

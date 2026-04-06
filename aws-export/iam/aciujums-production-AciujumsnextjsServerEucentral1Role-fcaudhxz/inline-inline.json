@@ -1,0 +1,58 @@
+{
+    "RoleName": "aciujums-production-AciujumsnextjsServerEucentral1Role-fcaudhxz",
+    "PolicyName": "inline",
+    "PolicyDocument": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Action": "cloudfront:CreateInvalidation",
+                "Effect": "Allow",
+                "Resource": "*"
+            },
+            {
+                "Action": [
+                    "s3:PutObject",
+                    "s3:GetObject",
+                    "s3:DeleteObject"
+                ],
+                "Effect": "Allow",
+                "Resource": "arn:aws:s3:::aciujums-production-aciujumsnextjsassetsbucket-sefuvmux/*"
+            },
+            {
+                "Action": "s3:ListBucket",
+                "Effect": "Allow",
+                "Resource": "arn:aws:s3:::aciujums-production-aciujumsnextjsassetsbucket-sefuvmux"
+            },
+            {
+                "Action": [
+                    "sqs:SendMessage",
+                    "sqs:GetQueueUrl",
+                    "sqs:GetQueueAttributes"
+                ],
+                "Effect": "Allow",
+                "Resource": "arn:aws:sqs:eu-central-1:876391798236:aciujums-production-AciujumsnextjsRevalidationEventsQueue-bbccbcot.fifo"
+            },
+            {
+                "Action": [
+                    "dynamodb:UpdateItem",
+                    "dynamodb:Scan",
+                    "dynamodb:Query",
+                    "dynamodb:PutItem",
+                    "dynamodb:GetShardIterator",
+                    "dynamodb:GetRecords",
+                    "dynamodb:GetItem",
+                    "dynamodb:DescribeTable",
+                    "dynamodb:DeleteItem",
+                    "dynamodb:ConditionCheckItem",
+                    "dynamodb:BatchWriteItem",
+                    "dynamodb:BatchGetItem"
+                ],
+                "Effect": "Allow",
+                "Resource": [
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/aciujums-production-AciujumsnextjsRevalidationTable-sbhoofto/*",
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/aciujums-production-AciujumsnextjsRevalidationTable-sbhoofto"
+                ]
+            }
+        ]
+    }
+}

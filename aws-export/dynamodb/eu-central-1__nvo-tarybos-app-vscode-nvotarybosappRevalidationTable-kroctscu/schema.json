@@ -1,0 +1,82 @@
+{
+    "Table": {
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "path",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "revalidatedAt",
+                "AttributeType": "N"
+            },
+            {
+                "AttributeName": "tag",
+                "AttributeType": "S"
+            }
+        ],
+        "TableName": "nvo-tarybos-app-vscode-nvotarybosappRevalidationTable-kroctscu",
+        "KeySchema": [
+            {
+                "AttributeName": "tag",
+                "KeyType": "HASH"
+            },
+            {
+                "AttributeName": "path",
+                "KeyType": "RANGE"
+            }
+        ],
+        "TableStatus": "ACTIVE",
+        "CreationDateTime": "2026-02-04T19:14:19.637000+00:00",
+        "ProvisionedThroughput": {
+            "NumberOfDecreasesToday": 0,
+            "ReadCapacityUnits": 0,
+            "WriteCapacityUnits": 0
+        },
+        "TableSizeBytes": 10960,
+        "ItemCount": 120,
+        "TableArn": "arn:aws:dynamodb:eu-central-1:876391798236:table/nvo-tarybos-app-vscode-nvotarybosappRevalidationTable-kroctscu",
+        "TableId": "58684693-70be-4557-b5e2-6c04c0a74372",
+        "BillingModeSummary": {
+            "BillingMode": "PAY_PER_REQUEST",
+            "LastUpdateToPayPerRequestDateTime": "2026-02-04T19:14:19.637000+00:00"
+        },
+        "GlobalSecondaryIndexes": [
+            {
+                "IndexName": "revalidate",
+                "KeySchema": [
+                    {
+                        "AttributeName": "path",
+                        "KeyType": "HASH"
+                    },
+                    {
+                        "AttributeName": "revalidatedAt",
+                        "KeyType": "RANGE"
+                    }
+                ],
+                "Projection": {
+                    "ProjectionType": "ALL"
+                },
+                "IndexStatus": "ACTIVE",
+                "ProvisionedThroughput": {
+                    "NumberOfDecreasesToday": 0,
+                    "ReadCapacityUnits": 0,
+                    "WriteCapacityUnits": 0
+                },
+                "IndexSizeBytes": 10960,
+                "ItemCount": 120,
+                "IndexArn": "arn:aws:dynamodb:eu-central-1:876391798236:table/nvo-tarybos-app-vscode-nvotarybosappRevalidationTable-kroctscu/index/revalidate",
+                "WarmThroughput": {
+                    "ReadUnitsPerSecond": 12000,
+                    "WriteUnitsPerSecond": 4000,
+                    "Status": "ACTIVE"
+                }
+            }
+        ],
+        "DeletionProtectionEnabled": false,
+        "WarmThroughput": {
+            "ReadUnitsPerSecond": 12000,
+            "WriteUnitsPerSecond": 4000,
+            "Status": "ACTIVE"
+        }
+    }
+}

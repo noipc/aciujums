@@ -1,0 +1,208 @@
+{
+    "Items": [
+        {
+            "year": {
+                "N": "2017"
+            },
+            "total_recipients": {
+                "N": "313"
+            },
+            "municipality": {
+                "S": "telsiu-rajono-savivaldybe"
+            },
+            "total_funds": {
+                "N": "161313.73"
+            },
+            "total_funders": {
+                "N": "6559"
+            },
+            "record_dt": {
+                "S": "2025-03-23"
+            }
+        },
+        {
+            "year": {
+                "N": "2018"
+            },
+            "total_recipients": {
+                "N": "304"
+            },
+            "municipality": {
+                "S": "telsiu-rajono-savivaldybe"
+            },
+            "total_funds": {
+                "N": "192103.74"
+            },
+            "total_funders": {
+                "N": "6432"
+            },
+            "record_dt": {
+                "S": "2025-03-23"
+            }
+        },
+        {
+            "year": {
+                "N": "2019"
+            },
+            "total_recipients": {
+                "N": "291"
+            },
+            "municipality": {
+                "S": "telsiu-rajono-savivaldybe"
+            },
+            "total_funds": {
+                "N": "183873.78"
+            },
+            "total_funders": {
+                "N": "5745"
+            },
+            "record_dt": {
+                "S": "2024-11-18"
+            }
+        },
+        {
+            "year": {
+                "N": "2020"
+            },
+            "total_recipients": {
+                "N": "287"
+            },
+            "municipality": {
+                "S": "telsiu-rajono-savivaldybe"
+            },
+            "total_funds": {
+                "N": "171344.38999999998"
+            },
+            "total_funders": {
+                "N": "5092"
+            },
+            "record_dt": {
+                "S": "2024-11-18"
+            }
+        },
+        {
+            "year": {
+                "N": "2021"
+            },
+            "total_recipients": {
+                "N": "290"
+            },
+            "municipality": {
+                "S": "telsiu-rajono-savivaldybe"
+            },
+            "total_funds": {
+                "N": "208611.83000000002"
+            },
+            "total_funders": {
+                "N": "5400"
+            },
+            "record_dt": {
+                "S": "2024-11-18"
+            }
+        },
+        {
+            "year": {
+                "N": "2022"
+            },
+            "total_recipients": {
+                "N": "278"
+            },
+            "municipality": {
+                "S": "telsiu-rajono-savivaldybe"
+            },
+            "total_funds": {
+                "N": "235583.45"
+            },
+            "total_funders": {
+                "N": "5342"
+            },
+            "record_dt": {
+                "S": "2024-11-18"
+            }
+        },
+        {
+            "year": {
+                "N": "2023"
+            },
+            "total_recipients": {
+                "N": "286"
+            },
+            "municipality": {
+                "S": "telsiu-rajono-savivaldybe"
+            },
+            "total_funds": {
+                "N": "282443.45"
+            },
+            "total_funders": {
+                "N": "6030"
+            },
+            "record_dt": {
+                "S": "2024-11-18"
+            }
+        },
+        {
+            "year": {
+                "N": "2017"
+            },
+            "total_recipients": {
+                "N": "174"
+            },
+            "municipality": {
+                "S": "zarasu-rajono-savivaldybe"
+            },
+            "total_funds": {
+                "N": "58250.8"
+            },
+            "total_funders": {
+                "N": "2298"
+            },
+            "record_dt": {
+                "S": "2025-03-23"
+            }
+        },
+        {
+            "year": {
+                "N": "2018"
+            },
+            "total_recipients": {
+                "N": "174"
+            },
+            "municipality": {
+                "S": "zarasu-rajono-savivaldybe"
+            },
+            "total_funds": {
+                "N": "71672.43"
+            },
+            "total_funders": {
+                "N": "2447"
+            },
+            "record_dt": {
+                "S": "2025-03-23"
+            }
+        },
+        {
+            "year": {
+                "N": "2019"
+            },
+            "total_recipients": {
+                "N": "160"
+            },
+            "municipality": {
+                "S": "zarasu-rajono-savivaldybe"
+            },
+            "total_funds": {
+                "N": "73935.27"
+            },
+            "total_funders": {
+                "N": "2187"
+            },
+            "record_dt": {
+                "S": "2024-11-18"
+            }
+        }
+    ],
+    "Count": 420,
+    "ScannedCount": 420,
+    "ConsumedCapacity": null,
+    "NextToken": "eyJFeGNsdXNpdmVTdGFydEtleSI6IG51bGwsICJib3RvX3RydW5jYXRlX2Ftb3VudCI6IDEwfQ=="
+}

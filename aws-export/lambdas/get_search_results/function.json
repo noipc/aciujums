@@ -1,0 +1,44 @@
+{
+    "Configuration": {
+        "FunctionName": "get_search_results",
+        "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:get_search_results",
+        "Runtime": "nodejs22.x",
+        "Role": "arn:aws:iam::876391798236:role/Aciujums-Lambda-GetS3Object-Role",
+        "Handler": "index.handler",
+        "CodeSize": 829,
+        "Description": "",
+        "Timeout": 3,
+        "MemorySize": 128,
+        "LastModified": "2025-03-24T23:35:09.000+0000",
+        "CodeSha256": "u7LBZxs4LgBMMY6gTC5RiiSeDUhC9XFBFMZLPYkWUeY=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "d780f76e-b137-4142-8782-c206cddbe295",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "arm64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:5e3c80f22edec71979fb474ea310e6e652f1e127086be7eb20d12b0b26666cc1"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/get_search_results"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/876391798236/get_search_results-37887b45-d831-475b-b880-17640b05b84f?versionId=rxqjeG0ukWJ_AL3spwOWnbVFQZaawehe&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJGMEQCIGMaEyHCkNwjmC3qnJGfAfZm1kQvwgLpt%2F4h9w6JyzAgAiAtGpHcMAokhSA%2FBJ1CfCuRVgOCvH3pfKns4kq8jNbU4CqLAghWEAMaDDY4MDY4NjU1OTQzNCIMbreevD5RjDjujajtKugBLOZEUNR8LlKH4lhwOJcIPdp4dZh%2FG5lgPQA4Nx2VfqZP1jTGD9%2FtQNyQZszKR9UEMfx6RzdsSyV4f9%2BYBGW08r4rFlHv3N8t9DIxtHu3YHwJwy2qPYzIsBD30L%2BKCqFAi3hoqsnBT%2BRobuVdnoEJMvopFBStxUa5qNND4cljqMf1q%2BYPi%2BSZ59OY1EKccT73NlvEuyxzZ7iWp%2BFtzqZH9iI5QnUbxak9nJ6tN30ydFV%2BY4FwDXBmKNnte8%2BC2WydLIw3tY96bMWJ5orm%2B3rbjcMYOe7lwi9TDP2IpVr3KEc1rT0jpw013DDKqrTOBjqOAfEemtypwIWba8M6Jd8B9z7NH3EH%2FyiCoH5vCkRnxMsDy1W7EoB0R188GBEm7ScrxO3PtQo6edfecAU0nhUUYT99TJLXV08vP2iqSheXlFORjjl%2BSAQz213klcPniXa3cQ6JcXVQJv5KU%2FOovAHqk3HDueQq4ggOPY4dCcxGCMW4rm7Fh97KkWpWJbhAqcA%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T125832Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZ47AUUDFI4EI5ZGD%2F20260401%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=656c3c6b575f0a6f033dea8e75edadda8216db683bcc8e2c1e5bcfe316ab5d77"
+    }
+}

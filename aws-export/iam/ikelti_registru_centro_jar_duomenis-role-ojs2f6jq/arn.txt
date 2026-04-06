@@ -1,0 +1,1 @@
+arn:aws:iam::876391798236:role/service-role/ikelti_registru_centro_jar_duomenis-role-ojs2f6jq

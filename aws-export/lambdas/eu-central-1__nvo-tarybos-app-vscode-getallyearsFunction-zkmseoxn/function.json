@@ -1,0 +1,56 @@
+{
+    "Configuration": {
+        "FunctionName": "nvo-tarybos-app-vscode-getallyearsFunction-zkmseoxn",
+        "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-app-vscode-getallyearsFunction-zkmseoxn",
+        "Runtime": "nodejs20.x",
+        "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-vscode-getallyearsRole-ofaakezv",
+        "Handler": "bundle.handler",
+        "CodeSize": 200027,
+        "Description": "",
+        "Timeout": 20,
+        "MemorySize": 1024,
+        "LastModified": "2026-02-04T19:12:12.000+0000",
+        "CodeSha256": "bjB2wSJaGt4dhZfIcEogLF/Bid6xLkJOEdZkld+6Hwo=",
+        "Version": "$LATEST",
+        "Environment": {
+            "Variables": {
+                "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"vscode\"}",
+                "SST_KEY": "7Mz0S2JRvS+/lw22gBtuTATxtSpGfwP9pnXdXu661rU=",
+                "PROJECT_ROOT": "/workspaces/ngo_tarybos",
+                "SST_KEY_FILE": "resource.enc"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "d42cce11-b76c-48db-bb10-7805a3a5aef5",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "arm64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:2e3f7cf349db89189069e40578cf0238792926a80ade780bf28d6f495a74047b"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/nvo-tarybos-app-vscode-getallyearsFunction-bdbvowcm"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/876391798236/nvo-tarybos-app-vscode-getallyearsFunction-zkmseoxn-81992946-2c73-46b3-93a7-0e42b9ca87f0?versionId=6aAGDTNzLATR_YhGp9T7R42xL1.1mWGM&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJGMEQCICC8hXh6F3BbvmMKD4eiZNlkNFT%2Bhb3sh5cm%2FrKde2jUAiBHHB4dtqQ%2FKrCjPfbvJE948YWrJYChAMOhyveQmV5d7SqLAghREAMaDDY4MDY4NjU1OTQzNCIM3KM%2F5aCSAvN78Ut%2BKugBWRqd0K3EBmHX%2BJwvxS8MjC0FEovwKiWf4EfkLUpiQ8pHHMwfrnZhjsnr6GXN9A0JxbriV8fThvWl%2BuYg%2Ff%2FWm3Tj9W7UXea6B8aX9AMvnXNfANOPwEDsQygOxfbbNPXA5EQ1WigV6cktRFRuszK2%2FSLePqRYkQD6n8TScKo873WG%2Bbk02pJY4%2Be%2FhN9s9y8I5OWdxifWyQVOeJLsdnClmoRw5gWBEhrKzjNSv3RxmayhOLA1NhsnDOTWaSDtZIWFgWKG%2FNJqAfji3m7y%2FVsbfTJbiqEpHzh5%2FedeCys3ai05wzumtWunKTCjmrPOBjqOAaNXVpd9lmyFahUKayIarM71cq2TAOYjdcUiTfT5wt3QqHQgKKbHo4j2EvBAH7Gvy2ar8azXA%2Fv77frpgs8zUZDOvAyZdXrnxD1R7B3U7T8XjSLrkYEA5rY7%2FlRLC8SuevrbYono8b4dTXTfhGlqYtA6oHoe5VU9cCfcnd4Sb6CD%2Boh2RFzCrZpmQCcw1rs%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T142149Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZ47AUUDFJGSDA3MO%2F20260401%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=b752b3588a7475d595aae5b9fdb532af636ce5e91eca44b3629c9df990a6993e"
+    },
+    "Tags": {
+        "sst:app": "nvo-tarybos-app",
+        "sst:stage": "vscode"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "Items": [
+        {
+            "ApiKeyRequired": false,
+            "AuthorizationType": "NONE",
+            "RouteId": "2igkfim",
+            "RouteKey": "GET /api/get_all_years",
+            "Target": "integrations/z2x1jgu"
+        },
+        {
+            "ApiKeyRequired": false,
+            "AuthorizationType": "NONE",
+            "RouteId": "fra47l0",
+            "RouteKey": "GET /api/get_metadata",
+            "Target": "integrations/gbs232g"
+        },
+        {
+            "ApiKeyRequired": false,
+            "AuthorizationType": "NONE",
+            "RouteId": "nh2scek",
+            "RouteKey": "GET /api/get_all_municipalities",
+            "Target": "integrations/ni4x7u3"
+        }
+    ]
+}

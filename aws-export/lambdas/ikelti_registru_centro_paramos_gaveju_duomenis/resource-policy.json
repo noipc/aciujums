@@ -1,0 +1,4 @@
+{
+    "Policy": "{\"Version\":\"2012-10-17\",\"Id\":\"default\",\"Statement\":[{\"Sid\":\"lambda-65d14298-81f8-4490-8ed5-198965df48b1\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"events.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:eu-central-1:876391798236:function:ikelti_registru_centro_paramos_gaveju_duomenis\",\"Condition\":{\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:events:eu-central-1:876391798236:rule/monthly-trigger\"}}}]}",
+    "RevisionId": "bf1d0ea3-5555-4661-a721-6e2308aa08a3"
+}

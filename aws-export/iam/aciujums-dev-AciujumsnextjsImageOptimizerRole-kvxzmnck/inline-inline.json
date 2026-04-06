@@ -1,0 +1,14 @@
+{
+    "RoleName": "aciujums-dev-AciujumsnextjsImageOptimizerRole-kvxzmnck",
+    "PolicyName": "inline",
+    "PolicyDocument": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Action": "s3:GetObject",
+                "Effect": "Allow",
+                "Resource": "arn:aws:s3:::aciujums-dev-aciujumsnextjsassetsbucket-dtknwnwa/*"
+            }
+        ]
+    }
+}

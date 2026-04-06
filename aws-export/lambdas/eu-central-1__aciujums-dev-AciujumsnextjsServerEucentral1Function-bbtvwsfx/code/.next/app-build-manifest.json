@@ -1,0 +1,82 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-b5d16a2326b593dd.js",
+      "static/chunks/4bd1b696-4362764ac0d51da5.js",
+      "static/chunks/684-b029e18bd2c43ef8.js",
+      "static/chunks/main-app-6f0d2f46fdd93f3e.js",
+      "static/chunks/app/_not-found/page-feb6a5e097ad3b05.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-b5d16a2326b593dd.js",
+      "static/chunks/4bd1b696-4362764ac0d51da5.js",
+      "static/chunks/684-b029e18bd2c43ef8.js",
+      "static/chunks/main-app-6f0d2f46fdd93f3e.js",
+      "static/css/61fee6f8ff834acb.css",
+      "static/css/535059d56f32adc9.css",
+      "static/chunks/874-a32c5c0d95317fda.js",
+      "static/chunks/app/layout-3c394d43cf809f1b.js"
+    ],
+    "/apie-mus/page": [
+      "static/chunks/webpack-b5d16a2326b593dd.js",
+      "static/chunks/4bd1b696-4362764ac0d51da5.js",
+      "static/chunks/684-b029e18bd2c43ef8.js",
+      "static/chunks/main-app-6f0d2f46fdd93f3e.js",
+      "static/chunks/app/apie-mus/page-195f9ac08a088d56.js"
+    ],
+    "/naudinga-informacija/page": [
+      "static/chunks/webpack-b5d16a2326b593dd.js",
+      "static/chunks/4bd1b696-4362764ac0d51da5.js",
+      "static/chunks/684-b029e18bd2c43ef8.js",
+      "static/chunks/main-app-6f0d2f46fdd93f3e.js",
+      "static/chunks/app/naudinga-informacija/page-96acbf9f8cdc918d.js"
+    ],
+    "/naujienos/[slug]/page": [
+      "static/chunks/webpack-b5d16a2326b593dd.js",
+      "static/chunks/4bd1b696-4362764ac0d51da5.js",
+      "static/chunks/684-b029e18bd2c43ef8.js",
+      "static/chunks/main-app-6f0d2f46fdd93f3e.js",
+      "static/chunks/app/naujienos/[slug]/page-873386e46d5fc318.js"
+    ],
+    "/naujienos/page": [
+      "static/chunks/webpack-b5d16a2326b593dd.js",
+      "static/chunks/4bd1b696-4362764ac0d51da5.js",
+      "static/chunks/684-b029e18bd2c43ef8.js",
+      "static/chunks/main-app-6f0d2f46fdd93f3e.js",
+      "static/chunks/874-a32c5c0d95317fda.js",
+      "static/chunks/app/naujienos/page-510869e3820dfa97.js"
+    ],
+    "/organizacijos/[legal_id]/page": [
+      "static/chunks/webpack-b5d16a2326b593dd.js",
+      "static/chunks/4bd1b696-4362764ac0d51da5.js",
+      "static/chunks/684-b029e18bd2c43ef8.js",
+      "static/chunks/main-app-6f0d2f46fdd93f3e.js",
+      "static/chunks/app/organizacijos/[legal_id]/page-81f5a409fc435bad.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-b5d16a2326b593dd.js",
+      "static/chunks/4bd1b696-4362764ac0d51da5.js",
+      "static/chunks/684-b029e18bd2c43ef8.js",
+      "static/chunks/main-app-6f0d2f46fdd93f3e.js",
+      "static/chunks/874-a32c5c0d95317fda.js",
+      "static/chunks/app/page-e9484ed668dc1b14.js"
+    ],
+    "/paieska/page": [
+      "static/chunks/webpack-b5d16a2326b593dd.js",
+      "static/chunks/4bd1b696-4362764ac0d51da5.js",
+      "static/chunks/684-b029e18bd2c43ef8.js",
+      "static/chunks/main-app-6f0d2f46fdd93f3e.js",
+      "static/chunks/874-a32c5c0d95317fda.js",
+      "static/chunks/app/paieska/page-2b6a6deeb22f135b.js"
+    ],
+    "/savivaldybes/[municipality]/page": [
+      "static/chunks/webpack-b5d16a2326b593dd.js",
+      "static/chunks/4bd1b696-4362764ac0d51da5.js",
+      "static/chunks/684-b029e18bd2c43ef8.js",
+      "static/chunks/main-app-6f0d2f46fdd93f3e.js",
+      "static/chunks/ca377847-0a672dde858d5a48.js",
+      "static/chunks/252-8ae24a3a5c4d35eb.js",
+      "static/chunks/app/savivaldybes/[municipality]/page-34a988bfeccc9c44.js"
+    ]
+  }
+}

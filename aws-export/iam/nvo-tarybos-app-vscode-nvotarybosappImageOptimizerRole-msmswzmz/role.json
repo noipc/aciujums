@@ -1,0 +1,37 @@
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "nvo-tarybos-app-vscode-nvotarybosappImageOptimizerRole-msmswzmz",
+        "RoleId": "AROA4YDIFSXOGH5LNRWLI",
+        "Arn": "arn:aws:iam::876391798236:role/nvo-tarybos-app-vscode-nvotarybosappImageOptimizerRole-msmswzmz",
+        "CreateDate": "2026-02-04T19:14:49+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "lambda.amazonaws.com",
+                        "AWS": "arn:aws:iam::876391798236:root"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        },
+        "MaxSessionDuration": 3600,
+        "Tags": [
+            {
+                "Key": "sst:app",
+                "Value": "nvo-tarybos-app"
+            },
+            {
+                "Key": "sst:stage",
+                "Value": "vscode"
+            }
+        ],
+        "RoleLastUsed": {
+            "LastUsedDate": "2026-02-05T07:07:30+00:00",
+            "Region": "eu-central-1"
+        }
+    }
+}

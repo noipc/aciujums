@@ -1,0 +1,12 @@
+{
+    "CommonPrefixes": [
+        {
+            "Prefix": "appMetadata/"
+        },
+        {
+            "Prefix": "stackMetadata/"
+        }
+    ],
+    "RequestCharged": null,
+    "Prefix": ""
+}

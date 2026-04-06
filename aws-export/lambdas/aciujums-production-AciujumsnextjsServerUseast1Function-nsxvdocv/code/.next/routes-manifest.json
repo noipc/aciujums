@@ -1,0 +1,104 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [
+    {
+      "page": "/naujienos/[slug]",
+      "regex": "^/naujienos/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/naujienos/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/organizacijos/[legal_id]",
+      "regex": "^/organizacijos/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlegal_id": "nxtPlegal_id"
+      },
+      "namedRegex": "^/organizacijos/(?<nxtPlegal_id>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/savivaldybes/[municipality]",
+      "regex": "^/savivaldybes/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPmunicipality": "nxtPmunicipality"
+      },
+      "namedRegex": "^/savivaldybes/(?<nxtPmunicipality>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/apie-mus",
+      "regex": "^/apie\\-mus(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apie\\-mus(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/naudinga-informacija",
+      "regex": "^/naudinga\\-informacija(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/naudinga\\-informacija(?:/)?$"
+    },
+    {
+      "page": "/naujienos",
+      "regex": "^/naujienos(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/naujienos(?:/)?$"
+    },
+    {
+      "page": "/paieska",
+      "regex": "^/paieska(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/paieska(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}

@@ -1,0 +1,358 @@
+{
+    "Items": [
+        {
+            "contact_full_name": {
+                "NULL": true
+            },
+            "municipality_name": {
+                "S": "Telšių rajono savivaldybė"
+            },
+            "nvo_status": {
+                "S": "red"
+            },
+            "contact_position": {
+                "NULL": true
+            },
+            "year": {
+                "N": "2025"
+            },
+            "municipality": {
+                "S": "telsiu-rajono-savivaldybe"
+            },
+            "link": {
+                "S": "https://telsiai.lt/gyventojams/nevyriausybines-organizacijos?lang=lt"
+            },
+            "region": {
+                "S": "Telšių"
+            },
+            "contact_email": {
+                "NULL": true
+            },
+            "organisation": {
+                "NULL": true
+            },
+            "council_chairperson": {
+                "NULL": true
+            }
+        },
+        {
+            "contact_full_name": {
+                "S": "Dalia Banienė"
+            },
+            "municipality_name": {
+                "S": "Zarasų rajono savivaldybė"
+            },
+            "nvo_status": {
+                "S": "green"
+            },
+            "contact_position": {
+                "S": "Investicijų ir plėtros skyriaus vyr. specialistė"
+            },
+            "year": {
+                "N": "2025"
+            },
+            "municipality": {
+                "S": "zarasu-rajono-savivaldybe"
+            },
+            "link": {
+                "S": "https://www.zarasai.lt/veiklos-sritys/nvo/nvo-taryba/443"
+            },
+            "region": {
+                "S": "Utenos"
+            },
+            "contact_email": {
+                "S": "dalia.baniene@zarasai.lt"
+            },
+            "organisation": {
+                "S": "Asociacijos \"Mes trys\" direktorė"
+            },
+            "council_chairperson": {
+                "S": "Aleksandra Stadalienė"
+            }
+        },
+        {
+            "contact_full_name": {
+                "S": "Goda Voveriunaitė-Kaminskienė"
+            },
+            "municipality_name": {
+                "S": "Panevėžio miesto savivaldybė"
+            },
+            "nvo_status": {
+                "S": "yellow"
+            },
+            "contact_position": {
+                "S": "Nevyriausybinių organizacijų koordinatorė"
+            },
+            "year": {
+                "N": "2025"
+            },
+            "municipality": {
+                "S": "panevezio-miesto-savivaldybe"
+            },
+            "link": {
+                "S": "https://www.panevezys.lt/lt/veiklos-sritys/nevyriausybines-organizacijos-277/nvo-taryba.html"
+            },
+            "region": {
+                "S": "Panevėžio"
+            },
+            "contact_email": {
+                "S": "goda.voveriunaite-kaminskiene@panevezys.lt"
+            },
+            "organisation": {
+                "S": "Panevėžio jaunimo organizacijų sąjunga „Apskritasis stalas“"
+            },
+            "council_chairperson": {
+                "S": "Kasparas Vaičelis"
+            }
+        },
+        {
+            "contact_full_name": {
+                "S": "Inga Biliūnaitė-Rusinskė"
+            },
+            "municipality_name": {
+                "S": "Kretingos rajono savivaldybė"
+            },
+            "nvo_status": {
+                "S": "yellow"
+            },
+            "contact_position": {
+                "S": "Jaunimo reikalų koordinatorė"
+            },
+            "year": {
+                "N": "2025"
+            },
+            "municipality": {
+                "S": "kretingos-rajono-savivaldybe"
+            },
+            "link": {
+                "S": "https://www.kretinga.lt/taryba/nevyriausybiniu-organizaciju-taryba"
+            },
+            "region": {
+                "S": "Klaipėdos"
+            },
+            "contact_email": {
+                "S": "inga.rusinske@kretinga.lt"
+            },
+            "organisation": {
+                "S": "Laukžemės kaimo bendruomenės pirmininkė"
+            },
+            "council_chairperson": {
+                "S": "Aida Mikutienė"
+            }
+        },
+        {
+            "contact_full_name": {
+                "S": "Ramunė Sileikienė"
+            },
+            "municipality_name": {
+                "S": "Pasvalio rajono savivaldybė"
+            },
+            "nvo_status": {
+                "S": "yellow"
+            },
+            "contact_position": {
+                "S": "Bendrojo skyriaus vyresnioji specialistė"
+            },
+            "year": {
+                "N": "2025"
+            },
+            "municipality": {
+                "S": "pasvalio-rajono-savivaldybe"
+            },
+            "link": {
+                "S": "https://www.pasvalys.lt/struktura-ir-kontaktai/2948/nevyriausybiniu-organizaciju-taryba/d73"
+            },
+            "region": {
+                "S": "Panevėžio"
+            },
+            "contact_email": {
+                "S": "ramune.sileikiene@pasvalys.lt"
+            },
+            "organisation": {
+                "S": "Pasvalio rajono Atžalyno bendruomenės pirmininkė"
+            },
+            "council_chairperson": {
+                "S": "Gražina Paliulienė"
+            }
+        },
+        {
+            "contact_full_name": {
+                "S": "Loreta Pesliakienė"
+            },
+            "municipality_name": {
+                "S": "Anykščių rajono savivaldybė"
+            },
+            "nvo_status": {
+                "S": "yellow"
+            },
+            "contact_position": {
+                "S": "NVO tarybos sekretorė"
+            },
+            "year": {
+                "N": "2025"
+            },
+            "municipality": {
+                "S": "anyksciu-rajono-savivaldybe"
+            },
+            "link": {
+                "S": "https://www.anyksciai.lt/veiklos-sritys/nvo/anyksciu-rajono-savivaldybes-nevyriausybiniu-organizaciju-taryba/160"
+            },
+            "region": {
+                "S": "Utenos"
+            },
+            "contact_email": {
+                "S": "loreta.pesliakiene@anyksciai.lt"
+            },
+            "organisation": {
+                "S": "Kavarsko sporto ir pramogų klubo narys"
+            },
+            "council_chairperson": {
+                "S": "Algirdas Gansiniauskas\n"
+            }
+        },
+        {
+            "contact_full_name": {
+                "S": "Regina Stulgienė"
+            },
+            "municipality_name": {
+                "S": "Šilalės rajono savivaldybė"
+            },
+            "nvo_status": {
+                "S": "yellow"
+            },
+            "contact_position": {
+                "S": "Vyriausioji specialistė (NVO, bendruomenių klausimai)"
+            },
+            "year": {
+                "N": "2025"
+            },
+            "municipality": {
+                "S": "silales-rajono-savivaldybe"
+            },
+            "link": {
+                "S": "https://nauja.silale.lt/informacija-nevyriausybinems-organizacijoms/"
+            },
+            "region": {
+                "S": "Tauragės"
+            },
+            "contact_email": {
+                "S": "regina.stulgiene@silale.lt"
+            },
+            "organisation": {
+                "NULL": true
+            },
+            "council_chairperson": {
+                "NULL": true
+            }
+        },
+        {
+            "contact_full_name": {
+                "NULL": true
+            },
+            "municipality_name": {
+                "S": "Jonavos rajono savivaldybė"
+            },
+            "nvo_status": {
+                "S": "red"
+            },
+            "contact_position": {
+                "NULL": true
+            },
+            "year": {
+                "N": "2025"
+            },
+            "municipality": {
+                "S": "jonavos-rajono-savivaldybe"
+            },
+            "link": {
+                "S": "https://www.jonava.lt/savivaldybe/veiklos-sritys/nevyriausybiniu-organizaciju-veikla/381"
+            },
+            "region": {
+                "S": "Kauno"
+            },
+            "contact_email": {
+                "NULL": true
+            },
+            "organisation": {
+                "NULL": true
+            },
+            "council_chairperson": {
+                "NULL": true
+            }
+        },
+        {
+            "contact_full_name": {
+                "NULL": true
+            },
+            "municipality_name": {
+                "S": "Vilniaus rajono savivaldybė"
+            },
+            "nvo_status": {
+                "S": "red"
+            },
+            "contact_position": {
+                "NULL": true
+            },
+            "year": {
+                "N": "2025"
+            },
+            "municipality": {
+                "S": "vilniaus-rajono-savivaldybe"
+            },
+            "link": {
+                "S": "https://vrsa.lt/nevyriausybiniu-ir-bendruomeniniu-organizaciju-veikla/nevyriausybiniu-organizaciju-veikla-rajone/503"
+            },
+            "region": {
+                "S": "Vilniaus"
+            },
+            "contact_email": {
+                "NULL": true
+            },
+            "organisation": {
+                "NULL": true
+            },
+            "council_chairperson": {
+                "NULL": true
+            }
+        },
+        {
+            "contact_full_name": {
+                "NULL": true
+            },
+            "municipality_name": {
+                "S": "Pakruojo rajono savivaldybė"
+            },
+            "nvo_status": {
+                "S": "yellow"
+            },
+            "contact_position": {
+                "NULL": true
+            },
+            "year": {
+                "N": "2025"
+            },
+            "municipality": {
+                "S": "pakruojo-rajono-savivaldybe"
+            },
+            "link": {
+                "S": "https://www.pakruojis.lt/komisijos/nevyriausybiniu-organizaciju-taryba/573"
+            },
+            "region": {
+                "S": "Šiaulių"
+            },
+            "contact_email": {
+                "NULL": true
+            },
+            "organisation": {
+                "S": "Pakruojo rajono jaunimo organizacijų sąjungos „Apskritasis stalas“ narė"
+            },
+            "council_chairperson": {
+                "S": "Paulina Macevičienė"
+            }
+        }
+    ],
+    "Count": 61,
+    "ScannedCount": 61,
+    "ConsumedCapacity": null,
+    "NextToken": "eyJFeGNsdXNpdmVTdGFydEtleSI6IG51bGwsICJib3RvX3RydW5jYXRlX2Ftb3VudCI6IDEwfQ=="
+}

@@ -1,0 +1,49 @@
+{
+    "Table": {
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "batch_id",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "filename",
+                "AttributeType": "S"
+            }
+        ],
+        "TableName": "aciujums_logs",
+        "KeySchema": [
+            {
+                "AttributeName": "batch_id",
+                "KeyType": "HASH"
+            },
+            {
+                "AttributeName": "filename",
+                "KeyType": "RANGE"
+            }
+        ],
+        "TableStatus": "ACTIVE",
+        "CreationDateTime": "2025-07-20T21:50:05.846000+00:00",
+        "ProvisionedThroughput": {
+            "NumberOfDecreasesToday": 0,
+            "ReadCapacityUnits": 0,
+            "WriteCapacityUnits": 0
+        },
+        "TableSizeBytes": 143,
+        "ItemCount": 1,
+        "TableArn": "arn:aws:dynamodb:eu-central-1:876391798236:table/aciujums_logs",
+        "TableId": "0a45076a-c824-46eb-974b-b8046b46500c",
+        "BillingModeSummary": {
+            "BillingMode": "PAY_PER_REQUEST",
+            "LastUpdateToPayPerRequestDateTime": "2025-07-20T21:50:05.846000+00:00"
+        },
+        "TableClassSummary": {
+            "TableClass": "STANDARD"
+        },
+        "DeletionProtectionEnabled": false,
+        "WarmThroughput": {
+            "ReadUnitsPerSecond": 12000,
+            "WriteUnitsPerSecond": 4000,
+            "Status": "ACTIVE"
+        }
+    }
+}

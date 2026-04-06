@@ -8,19 +8,19 @@ export function useMunicipalityData(municipality, year) {
     useEffect(() => {
         async function loadData() {
             setLoading(true);
-
-            const cachedData = await loadMunicipalityData(municipality);
-
-            if (cachedData && cachedData.latestYear === year) {
-                // If cached data matches the selected year, use it
-                setData(cachedData.data || []);
-            } else {
-                // Otherwise, fetch fresh data and overwrite
-                const apiData = await fetchAndStoreMunicipalityData(municipality, year);
-                setData(apiData?.data || []);
+            try {
+                const cachedData = await loadMunicipalityData(municipality);
+                if (cachedData && cachedData.latestYear === year) {
+                    setData(cachedData.data || []);
+                } else {
+                    const apiData = await fetchAndStoreMunicipalityData(municipality, year);
+                    setData(apiData?.data || []);
+                }
+            } catch {
+                setData([]);
+            } finally {
+                setLoading(false);
             }
-
-            setLoading(false);
         }
 
         if (municipality && year) {

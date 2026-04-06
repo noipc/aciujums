@@ -1,0 +1,96 @@
+{
+    "Buckets": [
+        {
+            "Name": "aciujums-dev-aciujumsnextjsassetsbucket-dtknwnwa",
+            "CreationDate": "2025-11-06T19:01:10+00:00"
+        },
+        {
+            "Name": "aciujums-production-aciujumsnextjsassetsbucket-nmxsswzo",
+            "CreationDate": "2025-11-05T17:47:13+00:00"
+        },
+        {
+            "Name": "aciujums-production-aciujumsnextjsassetsbucket-sefuvmux",
+            "CreationDate": "2025-11-06T22:09:51+00:00"
+        },
+        {
+            "Name": "cdk-hnb659fds-assets-876391798236-eu-central-1",
+            "CreationDate": "2025-12-17T00:37:43+00:00"
+        },
+        {
+            "Name": "nipc-aciujums-dev",
+            "CreationDate": "2024-11-10T02:29:22+00:00"
+        },
+        {
+            "Name": "nipc-dl-analytics",
+            "CreationDate": "2025-11-06T20:12:53+00:00"
+        },
+        {
+            "Name": "nipc-dl-athena-query-results",
+            "CreationDate": "2025-11-06T23:50:52+00:00"
+        },
+        {
+            "Name": "nipc-dl-logs",
+            "CreationDate": "2024-11-10T02:29:22+00:00"
+        },
+        {
+            "Name": "nipc-dl-raw",
+            "CreationDate": "2025-11-06T18:24:45+00:00"
+        },
+        {
+            "Name": "nipc-dl-stage",
+            "CreationDate": "2025-11-06T18:20:20+00:00"
+        },
+        {
+            "Name": "nipc-lambda-code-repo",
+            "CreationDate": "2024-11-13T11:55:39+00:00"
+        },
+        {
+            "Name": "nvo-tarybos-app-dev-nvotarybosappassetsbucket-rzohscke",
+            "CreationDate": "2025-12-26T00:22:21+00:00"
+        },
+        {
+            "Name": "nvo-tarybos-app-dev-nvotarybosbucketbucket-bbktdxcb",
+            "CreationDate": "2025-12-26T00:22:21+00:00"
+        },
+        {
+            "Name": "nvo-tarybos-app-vscode-nvotarybosappassetsbucket-cvocewsb",
+            "CreationDate": "2026-02-04T19:12:04+00:00"
+        },
+        {
+            "Name": "nvo-tarybos-app-vscode-nvotarybosbucketbucket-bmdotwes",
+            "CreationDate": "2025-12-25T19:53:07+00:00"
+        },
+        {
+            "Name": "serverless-framework-deployments-eu-central-1-909ad4df-1f19",
+            "CreationDate": "2025-03-25T07:16:33+00:00"
+        },
+        {
+            "Name": "serverless-framework-deployments-us-east-1-10e1d6d6-39be",
+            "CreationDate": "2025-03-25T07:46:37+00:00"
+        },
+        {
+            "Name": "sst-asset-stfvbzbwauro",
+            "CreationDate": "2025-03-26T07:24:45+00:00"
+        },
+        {
+            "Name": "sst-asset-zewceoodbufc",
+            "CreationDate": "2025-03-25T19:04:12+00:00"
+        },
+        {
+            "Name": "sst-state-stfvbzbwauro",
+            "CreationDate": "2025-03-26T07:24:45+00:00"
+        },
+        {
+            "Name": "sst-state-zewceoodbufc",
+            "CreationDate": "2025-03-25T19:04:12+00:00"
+        },
+        {
+            "Name": "sstbootstrap-eucentral134f82fae-oznhoehwzew1",
+            "CreationDate": "2025-12-17T00:38:36+00:00"
+        }
+    ],
+    "Owner": {
+        "ID": "d3b3a5b68682dcde02eced948c6687e7ba37278f0a431b4077ff60d29551e838"
+    },
+    "Prefix": null
+}

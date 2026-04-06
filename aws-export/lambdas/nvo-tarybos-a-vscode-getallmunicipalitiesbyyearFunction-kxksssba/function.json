@@ -1,0 +1,56 @@
+{
+    "Configuration": {
+        "FunctionName": "nvo-tarybos-a-vscode-getallmunicipalitiesbyyearFunction-kxksssba",
+        "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-a-vscode-getallmunicipalitiesbyyearFunction-kxksssba",
+        "Runtime": "nodejs20.x",
+        "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-vscode-getallmunicipalitiesbyyearRole-cfhmzneh",
+        "Handler": "bundle.handler",
+        "CodeSize": 200114,
+        "Description": "",
+        "Timeout": 20,
+        "MemorySize": 1024,
+        "LastModified": "2026-02-04T19:12:13.000+0000",
+        "CodeSha256": "hQIXkF8JORlSGUB/LeBZCle/bwvkQOESrxpiBaCkpAY=",
+        "Version": "$LATEST",
+        "Environment": {
+            "Variables": {
+                "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"vscode\"}",
+                "SST_KEY": "7Mz0S2JRvS+/lw22gBtuTATxtSpGfwP9pnXdXu661rU=",
+                "PROJECT_ROOT": "/workspaces/ngo_tarybos",
+                "SST_KEY_FILE": "resource.enc"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "265083de-a832-4a78-bc25-17a2347f7867",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "arm64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:2e3f7cf349db89189069e40578cf0238792926a80ade780bf28d6f495a74047b"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/nvo-tarybos-a-vscode-getallmunicipalitiesbyyearFunction-msecvhcz"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/876391798236/nvo-tarybos-a-vscode-getallmunicipalitiesbyyearFunction-kxksssba-c2604f2f-67ba-43bf-9da7-cffd02eb27f0?versionId=yfzDYiV.666Su0rMXv5KEApoB_joZOlH&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJGMEQCIHixAmM6Pn%2B9GabWQycpoVHkIUVB0jNcWvhbOMc3EDgGAiADjHT6XOQlbGaJDBGEQNO3DUo3Hdj3ULiNGmo%2BWj42LyqLAghREAMaDDY4MDY4NjU1OTQzNCIMCS%2FRYZHRriZlccdIKugBYbrPGlPjsalDkpE7MrdjbQp5g8tfYFt359UVxA6466qedeixBVwluffett0cPVKaCkPY3nNYWkh3cokgrcnncWCq5i65mCnLWDaCzBZ9O0EyITGR63XVL1E581qUdDasqkeOwHbr%2FB3fJGrdo2hTnBXv7PNdjnCc%2FJYBCZWRRTwLIkmbT5OOY7V6bqV99Wk6bGOgpo3o%2BEeV%2FfkDtajOqur7g5oXWa1RMRyVDYV8JdwxxRxacHxG66X6qvo97qgW65WjAQRG7Ryn%2FzsLXliSC4pxHfOY%2BPglUPStLVMXsj2Xj1k4r0r93zDFm7POBjqOAU5TzRh0Mnt43BQYTUnHSZFIqlGdI7JRkl8cS%2FbjF1XNZb6Fs0O%2BFYkmc3kt8DORp6Pl2ZItCOoRJ01A136bbP4QKfkfz5H7Ktgsxr1ZxbhiFtMFCV%2BfTF9EZduNA592DY0r5IYsjQGDqVZl8sen4s8B3atRtNyRAbfL7MuBDoWvJjTTqEUmyui3YfEPNEM%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T130338Z&X-Amz-SignedHeaders=host&X-Amz-Expires=599&X-Amz-Credential=ASIAZ47AUUDFE5W3PIQT%2F20260401%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=79d2a862b179f10db83d0d3fed1b2100066861cd4f728125e981fd158bc6e32d"
+    },
+    "Tags": {
+        "sst:app": "nvo-tarybos-app",
+        "sst:stage": "vscode"
+    }
+}

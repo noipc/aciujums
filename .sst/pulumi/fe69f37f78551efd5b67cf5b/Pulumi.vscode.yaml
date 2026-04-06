@@ -1,0 +1,4 @@
+config:
+  aws:defaultTags: '{"tags":{"sst:app":"aciujums","sst:stage":"vscode"}}'
+  aws:region: us-east-1
+encryptionsalt: v1:/Q5ge5hsRWY=:v1:u9HSYxoNSUYFItq2:lV8W6h3lFaY3MyG1UemvTv7VTs37zg==

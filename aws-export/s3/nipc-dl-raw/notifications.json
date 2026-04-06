@@ -1,0 +1,38 @@
+{
+    "LambdaFunctionConfigurations": [
+        {
+            "Id": "5b085de6-873d-4f21-8e6c-3863be6b3f7d",
+            "LambdaFunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:check_csv_structure",
+            "Events": [
+                "s3:ObjectCreated:*"
+            ],
+            "Filter": {
+                "Key": {
+                    "FilterRules": [
+                        {
+                            "Name": "Suffix",
+                            "Value": ".csv"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Id": "244e0399-15b9-42f0-82d4-b7428171edd9",
+            "LambdaFunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:check_vmi_file_date",
+            "Events": [
+                "s3:ObjectCreated:Put"
+            ],
+            "Filter": {
+                "Key": {
+                    "FilterRules": [
+                        {
+                            "Name": "Suffix",
+                            "Value": ".xlsx"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

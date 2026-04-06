@@ -1,0 +1,32 @@
+{
+    "Items": [
+        {
+            "ApiKeyRequired": false,
+            "AuthorizationType": "NONE",
+            "RouteId": "14uugot",
+            "RouteKey": "GET /search",
+            "Target": "integrations/tixkl5j"
+        },
+        {
+            "ApiKeyRequired": false,
+            "AuthorizationType": "NONE",
+            "RouteId": "1kuubt3",
+            "RouteKey": "GET /index_data",
+            "Target": "integrations/46h9nyk"
+        },
+        {
+            "ApiKeyRequired": false,
+            "AuthorizationType": "NONE",
+            "RouteId": "gy2qvg3",
+            "RouteKey": "GET /entity_data",
+            "Target": "integrations/potrclk"
+        },
+        {
+            "ApiKeyRequired": false,
+            "AuthorizationType": "NONE",
+            "RouteId": "jni7b43",
+            "RouteKey": "GET /municipality_data",
+            "Target": "integrations/bb5v744"
+        }
+    ]
+}

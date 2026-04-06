@@ -1,0 +1,44 @@
+{
+    "RoleName": "nvo-tarybos-app-vscode-getallmunicipalitiesbyyearRole-cfhmzneh",
+    "PolicyName": "inline",
+    "PolicyDocument": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Action": [
+                    "s3:ListBucket",
+                    "s3:GetObject"
+                ],
+                "Effect": "Allow",
+                "Resource": [
+                    "arn:aws:s3:::nvo-tarybos-app-vscode-nvotarybosbucketbucket-bmdotwes/*",
+                    "arn:aws:s3:::nvo-tarybos-app-vscode-nvotarybosbucketbucket-bmdotwes"
+                ]
+            },
+            {
+                "Action": "dynamodb:*",
+                "Effect": "Allow",
+                "Resource": [
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/nvo-tarybos-app-vscode-nvomunicipalitiesTable-znudotbs/*",
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/nvo-tarybos-app-vscode-nvomunicipalitiesTable-znudotbs"
+                ]
+            },
+            {
+                "Action": "dynamodb:*",
+                "Effect": "Allow",
+                "Resource": [
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/nvo-tarybos-app-vscode-nvomunicipalitiesTable-znudotbs/*",
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/nvo-tarybos-app-vscode-nvomunicipalitiesTable-znudotbs"
+                ]
+            },
+            {
+                "Action": "s3:*",
+                "Effect": "Allow",
+                "Resource": [
+                    "arn:aws:s3:::nvo-tarybos-app-vscode-nvotarybosbucketbucket-bmdotwes/*",
+                    "arn:aws:s3:::nvo-tarybos-app-vscode-nvotarybosbucketbucket-bmdotwes"
+                ]
+            }
+        ]
+    }
+}

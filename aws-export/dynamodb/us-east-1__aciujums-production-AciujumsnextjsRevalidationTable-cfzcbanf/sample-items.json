@@ -1,0 +1,118 @@
+{
+    "Items": [
+        {
+            "path": {
+                "S": "s53ul7QKb_Njgt4hj6XoV/naudinga-informacija"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "s53ul7QKb_Njgt4hj6XoV/_N_T_/naudinga-informacija/layout"
+            }
+        },
+        {
+            "path": {
+                "S": "sMM73_TvF5atNX2kUbg48/index"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "sMM73_TvF5atNX2kUbg48/_N_T_/"
+            }
+        },
+        {
+            "path": {
+                "S": "s53ul7QKb_Njgt4hj6XoV/index"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "s53ul7QKb_Njgt4hj6XoV/_N_T_/"
+            }
+        },
+        {
+            "path": {
+                "S": "sMM73_TvF5atNX2kUbg48/apie-mus"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "sMM73_TvF5atNX2kUbg48/_N_T_/apie-mus"
+            }
+        },
+        {
+            "path": {
+                "S": "s53ul7QKb_Njgt4hj6XoV/apie-mus"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "s53ul7QKb_Njgt4hj6XoV/_N_T_/apie-mus/page"
+            }
+        },
+        {
+            "path": {
+                "S": "S8L0RcwEOVhV9b8Qcucb8/favicon.ico"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "S8L0RcwEOVhV9b8Qcucb8/_N_T_/favicon.ico/layout"
+            }
+        },
+        {
+            "path": {
+                "S": "sMM73_TvF5atNX2kUbg48/_not-found"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "sMM73_TvF5atNX2kUbg48/_N_T_/_not-found/layout"
+            }
+        },
+        {
+            "path": {
+                "S": "K3Fr9qgQDzjxiX-4Na0us/_not-found"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "K3Fr9qgQDzjxiX-4Na0us/_N_T_/_not-found/layout"
+            }
+        },
+        {
+            "path": {
+                "S": "K3Fr9qgQDzjxiX-4Na0us/favicon.ico"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "K3Fr9qgQDzjxiX-4Na0us/_N_T_/favicon.ico/route"
+            }
+        },
+        {
+            "path": {
+                "S": "sMM73_TvF5atNX2kUbg48/paieska"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "sMM73_TvF5atNX2kUbg48/_N_T_/paieska"
+            }
+        }
+    ],
+    "Count": 108,
+    "ScannedCount": 108,
+    "ConsumedCapacity": null,
+    "NextToken": "eyJFeGNsdXNpdmVTdGFydEtleSI6IG51bGwsICJib3RvX3RydW5jYXRlX2Ftb3VudCI6IDEwfQ=="
+}

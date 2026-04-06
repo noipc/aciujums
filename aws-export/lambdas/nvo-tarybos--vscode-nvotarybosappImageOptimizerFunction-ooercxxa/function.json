@@ -1,0 +1,57 @@
+{
+    "Configuration": {
+        "FunctionName": "nvo-tarybos--vscode-nvotarybosappImageOptimizerFunction-ooercxxa",
+        "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos--vscode-nvotarybosappImageOptimizerFunction-ooercxxa",
+        "Runtime": "nodejs20.x",
+        "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-vscode-nvotarybosappImageOptimizerRole-msmswzmz",
+        "Handler": "index.handler",
+        "CodeSize": 12274103,
+        "Description": "nvo_tarybos_app image optimizer",
+        "Timeout": 25,
+        "MemorySize": 1536,
+        "LastModified": "2026-02-05T13:38:34.000+0000",
+        "CodeSha256": "TX6ZmK5UxId0r7i6rgZfM9jrbfNjDdZh9oHog7ZKhrs=",
+        "Version": "$LATEST",
+        "Environment": {
+            "Variables": {
+                "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"vscode\"}",
+                "BUCKET_KEY_PREFIX": "_assets",
+                "SST_KEY": "7Mz0S2JRvS+/lw22gBtuTATxtSpGfwP9pnXdXu661rU=",
+                "SST_KEY_FILE": "resource.enc",
+                "BUCKET_NAME": "nvo-tarybos-app-vscode-nvotarybosappassetsbucket-cvocewsb"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "5d045020-c559-4fa0-9b8e-996aa03d4e5a",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "arm64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:2e3f7cf349db89189069e40578cf0238792926a80ade780bf28d6f495a74047b"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/nvo-tarybos--vscode-nvotarybosappImageOptimizerFunction-rfwtxmaw"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/876391798236/nvo-tarybos--vscode-nvotarybosappImageOptimizerFunction-ooercxxa-f4e7b8e5-f2dd-43e4-9156-22414a14cccd?versionId=RBdxTx4Yt2utdoSQ_2JTwMt6gzdlR5l2&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJHMEUCIB6RZfuWrBukpQ7JSEiOnf2yS0LrMv7G4YKgIIpZaXUyAiEAlXaIr1OSpODrbd5qhWQuFtgzHVRbBpceQWb%2BG38nMakqiwIIVhADGgw2ODA2ODY1NTk0MzQiDMSh4%2F92QYMfRfZAxSroAWMw3kV9tzX9G47gepvBwIDEBGkoaz8XyMi5mIyhibk9lOWoYpBRxulDI%2F30PrUbL7GeEpV5JRFVaGZl%2Bj1PUlC2vkF%2FBTlkboN1YmRjguzZVPr1IFDeS08GX0p0OWbnWW7WkrmiBHLwvU5T8ReMp8g9IUhPBnxTiprJw1IioG0%2F7ravRIWMmsRsKzt%2BBe2kJGwIwWNCDRCADtOHz%2BZiGMmSxp1jSazbVXW%2Bo9nF8NEpCyOBPfLHgPomwetrps5fev7KA%2BGD4fu%2BggDjBIByjr4jOfLtIrAK%2BQxtk5z3zTOwmDR9Y43APdYw2Kq0zgY6jQFHzASjJv%2B315GBafjXjMgaimnImRxyBIGVQiX4nJOW1UBENQmTf59JCI2Xf7b3eOj0PnV3Cnr3kfCUsfr29kHdMBUCfWhr4shWcOoLTxV55%2B4Y3y4aWcrLAc2bMvOO9JYMkUDhBeCYW8sveAPecjyC%2FvBxH0uTxumg2ylxHuVQMufx%2FsvMgmlaucDPL0Y%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T130049Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZ47AUUDFJG53JTM5%2F20260401%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=fe869df7effc8f02dbf68df115244d2d4cb62b4229bf3a69f7876a249288baba"
+    },
+    "Tags": {
+        "sst:app": "nvo-tarybos-app",
+        "sst:stage": "vscode"
+    }
+}

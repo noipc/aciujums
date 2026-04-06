@@ -1,0 +1,16 @@
+{
+    "EventSourceMappings": [
+        {
+            "UUID": "15571016-93cd-4dae-8c43-3277e80a74e6",
+            "BatchSize": 5,
+            "MaximumBatchingWindowInSeconds": 0,
+            "EventSourceArn": "arn:aws:sqs:eu-central-1:876391798236:nvo-tarybos-app-vscode-nvotarybosappRevalidationEventsQueue-rhteozoc.fifo",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvotarybosappRevalidationEventsSubscriberBcebmtFunction-bhauwcku",
+            "LastModified": "2026-02-04T19:15:05.440000+00:00",
+            "State": "Enabled",
+            "StateTransitionReason": "USER_INITIATED",
+            "FunctionResponseTypes": [],
+            "EventSourceMappingArn": "arn:aws:lambda:eu-central-1:876391798236:event-source-mapping:15571016-93cd-4dae-8c43-3277e80a74e6"
+        }
+    ]
+}

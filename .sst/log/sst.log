@@ -1,0 +1,327 @@
+time=2026-04-06T21:23:47.256Z level=INFO msg="checking for pulumi" path=/home/vscode/.config/sst/bin/pulumi
+time=2026-04-06T21:23:48.195Z level=INFO msg="checking for bun" path=/home/vscode/.config/sst/bin/bun
+time=2026-04-06T21:23:48.209Z level=INFO msg="initializing project" version=3.10.11
+time=2026-04-06T21:23:48.211Z level=INFO msg="esbuild building" out=/workspaces/aciujums/.sst/platform/sst.config.1775510628210.mjs
+time=2026-04-06T21:23:48.252Z level=INFO msg="esbuild built" outfile=/workspaces/aciujums/.sst/platform/sst.config.1775510628210.mjs
+time=2026-04-06T21:23:48.254Z level=INFO msg="evaluating config"
+time=2026-04-06T21:23:48.409Z level=INFO msg="config evaluated"
+time=2026-04-06T21:23:48.414Z level=INFO msg="checking platform"
+time=2026-04-06T21:23:48.415Z level=INFO msg="loading home"
+time=2026-04-06T21:23:49.208Z level=INFO msg="aws credentials found" region=eu-central-1 profile=nipc-dev
+time=2026-04-06T21:23:49.209Z level=INFO msg="fetching bootstrap"
+time=2026-04-06T21:23:49.408Z level=INFO msg="found existing bootstrap" data="{\"version\":5,\"asset\":\"sst-asset-zewceoodbufc\",\"assetEcrRegistryId\":\"876391798236\",\"assetEcrUrl\":\"876391798236.dkr.ecr.eu-central-1.amazonaws.com/sst-asset\",\"state\":\"sst-state-zewceoodbufc\",\"appsyncHttp\":\"\",\"appsyncRealtime\":\"\"}"
+time=2026-04-06T21:23:49.409Z level=INFO msg="loaded config" app=aciujums stage=dev
+time=2026-04-06T21:23:49.409Z level=INFO msg="initializing ui" isTTY=true
+time=2026-04-06T21:23:49.417Z level=INFO msg="server port assigned" port=13557
+time=2026-04-06T21:23:49.418Z level=INFO msg="running stack command" service=project.run cmd=deploy
+time=2026-04-06T21:23:49.418Z level=INFO msg="INFO locking app=aciujums stage=dev"
+time=2026-04-06T21:23:49.419Z level=INFO msg="INFO getting data key=lock app=aciujums stage=dev"
+time=2026-04-06T21:23:49.418Z level=INFO msg=starting service=server
+time=2026-04-06T21:23:49.428Z level=INFO msg=server service=server addr=0.0.0.0:13557
+time=2026-04-06T21:23:49.739Z level=INFO msg="INFO putting update app=aciujums stage=dev"
+time=2026-04-06T21:23:49.893Z level=INFO msg="INFO getting passphrase app=aciujums stage=dev"
+time=2026-04-06T21:23:50.092Z level=INFO msg="INFO pulling state app=aciujums stage=dev out=/workspaces/aciujums/.sst/pulumi/fe629b51d3d523f683feed3a/.pulumi/stacks/aciujums/dev.json"
+time=2026-04-06T21:23:51.947Z level=INFO msg="got previous deployment" service=project.run updateID=fe629b51d3d523f683feed3a
+time=2026-04-06T21:23:51.948Z level=INFO msg="esbuild building" out=/workspaces/aciujums/.sst/platform/sst.config.1775510630085.mjs
+time=2026-04-06T21:23:52.563Z level=INFO msg="esbuild built" outfile=/workspaces/aciujums/.sst/platform/sst.config.1775510630085.mjs
+time=2026-04-06T21:23:52.588Z level=INFO msg="built sst.config.ts" service=project.run updateID=fe629b51d3d523f683feed3a to=/workspaces/aciujums/.sst/platform/sst.config.1775510630085.mjs
+time=2026-04-06T21:23:52.600Z level=INFO msg="tracked files" service=project.run updateID=fe629b51d3d523f683feed3a
+time=2026-04-06T21:23:52.601Z level=INFO msg="INFO getting data key=secret app=aciujums stage=_fallback"
+time=2026-04-06T21:23:52.602Z level=INFO msg="INFO getting data key=secret app=aciujums stage=dev"
+time=2026-04-06T21:23:52.763Z level=INFO msg="starting pulumi" service=project.run updateID=fe629b51d3d523f683feed3a args="[/home/vscode/.config/sst/bin/pulumi up --yes -f --stack organization/aciujums/dev --non-interactive --event-log /workspaces/aciujums/.sst/pulumi/fe629b51d3d523f683feed3a/eventlog.json --config aws:region=eu-central-1 --config aws:defaultTags={\"tags\":{\"sst:app\":\"aciujums\",\"sst:stage\":\"dev\"}}]"
+time=2026-04-06T21:23:57.779Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:24:47.752Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:47.753Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:47.753Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:47.753Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:47.757Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:47.758Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:47.759Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:47.759Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:47.759Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:47.759Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:47.759Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:47.759Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:48.388Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:48.409Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:48.410Z level=INFO msg="building function" runtime=python3.12 functionID=SendAlert
+time=2026-04-06T21:24:48.416Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:48.417Z level=INFO msg="building function" runtime=nodejs22.x functionID=RcParamosGavejaiDownloader
+time=2026-04-06T21:24:48.421Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:48.422Z level=INFO msg="building function" runtime=python3.12 functionID=CheckVmiFileDate
+time=2026-04-06T21:24:48.437Z level=INFO msg="loader info" service=runtime.node functionID=RcParamosGavejaiDownloader loader=map[]
+time=2026-04-06T21:24:48.438Z level=INFO msg="running esbuild" service=runtime.node functionID=RcParamosGavejaiDownloader
+time=2026-04-06T21:24:48.450Z level=INFO msg="looking for python handler file" handler=functions/alerts/send-alert/lambda_function.lambda_handler
+time=2026-04-06T21:24:48.452Z level=INFO msg="input properties" json="{\"architecture\":\"arm64\"}"
+time=2026-04-06T21:24:48.453Z level=INFO msg="running uv sync in dir" dir=/workspaces/aciujums
+time=2026-04-06T21:24:48.455Z level=INFO msg="looking for python handler file" handler=functions/validators/check-vmi-file-date/lambda_function.lambda_handler
+time=2026-04-06T21:24:48.459Z level=INFO msg="input properties" json="{\"architecture\":\"arm64\"}"
+time=2026-04-06T21:24:48.461Z level=INFO msg="running uv sync in dir" dir=/workspaces/aciujums
+time=2026-04-06T21:24:48.467Z level=INFO msg="esbuild finished" service=runtime.node functionID=RcParamosGavejaiDownloader
+time=2026-04-06T21:24:48.476Z level=INFO msg="function built" runtime=nodejs22.x functionID=RcParamosGavejaiDownloader
+time=2026-04-06T21:24:48.622Z level=ERROR msg="uv sync output" output="Resolved 1 package in 21ms\nChecked 1 package in 6ms\n"
+time=2026-04-06T21:24:48.627Z level=INFO msg="looking for python handler file" handler=functions/validators/check-vmi-file-date/lambda_function.lambda_handler
+time=2026-04-06T21:24:48.645Z level=ERROR msg="uv sync output" output="Resolved 1 package in 7ms\nChecked 1 package in 4ms\n"
+time=2026-04-06T21:24:48.645Z level=INFO msg="looking for python handler file" handler=functions/alerts/send-alert/lambda_function.lambda_handler
+time=2026-04-06T21:24:48.659Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:48.661Z level=INFO msg="building function" runtime=nodejs22.x functionID=RcJarNoFaDownloader
+time=2026-04-06T21:24:48.676Z level=INFO msg="loader info" service=runtime.node functionID=RcJarNoFaDownloader loader=map[]
+time=2026-04-06T21:24:48.677Z level=INFO msg="running esbuild" service=runtime.node functionID=RcJarNoFaDownloader
+time=2026-04-06T21:24:48.764Z level=INFO msg="esbuild finished" service=runtime.node functionID=RcJarNoFaDownloader
+time=2026-04-06T21:24:48.775Z level=INFO msg="function built" runtime=nodejs22.x functionID=RcJarNoFaDownloader
+time=2026-04-06T21:24:48.931Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:48.933Z level=INFO msg="building function" runtime=python3.12 functionID=VmiProcessor
+time=2026-04-06T21:24:48.964Z level=INFO msg="looking for python handler file" handler=functions/processors/vmi-processor/lambda_function.lambda_handler
+time=2026-04-06T21:24:48.967Z level=INFO msg="input properties" json="{\"architecture\":\"arm64\"}"
+time=2026-04-06T21:24:48.971Z level=INFO msg="running uv sync in dir" dir=/workspaces/aciujums
+time=2026-04-06T21:24:49.094Z level=ERROR msg="uv sync output" output="Resolved 1 package in 11ms\nChecked 1 package in 3ms\n"
+time=2026-04-06T21:24:49.094Z level=INFO msg="looking for python handler file" handler=functions/processors/vmi-processor/lambda_function.lambda_handler
+time=2026-04-06T21:24:49.137Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:49.138Z level=INFO msg="building function" runtime=nodejs22.x functionID=RcExParamosGavejaiDownloader
+time=2026-04-06T21:24:49.162Z level=INFO msg="loader info" service=runtime.node functionID=RcExParamosGavejaiDownloader loader=map[]
+time=2026-04-06T21:24:49.163Z level=INFO msg="running esbuild" service=runtime.node functionID=RcExParamosGavejaiDownloader
+time=2026-04-06T21:24:49.191Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:49.193Z level=INFO msg="building function" runtime=nodejs22.x functionID=VmiDownloader
+time=2026-04-06T21:24:49.197Z level=INFO msg="esbuild finished" service=runtime.node functionID=RcExParamosGavejaiDownloader
+time=2026-04-06T21:24:49.198Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:49.200Z level=INFO msg="building function" runtime=python3.12 functionID=RcProcessor
+time=2026-04-06T21:24:49.205Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:49.209Z level=INFO msg="building function" runtime=nodejs22.x functionID=RcExNvoDownloader
+time=2026-04-06T21:24:49.205Z level=INFO msg="function built" runtime=nodejs22.x functionID=RcExParamosGavejaiDownloader
+time=2026-04-06T21:24:49.219Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:49.220Z level=INFO msg="building function" runtime=python3.12 functionID=CheckCsvStructure
+time=2026-04-06T21:24:49.222Z level=INFO msg="loader info" service=runtime.node functionID=VmiDownloader loader=map[]
+time=2026-04-06T21:24:49.223Z level=INFO msg="running esbuild" service=runtime.node functionID=VmiDownloader
+time=2026-04-06T21:24:49.238Z level=INFO msg="loader info" service=runtime.node functionID=RcExNvoDownloader loader=map[]
+time=2026-04-06T21:24:49.243Z level=INFO msg="running esbuild" service=runtime.node functionID=RcExNvoDownloader
+time=2026-04-06T21:24:49.270Z level=INFO msg="looking for python handler file" handler=functions/processors/rc-processor/lambda_function.lambda_handler
+time=2026-04-06T21:24:49.274Z level=INFO msg="input properties" json="{\"architecture\":\"arm64\"}"
+time=2026-04-06T21:24:49.274Z level=INFO msg="esbuild finished" service=runtime.node functionID=VmiDownloader
+time=2026-04-06T21:24:49.276Z level=INFO msg="running uv sync in dir" dir=/workspaces/aciujums
+time=2026-04-06T21:24:49.280Z level=INFO msg="function built" runtime=nodejs22.x functionID=VmiDownloader
+time=2026-04-06T21:24:49.284Z level=INFO msg="esbuild finished" service=runtime.node functionID=RcExNvoDownloader
+time=2026-04-06T21:24:49.285Z level=INFO msg="looking for python handler file" handler=functions/validators/check-csv-structure/lambda_function.lambda_handler
+time=2026-04-06T21:24:49.286Z level=INFO msg="input properties" json="{\"architecture\":\"arm64\"}"
+time=2026-04-06T21:24:49.287Z level=INFO msg="running uv sync in dir" dir=/workspaces/aciujums
+time=2026-04-06T21:24:49.288Z level=INFO msg="function built" runtime=nodejs22.x functionID=RcExNvoDownloader
+time=2026-04-06T21:24:49.446Z level=ERROR msg="uv sync output" output="Resolved 1 package in 12ms\nChecked 1 package in 7ms\n"
+time=2026-04-06T21:24:49.447Z level=INFO msg="looking for python handler file" handler=functions/processors/rc-processor/lambda_function.lambda_handler
+time=2026-04-06T21:24:49.482Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:49.485Z level=INFO msg="building function" runtime=nodejs22.x functionID=RcJarDownloader
+time=2026-04-06T21:24:49.514Z level=INFO msg="loader info" service=runtime.node functionID=RcJarDownloader loader=map[]
+time=2026-04-06T21:24:49.515Z level=INFO msg="running esbuild" service=runtime.node functionID=RcJarDownloader
+time=2026-04-06T21:24:49.522Z level=ERROR msg="uv sync output" output="Resolved 1 package in 23ms\nChecked 1 package in 4ms\n"
+time=2026-04-06T21:24:49.522Z level=INFO msg="looking for python handler file" handler=functions/validators/check-csv-structure/lambda_function.lambda_handler
+time=2026-04-06T21:24:49.572Z level=INFO msg="esbuild finished" service=runtime.node functionID=RcJarDownloader
+time=2026-04-06T21:24:49.580Z level=INFO msg="function built" runtime=nodejs22.x functionID=RcJarDownloader
+time=2026-04-06T21:24:49.583Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:49.584Z level=INFO msg="building function" runtime=nodejs22.x functionID=RcExJarDownloader
+time=2026-04-06T21:24:49.593Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:49.594Z level=INFO msg="building function" runtime=nodejs22.x functionID=RcNvoDownloader
+time=2026-04-06T21:24:49.600Z level=INFO msg="loader info" service=runtime.node functionID=RcExJarDownloader loader=map[]
+time=2026-04-06T21:24:49.601Z level=INFO msg="running esbuild" service=runtime.node functionID=RcExJarDownloader
+time=2026-04-06T21:24:49.618Z level=INFO msg="loader info" service=runtime.node functionID=RcNvoDownloader loader=map[]
+time=2026-04-06T21:24:49.618Z level=INFO msg="running esbuild" service=runtime.node functionID=RcNvoDownloader
+time=2026-04-06T21:24:49.634Z level=INFO msg="esbuild finished" service=runtime.node functionID=RcExJarDownloader
+time=2026-04-06T21:24:49.649Z level=INFO msg="function built" runtime=nodejs22.x functionID=RcExJarDownloader
+time=2026-04-06T21:24:49.654Z level=INFO msg="esbuild finished" service=runtime.node functionID=RcNvoDownloader
+time=2026-04-06T21:24:49.662Z level=INFO msg="function built" runtime=nodejs22.x functionID=RcNvoDownloader
+time=2026-04-06T21:24:51.580Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:51.631Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:51.659Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:51.681Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:51.740Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:51.745Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:52.116Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:24:52.751Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:52.903Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:24:53.385Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:53.892Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:54.090Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:24:54.348Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:54.692Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:24:54.701Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:54.733Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:24:55.100Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:55.751Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:24:55.774Z level=ERROR msg="uv build output" output="[aciujums] Building source distribution...\nrunning egg_info\nwriting aciujums.egg-info/PKG-INFO\nwriting dependency_links to aciujums.egg-info/dependency_links.txt\nwriting top-level names to aciujums.egg-info/top_level.txt\nreading manifest file 'aciujums.egg-info/SOURCES.txt'\nadding license file 'LICENSE'\nwriting manifest file 'aciujums.egg-info/SOURCES.txt'\nrunning sdist\nrunning egg_info\nwriting aciujums.egg-info/PKG-INFO\nwriting dependency_links to aciujums.egg-info/dependency_links.txt\nwriting top-level names to aciujums.egg-info/top_level.txt\nreading manifest file 'aciujums.egg-info/SOURCES.txt'\nadding license file 'LICENSE'\nwriting manifest file 'aciujums.egg-info/SOURCES.txt'\nrunning check\ncreating aciujums-0.1.0\ncreating aciujums-0.1.0/aciujums.egg-info\ncopying files to aciujums-0.1.0...\ncopying LICENSE -> aciujums-0.1.0\ncopying README.md -> aciujums-0.1.0\ncopying pyproject.toml -> aciujums-0.1.0\ncopying aciujums.egg-info/PKG-INFO -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/SOURCES.txt -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/dependency_links.txt -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/top_level.txt -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/SOURCES.txt -> aciujums-0.1.0/aciujums.egg-info\nWriting aciujums-0.1.0/setup.cfg\nCreating tar archive\nremoving 'aciujums-0.1.0' (and everything under it)\nSuccessfully built .sst/artifacts/CheckVmiFileDate-src/aciujums-0.1.0.tar.gz\n"
+time=2026-04-06T21:24:55.817Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:56.580Z level=ERROR msg="uv pip install output" output="warning: Requirements file `requirements.txt` does not contain any dependencies\nUsing CPython 3.14.3 interpreter at: /workspaces/aciujums/.venv/bin/python3\nChecked in 618ms\n" error=<nil>
+time=2026-04-06T21:24:56.584Z level=INFO msg="built python function" handler=functions/validators/check-vmi-file-date/lambda_function.lambda_handler out=/workspaces/aciujums/.sst/artifacts/CheckVmiFileDate-src
+time=2026-04-06T21:24:56.602Z level=INFO msg="function built" runtime=python3.12 functionID=CheckVmiFileDate
+time=2026-04-06T21:24:56.616Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:24:56.769Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:57.313Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:24:57.923Z level=ERROR msg="uv build output" output="[aciujums] Building source distribution...\nrunning egg_info\nwriting aciujums.egg-info/PKG-INFO\nwriting dependency_links to aciujums.egg-info/dependency_links.txt\nwriting top-level names to aciujums.egg-info/top_level.txt\nreading manifest file 'aciujums.egg-info/SOURCES.txt'\nadding license file 'LICENSE'\nwriting manifest file 'aciujums.egg-info/SOURCES.txt'\nrunning sdist\nrunning egg_info\nwriting aciujums.egg-info/PKG-INFO\nwriting dependency_links to aciujums.egg-info/dependency_links.txt\nwriting top-level names to aciujums.egg-info/top_level.txt\nreading manifest file 'aciujums.egg-info/SOURCES.txt'\nadding license file 'LICENSE'\nwriting manifest file 'aciujums.egg-info/SOURCES.txt'\nrunning check\ncreating aciujums-0.1.0\ncreating aciujums-0.1.0/aciujums.egg-info\ncopying files to aciujums-0.1.0...\ncopying LICENSE -> aciujums-0.1.0\ncopying README.md -> aciujums-0.1.0\ncopying pyproject.toml -> aciujums-0.1.0\ncopying aciujums.egg-info/PKG-INFO -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/SOURCES.txt -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/dependency_links.txt -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/top_level.txt -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/SOURCES.txt -> aciujums-0.1.0/aciujums.egg-info\nWriting aciujums-0.1.0/setup.cfg\nCreating tar archive\nremoving 'aciujums-0.1.0' (and everything under it)\nSuccessfully built .sst/artifacts/VmiProcessor-src/aciujums-0.1.0.tar.gz\n"
+time=2026-04-06T21:24:57.944Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:24:58.077Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:58.337Z level=ERROR msg="uv pip install output" output="warning: Requirements file `requirements.txt` does not contain any dependencies\nUsing CPython 3.14.3 interpreter at: /workspaces/aciujums/.venv/bin/python3\nChecked in 254ms\n" error=<nil>
+time=2026-04-06T21:24:58.338Z level=INFO msg="built python function" handler=functions/processors/vmi-processor/lambda_function.lambda_handler out=/workspaces/aciujums/.sst/artifacts/VmiProcessor-src
+time=2026-04-06T21:24:58.343Z level=INFO msg="function built" runtime=python3.12 functionID=VmiProcessor
+time=2026-04-06T21:24:59.164Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:24:59.183Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:24:59.635Z level=ERROR msg="uv build output" output="[aciujums] Building source distribution...\nrunning egg_info\nwriting aciujums.egg-info/PKG-INFO\nwriting dependency_links to aciujums.egg-info/dependency_links.txt\nwriting top-level names to aciujums.egg-info/top_level.txt\nreading manifest file 'aciujums.egg-info/SOURCES.txt'\nadding license file 'LICENSE'\nwriting manifest file 'aciujums.egg-info/SOURCES.txt'\nrunning sdist\nrunning egg_info\nwriting aciujums.egg-info/PKG-INFO\nwriting dependency_links to aciujums.egg-info/dependency_links.txt\nwriting top-level names to aciujums.egg-info/top_level.txt\nreading manifest file 'aciujums.egg-info/SOURCES.txt'\nadding license file 'LICENSE'\nwriting manifest file 'aciujums.egg-info/SOURCES.txt'\nrunning check\ncreating aciujums-0.1.0\ncreating aciujums-0.1.0/aciujums.egg-info\ncopying files to aciujums-0.1.0...\ncopying LICENSE -> aciujums-0.1.0\ncopying README.md -> aciujums-0.1.0\ncopying pyproject.toml -> aciujums-0.1.0\ncopying aciujums.egg-info/PKG-INFO -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/SOURCES.txt -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/dependency_links.txt -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/top_level.txt -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/SOURCES.txt -> aciujums-0.1.0/aciujums.egg-info\nWriting aciujums-0.1.0/setup.cfg\nCreating tar archive\nremoving 'aciujums-0.1.0' (and everything under it)\nSuccessfully built .sst/artifacts/RcProcessor-src/aciujums-0.1.0.tar.gz\n"
+time=2026-04-06T21:24:59.986Z level=ERROR msg="uv pip install output" output="warning: Requirements file `requirements.txt` does not contain any dependencies\nUsing CPython 3.14.3 interpreter at: /workspaces/aciujums/.venv/bin/python3\nChecked in 203ms\n" error=<nil>
+time=2026-04-06T21:24:59.988Z level=INFO msg="built python function" handler=functions/processors/rc-processor/lambda_function.lambda_handler out=/workspaces/aciujums/.sst/artifacts/RcProcessor-src
+time=2026-04-06T21:25:00.002Z level=INFO msg="function built" runtime=python3.12 functionID=RcProcessor
+time=2026-04-06T21:25:00.348Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:25:00.441Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:25:00.681Z level=ERROR msg="uv build output" output="[aciujums] Building source distribution...\nrunning egg_info\nwriting aciujums.egg-info/PKG-INFO\nwriting dependency_links to aciujums.egg-info/dependency_links.txt\nwriting top-level names to aciujums.egg-info/top_level.txt\nreading manifest file 'aciujums.egg-info/SOURCES.txt'\nadding license file 'LICENSE'\nwriting manifest file 'aciujums.egg-info/SOURCES.txt'\nrunning sdist\nrunning egg_info\nwriting aciujums.egg-info/PKG-INFO\nwriting dependency_links to aciujums.egg-info/dependency_links.txt\nwriting top-level names to aciujums.egg-info/top_level.txt\nreading manifest file 'aciujums.egg-info/SOURCES.txt'\nadding license file 'LICENSE'\nwriting manifest file 'aciujums.egg-info/SOURCES.txt'\nrunning check\ncreating aciujums-0.1.0\ncreating aciujums-0.1.0/aciujums.egg-info\ncopying files to aciujums-0.1.0...\ncopying LICENSE -> aciujums-0.1.0\ncopying README.md -> aciujums-0.1.0\ncopying pyproject.toml -> aciujums-0.1.0\ncopying aciujums.egg-info/PKG-INFO -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/SOURCES.txt -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/dependency_links.txt -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/top_level.txt -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/SOURCES.txt -> aciujums-0.1.0/aciujums.egg-info\nWriting aciujums-0.1.0/setup.cfg\nCreating tar archive\nremoving 'aciujums-0.1.0' (and everything under it)\nSuccessfully built .sst/artifacts/SendAlert-src/aciujums-0.1.0.tar.gz\n"
+time=2026-04-06T21:25:00.918Z level=ERROR msg="uv pip install output" output="warning: Requirements file `requirements.txt` does not contain any dependencies\nUsing CPython 3.14.3 interpreter at: /workspaces/aciujums/.venv/bin/python3\nChecked in 134ms\n" error=<nil>
+time=2026-04-06T21:25:00.918Z level=INFO msg="built python function" handler=functions/alerts/send-alert/lambda_function.lambda_handler out=/workspaces/aciujums/.sst/artifacts/SendAlert-src
+time=2026-04-06T21:25:00.921Z level=INFO msg="function built" runtime=python3.12 functionID=SendAlert
+time=2026-04-06T21:25:01.086Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:25:01.195Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:25:01.544Z level=ERROR msg="uv build output" output="[aciujums] Building source distribution...\nrunning egg_info\nwriting aciujums.egg-info/PKG-INFO\nwriting dependency_links to aciujums.egg-info/dependency_links.txt\nwriting top-level names to aciujums.egg-info/top_level.txt\nreading manifest file 'aciujums.egg-info/SOURCES.txt'\nadding license file 'LICENSE'\nwriting manifest file 'aciujums.egg-info/SOURCES.txt'\nrunning sdist\nrunning egg_info\nwriting aciujums.egg-info/PKG-INFO\nwriting dependency_links to aciujums.egg-info/dependency_links.txt\nwriting top-level names to aciujums.egg-info/top_level.txt\nreading manifest file 'aciujums.egg-info/SOURCES.txt'\nadding license file 'LICENSE'\nwriting manifest file 'aciujums.egg-info/SOURCES.txt'\nrunning check\ncreating aciujums-0.1.0\ncreating aciujums-0.1.0/aciujums.egg-info\ncopying files to aciujums-0.1.0...\ncopying LICENSE -> aciujums-0.1.0\ncopying README.md -> aciujums-0.1.0\ncopying pyproject.toml -> aciujums-0.1.0\ncopying aciujums.egg-info/PKG-INFO -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/SOURCES.txt -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/dependency_links.txt -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/top_level.txt -> aciujums-0.1.0/aciujums.egg-info\ncopying aciujums.egg-info/SOURCES.txt -> aciujums-0.1.0/aciujums.egg-info\nWriting aciujums-0.1.0/setup.cfg\nCreating tar archive\nremoving 'aciujums-0.1.0' (and everything under it)\nSuccessfully built .sst/artifacts/CheckCsvStructure-src/aciujums-0.1.0.tar.gz\n"
+time=2026-04-06T21:25:01.565Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:25:01.567Z level=INFO msg="building function" runtime=nodejs22.x functionID=AciujumsApiRouteDrnnvfHandler
+time=2026-04-06T21:25:01.572Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:25:01.573Z level=INFO msg="building function" runtime=nodejs22.x functionID=AciujumsApiRouteZzafaeHandler
+time=2026-04-06T21:25:01.587Z level=INFO msg="loader info" service=runtime.node functionID=AciujumsApiRouteDrnnvfHandler loader=map[]
+time=2026-04-06T21:25:01.587Z level=INFO msg="running esbuild" service=runtime.node functionID=AciujumsApiRouteDrnnvfHandler
+time=2026-04-06T21:25:01.595Z level=INFO msg="loader info" service=runtime.node functionID=AciujumsApiRouteZzafaeHandler loader=map[]
+time=2026-04-06T21:25:01.595Z level=INFO msg="running esbuild" service=runtime.node functionID=AciujumsApiRouteZzafaeHandler
+time=2026-04-06T21:25:01.608Z level=INFO msg="esbuild finished" service=runtime.node functionID=AciujumsApiRouteDrnnvfHandler
+time=2026-04-06T21:25:01.612Z level=INFO msg="function built" runtime=nodejs22.x functionID=AciujumsApiRouteDrnnvfHandler
+time=2026-04-06T21:25:01.619Z level=INFO msg="esbuild finished" service=runtime.node functionID=AciujumsApiRouteZzafaeHandler
+time=2026-04-06T21:25:01.625Z level=INFO msg="function built" runtime=nodejs22.x functionID=AciujumsApiRouteZzafaeHandler
+time=2026-04-06T21:25:01.707Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:25:01.811Z level=ERROR msg="uv pip install output" output="warning: Requirements file `requirements.txt` does not contain any dependencies\nUsing CPython 3.14.3 interpreter at: /workspaces/aciujums/.venv/bin/python3\nChecked in 171ms\n" error=<nil>
+time=2026-04-06T21:25:01.812Z level=INFO msg="built python function" handler=functions/validators/check-csv-structure/lambda_function.lambda_handler out=/workspaces/aciujums/.sst/artifacts/CheckCsvStructure-src
+time=2026-04-06T21:25:01.816Z level=INFO msg="function built" runtime=python3.12 functionID=CheckCsvStructure
+time=2026-04-06T21:25:01.874Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:25:02.109Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:25:02.395Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:25:02.440Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:25:02.621Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:25:02.622Z level=INFO msg="building function" runtime=nodejs22.x functionID=AciujumsApiRouteCnszxtHandler
+time=2026-04-06T21:25:02.635Z level=INFO msg="loader info" service=runtime.node functionID=AciujumsApiRouteCnszxtHandler loader=map[]
+time=2026-04-06T21:25:02.635Z level=INFO msg="running esbuild" service=runtime.node functionID=AciujumsApiRouteCnszxtHandler
+time=2026-04-06T21:25:02.651Z level=INFO msg="esbuild finished" service=runtime.node functionID=AciujumsApiRouteCnszxtHandler
+time=2026-04-06T21:25:02.655Z level=INFO msg="function built" runtime=nodejs22.x functionID=AciujumsApiRouteCnszxtHandler
+time=2026-04-06T21:25:02.877Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:25:02.894Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:25:02.894Z level=INFO msg="building function" runtime=nodejs22.x functionID=AciujumsApiRouteMswwvfHandler
+time=2026-04-06T21:25:02.900Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:25:02.901Z level=INFO msg="building function" runtime=nodejs22.x functionID=AciujumsApiRouteBvcwahHandler
+time=2026-04-06T21:25:02.911Z level=INFO msg="loader info" service=runtime.node functionID=AciujumsApiRouteMswwvfHandler loader=map[]
+time=2026-04-06T21:25:02.912Z level=INFO msg="running esbuild" service=runtime.node functionID=AciujumsApiRouteMswwvfHandler
+time=2026-04-06T21:25:02.918Z level=INFO msg="loader info" service=runtime.node functionID=AciujumsApiRouteBvcwahHandler loader=map[]
+time=2026-04-06T21:25:02.919Z level=INFO msg="running esbuild" service=runtime.node functionID=AciujumsApiRouteBvcwahHandler
+time=2026-04-06T21:25:02.936Z level=INFO msg="esbuild finished" service=runtime.node functionID=AciujumsApiRouteMswwvfHandler
+time=2026-04-06T21:25:02.942Z level=INFO msg="function built" runtime=nodejs22.x functionID=AciujumsApiRouteMswwvfHandler
+time=2026-04-06T21:25:02.942Z level=INFO msg="esbuild finished" service=runtime.node functionID=AciujumsApiRouteBvcwahHandler
+time=2026-04-06T21:25:02.945Z level=INFO msg="function built" runtime=nodejs22.x functionID=AciujumsApiRouteBvcwahHandler
+time=2026-04-06T21:25:03.074Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:25:03.176Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:25:03.369Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:25:03.375Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:25:03.376Z level=INFO msg="building function" runtime=nodejs22.x functionID=AciujumsApiRouteZuffzrHandler
+time=2026-04-06T21:25:03.394Z level=INFO msg="loader info" service=runtime.node functionID=AciujumsApiRouteZuffzrHandler loader=map[]
+time=2026-04-06T21:25:03.394Z level=INFO msg="running esbuild" service=runtime.node functionID=AciujumsApiRouteZuffzrHandler
+time=2026-04-06T21:25:03.419Z level=INFO msg="esbuild finished" service=runtime.node functionID=AciujumsApiRouteZuffzrHandler
+time=2026-04-06T21:25:03.424Z level=INFO msg="function built" runtime=nodejs22.x functionID=AciujumsApiRouteZuffzrHandler
+time=2026-04-06T21:25:04.278Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:25:04.394Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:25:06.295Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:25:07.107Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:25:10.121Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:25:10.999Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:27:35.813Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:27:36.747Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:27:37.716Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:27:37.723Z level=INFO msg="building function" runtime=nodejs20.x functionID=Aciujums-nextjsRevalidationSeeder
+time=2026-04-06T21:27:37.735Z level=INFO msg="function built" runtime=nodejs20.x functionID=Aciujums-nextjsRevalidationSeeder
+time=2026-04-06T21:27:37.810Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:27:37.814Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:27:38.766Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:27:43.835Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:27:44.063Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:27:44.386Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:27:44.389Z level=INFO msg="building function" runtime=nodejs20.x functionID=Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunction
+time=2026-04-06T21:27:44.392Z level=INFO msg="function built" runtime=nodejs20.x functionID=Aciujums-nextjsRevalidationEventsSubscriberMsfteeFunction
+time=2026-04-06T21:27:44.409Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:27:44.410Z level=INFO msg="building function" runtime=nodejs20.x functionID=Aciujums-nextjsImageOptimizer
+time=2026-04-06T21:27:44.419Z level=INFO msg="function built" runtime=nodejs20.x functionID=Aciujums-nextjsImageOptimizer
+time=2026-04-06T21:27:44.459Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:27:44.468Z level=INFO msg="building function" runtime=nodejs20.x functionID=Aciujums-nextjsServerEucentral1
+time=2026-04-06T21:27:44.473Z level=INFO msg="function built" runtime=nodejs20.x functionID=Aciujums-nextjsServerEucentral1
+time=2026-04-06T21:27:44.540Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:27:45.219Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:27:45.347Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:27:46.574Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:27:47.188Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:27:47.766Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:27:53.699Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:27:54.281Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:27:54.440Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:27:55.159Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:27:55.872Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:27:56.399Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:27:56.846Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:28:00.858Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:01.600Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:02.481Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:07.783Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:07.987Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:28:08.988Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:09.393Z level=INFO msg="rpc request" method=POST url=/rpc
+time=2026-04-06T21:28:10.102Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:11.022Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:11.727Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:12.537Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:13.161Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:13.700Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:14.278Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:15.015Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:15.627Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:16.348Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:17.036Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:17.770Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:18.295Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:18.816Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:20.007Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:20.596Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:21.409Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:22.110Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:23.629Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:24.243Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:24.808Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:25.642Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:26.144Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:26.712Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:27.233Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:28.375Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:29.211Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:29.748Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:30.579Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:31.229Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:31.902Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:32.860Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:33.601Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:34.177Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:34.757Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:35.274Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:35.778Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:36.321Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:36.851Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:37.429Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:37.987Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:38.516Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:38.950Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:39.395Z level=INFO msg="pulumi exited" service=project.run updateID=fe629b51d3d523f683feed3a err=<nil>
+time=2026-04-06T21:28:39.396Z level=INFO msg="eof and exited" service=project.run updateID=fe629b51d3d523f683feed3a eofs=0
+time=2026-04-06T21:28:39.397Z level=INFO msg="eof and exited" service=project.run updateID=fe629b51d3d523f683feed3a eofs=1
+time=2026-04-06T21:28:39.398Z level=INFO msg="breaking out of tail loop" service=project.run updateID=fe629b51d3d523f683feed3a
+time=2026-04-06T21:28:39.399Z level=INFO msg="parsing state" service=project.run updateID=fe629b51d3d523f683feed3a
+time=2026-04-06T21:28:39.669Z level=INFO msg="INFO pushing partial state updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:28:40.458Z level=INFO msg="generating types" root=/workspaces/aciujums
+time=2026-04-06T21:29:06.166Z level=INFO msg="canceling partial" service=project.run updateID=fe629b51d3d523f683feed3a
+time=2026-04-06T21:29:06.166Z level=INFO msg="waiting for partial to exit" service=project.run updateID=fe629b51d3d523f683feed3a
+time=2026-04-06T21:29:06.174Z level=INFO msg="INFO pushing eventlog updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:29:06.175Z level=INFO msg="INFO pushing snapshot updateID=fe629b51d3d523f683feed3a"
+time=2026-04-06T21:29:06.961Z level=INFO msg="INFO putting update app=aciujums stage=dev"
+time=2026-04-06T21:29:07.121Z level=INFO msg="done running stack command" service=project.run updateID=fe629b51d3d523f683feed3a
+time=2026-04-06T21:29:07.163Z level=INFO msg="INFO unlocking app=aciujums stage=dev"
+time=2026-04-06T21:29:07.308Z level=INFO msg="shutting down server" service=server
+time=2026-04-06T21:29:07.314Z level=INFO msg="server done" service=server

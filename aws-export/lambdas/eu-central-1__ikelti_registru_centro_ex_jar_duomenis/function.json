@@ -1,0 +1,52 @@
+{
+    "Configuration": {
+        "FunctionName": "ikelti_registru_centro_ex_jar_duomenis",
+        "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_registru_centro_ex_jar_duomenis",
+        "Runtime": "nodejs18.x",
+        "Role": "arn:aws:iam::876391798236:role/service-role/ikelti_registru_centro_ex_jar_duomenis-role-smmie1nm",
+        "Handler": "index.handler",
+        "CodeSize": 948,
+        "Description": "",
+        "Timeout": 70,
+        "MemorySize": 512,
+        "LastModified": "2023-10-17T22:32:29.000+0000",
+        "CodeSha256": "DiivWNvy3d5xDgZ3dD+41IhHaEF3pgv5OaAvSTf6gS8=",
+        "Version": "$LATEST",
+        "Environment": {
+            "Variables": {
+                "DL_RAW_BUCKET": "nipc-dl-raw"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "51396a0f-e403-4f78-8589-7179db051d11",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "arm64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:55088f4db680bbda3ae5e87f662af5b9f56907c34129f60578de7abd85a6f331"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/ikelti_registru_centro_ex_jar_duomenis"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/876391798236/ikelti_registru_centro_ex_jar_duomenis-b681bd2d-b57e-4416-ba63-ba04297d7677?versionId=Sr3HC6kqjAMRLlw3waiPn593mTuxeId4&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJHMEUCIQDMekbf3%2Fab0TJGIrSZAN2Ji9JTYEGLTQGOmPYvgqdxmwIgU0ayXt6qXD6osuquIV1eUc3stDGOiobbnBbSJ5HzOWUqiwIIVhADGgw2ODA2ODY1NTk0MzQiDCyLi%2FWAXOEG%2FtZpmCroAf8zP8hEmFS8wC7rNXEf%2FPJxJdwUSGUZoM%2BFOV9U3JJGajXkhvwCaPKH2a5N%2FnoCkW%2BryYpYpAtqVp9m4mo78qo6zb5nXwjluv5IrcnR8woae9VEdZLKHFDpfaH5HwnSelyM2iUcKRTYlxbWJdgpQNsBfzCnkUBsZnZSqMYeM%2B9djrY6gspCzTZq0hMwGmo6ibuotL2rzJ%2FLcmBb3vjo5WcQFOOqcy0atf270x5O17h3OGCHtTwkOAFB%2FCbb%2BBPN8twkFljSUjlZX4SNKwTA5pBOK2JsMf7I%2FkZ1FG7m51DJMRgM91ZKM5Iwmqy0zgY6jQHCJUW1UfNb%2FxSyTOHcB1HJo7RbQVPYCKk5jJIEQwro8vvnQnPgchqo1eY7rWTlrw%2FCJUiSuj%2FNVPds7r8GW5nIPiBiC3G74LT2s8FofUcE9aOOvkd1%2BOSZE0XiPPAxND0lQBF67EFAaPzEv8jXR8CLib4XFUq9ZaR57fLOE00yZ%2BxoDiwrTja6ZHckyAc%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T142137Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZ47AUUDFJYCAT4GO%2F20260401%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=c8ba6a55ff6b887ba01115a60da54ebf9d37a32883e3be3966cb54b656330f86"
+    },
+    "Tags": {
+        "Project": "Data Lake"
+    }
+}

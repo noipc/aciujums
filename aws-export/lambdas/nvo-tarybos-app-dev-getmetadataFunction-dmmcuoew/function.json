@@ -1,0 +1,56 @@
+{
+    "Configuration": {
+        "FunctionName": "nvo-tarybos-app-dev-getmetadataFunction-dmmcuoew",
+        "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-app-dev-getmetadataFunction-dmmcuoew",
+        "Runtime": "nodejs20.x",
+        "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-dev-getmetadataRole-vdtonwuz",
+        "Handler": "bundle.handler",
+        "CodeSize": 193743,
+        "Description": "",
+        "Timeout": 20,
+        "MemorySize": 1024,
+        "LastModified": "2026-01-22T00:04:27.000+0000",
+        "CodeSha256": "27cVzg4lfx1Rv1XQQRofHBMJMRaaWElNDwsEj0NKBtM=",
+        "Version": "$LATEST",
+        "Environment": {
+            "Variables": {
+                "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"dev\"}",
+                "SST_KEY": "fAIm9rdQWuiqo7Ne0xGpWAEXQtdsJzu3/5AuJ1vqQg4=",
+                "PROJECT_ROOT": "/workspaces/ngo_tarybos",
+                "SST_KEY_FILE": "resource.enc"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "e140f82d-fd0a-477f-b3f1-2954fc8089cd",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "arm64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:2e3f7cf349db89189069e40578cf0238792926a80ade780bf28d6f495a74047b"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/nvo-tarybos-app-dev-getmetadataFunction-hmhvxcxm"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/876391798236/nvo-tarybos-app-dev-getmetadataFunction-dmmcuoew-09c74e80-3422-443d-94a5-e85f3fec547d?versionId=bCISbRwba8FG3ccRf1jdREHJCSRqUTsy&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJGMEQCICC8hXh6F3BbvmMKD4eiZNlkNFT%2Bhb3sh5cm%2FrKde2jUAiBHHB4dtqQ%2FKrCjPfbvJE948YWrJYChAMOhyveQmV5d7SqLAghREAMaDDY4MDY4NjU1OTQzNCIM3KM%2F5aCSAvN78Ut%2BKugBWRqd0K3EBmHX%2BJwvxS8MjC0FEovwKiWf4EfkLUpiQ8pHHMwfrnZhjsnr6GXN9A0JxbriV8fThvWl%2BuYg%2Ff%2FWm3Tj9W7UXea6B8aX9AMvnXNfANOPwEDsQygOxfbbNPXA5EQ1WigV6cktRFRuszK2%2FSLePqRYkQD6n8TScKo873WG%2Bbk02pJY4%2Be%2FhN9s9y8I5OWdxifWyQVOeJLsdnClmoRw5gWBEhrKzjNSv3RxmayhOLA1NhsnDOTWaSDtZIWFgWKG%2FNJqAfji3m7y%2FVsbfTJbiqEpHzh5%2FedeCys3ai05wzumtWunKTCjmrPOBjqOAaNXVpd9lmyFahUKayIarM71cq2TAOYjdcUiTfT5wt3QqHQgKKbHo4j2EvBAH7Gvy2ar8azXA%2Fv77frpgs8zUZDOvAyZdXrnxD1R7B3U7T8XjSLrkYEA5rY7%2FlRLC8SuevrbYono8b4dTXTfhGlqYtA6oHoe5VU9cCfcnd4Sb6CD%2Boh2RFzCrZpmQCcw1rs%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T130125Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZ47AUUDFJGSDA3MO%2F20260401%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=6fd27d1d65c4b351dc4382b03adebca0c4c0e5b58b407da35b9e6c68f08e424f"
+    },
+    "Tags": {
+        "sst:app": "nvo-tarybos-app",
+        "sst:stage": "dev"
+    }
+}

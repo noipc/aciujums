@@ -1,0 +1,27 @@
+{
+    "RoleName": "SSTBootstrap-MetadataHandlerServiceRole24408145-UA2x9EhQUr2j",
+    "PolicyName": "MetadataHandlerServiceRoleDefaultPolicy03477988",
+    "PolicyDocument": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Action": "cloudformation:DescribeStacks",
+                "Resource": "*",
+                "Effect": "Allow"
+            },
+            {
+                "Action": [
+                    "s3:PutObject",
+                    "s3:DeleteObject"
+                ],
+                "Resource": "arn:aws:s3:::sstbootstrap-eucentral134f82fae-oznhoehwzew1/*",
+                "Effect": "Allow"
+            },
+            {
+                "Action": "iot:Publish",
+                "Resource": "arn:aws:iot:eu-central-1:876391798236:topic//sst/*",
+                "Effect": "Allow"
+            }
+        ]
+    }
+}

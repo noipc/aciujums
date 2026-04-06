@@ -1,0 +1,118 @@
+{
+    "Items": [
+        {
+            "path": {
+                "S": "2ZeH8J9oSN8GfWOuDjyi3/naujienos"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "2ZeH8J9oSN8GfWOuDjyi3/_N_T_/naujienos/page"
+            }
+        },
+        {
+            "path": {
+                "S": "yqDdqrDix9pN82lle4Kpb/naujienos"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "yqDdqrDix9pN82lle4Kpb/_N_T_/naujienos/page"
+            }
+        },
+        {
+            "path": {
+                "S": "yqDdqrDix9pN82lle4Kpb/apie-mus"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "yqDdqrDix9pN82lle4Kpb/_N_T_/apie-mus/page"
+            }
+        },
+        {
+            "path": {
+                "S": "jE0vq2CACo2jdk_z5k6dW/paieska"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "jE0vq2CACo2jdk_z5k6dW/_N_T_/paieska/layout"
+            }
+        },
+        {
+            "path": {
+                "S": "2ZeH8J9oSN8GfWOuDjyi3/index"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "2ZeH8J9oSN8GfWOuDjyi3/_N_T_/page"
+            }
+        },
+        {
+            "path": {
+                "S": "jE0vq2CACo2jdk_z5k6dW/naudinga-informacija"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "jE0vq2CACo2jdk_z5k6dW/_N_T_/naudinga-informacija/page"
+            }
+        },
+        {
+            "path": {
+                "S": "yqDdqrDix9pN82lle4Kpb/naudinga-informacija"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "yqDdqrDix9pN82lle4Kpb/_N_T_/naudinga-informacija/page"
+            }
+        },
+        {
+            "path": {
+                "S": "2ZeH8J9oSN8GfWOuDjyi3/apie-mus"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "2ZeH8J9oSN8GfWOuDjyi3/_N_T_/apie-mus"
+            }
+        },
+        {
+            "path": {
+                "S": "yqDdqrDix9pN82lle4Kpb/paieska"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "yqDdqrDix9pN82lle4Kpb/_N_T_/paieska/layout"
+            }
+        },
+        {
+            "path": {
+                "S": "jE0vq2CACo2jdk_z5k6dW/naujienos"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "jE0vq2CACo2jdk_z5k6dW/_N_T_/naujienos/page"
+            }
+        }
+    ],
+    "Count": 81,
+    "ScannedCount": 81,
+    "ConsumedCapacity": null,
+    "NextToken": "eyJFeGNsdXNpdmVTdGFydEtleSI6IG51bGwsICJib3RvX3RydW5jYXRlX2Ftb3VudCI6IDEwfQ=="
+}

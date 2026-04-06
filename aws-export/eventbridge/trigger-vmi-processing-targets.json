@@ -1,0 +1,9 @@
+{
+    "Targets": [
+        {
+            "Id": "Ide7365f9b-d027-44e5-9f38-78560dedc1bc",
+            "Arn": "arn:aws:lambda:eu-central-1:876391798236:function:vmi_duomenu_paruosimas",
+            "RoleArn": "arn:aws:iam::876391798236:role/service-role/Amazon_EventBridge_Invoke_Lambda_1398355061"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "aciujums-vscode-AciujumsnextjsDevServerRole-moeerscb",
+        "RoleId": "AROA4YDIFSXOI7TJR3XET",
+        "Arn": "arn:aws:iam::876391798236:role/aciujums-vscode-AciujumsnextjsDevServerRole-moeerscb",
+        "CreateDate": "2026-04-01T01:52:26+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "AWS": "arn:aws:iam::876391798236:root",
+                        "Service": "lambda.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        },
+        "MaxSessionDuration": 3600,
+        "Tags": [
+            {
+                "Key": "sst:stage",
+                "Value": "vscode"
+            },
+            {
+                "Key": "sst:app",
+                "Value": "aciujums"
+            }
+        ],
+        "RoleLastUsed": {}
+    }
+}

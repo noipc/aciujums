@@ -1,0 +1,118 @@
+{
+    "Items": [
+        {
+            "path": {
+                "S": "cJc2pb7HZOzDazEfL1ztZ/_global-error"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "cJc2pb7HZOzDazEfL1ztZ/_N_T_/_global-error"
+            }
+        },
+        {
+            "path": {
+                "S": "BNvA1kAJ3aTIu9tKjShPY/_global-error"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "BNvA1kAJ3aTIu9tKjShPY/_N_T_/layout"
+            }
+        },
+        {
+            "path": {
+                "S": "BNvA1kAJ3aTIu9tKjShPY/_not-found"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "BNvA1kAJ3aTIu9tKjShPY/_N_T_/layout"
+            }
+        },
+        {
+            "path": {
+                "S": "BNvA1kAJ3aTIu9tKjShPY/index"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "BNvA1kAJ3aTIu9tKjShPY/_N_T_/layout"
+            }
+        },
+        {
+            "path": {
+                "S": "b_FaucYjUPLsOaF3DT3T6/_not-found"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "b_FaucYjUPLsOaF3DT3T6/_N_T_/_not-found"
+            }
+        },
+        {
+            "path": {
+                "S": "Naqitj4fuWcjKkW-QH1q8/_not-found"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "Naqitj4fuWcjKkW-QH1q8/_N_T_/_not-found/page"
+            }
+        },
+        {
+            "path": {
+                "S": "nmbV8osq7WkQjxI7_JoWA/_global-error"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "nmbV8osq7WkQjxI7_JoWA/_N_T_/_global-error"
+            }
+        },
+        {
+            "path": {
+                "S": "1YGsSznHFGcJaz_8B-oHZ/_not-found"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "1YGsSznHFGcJaz_8B-oHZ/_N_T_/_not-found"
+            }
+        },
+        {
+            "path": {
+                "S": "1DXgs1rusMQNO8m2RYQIe/_global-error"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "1DXgs1rusMQNO8m2RYQIe/_N_T_/layout"
+            }
+        },
+        {
+            "path": {
+                "S": "1DXgs1rusMQNO8m2RYQIe/_not-found"
+            },
+            "revalidatedAt": {
+                "N": "1"
+            },
+            "tag": {
+                "S": "1DXgs1rusMQNO8m2RYQIe/_N_T_/layout"
+            }
+        }
+    ],
+    "Count": 888,
+    "ScannedCount": 888,
+    "ConsumedCapacity": null,
+    "NextToken": "eyJFeGNsdXNpdmVTdGFydEtleSI6IG51bGwsICJib3RvX3RydW5jYXRlX2Ftb3VudCI6IDEwfQ=="
+}

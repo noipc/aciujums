@@ -1,0 +1,4 @@
+{
+    "Policy": "{\"Version\":\"2012-10-17\",\"Id\":\"default\",\"Statement\":[{\"Sid\":\"lambda-f188063b-68dd-4504-8eae-53d21d0a051e\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"logs.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:eu-central-1:876391798236:function:send_custom_alert\",\"Condition\":{\"StringEquals\":{\"AWS:SourceAccount\":\"876391798236\"},\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:logs:eu-central-1:876391798236:log-group:/aws/lambda/check_csv_structure:*\"}}}]}",
+    "RevisionId": "1bb83a13-2e7e-4bde-afd2-0b560bc2019b"
+}

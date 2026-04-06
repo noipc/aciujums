@@ -1,0 +1,38 @@
+{
+    "FunctionName": "get_entity_data",
+    "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:get_entity_data",
+    "Runtime": "nodejs22.x",
+    "Role": "arn:aws:iam::876391798236:role/Aciujums-Lambda-GetS3Object-Role",
+    "Handler": "index.handler",
+    "CodeSize": 753,
+    "Description": "",
+    "Timeout": 3,
+    "MemorySize": 128,
+    "LastModified": "2025-03-22T20:15:33.000+0000",
+    "CodeSha256": "hh5R6R88UfSj05OTGQ+l1dFEo+jniju4X0TBR/AK3xE=",
+    "Version": "$LATEST",
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "1da97875-bcf2-48e3-8333-920c14caf75c",
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Zip",
+    "Architectures": [
+        "arm64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "RuntimeVersionConfig": {
+        "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:5e3c80f22edec71979fb474ea310e6e652f1e127086be7eb20d12b0b26666cc1"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/get_entity_data"
+    }
+}

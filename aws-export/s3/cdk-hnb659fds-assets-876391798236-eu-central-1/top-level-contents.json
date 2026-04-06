@@ -1,0 +1,94 @@
+{
+    "Contents": [
+        {
+            "Key": "2819175352ad1ce0dae768e83fc328fb70fb5f10b4a8ff0ccbcb791f02b0716d.zip",
+            "LastModified": "2025-12-17T07:15:27+00:00",
+            "ETag": "\"ae95d346a027acbe5b0727b6dc09bb4d\"",
+            "ChecksumAlgorithm": [
+                "SHA256"
+            ],
+            "ChecksumType": "FULL_OBJECT",
+            "Size": 1590,
+            "StorageClass": "STANDARD"
+        },
+        {
+            "Key": "317b87c096ec0ba7151da416397e214920c9eb4f4bf4b3d3e639dba1744b8480.zip",
+            "LastModified": "2025-12-17T07:16:08+00:00",
+            "ETag": "\"64b753ce2bb24067e7ca13e8e160986b\"",
+            "ChecksumAlgorithm": [
+                "CRC64NVME"
+            ],
+            "ChecksumType": "FULL_OBJECT",
+            "Size": 185,
+            "StorageClass": "STANDARD"
+        },
+        {
+            "Key": "377097d346716f940f579f012cf97dacd2edc6a0556e5d54c147761b63f97184.zip",
+            "LastModified": "2025-12-17T07:15:26+00:00",
+            "ETag": "\"198e4f9d1f5053bbff684ba24c3060b7\"",
+            "ChecksumAlgorithm": [
+                "SHA256"
+            ],
+            "ChecksumType": "FULL_OBJECT",
+            "Size": 324212,
+            "StorageClass": "STANDARD"
+        },
+        {
+            "Key": "3d6ce4fac7ab0cd98f7c75bd6aab40592fe069c2e5d61059e7702c77b98009c9.zip",
+            "LastModified": "2025-12-17T00:38:13+00:00",
+            "ETag": "\"5502e8d70ff44fa40d8719b51a79ee7d\"",
+            "ChecksumAlgorithm": [
+                "SHA256"
+            ],
+            "ChecksumType": "FULL_OBJECT",
+            "Size": 329897,
+            "StorageClass": "STANDARD"
+        },
+        {
+            "Key": "770f730026c80c764638e2f940b362a188b17e8c202709a7cd1288f507a3f221.json",
+            "LastModified": "2025-12-17T00:38:13+00:00",
+            "ETag": "\"cffb1fb84e27728f44971a9f7eff63cb\"",
+            "ChecksumAlgorithm": [
+                "SHA256"
+            ],
+            "ChecksumType": "FULL_OBJECT",
+            "Size": 8828,
+            "StorageClass": "STANDARD"
+        },
+        {
+            "Key": "7a0d4e8c7745d9fb5c05436bbd4c04b7533ae9ff4d129c6eaf8d381e9c216625.zip",
+            "LastModified": "2025-12-17T07:15:26+00:00",
+            "ETag": "\"abcfe1e18f58438ea1f19b68bb88a9c8\"",
+            "ChecksumAlgorithm": [
+                "SHA256"
+            ],
+            "ChecksumType": "FULL_OBJECT",
+            "Size": 632604,
+            "StorageClass": "STANDARD"
+        },
+        {
+            "Key": "93fe38369f3f90ed8480a558d543c41c9a7a35d8806e9a061566fab8a2cb39f4.json",
+            "LastModified": "2025-12-17T07:15:27+00:00",
+            "ETag": "\"c4eaa8468ecbe6ff3b0ebccad39c101c\"",
+            "ChecksumAlgorithm": [
+                "SHA256"
+            ],
+            "ChecksumType": "FULL_OBJECT",
+            "Size": 32252,
+            "StorageClass": "STANDARD"
+        },
+        {
+            "Key": "faa95a81ae7d7373f3e1f242268f904eb748d8d0fdd306e8a6fe515a1905a7d6.zip",
+            "LastModified": "2025-12-17T00:38:12+00:00",
+            "ETag": "\"4b56cd27296e759c82d03c9ffa6f2f64\"",
+            "ChecksumAlgorithm": [
+                "SHA256"
+            ],
+            "ChecksumType": "FULL_OBJECT",
+            "Size": 2237,
+            "StorageClass": "STANDARD"
+        }
+    ],
+    "RequestCharged": null,
+    "Prefix": ""
+}

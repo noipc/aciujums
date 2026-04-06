@@ -1,0 +1,45 @@
+{
+    "FunctionName": "AciujumsnextjsRevalidationEventsSubscriberWechuaFunctio-bszrmbxm",
+    "FunctionArn": "arn:aws:lambda:us-east-1:876391798236:function:AciujumsnextjsRevalidationEventsSubscriberWechuaFunctio-bszrmbxm",
+    "Runtime": "nodejs20.x",
+    "Role": "arn:aws:iam::876391798236:role/AciujumsnextjsRevalidationEventsSubscriberWechuaFunctio-cozoebho",
+    "Handler": "index.handler",
+    "CodeSize": 2893,
+    "Description": "Aciujums-nextjs ISR revalidator",
+    "Timeout": 30,
+    "MemorySize": 1024,
+    "LastModified": "2025-06-16T21:14:12.000+0000",
+    "CodeSha256": "54J7BFyppL7qIc69fC4jceYhd1xZRwm3s+YGoA0f6VQ=",
+    "Version": "$LATEST",
+    "Environment": {
+        "Variables": {
+            "SST_RESOURCE_App": "{\"name\":\"aciujums\",\"stage\":\"production\"}",
+            "SST_KEY": "If5N+rd4uYsHDkG5Wlfj185Ql7hy16+CHowXUCo6fjk=",
+            "SST_KEY_FILE": "resource.enc"
+        }
+    },
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "60a9534c-3bb3-4d5b-8e1b-8b88fdfb563f",
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Zip",
+    "Architectures": [
+        "x86_64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "RuntimeVersionConfig": {
+        "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:2d788b26ac416854c5eb831c9f46cb2e0a0ddcee84b1a9b114acbdfdb644c8c1"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/AciujumsnextjsRevalidationEventsSubscriberWechuaFunctio-smexzkcv"
+    }
+}

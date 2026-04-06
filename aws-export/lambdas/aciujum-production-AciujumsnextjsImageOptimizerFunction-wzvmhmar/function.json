@@ -1,0 +1,57 @@
+{
+    "Configuration": {
+        "FunctionName": "aciujum-production-AciujumsnextjsImageOptimizerFunction-wzvmhmar",
+        "FunctionArn": "arn:aws:lambda:us-east-1:876391798236:function:aciujum-production-AciujumsnextjsImageOptimizerFunction-wzvmhmar",
+        "Runtime": "nodejs20.x",
+        "Role": "arn:aws:iam::876391798236:role/aciujums-production-AciujumsnextjsImageOptimizerRole-zddsocmw",
+        "Handler": "index.handler",
+        "CodeSize": 11576389,
+        "Description": "Aciujums-nextjs image optimizer",
+        "Timeout": 25,
+        "MemorySize": 1536,
+        "LastModified": "2025-06-16T21:14:18.000+0000",
+        "CodeSha256": "vs0cCRSmen7aMX1BdIK1CzJxjnDNhTqAmKjxiU9yBbg=",
+        "Version": "$LATEST",
+        "Environment": {
+            "Variables": {
+                "SST_RESOURCE_App": "{\"name\":\"aciujums\",\"stage\":\"production\"}",
+                "BUCKET_KEY_PREFIX": "_assets",
+                "SST_KEY": "If5N+rd4uYsHDkG5Wlfj185Ql7hy16+CHowXUCo6fjk=",
+                "SST_KEY_FILE": "resource.enc",
+                "BUCKET_NAME": "aciujums-production-aciujumsnextjsassetsbucket-nmxsswzo"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "b8e3e643-8b0c-4e8d-9582-ddca814b9576",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "arm64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:2e3f7cf349db89189069e40578cf0238792926a80ade780bf28d6f495a74047b"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/aciujum-production-AciujumsnextjsImageOptimizerFunction-baszshhr"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-iad-c1-djusa-tasks.s3.us-east-1.amazonaws.com/snapshots/876391798236/aciujum-production-AciujumsnextjsImageOptimizerFunction-wzvmhmar-a5def777-e91d-440d-9655-2b6a4b73adcb?versionId=PbZyCvlZ3znV_GDdOHaF1QEQLP1C2.A7&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCICg4oQkM0GbEw4zx%2Bfhk8fp9zVV2OOn9eevwYRGqdhQlAiEAnPrI4Nw6NAdTruqXT1JAOiaf9kSUHdmr2AZkoWb49fEqiwIIUhAEGgw0NzkyMzMwMjUzNzkiDP4P4LMJm6wi%2BRZ3PCroAWP1Hg%2FLPBEQIL3H5TpRmm25DWGSBcor90QfkxPi5dAc8K8gTJbQk8idOxlUpBazBpjUv%2FGsLaaBsqYAm%2FyZ%2BW3d8d7L72itfvnoMryBjXv1fP3le1u%2BYSy4D%2BSisgGlM3GmtJcIGRk1J1jjlQdP19YGUNw7IFSpJ1tOjrVsPZBiON%2Fy9jAuFlz4upM0mcDAvzwIlYn7rEDNiy8RNmMYoW1ahW8SNh4Qu6i5mErQh6%2Fzh6sIN418p2mWjESuyCzoMmKmy1TrgrVe4grcBnE9XEVw%2FM9vhG6QJLBYfONuSxfByhn%2B1IX05icwlcSzzgY6jQHo%2BSnDJV1jUR7ymenkpxEbqm1bq8FWS7M%2B5cocorI9g1Vgpur9aboItCcZGVsi4JqjkVNYS1eFmlQnu9sVUxk9kokQXY2kmb3fvQthmLjlUsatiVo7Q9Dj0LCO0pbZk8Gy3pnPOzDo%2BxN6BBjokx67idkLJhKAbG9siMugKOzPXVF6y2x0DOHPQLg%2FEeY%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T131138Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAW7FEDUVR74B6YQP2%2F20260401%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a56957090c20dfc1e29d9ed6f4d73f8619daef3b0059250c7c56ab3d013a0580"
+    },
+    "Tags": {
+        "sst:app": "aciujums",
+        "sst:stage": "production"
+    }
+}
