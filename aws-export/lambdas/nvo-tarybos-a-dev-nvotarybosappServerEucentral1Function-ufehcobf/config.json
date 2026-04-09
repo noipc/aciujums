@@ -1,0 +1,52 @@
+{
+    "FunctionName": "nvo-tarybos-a-dev-nvotarybosappServerEucentral1Function-ufehcobf",
+    "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-a-dev-nvotarybosappServerEucentral1Function-ufehcobf",
+    "Runtime": "nodejs20.x",
+    "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-dev-nvotarybosappServerEucentral1Role-nmttknch",
+    "Handler": "server-index.handler",
+    "CodeSize": 4529811,
+    "Description": "nvo_tarybos_app server",
+    "Timeout": 20,
+    "MemorySize": 1024,
+    "LastModified": "2026-02-04T19:31:24.000+0000",
+    "CodeSha256": "3YxlXlxBc6SwdqjLFDPDwn7lwDkHB7zvDuSW0NaQeW8=",
+    "Version": "$LATEST",
+    "Environment": {
+        "Variables": {
+            "CACHE_BUCKET_KEY_PREFIX": "_cache",
+            "CACHE_BUCKET_NAME": "nvo-tarybos-app-dev-nvotarybosappassetsbucket-rzohscke",
+            "REVALIDATION_QUEUE_REGION": "eu-central-1",
+            "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"dev\"}",
+            "SST_KEY": "fAIm9rdQWuiqo7Ne0xGpWAEXQtdsJzu3/5AuJ1vqQg4=",
+            "REVALIDATION_QUEUE_URL": "https://sqs.eu-central-1.amazonaws.com/876391798236/nvo-tarybos-app-dev-nvotarybosappRevalidationEventsQueue-wmsdmawh.fifo",
+            "SST_KEY_FILE": "resource.enc",
+            "CACHE_DYNAMO_TABLE": "nvo-tarybos-app-dev-nvotarybosappRevalidationTable-mhwuvwbo",
+            "CACHE_BUCKET_REGION": "eu-central-1",
+            "NEXT_PUBLIC_API_URL": "https://eq3z0i2gyj.execute-api.eu-central-1.amazonaws.com"
+        }
+    },
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "c43e496d-f45a-40ea-8007-4e2d43640cb5",
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Zip",
+    "Architectures": [
+        "x86_64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "RuntimeVersionConfig": {
+        "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:2d788b26ac416854c5eb831c9f46cb2e0a0ddcee84b1a9b114acbdfdb644c8c1"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/nvo-tarybos-a-dev-nvotarybosappServerEucentral1Function-tdxsabsc"
+    }
+}

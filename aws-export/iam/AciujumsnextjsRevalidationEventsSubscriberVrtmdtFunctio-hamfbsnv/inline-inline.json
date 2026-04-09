@@ -1,0 +1,31 @@
+{
+    "RoleName": "AciujumsnextjsRevalidationEventsSubscriberVrtmdtFunctio-hamfbsnv",
+    "PolicyName": "inline",
+    "PolicyDocument": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Action": [
+                    "sqs:ReceiveMessage",
+                    "sqs:GetQueueUrl",
+                    "sqs:GetQueueAttributes",
+                    "sqs:DeleteMessage",
+                    "sqs:ChangeMessageVisibility"
+                ],
+                "Effect": "Allow",
+                "Resource": "arn:aws:sqs:eu-central-1:876391798236:aciujums-production-AciujumsnextjsRevalidationEventsQueue-bbccbcot.fifo"
+            },
+            {
+                "Action": [
+                    "sqs:ReceiveMessage",
+                    "sqs:GetQueueUrl",
+                    "sqs:GetQueueAttributes",
+                    "sqs:DeleteMessage",
+                    "sqs:ChangeMessageVisibility"
+                ],
+                "Effect": "Allow",
+                "Resource": "arn:aws:sqs:eu-central-1:876391798236:aciujums-production-AciujumsnextjsRevalidationEventsQueue-bbccbcot.fifo"
+            }
+        ]
+    }
+}

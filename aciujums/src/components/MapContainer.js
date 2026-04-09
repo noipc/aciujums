@@ -1,7 +1,6 @@
 "use client";
 import { useEffect } from "react";
 import Link from 'next/link';
-import { getIndexDataByYear } from "@/lib/indexedDB";
 
 export default function MapContainer({ onRegionHover, onRegionLeave, data }) {
 
@@ -179,15 +178,6 @@ export default function MapContainer({ onRegionHover, onRegionLeave, data }) {
                     );
                 })}
             </svg>
-            <div>
-                <ul className="d-flex m-auto flex-row alin-items-centre">
-                    <li><span className="legend-dot ml-2 amount-range-1"></span><span className="d-inline-block ml-1">&lt;</span> 50 000</li>
-                    <li><span className="legend-dot ml-2 amount-range-2"></span><span className="d-inline-block ml-1">&lt;</span> 100 000</li>
-                    <li><span className="legend-dot ml-2 amount-range-3"></span><span className="d-inline-block ml-1">&lt;</span> 200 000</li>
-                    <li><span className="legend-dot ml-2 amount-range-4"></span><span className="d-inline-block ml-1">&lt;</span> 500 000</li>
-                    <li><span className="legend-dot ml-2 amount-range-5"></span><span className="d-inline-block ml-1">&gt;</span> 500 000</li>
-                </ul>
-            </div>
         </div>
     );
 }

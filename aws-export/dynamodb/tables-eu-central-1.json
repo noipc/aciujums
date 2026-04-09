@@ -1,0 +1,15 @@
+{
+    "TableNames": [
+        "aciujums-dev-AciujumsnextjsRevalidationTable-srhshveo",
+        "aciujums-production-AciujumsnextjsRevalidationTable-sbhoofto",
+        "aciujums_entities",
+        "aciujums_finances",
+        "aciujums_logs",
+        "aciujums_search",
+        "aciujums_summary",
+        "nvo-tarybos-app-dev-nvomunicipalitiesTable-bcuwfazd",
+        "nvo-tarybos-app-dev-nvotarybosappRevalidationTable-mhwuvwbo",
+        "nvo-tarybos-app-vscode-nvomunicipalitiesTable-znudotbs",
+        "nvo-tarybos-app-vscode-nvotarybosappRevalidationTable-kroctscu"
+    ]
+}

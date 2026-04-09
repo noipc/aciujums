@@ -1,0 +1,3 @@
+name: aciujums
+runtime: nodejs
+main: /workspaces/aciujums/aciujums/.sst/platform/sst.config.1743966473844.mjs

@@ -6,23 +6,25 @@
         "build": "next build",
         "dev": "next dev",
         "lint": "next lint",
-        "start": "next start"
+        "start": "next start",
+        "sst:dev": "sst dev --stage dev"
     },
     "dependencies": {
-        "axios": "^1.8.4",
         "chart.js": "^4.5.0",
         "idb": "7.1.1",
-        "next": "15.2.3",
+        "next": "16.2.2",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
         "sst": "3.10.11"
     },
     "devDependencies": {
         "@eslint/eslintrc": "^3",
+        "autoprefixer": "^10.4.21",
         "aws-cdk-lib": "2.142.1",
         "constructs": "10.3.0",
         "eslint": "^9",
-        "eslint-config-next": "15.2.3",
-        "sst": "^3.10.11"
+        "eslint-config-next": "16.2.2",
+        "sst": "^3.10.11",
+        "tailwindcss": "^3.4.17"
     }
 }

@@ -1,0 +1,4 @@
+{
+    "Policy": "{\"Version\":\"2012-10-17\",\"Id\":\"default\",\"Statement\":[{\"Sid\":\"lambda-bb8ae291-3d52-4165-b58a-0ea0b9e399f5\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"s3.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:eu-central-1:876391798236:function:check_vmi_file_date\",\"Condition\":{\"StringEquals\":{\"AWS:SourceAccount\":\"876391798236\"},\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:s3:::nipc-dl-raw\"}}}]}",
+    "RevisionId": "b226bacc-c69c-4cec-9866-7ad451045155"
+}

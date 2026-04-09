@@ -1,0 +1,3 @@
+{
+    "Policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"cloudfront.amazonaws.com\"},\"Action\":\"s3:GetObject\",\"Resource\":\"arn:aws:s3:::nvo-tarybos-app-vscode-nvotarybosappassetsbucket-cvocewsb/*\"},{\"Effect\":\"Deny\",\"Principal\":\"*\",\"Action\":\"s3:*\",\"Resource\":[\"arn:aws:s3:::nvo-tarybos-app-vscode-nvotarybosappassetsbucket-cvocewsb/*\",\"arn:aws:s3:::nvo-tarybos-app-vscode-nvotarybosappassetsbucket-cvocewsb\"],\"Condition\":{\"Bool\":{\"aws:SecureTransport\":\"false\"}}}]}"
+}

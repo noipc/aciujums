@@ -1,0 +1,55 @@
+{
+    "Configuration": {
+        "FunctionName": "aciujums-vscode-AciujumsnextjsDevServerFunction-rnehzfbu",
+        "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:aciujums-vscode-AciujumsnextjsDevServerFunction-rnehzfbu",
+        "Runtime": "nodejs20.x",
+        "Role": "arn:aws:iam::876391798236:role/aciujums-vscode-AciujumsnextjsDevServerRole-moeerscb",
+        "Handler": "index.handler",
+        "CodeSize": 391,
+        "Description": "Aciujums-nextjs dev server",
+        "Timeout": 20,
+        "MemorySize": 128,
+        "LastModified": "2026-04-01T01:52:36.065+0000",
+        "CodeSha256": "2zwydnWV1SiXrsSTzdOXyOdjnFtGxk/Te0uVC8ZAdIg=",
+        "Version": "$LATEST",
+        "Environment": {
+            "Variables": {
+                "SST_RESOURCE_App": "{\"name\":\"aciujums\",\"stage\":\"vscode\"}",
+                "SST_KEY": "9inU7eJztTkqfUpRt1Sp44wBTLSUa34WfPRoHbaHi4E=",
+                "SST_KEY_FILE": "resource.enc"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "4fb8e57a-d9c6-4e5d-9b96-8bafec7b4d16",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:2d788b26ac416854c5eb831c9f46cb2e0a0ddcee84b1a9b114acbdfdb644c8c1"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/aciujums-vscode-AciujumsnextjsDevServerFunction-fuvkcken"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/876391798236/aciujums-vscode-AciujumsnextjsDevServerFunction-rnehzfbu-50502045-d883-461e-b0e6-633137ddca8e?versionId=Rh0gPLAOgqzvCmMwYTOJMUclGvubi5.E&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJHMEUCIECd%2FIih3snmAqfluD1nCdBrIUvMzsQ1aFMSdXAi1H5XAiEA7ltLB6mkSnaM0Y7jYwqKPyzwWETHuvkTdLhpFJT%2BpcYqiwIIVhADGgw2ODA2ODY1NTk0MzQiDG4qe1JcuXv2Xii15yroAQYys1p4Y8fF5PTWiwNnc3zqVTVy58emuTFYeyCRD%2BeXiQQS%2Bzqx%2BVVkFNaPBq%2Bqs8NpO3lanv06vcXEoute2sfTSu77DDRgX%2BDiSkxWaQcuo2b9fT9TBHf4r%2FxW27vBgTnX0%2FRtk7aRrQOcRWhMdnKSFhGmGO1%2FwLS7h%2BI64y2tx9J3R4drxOb%2BDoLQBCj61bHYWnQi4tb1RYUEs33hcSh8DY6VcRGFnBFMVwnijj8TGAAXMbl%2FVkT03Fl0smtTXWZjnYOnbUm%2Fbol1PHPf4zzP4lwRWS41LA3F2fg9qrXu9nynrk7fFsgwx6q0zgY6jQGGB%2BVwejTjJrYCeb2pFVcnwE9r7HNYReg4GjjmBKCQMhMpjXSpJppXo%2B8PXTcCN13ryxPuCeWV59%2Br37EANtrj3h6bS9F%2BnUqG6t8Jrhak2LXuVAorWsoe3fPRAB9x6FkPd6Lk02USyLFIvG3US9Yu%2FDLV6G5yNyrwgxrMuZ8f9DytObd0XRuNiVt09S8%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T143104Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZ47AUUDFAKSESVAD%2F20260401%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=b3d6f1d595a7db372f56691c2bf189205fee4e87a9742a2d6fa35650e3b90e5f"
+    },
+    "Tags": {
+        "sst:app": "aciujums",
+        "sst:stage": "vscode"
+    }
+}

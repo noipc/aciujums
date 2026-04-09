@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.nvotarybos.lt)",
+      "Bash(docker exec:*)",
+      "Read(//Users/aboka/Development/ngo_tarybos/**)",
+      "Read(//Users/aboka/Development/**)",
+      "Bash(find /Users/aboka/Development/ngo_tarybos -name layout*)",
+      "Bash(find /Users/aboka/Development/ngo_tarybos -name page*)",
+      "Bash(find /Users/aboka/Development/aciujums/aciujums/.next/static -name *.css)",
+      "Bash(xargs ls:*)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); pages=d.get\\(''''pages'''',{}\\); [print\\(k, sum\\(len\\(v\\) for v in vals\\) if isinstance\\(vals,list\\) else 0\\) for k,vals in pages.items\\(\\)]\")",
+      "Bash(grep -rn \"fillMunicipalityDataAtHome\\\\|useEntityData\\\\|municipalityMap\" /Users/aboka/Development/aciujums/aciujums/src/ --include=*.js)",
+      "Bash(cat /Users/aboka/Development/aciujums/aciujums/src/app/organizacijos/[legal_id]/page.js)",
+      "Bash(ls:*)",
+      "Bash(find /Users/aboka/Development/aciujums -maxdepth 1 -name *.py -o -name *.ipynb)",
+      "Bash(find /Users/aboka/Development/ngo_tarybos -maxdepth 2 -name functions -o -name *.py -type f)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:api.github.com)"
+    ]
+  }
+}

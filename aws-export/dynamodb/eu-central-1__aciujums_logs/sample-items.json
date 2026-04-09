@@ -1,0 +1,18 @@
+{
+    "Items": [
+        {
+            "filename": {
+                "S": "vmi/paramos_apskaiciavimo_statistika/year=2025/month=07/paramos_statistika.xlsx"
+            },
+            "batch_id": {
+                "S": "last_processed_date"
+            },
+            "last_processed_date": {
+                "S": "2025-07-02"
+            }
+        }
+    ],
+    "Count": 1,
+    "ScannedCount": 1,
+    "ConsumedCapacity": null
+}

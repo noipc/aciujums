@@ -1,0 +1,31 @@
+{
+    "Items": [
+        {
+            "ConnectionType": "INTERNET",
+            "IntegrationId": "gbs232g",
+            "IntegrationMethod": "POST",
+            "IntegrationType": "AWS_PROXY",
+            "IntegrationUri": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-app-vscode-getmetadataFunction-rrdvczdv",
+            "PayloadFormatVersion": "2.0",
+            "TimeoutInMillis": 30000
+        },
+        {
+            "ConnectionType": "INTERNET",
+            "IntegrationId": "ni4x7u3",
+            "IntegrationMethod": "POST",
+            "IntegrationType": "AWS_PROXY",
+            "IntegrationUri": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-a-vscode-getallmunicipalitiesbyyearFunction-kxksssba",
+            "PayloadFormatVersion": "2.0",
+            "TimeoutInMillis": 30000
+        },
+        {
+            "ConnectionType": "INTERNET",
+            "IntegrationId": "z2x1jgu",
+            "IntegrationMethod": "POST",
+            "IntegrationType": "AWS_PROXY",
+            "IntegrationUri": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-app-vscode-getallyearsFunction-zkmseoxn",
+            "PayloadFormatVersion": "2.0",
+            "TimeoutInMillis": 30000
+        }
+    ]
+}

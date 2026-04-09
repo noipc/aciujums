@@ -1,0 +1,4 @@
+{
+    "Policy": "{\"Version\":\"2012-10-17\",\"Id\":\"default\",\"Statement\":[{\"Sid\":\"lambda-b9d0f9b1-870e-4058-8aea-ef7e3eea99e2\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"s3.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:eu-central-1:876391798236:function:check_csv_structure\",\"Condition\":{\"StringEquals\":{\"AWS:SourceAccount\":\"876391798236\"},\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:s3:::nipc-dl-raw\"}}}]}",
+    "RevisionId": "86eb0a6e-593a-47a9-80af-cd3421e87cd6"
+}

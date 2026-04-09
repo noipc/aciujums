@@ -1,0 +1,89 @@
+{
+    "Table": {
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "legal_id",
+                "AttributeType": "N"
+            },
+            {
+                "AttributeName": "municipality",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "municipality_year",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "year",
+                "AttributeType": "N"
+            }
+        ],
+        "TableName": "aciujums_finances",
+        "KeySchema": [
+            {
+                "AttributeName": "legal_id",
+                "KeyType": "HASH"
+            },
+            {
+                "AttributeName": "municipality_year",
+                "KeyType": "RANGE"
+            }
+        ],
+        "TableStatus": "ACTIVE",
+        "CreationDateTime": "2025-03-21T21:19:53.812000+00:00",
+        "ProvisionedThroughput": {
+            "NumberOfDecreasesToday": 0,
+            "ReadCapacityUnits": 0,
+            "WriteCapacityUnits": 0
+        },
+        "TableSizeBytes": 33650227,
+        "ItemCount": 162614,
+        "TableArn": "arn:aws:dynamodb:eu-central-1:876391798236:table/aciujums_finances",
+        "TableId": "71811467-f30e-47f4-a657-2551cc0ccc15",
+        "BillingModeSummary": {
+            "BillingMode": "PAY_PER_REQUEST",
+            "LastUpdateToPayPerRequestDateTime": "2025-03-21T21:19:53.812000+00:00"
+        },
+        "GlobalSecondaryIndexes": [
+            {
+                "IndexName": "municipality-year-index",
+                "KeySchema": [
+                    {
+                        "AttributeName": "municipality",
+                        "KeyType": "HASH"
+                    },
+                    {
+                        "AttributeName": "year",
+                        "KeyType": "RANGE"
+                    }
+                ],
+                "Projection": {
+                    "ProjectionType": "ALL"
+                },
+                "IndexStatus": "ACTIVE",
+                "ProvisionedThroughput": {
+                    "NumberOfDecreasesToday": 0,
+                    "ReadCapacityUnits": 0,
+                    "WriteCapacityUnits": 0
+                },
+                "IndexSizeBytes": 33650227,
+                "ItemCount": 162614,
+                "IndexArn": "arn:aws:dynamodb:eu-central-1:876391798236:table/aciujums_finances/index/municipality-year-index",
+                "WarmThroughput": {
+                    "ReadUnitsPerSecond": 12000,
+                    "WriteUnitsPerSecond": 4000,
+                    "Status": "ACTIVE"
+                }
+            }
+        ],
+        "TableClassSummary": {
+            "TableClass": "STANDARD"
+        },
+        "DeletionProtectionEnabled": false,
+        "WarmThroughput": {
+            "ReadUnitsPerSecond": 12000,
+            "WriteUnitsPerSecond": 4000,
+            "Status": "ACTIVE"
+        }
+    }
+}

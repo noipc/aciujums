@@ -1,0 +1,27 @@
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "SSTBootstrap-CustomS3AutoDeleteObjectsCustomResourc-zOpvCElX2Cgu",
+        "RoleId": "AROA4YDIFSXOIZQQ6FG6O",
+        "Arn": "arn:aws:iam::876391798236:role/SSTBootstrap-CustomS3AutoDeleteObjectsCustomResourc-zOpvCElX2Cgu",
+        "CreateDate": "2025-12-17T00:38:16+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "lambda.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        },
+        "Description": "",
+        "MaxSessionDuration": 3600,
+        "RoleLastUsed": {
+            "LastUsedDate": "2025-12-17T00:38:52+00:00",
+            "Region": "eu-central-1"
+        }
+    }
+}

@@ -1,0 +1,3 @@
+{
+    "Policy": "{\"Version\":\"2012-10-17\",\"Id\":\"AccessControl\",\"Statement\":[{\"Sid\":\"AllowSSLRequestsOnly\",\"Effect\":\"Deny\",\"Principal\":\"*\",\"Action\":\"s3:*\",\"Resource\":[\"arn:aws:s3:::cdk-hnb659fds-assets-876391798236-eu-central-1\",\"arn:aws:s3:::cdk-hnb659fds-assets-876391798236-eu-central-1/*\"],\"Condition\":{\"Bool\":{\"aws:SecureTransport\":\"false\"}}}]}"
+}

@@ -1,0 +1,46 @@
+{
+    "FunctionName": "nvo-tarybos-app-vscode-getallyearsFunction-zkmseoxn",
+    "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-app-vscode-getallyearsFunction-zkmseoxn",
+    "Runtime": "nodejs20.x",
+    "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-vscode-getallyearsRole-ofaakezv",
+    "Handler": "bundle.handler",
+    "CodeSize": 200027,
+    "Description": "",
+    "Timeout": 20,
+    "MemorySize": 1024,
+    "LastModified": "2026-02-04T19:12:12.000+0000",
+    "CodeSha256": "bjB2wSJaGt4dhZfIcEogLF/Bid6xLkJOEdZkld+6Hwo=",
+    "Version": "$LATEST",
+    "Environment": {
+        "Variables": {
+            "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"vscode\"}",
+            "SST_KEY": "7Mz0S2JRvS+/lw22gBtuTATxtSpGfwP9pnXdXu661rU=",
+            "PROJECT_ROOT": "/workspaces/ngo_tarybos",
+            "SST_KEY_FILE": "resource.enc"
+        }
+    },
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "d42cce11-b76c-48db-bb10-7805a3a5aef5",
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Zip",
+    "Architectures": [
+        "arm64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "RuntimeVersionConfig": {
+        "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:2e3f7cf349db89189069e40578cf0238792926a80ade780bf28d6f495a74047b"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/nvo-tarybos-app-vscode-getallyearsFunction-bdbvowcm"
+    }
+}

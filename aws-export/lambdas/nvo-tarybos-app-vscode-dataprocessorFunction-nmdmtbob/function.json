@@ -1,0 +1,63 @@
+{
+    "Configuration": {
+        "FunctionName": "nvo-tarybos-app-vscode-dataprocessorFunction-nmdmtbob",
+        "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-app-vscode-dataprocessorFunction-nmdmtbob",
+        "Runtime": "python3.12",
+        "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-vscode-dataprocessorRole-ecbhxmdd",
+        "Handler": "functions/processor.handler",
+        "CodeSize": 15637972,
+        "Description": "",
+        "Timeout": 300,
+        "MemorySize": 1024,
+        "LastModified": "2026-02-04T19:58:29.000+0000",
+        "CodeSha256": "n87k3XM0K836Gc/s2a3CsS8wArFOZod0Xc1r9uupZxc=",
+        "Version": "$LATEST",
+        "Environment": {
+            "Variables": {
+                "MY_BUCKET_NAME": "nvo-tarybos-app-vscode-nvotarybosbucketbucket-bmdotwes",
+                "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"vscode\"}",
+                "SST_KEY": "7Mz0S2JRvS+/lw22gBtuTATxtSpGfwP9pnXdXu661rU=",
+                "MY_TABLE_NAME": "nvo-tarybos-app-vscode-nvomunicipalitiesTable-znudotbs",
+                "SST_KEY_FILE": "resource.enc"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "621109de-2e4d-44b8-9215-4d0b1abc9442",
+        "Layers": [
+            {
+                "Arn": "arn:aws:lambda:eu-central-1:336392948345:layer:AWSSDKPandas-Python312-Arm64:3",
+                "CodeSize": 47270840
+            }
+        ],
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "arm64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:070808e288c19fc17f7c6fcf8b79bc4ff20620a5a6ad6665568e7fcb9d766964"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/nvo-tarybos-app-vscode-dataprocessorFunction-wdcmsuos"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/876391798236/nvo-tarybos-app-vscode-dataprocessorFunction-nmdmtbob-f03878d9-3988-45fd-af37-a697bf60d8f4?versionId=FbjcL1FJFCVRVtSc3YUO2Gfif_.L0Slu&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJIMEYCIQDHU5HHZ3caAF4Ek7EL5BETpMKhlbHCdeUxMdkL5UOQGgIhALvgVrkRAGmdHylKY1r5TjbbY4uKSl88X1Sqs0qZ9KskKosCCEsQAxoMNjgwNjg2NTU5NDM0Igwk3hLDf8qh0I3zmw8q6AHEYh8IMYIxsJWJVIr7SbjdB2uP%2BJN6i9wPmA0omVS%2B0YGHXuQ7f4WDOtBQhVYo198kqCRp%2Fo0fSXVJ7SsYKgStGwQmQ%2BTxlZIkp8%2F0nG7m%2B%2BkmDum3jbxVnfWKDkPoz2LHST9sYk%2Fy01FoWiaZ4tU%2B5MhbnFTqlxACrd4khhDNjXfVbg1zPs2BdWYGgupnRJwpKcstblnJE%2FnSiuehRfcJDqD3ZW6i5H9UCNNtYc995cIT9%2BSA6IHo6%2BQfDBMKx9HSkavFESzKXPl4pwi%2FlIbTA%2BwB17R7g3ySpLG41S4CxYaFnz7URQmOMKnysc4GOowBWj2cfyyoicnSHnVQnSpmXNom7xxNhUXUutLl3JKRTVZ7RwqdVv2tQzMlxVCNZ7BIwR5NcoPeXDjko4kLl8f9E4NvX1E2Bb%2FcF5uw8iJUJDxzqx0gxRtZjIy%2BX9dN4Y9qoK6Exi1v%2FBs8UPfyDs6Soc%2FD4nwsKpXAuxNYfZfTveJaC5YP%2B10GMmhrGbA%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T125404Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZ47AUUDFFAMDEJEC%2F20260401%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=d8145cab62a458c8eeae4df8efbc27009a0bfa789cf22b763e95b4e302908cc5"
+    },
+    "Tags": {
+        "sst:app": "nvo-tarybos-app",
+        "sst:stage": "vscode"
+    }
+}

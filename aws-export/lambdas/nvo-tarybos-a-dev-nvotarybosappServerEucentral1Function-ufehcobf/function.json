@@ -1,0 +1,62 @@
+{
+    "Configuration": {
+        "FunctionName": "nvo-tarybos-a-dev-nvotarybosappServerEucentral1Function-ufehcobf",
+        "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-a-dev-nvotarybosappServerEucentral1Function-ufehcobf",
+        "Runtime": "nodejs20.x",
+        "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-dev-nvotarybosappServerEucentral1Role-nmttknch",
+        "Handler": "server-index.handler",
+        "CodeSize": 4529811,
+        "Description": "nvo_tarybos_app server",
+        "Timeout": 20,
+        "MemorySize": 1024,
+        "LastModified": "2026-02-04T19:31:24.000+0000",
+        "CodeSha256": "3YxlXlxBc6SwdqjLFDPDwn7lwDkHB7zvDuSW0NaQeW8=",
+        "Version": "$LATEST",
+        "Environment": {
+            "Variables": {
+                "CACHE_BUCKET_KEY_PREFIX": "_cache",
+                "CACHE_BUCKET_NAME": "nvo-tarybos-app-dev-nvotarybosappassetsbucket-rzohscke",
+                "REVALIDATION_QUEUE_REGION": "eu-central-1",
+                "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"dev\"}",
+                "SST_KEY": "fAIm9rdQWuiqo7Ne0xGpWAEXQtdsJzu3/5AuJ1vqQg4=",
+                "REVALIDATION_QUEUE_URL": "https://sqs.eu-central-1.amazonaws.com/876391798236/nvo-tarybos-app-dev-nvotarybosappRevalidationEventsQueue-wmsdmawh.fifo",
+                "SST_KEY_FILE": "resource.enc",
+                "CACHE_DYNAMO_TABLE": "nvo-tarybos-app-dev-nvotarybosappRevalidationTable-mhwuvwbo",
+                "CACHE_BUCKET_REGION": "eu-central-1",
+                "NEXT_PUBLIC_API_URL": "https://eq3z0i2gyj.execute-api.eu-central-1.amazonaws.com"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "c43e496d-f45a-40ea-8007-4e2d43640cb5",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:2d788b26ac416854c5eb831c9f46cb2e0a0ddcee84b1a9b114acbdfdb644c8c1"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/nvo-tarybos-a-dev-nvotarybosappServerEucentral1Function-tdxsabsc"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/876391798236/nvo-tarybos-a-dev-nvotarybosappServerEucentral1Function-ufehcobf-419b99f5-b6a1-4b31-bfee-a39a8948298d?versionId=FadpHfon3.1fLI16zeEEjvvIT1pvPDni&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJHMEUCIHQTeiNQVSnhdNBPT9rVqvev7knQvmNURSESz1Irqn0CAiEA6NmmFRZQ3XMMrDMbUhuawKDuxc8w5tYnHeNGYurJ9uYqiwIIURADGgw2ODA2ODY1NTk0MzQiDL7NoGEqXIz3eKaj3SroAQC3hFRH3RDC%2FNwdCwwz4xNDJA9IPBlKYFu1Nsl4OBROZYs%2BnohFp%2BGdMp9uGRAlCC2NPEd9XQCbl%2BLdYSlDr2vKGVqsI%2Btrs31Jib1xi9aEWpRo5hEXhVsN7sJIJ5Rz4dWZOVntT%2Fm0zlT9cbZW0l8Q%2BcPmETrHC8v%2BHjelCS8F7gFz2VII9DvB0LK8Oaa%2FQDtgjQqkhFtENU5H7x8NA20MTSW4xZEBj%2Fg4EMdBbZJRWDZeXGyGcr4jfQMZpe9294KAHNo8l6yy%2FhREn1OoMq43Rgfq%2FmmvygHUIqGVuBybn%2FZVhhuYwncwgJqzzgY6jQHcsd1y0Ee9CkaqKtcy3GQl4Hd7AwNsuvPkQEViztJcWe4hIWImIQnha923HI65c%2FSxi6k7C32JqiS5jrM2UjzcE8sk%2Bq2ZWXxWxZUjNT20%2F7NARZDDBlCgpI81pgUWmwnMI1IDPRyfVc%2FbD3fUKqdW%2FL4%2F14yFHWd0kFqhzJMHF6uZRzAbYAGqZ2FpDC8%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T130253Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZ47AUUDFIAR5LQYQ%2F20260401%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=d96707df6a0729161d461e93ede3c548c7516aa42abee072e29ba26c5ce6ccd1"
+    },
+    "Tags": {
+        "sst:app": "nvo-tarybos-app",
+        "sst:stage": "dev"
+    }
+}

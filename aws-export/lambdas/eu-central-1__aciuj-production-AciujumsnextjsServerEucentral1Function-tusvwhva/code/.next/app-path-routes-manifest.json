@@ -1,0 +1,12 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/apie-mus/page": "/apie-mus",
+  "/naujienos/page": "/naujienos",
+  "/organizacijos/[legal_id]/page": "/organizacijos/[legal_id]",
+  "/paieska/page": "/paieska",
+  "/page": "/",
+  "/savivaldybes/[municipality]/page": "/savivaldybes/[municipality]",
+  "/naujienos/[slug]/page": "/naujienos/[slug]",
+  "/naudinga-informacija/page": "/naudinga-informacija"
+}

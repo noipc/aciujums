@@ -1,0 +1,4 @@
+{
+    "Policy": "{\"Version\":\"2012-10-17\",\"Id\":\"default\",\"Statement\":[{\"Sid\":\"lambda-4847f734-b8ea-4d8b-b629-ad7dda78f95f\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"events.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:eu-central-1:876391798236:function:ikelti_registru_centro_jar_nepateikusiu_fa_duomenis\",\"Condition\":{\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:events:eu-central-1:876391798236:rule/monthly-trigger\"}}}]}",
+    "RevisionId": "1b95c15a-cc46-4843-8bfd-5ae180609c71"
+}

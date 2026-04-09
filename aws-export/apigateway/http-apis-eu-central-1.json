@@ -1,0 +1,91 @@
+{
+    "Items": [
+        {
+            "ApiEndpoint": "https://eq3z0i2gyj.execute-api.eu-central-1.amazonaws.com",
+            "ApiId": "eq3z0i2gyj",
+            "ApiKeySelectionExpression": "$request.header.x-api-key",
+            "CorsConfiguration": {
+                "AllowCredentials": false,
+                "AllowHeaders": [
+                    "*"
+                ],
+                "AllowMethods": [
+                    "*"
+                ],
+                "AllowOrigins": [
+                    "http://localhost:3000",
+                    "https://d1xyk2ow2a2k9r.cloudfront.net"
+                ],
+                "MaxAge": 0
+            },
+            "CreatedDate": "2025-12-26T00:22:18+00:00",
+            "DisableExecuteApiEndpoint": false,
+            "Name": "nvo-tarybos-app-dev-nvotarybosapiApi-dbdswatb",
+            "ProtocolType": "HTTP",
+            "RouteSelectionExpression": "$request.method $request.path",
+            "Tags": {
+                "sst:app": "nvo-tarybos-app",
+                "sst:stage": "dev"
+            }
+        },
+        {
+            "ApiEndpoint": "https://n3d9c9bf6a.execute-api.eu-central-1.amazonaws.com",
+            "ApiId": "n3d9c9bf6a",
+            "ApiKeySelectionExpression": "$request.header.x-api-key",
+            "CorsConfiguration": {
+                "AllowCredentials": false,
+                "AllowHeaders": [
+                    "*"
+                ],
+                "AllowMethods": [
+                    "*"
+                ],
+                "AllowOrigins": [
+                    "https://d100ej60if4b1z.cloudfront.net",
+                    "http://localhost:3000",
+                    "https://d1xyk2ow2a2k9r.cloudfront.net",
+                    "https://d3cvwoan3n3jjk.cloudfront.net"
+                ],
+                "MaxAge": 0
+            },
+            "CreatedDate": "2025-12-25T19:53:04+00:00",
+            "DisableExecuteApiEndpoint": false,
+            "Name": "nvo-tarybos-app-vscode-nvotarybosapiApi-bduwwthb",
+            "ProtocolType": "HTTP",
+            "RouteSelectionExpression": "$request.method $request.path",
+            "Tags": {
+                "sst:app": "nvo-tarybos-app",
+                "sst:stage": "vscode"
+            }
+        },
+        {
+            "ApiEndpoint": "https://uv6lt2g8i3.execute-api.eu-central-1.amazonaws.com",
+            "ApiId": "uv6lt2g8i3",
+            "ApiKeySelectionExpression": "$request.header.x-api-key",
+            "CorsConfiguration": {
+                "AllowCredentials": false,
+                "AllowHeaders": [
+                    "content-type"
+                ],
+                "AllowMethods": [
+                    "GET"
+                ],
+                "AllowOrigins": [
+                    "http://localhost:3000",
+                    "https://dlgr2jfr3aoxh.cloudfront.net",
+                    "https://d2y18y8s6kj92t.cloudfront.net",
+                    "https://d3g3cpc6a6lwd.cloudfront.net",
+                    "https://aciujums.lt",
+                    "https://www.aciujums.lt"
+                ],
+                "MaxAge": 0
+            },
+            "CreatedDate": "2023-11-25T23:34:46+00:00",
+            "DisableExecuteApiEndpoint": false,
+            "Name": "aciujums",
+            "ProtocolType": "HTTP",
+            "RouteSelectionExpression": "$request.method $request.path",
+            "Tags": {}
+        }
+    ]
+}

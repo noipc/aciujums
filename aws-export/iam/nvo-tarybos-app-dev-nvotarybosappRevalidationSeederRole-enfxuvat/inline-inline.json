@@ -1,0 +1,18 @@
+{
+    "RoleName": "nvo-tarybos-app-dev-nvotarybosappRevalidationSeederRole-enfxuvat",
+    "PolicyName": "inline",
+    "PolicyDocument": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Action": [
+                    "dynamodb:PutItem",
+                    "dynamodb:DescribeTable",
+                    "dynamodb:BatchWriteItem"
+                ],
+                "Effect": "Allow",
+                "Resource": "arn:aws:dynamodb:eu-central-1:876391798236:table/nvo-tarybos-app-dev-nvotarybosappRevalidationTable-mhwuvwbo"
+            }
+        ]
+    }
+}

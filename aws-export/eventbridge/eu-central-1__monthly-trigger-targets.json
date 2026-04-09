@@ -1,0 +1,24 @@
+{
+    "Targets": [
+        {
+            "Id": "48a1a84n9wpnu4qeds9h",
+            "Arn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_registru_centro_jar_nepateikusiu_fa_duomenis"
+        },
+        {
+            "Id": "5tb8mk2g472zzci6hf0g",
+            "Arn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_registru_centro_paramos_gaveju_duomenis"
+        },
+        {
+            "Id": "763gc4uoi3w0rkgegcuk",
+            "Arn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_registru_centro_ex_jar_duomenis"
+        },
+        {
+            "Id": "gl24frovjtsz4a6ar7n",
+            "Arn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_registru_centro_jar_duomenis"
+        },
+        {
+            "Id": "lph4vxojplk3qb8n8q5o",
+            "Arn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_rgistru_centro_nvo_duomenis"
+        }
+    ]
+}

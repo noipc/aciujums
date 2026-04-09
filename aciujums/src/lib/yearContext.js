@@ -1,6 +1,8 @@
-import { createContext, useState } from 'react';
+import { createContext } from 'react';
 
 export const YearContext = createContext({
     year: null,
-    setYear: () => {}
+    setYear: () => {},
+    data: [],
+    availableYears: [],
 });

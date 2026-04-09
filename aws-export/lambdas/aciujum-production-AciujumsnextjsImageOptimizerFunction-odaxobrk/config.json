@@ -1,0 +1,47 @@
+{
+    "FunctionName": "aciujum-production-AciujumsnextjsImageOptimizerFunction-odaxobrk",
+    "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:aciujum-production-AciujumsnextjsImageOptimizerFunction-odaxobrk",
+    "Runtime": "nodejs20.x",
+    "Role": "arn:aws:iam::876391798236:role/aciujums-production-AciujumsnextjsImageOptimizerRole-zdubazcc",
+    "Handler": "index.handler",
+    "CodeSize": 11576389,
+    "Description": "Aciujums-nextjs image optimizer",
+    "Timeout": 25,
+    "MemorySize": 1536,
+    "LastModified": "2025-06-16T20:47:01.000+0000",
+    "CodeSha256": "8g6WfcaixaZhWy7n+JIV2emkeNT72AH2v0dN0YdLqYw=",
+    "Version": "$LATEST",
+    "Environment": {
+        "Variables": {
+            "SST_RESOURCE_App": "{\"name\":\"aciujums\",\"stage\":\"production\"}",
+            "BUCKET_KEY_PREFIX": "_assets",
+            "SST_KEY": "twstf1laEOpav9oe4FC67sQyB3YJetQXlp2mFtdz2dQ=",
+            "SST_KEY_FILE": "resource.enc",
+            "BUCKET_NAME": "aciujums-production-aciujumsnextjsassetsbucket-sefuvmux"
+        }
+    },
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "cfd4c55f-0804-409c-84b7-c8c781d27bcc",
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Zip",
+    "Architectures": [
+        "arm64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "RuntimeVersionConfig": {
+        "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:2e3f7cf349db89189069e40578cf0238792926a80ade780bf28d6f495a74047b"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/aciujum-production-AciujumsnextjsImageOptimizerFunction-ouowumdx"
+    }
+}

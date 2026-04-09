@@ -1,0 +1,4 @@
+{
+    "Policy": "{\"Version\":\"2012-10-17\",\"Id\":\"default\",\"Statement\":[{\"Sid\":\"SSTBootstrap-MetadataRuleAllowEventRuleSSTBootstrapMetadataHandler013639BCFC7CDC4B-CoFRSVoctTJw\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"events.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:eu-central-1:876391798236:function:SSTBootstrap-MetadataHandlerBEE7179C-vj9EnEQppudW\",\"Condition\":{\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:events:eu-central-1:876391798236:rule/SSTBootstrap-MetadataRule1BDDB4A9-dBq8DSNBtQrr\"}}}]}",
+    "RevisionId": "a4fd6e05-d64d-492e-8224-fcb816677db3"
+}

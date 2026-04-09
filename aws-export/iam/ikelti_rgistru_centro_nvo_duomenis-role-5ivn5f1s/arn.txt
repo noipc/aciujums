@@ -1,0 +1,1 @@
+arn:aws:iam::876391798236:role/service-role/ikelti_rgistru_centro_nvo_duomenis-role-5ivn5f1s

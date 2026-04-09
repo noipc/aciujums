@@ -1,0 +1,4 @@
+{
+    "Policy": "{\"Version\":\"2012-10-17\",\"Id\":\"default\",\"Statement\":[{\"Sid\":\"nvo_tarybos_apiRouteBusoccPermissions-ccdf81d\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"apigateway.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-app-dev-getallyearsFunction-vrswmhur\",\"Condition\":{\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:execute-api:eu-central-1:876391798236:eq3z0i2gyj/*\"}}}]}",
+    "RevisionId": "32471997-68d5-4282-ae8d-fb9fbf495ef5"
+}

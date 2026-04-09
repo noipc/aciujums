@@ -1,0 +1,45 @@
+{
+    "kind": "update",
+    "startTime": 1743966476,
+    "message": "init",
+    "environment": {
+        "exec.kind": "cli",
+        "git.author": "aboka",
+        "git.author.email": "aboka@tabandquill.com",
+        "git.committer": "aboka",
+        "git.committer.email": "aboka@tabandquill.com",
+        "git.dirty": "true",
+        "git.head": "aaf9c43a3513c9267e57d97c23e7cd5bafb3dc81",
+        "git.headName": "refs/heads/main",
+        "pulumi.arch": "amd64",
+        "pulumi.env.PULUMI_BACKEND_URL": "set",
+        "pulumi.env.PULUMI_CONFIG_PASSPHRASE": "set",
+        "pulumi.env.PULUMI_DEBUG_COMMANDS": "true",
+        "pulumi.env.PULUMI_HOME": "set",
+        "pulumi.env.PULUMI_SKIP_UPDATE_CHECK": "true",
+        "pulumi.flag.config": "set",
+        "pulumi.flag.event-log": "set",
+        "pulumi.flag.non-interactive": "true",
+        "pulumi.flag.skip-preview": "true",
+        "pulumi.flag.stack": "set",
+        "pulumi.flag.yes": "true",
+        "pulumi.os": "linux",
+        "pulumi.version": "v3.146.0",
+        "stack.environments": "[]",
+        "updatePlan": "false",
+        "vcs.kind": "github.com",
+        "vcs.owner": "noipc",
+        "vcs.repo": "aciujums",
+        "vcs.root": "aciujums/.sst/pulumi/fe69f37f78551efd5b67cf5b"
+    },
+    "config": {
+        "aws:defaultTags": "{\"tags\":{\"sst:app\":\"aciujums\",\"sst:stage\":\"vscode\"}}",
+        "aws:region": "us-east-1"
+    },
+    "version": 0,
+    "result": "failed",
+    "endTime": 1743966493,
+    "resourceChanges": {
+        "same": 7
+    }
+}

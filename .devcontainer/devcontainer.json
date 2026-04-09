@@ -5,6 +5,7 @@
     },
     "mounts": [
         "type=bind,source=${env:HOME}/.ssh,target=/home/vscode/.ssh,consistency=cached",
-        "type=bind,source=${env:HOME}/.gitconfig,target=/home/vscode/.gitconfig,consistency=cached"
+        "type=bind,source=${env:HOME}/.gitconfig,target=/home/vscode/.gitconfig,consistency=cached",
+        "type=bind,source=${env:HOME}/.aws,target=/home/vscode/.aws,consistency=cached"
     ]
 }

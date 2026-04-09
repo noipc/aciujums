@@ -1,0 +1,9 @@
+{
+    "CommonPrefixes": [
+        {
+            "Prefix": "serverless/"
+        }
+    ],
+    "RequestCharged": null,
+    "Prefix": ""
+}

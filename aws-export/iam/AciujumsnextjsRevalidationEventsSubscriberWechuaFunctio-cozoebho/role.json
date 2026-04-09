@@ -1,0 +1,37 @@
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "AciujumsnextjsRevalidationEventsSubscriberWechuaFunctio-cozoebho",
+        "RoleId": "AROA4YDIFSXOBD6FCPBUR",
+        "Arn": "arn:aws:iam::876391798236:role/AciujumsnextjsRevalidationEventsSubscriberWechuaFunctio-cozoebho",
+        "CreateDate": "2025-03-26T07:27:42+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "lambda.amazonaws.com",
+                        "AWS": "arn:aws:iam::876391798236:root"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        },
+        "MaxSessionDuration": 3600,
+        "Tags": [
+            {
+                "Key": "sst:stage",
+                "Value": "production"
+            },
+            {
+                "Key": "sst:app",
+                "Value": "aciujums"
+            }
+        ],
+        "RoleLastUsed": {
+            "LastUsedDate": "2026-04-01T14:21:38+00:00",
+            "Region": "us-east-1"
+        }
+    }
+}

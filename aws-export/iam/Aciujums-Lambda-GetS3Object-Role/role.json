@@ -1,0 +1,26 @@
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "Aciujums-Lambda-GetS3Object-Role",
+        "RoleId": "AROA4YDIFSXOF5WGSCDH7",
+        "Arn": "arn:aws:iam::876391798236:role/Aciujums-Lambda-GetS3Object-Role",
+        "CreateDate": "2023-11-25T00:15:25+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "lambda.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        },
+        "MaxSessionDuration": 3600,
+        "RoleLastUsed": {
+            "LastUsedDate": "2025-11-30T20:34:38+00:00",
+            "Region": "eu-central-1"
+        }
+    }
+}

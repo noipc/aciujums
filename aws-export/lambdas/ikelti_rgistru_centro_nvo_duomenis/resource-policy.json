@@ -1,0 +1,4 @@
+{
+    "Policy": "{\"Version\":\"2012-10-17\",\"Id\":\"default\",\"Statement\":[{\"Sid\":\"lambda-62d3a139-467b-440e-b3f1-bf702ec1ddfb\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"events.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:eu-central-1:876391798236:function:ikelti_rgistru_centro_nvo_duomenis\",\"Condition\":{\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:events:eu-central-1:876391798236:rule/monthly-trigger\"}}}]}",
+    "RevisionId": "5d4f9009-932b-4c4d-b6d3-3f707071c368"
+}

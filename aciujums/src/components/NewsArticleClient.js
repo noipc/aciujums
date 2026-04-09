@@ -20,8 +20,8 @@ export default function NewsArticleClient({ slug }) {
 
     return (
         <div className="container pt-10">
-            <h1 className="h1 mb-2">{article.title}</h1>
-            <span className="text-muted mb-4 d-block">{article.date}</span>
+            <h1 className="mb-2">{article.title}</h1>
+            <span className="text-gray-500 mb-6 block">{article.date}</span>
             <div
                 className="article-html"
                 dangerouslySetInnerHTML={{ __html: htmlContent }}

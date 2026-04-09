@@ -1,0 +1,16 @@
+{
+    "EventSourceMappings": [
+        {
+            "UUID": "b5b9f432-fc4e-41e4-a89b-e8e5c573d4f4",
+            "BatchSize": 5,
+            "MaximumBatchingWindowInSeconds": 0,
+            "EventSourceArn": "arn:aws:sqs:eu-central-1:876391798236:aciujums-dev-AciujumsnextjsRevalidationEventsQueue-cswoernb.fifo",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:AciujumsnextjsRevalidationEventsSubscriberMsfteeFunctio-sdtmzsbv",
+            "LastModified": "2025-09-09T21:52:42.559000+00:00",
+            "State": "Enabled",
+            "StateTransitionReason": "USER_INITIATED",
+            "FunctionResponseTypes": [],
+            "EventSourceMappingArn": "arn:aws:lambda:eu-central-1:876391798236:event-source-mapping:b5b9f432-fc4e-41e4-a89b-e8e5c573d4f4"
+        }
+    ]
+}

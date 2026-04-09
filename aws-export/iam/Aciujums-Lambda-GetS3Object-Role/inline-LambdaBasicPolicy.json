@@ -1,0 +1,66 @@
+{
+    "RoleName": "Aciujums-Lambda-GetS3Object-Role",
+    "PolicyName": "LambdaBasicPolicy",
+    "PolicyDocument": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "1",
+                "Effect": "Allow",
+                "Action": [
+                    "s3:GetObject",
+                    "s3:ListBucket"
+                ],
+                "Resource": [
+                    "arn:aws:s3:::nipc-dl-analytics/*",
+                    "arn:aws:s3:::nipc-dl-analytics/aciujums/*",
+                    "arn:aws:s3:::nipc-dl-raw",
+                    "arn:aws:s3:::nipc-dl-raw/*",
+                    "arn:aws:s3:::nipc-dl-raw/registru_centras/*",
+                    "arn:aws:s3:::nipc-dl-raw/savivaldybes/*",
+                    "arn:aws:s3:::nipc-dl-raw/vmi/*"
+                ]
+            },
+            {
+                "Sid": "2",
+                "Effect": "Allow",
+                "Action": [
+                    "logs:CreateLogGroup",
+                    "logs:CreateLogStream",
+                    "logs:PutLogEvents"
+                ],
+                "Resource": [
+                    "arn:aws:logs:eu-central-1:876391798236:*:*:*"
+                ]
+            },
+            {
+                "Sid": "3",
+                "Effect": "Allow",
+                "Action": [
+                    "dynamodb:GetItem",
+                    "dynamodb:PutItem",
+                    "dynamodb:UpdateItem",
+                    "dynamodb:DeleteItem",
+                    "dynamodb:Scan",
+                    "dynamodb:Query",
+                    "dynamodb:BatchWriteItem",
+                    "dynamodb:DeleteTable",
+                    "dynamodb:CreateTable",
+                    "dynamodb:DescribeTable",
+                    "dynamodb:UpdateTable",
+                    "dynamodb:TagResource",
+                    "dynamodb:UntagResource"
+                ],
+                "Resource": [
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/aciujums_entities",
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/aciujums_finances",
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/aciujums_summary",
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/aciujums_search",
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/aciujums_entities/*",
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/aciujums_finances/*",
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/aciujums_summary/*"
+                ]
+            }
+        ]
+    }
+}

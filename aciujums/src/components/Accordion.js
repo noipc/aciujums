@@ -80,13 +80,15 @@ export default function Accordion({ data }) {
                 return (
                     <div key={county.slug} className="armonica-container">
                         <h3 className="h3 armonica-title">
-                            <div 
-                                id={headerId} 
-                                className="armonica-header w-full text-left" 
-                                aria-expanded={isOpen} 
+                            <div
+                                id={headerId}
+                                className="armonica-header w-full text-left"
+                                role="button"
+                                tabIndex={0}
+                                aria-expanded={isOpen}
                                 aria-controls={panelId}
                                 onClick={() => toggle(i)}
-                                onKeyDown={(e) => handleHeaderKey(e, i)}
+                                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(i); } }}
                             >
                                 {county.name}
                             </div>
@@ -94,7 +96,7 @@ export default function Accordion({ data }) {
                         <div 
                             id={panelId} 
                             role="region" 
-                            className={`armonica-content${isOpen ? '-open' : ''}`}
+                            className={`armonica-content${isOpen ? ' open' : ''}`}
                             aria-labelledby={headerId}
                             aria-hidden={!isOpen}
                         >
@@ -102,8 +104,8 @@ export default function Accordion({ data }) {
                                 {county.municipalities.map((m) => (
                                     <li key={m.municipality} className="armonica-content-item">
                                         <Link href={`/savivaldybes/${m.municipality}`}>
-                                            <span className="d-block info-name">{municipalitiesMap[m.municipality]}</span>
-                                            <span className="d-block info-value">€ {m.total_funds.toLocaleString('lt-LT')}</span>
+                                            <span className="block info-name">{municipalitiesMap[m.municipality]}</span>
+                                            <span className="block info-value">€ {m.total_funds.toLocaleString('lt-LT')}</span>
                                         </Link>
                                     </li>
                                 ))}

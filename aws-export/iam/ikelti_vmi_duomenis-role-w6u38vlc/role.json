@@ -1,0 +1,26 @@
+{
+    "Role": {
+        "Path": "/service-role/",
+        "RoleName": "ikelti_vmi_duomenis-role-w6u38vlc",
+        "RoleId": "AROA4YDIFSXOKVSQTWQQN",
+        "Arn": "arn:aws:iam::876391798236:role/service-role/ikelti_vmi_duomenis-role-w6u38vlc",
+        "CreateDate": "2025-07-20T20:40:53+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "lambda.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        },
+        "MaxSessionDuration": 3600,
+        "RoleLastUsed": {
+            "LastUsedDate": "2025-07-20T20:54:38+00:00",
+            "Region": "eu-central-1"
+        }
+    }
+}

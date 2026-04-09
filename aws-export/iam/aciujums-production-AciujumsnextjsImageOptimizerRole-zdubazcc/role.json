@@ -1,0 +1,34 @@
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "aciujums-production-AciujumsnextjsImageOptimizerRole-zdubazcc",
+        "RoleId": "AROA4YDIFSXOIPKEKVX44",
+        "Arn": "arn:aws:iam::876391798236:role/aciujums-production-AciujumsnextjsImageOptimizerRole-zdubazcc",
+        "CreateDate": "2025-06-16T20:32:51+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "AWS": "arn:aws:iam::876391798236:root",
+                        "Service": "lambda.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        },
+        "MaxSessionDuration": 3600,
+        "Tags": [
+            {
+                "Key": "sst:stage",
+                "Value": "production"
+            },
+            {
+                "Key": "sst:app",
+                "Value": "aciujums"
+            }
+        ],
+        "RoleLastUsed": {}
+    }
+}

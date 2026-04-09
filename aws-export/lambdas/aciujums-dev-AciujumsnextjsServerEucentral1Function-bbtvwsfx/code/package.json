@@ -1,0 +1,28 @@
+{
+    "name": "aciujums",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "build": "next build",
+        "dev": "next dev",
+        "lint": "next lint",
+        "start": "next start"
+    },
+    "dependencies": {
+        "axios": "^1.8.4",
+        "chart.js": "^4.5.0",
+        "idb": "7.1.1",
+        "next": "15.2.3",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "sst": "3.10.11"
+    },
+    "devDependencies": {
+        "@eslint/eslintrc": "^3",
+        "aws-cdk-lib": "2.142.1",
+        "constructs": "10.3.0",
+        "eslint": "^9",
+        "eslint-config-next": "15.2.3",
+        "sst": "^3.10.11"
+    }
+}

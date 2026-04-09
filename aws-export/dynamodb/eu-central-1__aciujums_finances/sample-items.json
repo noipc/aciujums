@@ -1,0 +1,268 @@
+{
+    "Items": [
+        {
+            "total_funds": {
+                "N": "808.43"
+            },
+            "total_funders": {
+                "N": "32"
+            },
+            "entity_name": {
+                "S": "Kelmės Jono Graičiūno gimnazija"
+            },
+            "legal_id": {
+                "N": "190091584"
+            },
+            "year": {
+                "N": "2017"
+            },
+            "municipality": {
+                "S": "kelmes-rajono-savivaldybe"
+            },
+            "municipality_year": {
+                "S": "kelmes-rajono-savivaldybe#2017"
+            },
+            "record_dt": {
+                "S": "2023-11-16"
+            }
+        },
+        {
+            "total_funds": {
+                "N": "642.73"
+            },
+            "total_funders": {
+                "N": "24"
+            },
+            "entity_name": {
+                "S": "Kelmės Jono Graičiūno gimnazija"
+            },
+            "legal_id": {
+                "N": "190091584"
+            },
+            "year": {
+                "N": "2018"
+            },
+            "municipality": {
+                "S": "kelmes-rajono-savivaldybe"
+            },
+            "municipality_year": {
+                "S": "kelmes-rajono-savivaldybe#2018"
+            },
+            "record_dt": {
+                "S": "2023-11-16"
+            }
+        },
+        {
+            "total_funds": {
+                "N": "716.39"
+            },
+            "total_funders": {
+                "N": "24"
+            },
+            "entity_name": {
+                "S": "Kelmės Jono Graičiūno gimnazija"
+            },
+            "legal_id": {
+                "N": "190091584"
+            },
+            "year": {
+                "N": "2019"
+            },
+            "municipality": {
+                "S": "kelmes-rajono-savivaldybe"
+            },
+            "municipality_year": {
+                "S": "kelmes-rajono-savivaldybe#2019"
+            },
+            "record_dt": {
+                "S": "2024-11-18"
+            }
+        },
+        {
+            "total_funds": {
+                "N": "660.66"
+            },
+            "total_funders": {
+                "N": "20"
+            },
+            "entity_name": {
+                "S": "Kelmės Jono Graičiūno gimnazija"
+            },
+            "legal_id": {
+                "N": "190091584"
+            },
+            "year": {
+                "N": "2020"
+            },
+            "municipality": {
+                "S": "kelmes-rajono-savivaldybe"
+            },
+            "municipality_year": {
+                "S": "kelmes-rajono-savivaldybe#2020"
+            },
+            "record_dt": {
+                "S": "2024-11-18"
+            }
+        },
+        {
+            "total_funds": {
+                "N": "551.03"
+            },
+            "total_funders": {
+                "N": "18"
+            },
+            "entity_name": {
+                "S": "Kelmės Jono Graičiūno gimnazija"
+            },
+            "legal_id": {
+                "N": "190091584"
+            },
+            "year": {
+                "N": "2021"
+            },
+            "municipality": {
+                "S": "kelmes-rajono-savivaldybe"
+            },
+            "municipality_year": {
+                "S": "kelmes-rajono-savivaldybe#2021"
+            },
+            "record_dt": {
+                "S": "2024-11-18"
+            }
+        },
+        {
+            "total_funds": {
+                "N": "642.11"
+            },
+            "total_funders": {
+                "N": "18"
+            },
+            "entity_name": {
+                "S": "Kelmės Jono Graičiūno gimnazija"
+            },
+            "legal_id": {
+                "N": "190091584"
+            },
+            "year": {
+                "N": "2022"
+            },
+            "municipality": {
+                "S": "kelmes-rajono-savivaldybe"
+            },
+            "municipality_year": {
+                "S": "kelmes-rajono-savivaldybe#2022"
+            },
+            "record_dt": {
+                "S": "2024-11-18"
+            }
+        },
+        {
+            "total_funds": {
+                "N": "689.36"
+            },
+            "total_funders": {
+                "N": "18"
+            },
+            "entity_name": {
+                "S": "Kelmės Jono Graičiūno gimnazija"
+            },
+            "legal_id": {
+                "N": "190091584"
+            },
+            "year": {
+                "N": "2023"
+            },
+            "municipality": {
+                "S": "kelmes-rajono-savivaldybe"
+            },
+            "municipality_year": {
+                "S": "kelmes-rajono-savivaldybe#2023"
+            },
+            "record_dt": {
+                "S": "2024-11-18"
+            }
+        },
+        {
+            "total_funds": {
+                "N": "416.32"
+            },
+            "total_funders": {
+                "N": "11"
+            },
+            "entity_name": {
+                "S": "Krašto apsaugos oro erdvės kontrolės sistemos veteranų klubas"
+            },
+            "legal_id": {
+                "N": "300547855"
+            },
+            "year": {
+                "N": "2017"
+            },
+            "municipality": {
+                "S": "kauno-miesto-savivaldybe"
+            },
+            "municipality_year": {
+                "S": "kauno-miesto-savivaldybe#2017"
+            },
+            "record_dt": {
+                "S": "2023-11-16"
+            }
+        },
+        {
+            "total_funds": {
+                "N": "601.1"
+            },
+            "total_funders": {
+                "N": "12"
+            },
+            "entity_name": {
+                "S": "Krašto apsaugos oro erdvės kontrolės sistemos veteranų klubas"
+            },
+            "legal_id": {
+                "N": "300547855"
+            },
+            "year": {
+                "N": "2018"
+            },
+            "municipality": {
+                "S": "kauno-miesto-savivaldybe"
+            },
+            "municipality_year": {
+                "S": "kauno-miesto-savivaldybe#2018"
+            },
+            "record_dt": {
+                "S": "2023-11-16"
+            }
+        },
+        {
+            "total_funds": {
+                "N": "486.7"
+            },
+            "total_funders": {
+                "N": "9"
+            },
+            "entity_name": {
+                "S": "Krašto apsaugos oro erdvės kontrolės sistemos veteranų klubas"
+            },
+            "legal_id": {
+                "N": "300547855"
+            },
+            "year": {
+                "N": "2019"
+            },
+            "municipality": {
+                "S": "kauno-miesto-savivaldybe"
+            },
+            "municipality_year": {
+                "S": "kauno-miesto-savivaldybe#2019"
+            },
+            "record_dt": {
+                "S": "2024-11-18"
+            }
+        }
+    ],
+    "Count": 5059,
+    "ScannedCount": 5059,
+    "ConsumedCapacity": null,
+    "NextToken": "eyJFeGNsdXNpdmVTdGFydEtleSI6IG51bGwsICJib3RvX3RydW5jYXRlX2Ftb3VudCI6IDEwfQ=="
+}

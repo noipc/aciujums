@@ -1,0 +1,55 @@
+{
+    "Configuration": {
+        "FunctionName": "nvotarybosappRevalidationEventsSubscriberBcebmtFunction-bhauwcku",
+        "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvotarybosappRevalidationEventsSubscriberBcebmtFunction-bhauwcku",
+        "Runtime": "nodejs20.x",
+        "Role": "arn:aws:iam::876391798236:role/nvotarybosappRevalidationEventsSubscriberBcebmtFunction-uwsrctun",
+        "Handler": "index.handler",
+        "CodeSize": 2750,
+        "Description": "nvo_tarybos_app ISR revalidator",
+        "Timeout": 30,
+        "MemorySize": 1024,
+        "LastModified": "2026-02-05T13:38:24.000+0000",
+        "CodeSha256": "/2MBOVHbiab8dLKc+Y5hPkF2VobefKADSra/qyNTEXE=",
+        "Version": "$LATEST",
+        "Environment": {
+            "Variables": {
+                "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"vscode\"}",
+                "SST_KEY": "7Mz0S2JRvS+/lw22gBtuTATxtSpGfwP9pnXdXu661rU=",
+                "SST_KEY_FILE": "resource.enc"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "2246a0c3-7e94-48e5-8f2f-372a459fe814",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:2d788b26ac416854c5eb831c9f46cb2e0a0ddcee84b1a9b114acbdfdb644c8c1"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/nvotarybosappRevalidationEventsSubscriberBcebmtFunction-mxxhactw"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/876391798236/nvotarybosappRevalidationEventsSubscriberBcebmtFunction-bhauwcku-aeba8c6a-6d72-4351-8b80-3019004eb8c7?versionId=bX9E732Q79X6F8IGQeLqJSIvt_0gor1t&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJHMEUCIFKqHnZ1g2fr9Y4ogePm%2B3%2FlEQpFBFRQ9bcy%2FBnwT0fbAiEA6YYRqyfT54IqmqGuYkD5Pwr2PqYVAucBPw6WvizMThkqiwIIShADGgw2ODA2ODY1NTk0MzQiDKlHio847cZimD%2BRMiroAf05gHk%2F4bSbn0glkttUre9OACYKe3ixmv8tURxs7L11kDltXsptA1gLr6HL%2BCmQn8HgKtrePSsv%2F0T6L8VYAreeJsKYC%2BZyOj4N0XEW2WmRy8GR5Dg9ba4bcsE0DQt%2Fx1%2BRV240ybOuqJdCxNn9bduINq4bABAxjdaHNuOuYeZO6ZXfZCMURNTyAreKYdQjR9geaLx2%2BvEC7GI5UEF7%2FniU6BxNimqwlAE8PCWsv6lmYNreH1zy7kCy66L2YTMFur4Yktjz%2FdEx571BNSwt3JWAKF%2Bs7iIR062wA5XqPrKuvE%2FFMcSxhfYw0tyxzgY6jQGH6pC7UJfhZ3xHL92JPwLqKaupyIKZdNG1VG1eESLorJrIpwU9ZY%2Fm0Zg5%2B%2BZVTxZA6FhWuuvXnudjkZbYiBgwdDU91yuYw6sQ82%2FfJ%2F%2FlgbnqZIu5bnaV5v78CRVU%2FLL1aJPvJYsC7pt183tDDwpv652j6Dp%2B4HPAUdP6wC0H%2Bd11B6yOG%2F9wio%2BRajs%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T125522Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZ47AUUDFFJ4XDDLP%2F20260401%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=9007c13ca976746ed7837adc05e662918a9ca5a41b50b7a1e6287be73d5121a5"
+    },
+    "Tags": {
+        "sst:app": "nvo-tarybos-app",
+        "sst:stage": "vscode"
+    }
+}

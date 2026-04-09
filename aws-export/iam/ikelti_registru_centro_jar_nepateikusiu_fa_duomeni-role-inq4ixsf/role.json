@@ -1,0 +1,26 @@
+{
+    "Role": {
+        "Path": "/service-role/",
+        "RoleName": "ikelti_registru_centro_jar_nepateikusiu_fa_duomeni-role-inq4ixsf",
+        "RoleId": "AROA4YDIFSXONFL3A4REL",
+        "Arn": "arn:aws:iam::876391798236:role/service-role/ikelti_registru_centro_jar_nepateikusiu_fa_duomeni-role-inq4ixsf",
+        "CreateDate": "2023-10-01T21:57:42+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "lambda.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        },
+        "MaxSessionDuration": 3600,
+        "RoleLastUsed": {
+            "LastUsedDate": "2026-03-03T06:00:49+00:00",
+            "Region": "eu-central-1"
+        }
+    }
+}

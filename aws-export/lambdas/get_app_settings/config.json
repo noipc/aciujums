@@ -1,0 +1,35 @@
+{
+    "FunctionName": "get_app_settings",
+    "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:get_app_settings",
+    "Runtime": "nodejs14.x",
+    "Role": "arn:aws:iam::876391798236:role/Aciujums-Lambda-GetS3Object-Role",
+    "Handler": "index.handler",
+    "CodeSize": 458,
+    "Description": "",
+    "Timeout": 30,
+    "MemorySize": 128,
+    "LastModified": "2023-11-25T23:39:10.563+0000",
+    "CodeSha256": "IG7pHiX9OSib28PpzL7opmMZVAIcDK2FJYzyyLlt7Wg=",
+    "Version": "$LATEST",
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "2ff2bffd-7eae-467b-9f75-274591952d8d",
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Zip",
+    "Architectures": [
+        "arm64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/get_app_settings"
+    }
+}

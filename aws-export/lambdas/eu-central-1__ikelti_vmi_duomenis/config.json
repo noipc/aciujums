@@ -1,0 +1,44 @@
+{
+    "FunctionName": "ikelti_vmi_duomenis",
+    "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_vmi_duomenis",
+    "Runtime": "nodejs22.x",
+    "Role": "arn:aws:iam::876391798236:role/service-role/ikelti_vmi_duomenis-role-w6u38vlc",
+    "Handler": "index.handler",
+    "CodeSize": 1186,
+    "Description": "",
+    "Timeout": 30,
+    "MemorySize": 128,
+    "LastModified": "2025-07-20T20:54:08.000+0000",
+    "CodeSha256": "jRn1zA28PQsZx08lZW6GUx85BL6/2mFIcKexLcjZWZ0=",
+    "Version": "$LATEST",
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "b8cfc75c-fae7-4162-bce5-2bd81d5678c9",
+    "Layers": [
+        {
+            "Arn": "arn:aws:lambda:eu-central-1:876391798236:layer:node-layer:1",
+            "CodeSize": 6711728
+        }
+    ],
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Zip",
+    "Architectures": [
+        "arm64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "RuntimeVersionConfig": {
+        "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:5e3c80f22edec71979fb474ea310e6e652f1e127086be7eb20d12b0b26666cc1"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/ikelti_vmi_duomenis"
+    }
+}

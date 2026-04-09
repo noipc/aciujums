@@ -1,0 +1,15 @@
+{
+    "CommonPrefixes": [
+        {
+            "Prefix": "registru_centras/"
+        },
+        {
+            "Prefix": "savivaldybes/"
+        },
+        {
+            "Prefix": "vmi/"
+        }
+    ],
+    "RequestCharged": null,
+    "Prefix": ""
+}

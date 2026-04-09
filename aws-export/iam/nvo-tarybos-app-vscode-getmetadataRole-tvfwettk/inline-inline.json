@@ -1,0 +1,25 @@
+{
+    "RoleName": "nvo-tarybos-app-vscode-getmetadataRole-tvfwettk",
+    "PolicyName": "inline",
+    "PolicyDocument": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Action": "dynamodb:*",
+                "Effect": "Allow",
+                "Resource": [
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/nvo-tarybos-app-vscode-nvomunicipalitiesTable-znudotbs/*",
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/nvo-tarybos-app-vscode-nvomunicipalitiesTable-znudotbs"
+                ]
+            },
+            {
+                "Action": "dynamodb:*",
+                "Effect": "Allow",
+                "Resource": [
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/nvo-tarybos-app-vscode-nvomunicipalitiesTable-znudotbs/*",
+                    "arn:aws:dynamodb:eu-central-1:876391798236:table/nvo-tarybos-app-vscode-nvomunicipalitiesTable-znudotbs"
+                ]
+            }
+        ]
+    }
+}

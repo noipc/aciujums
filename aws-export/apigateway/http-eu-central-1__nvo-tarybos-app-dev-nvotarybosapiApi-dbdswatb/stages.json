@@ -1,0 +1,25 @@
+{
+    "Items": [
+        {
+            "AccessLogSettings": {
+                "DestinationArn": "arn:aws:logs:eu-central-1:876391798236:log-group:/aws/vendedlogs/apis/nvo-tarybos-app-dev-nvotarybosapi-bduzzwow",
+                "Format": "{\"requestTime\":\"\\\"$context.requestTime\\\"\",\"requestId\":\"\\\"$context.requestId\\\"\",\"httpMethod\":\"\\\"$context.httpMethod\\\"\",\"path\":\"\\\"$context.path\\\"\",\"routeKey\":\"\\\"$context.routeKey\\\"\",\"status\":\"$context.status\",\"responseLatency\":\"$context.responseLatency\",\"integrationRequestId\":\"\\\"$context.integration.requestId\\\"\",\"integrationStatus\":\"\\\"$context.integration.status\\\"\",\"integrationLatency\":\"\\\"$context.integration.latency\\\"\",\"integrationServiceStatus\":\"\\\"$context.integration.integrationStatus\\\"\",\"ip\":\"\\\"$context.identity.sourceIp\\\"\",\"userAgent\":\"\\\"$context.identity.userAgent\\\"\"}"
+            },
+            "AutoDeploy": true,
+            "CreatedDate": "2025-12-26T00:22:19+00:00",
+            "DefaultRouteSettings": {
+                "DetailedMetricsEnabled": false
+            },
+            "DeploymentId": "x18pog",
+            "LastDeploymentStatusMessage": "Successfully deployed stage with deployment ID 'x18pog'",
+            "LastUpdatedDate": "2026-01-21T05:57:59+00:00",
+            "RouteSettings": {},
+            "StageName": "$default",
+            "StageVariables": {},
+            "Tags": {
+                "sst:app": "nvo-tarybos-app",
+                "sst:stage": "dev"
+            }
+        }
+    ]
+}

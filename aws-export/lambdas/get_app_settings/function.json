@@ -1,0 +1,41 @@
+{
+    "Configuration": {
+        "FunctionName": "get_app_settings",
+        "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:get_app_settings",
+        "Runtime": "nodejs14.x",
+        "Role": "arn:aws:iam::876391798236:role/Aciujums-Lambda-GetS3Object-Role",
+        "Handler": "index.handler",
+        "CodeSize": 458,
+        "Description": "",
+        "Timeout": 30,
+        "MemorySize": 128,
+        "LastModified": "2023-11-25T23:39:10.563+0000",
+        "CodeSha256": "IG7pHiX9OSib28PpzL7opmMZVAIcDK2FJYzyyLlt7Wg=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "2ff2bffd-7eae-467b-9f75-274591952d8d",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "arm64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/get_app_settings"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/876391798236/get_app_settings-350d87e5-2371-4176-862e-695a73912e6a?versionId=rn8FXGqOgZ.pvlQGGPB6DUriALXBsUEi&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJGMEQCIFTP4Tpph6PTja%2FPx1rJxN%2FolFy1QD20xNxRcmyM62ipAiBOqILEGqcE8%2B4FirT8nwm6bN%2FOD4W210Rr80Qevp19biqLAghLEAMaDDY4MDY4NjU1OTQzNCIM4Kl8vW5hk9NPnyDAKugBBYxeYMd9qFdjCjw%2FWvOqHX0xNnptamtBPrdVu0vBXVXK0Di21a3mXIzwL8AbzcYpZYsAdNPPaq2Q27AF%2BO%2F4fpl2e%2BsT5xGRPKvZIDVZvekisVIGUnMbJkQyVx1zgaLhZn1hhWuEUlhWvMAA%2Fmm3nmEj2A48zymq4WUkwiWJmbnsz1PjM6oLpDO9OHqRrlRpb5ZHIAgonP2t5UyVUGcG4vidw6XHPb0r40vayoYLtaz4OdIlDhOWEy9TwBUg%2FqbSXnOHyryF8GxS%2BJOwY%2F2DKbsYrxAEd1Nlq7QKqsp9T4yCWII9YEl4DzCN8rHOBjqOAfcKojrQRZ1lMzYxp2v38sD0r2HMuCWnr9UzsdyhNH9U5voew1l6eG9qnA6GPhsbFqVgQGx1T%2Bhoi12YGNd5ux5RzAjQWYYbAWS6jBKsubmHJXvSJHW%2B7t%2BA2I3As9KMIlgl511DwSKlNspxSbD8M6wc82y%2B3fugElbEvNA2B7IeolyFP%2F9f%2FwuA%2BXweEcc%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T130112Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZ47AUUDFIWAKBOCE%2F20260401%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=1217b08cfa35529af25af5190a3c8e5bf0ac16175588483becc37d3e0264162f"
+    }
+}

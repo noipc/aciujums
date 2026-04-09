@@ -1,0 +1,1794 @@
+{
+    "Functions": [
+        {
+            "FunctionName": "nvotarybosappRevalidationEventsSubscriberZobnoeFunction-vhbnzbhh",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvotarybosappRevalidationEventsSubscriberZobnoeFunction-vhbnzbhh",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/nvotarybosappRevalidationEventsSubscriberZobnoeFunction-baxdbbck",
+            "Handler": "index.handler",
+            "CodeSize": 2742,
+            "Description": "nvo_tarybos_app ISR revalidator",
+            "Timeout": 30,
+            "MemorySize": 1024,
+            "LastModified": "2026-02-04T19:31:17.000+0000",
+            "CodeSha256": "fumZ/YfdsABc+jONPLF0Y1xNtmPEYxkUdeN71sOtVzQ=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"dev\"}",
+                    "SST_KEY": "fAIm9rdQWuiqo7Ne0xGpWAEXQtdsJzu3/5AuJ1vqQg4=",
+                    "SST_KEY_FILE": "resource.enc"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "380b9f3c-dc46-4c60-bd09-44c15c1dea96",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/nvotarybosappRevalidationEventsSubscriberZobnoeFunction-bnrsxvdx"
+            }
+        },
+        {
+            "FunctionName": "ikelti_registru_centro_jar_duomenis",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_registru_centro_jar_duomenis",
+            "Runtime": "nodejs18.x",
+            "Role": "arn:aws:iam::876391798236:role/service-role/ikelti_registru_centro_jar_duomenis-role-ojs2f6jq",
+            "Handler": "index.handler",
+            "CodeSize": 919,
+            "Description": "",
+            "Timeout": 70,
+            "MemorySize": 512,
+            "LastModified": "2025-07-01T21:09:20.000+0000",
+            "CodeSha256": "K6ipbaMg4USERLer0GkJCvozZWCkFEt3jHiAZYxkSJA=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "DL_RAW_BUCKET": "nipc-dl-raw"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "cf65681d-2e25-44c9-9792-f527408bf1a6",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/ikelti_registru_centro_jar_duomenis"
+            }
+        },
+        {
+            "FunctionName": "SSTBootstrap-CustomS3AutoDeleteObjectsCustomResour-yRDIpXyJVZWm",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:SSTBootstrap-CustomS3AutoDeleteObjectsCustomResour-yRDIpXyJVZWm",
+            "Runtime": "nodejs22.x",
+            "Role": "arn:aws:iam::876391798236:role/SSTBootstrap-CustomS3AutoDeleteObjectsCustomResourc-zOpvCElX2Cgu",
+            "Handler": "index.handler",
+            "CodeSize": 2237,
+            "Description": "Lambda function for auto-deleting objects in sstbootstrap-eucentral134f82fae-oznhoehwzew1 S3 bucket.",
+            "Timeout": 900,
+            "MemorySize": 128,
+            "LastModified": "2025-12-17T00:38:35.380+0000",
+            "CodeSha256": "CmExGfRutCJNjHF3sEx3R54UZAAtK6f8UFQLjaIRpsQ=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "904e0fe9-d912-4fbe-a23f-27a903ee4029",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/SSTBootstrap-CustomS3AutoDeleteObjectsCustomResour-yRDIpXyJVZWm"
+            }
+        },
+        {
+            "FunctionName": "check_vmi_file_date",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:check_vmi_file_date",
+            "Runtime": "python3.13",
+            "Role": "arn:aws:iam::876391798236:role/service-role/check_vmi_file_date-role-4qbz6kxm",
+            "Handler": "lambda_function.lambda_handler",
+            "CodeSize": 1168,
+            "Description": "",
+            "Timeout": 30,
+            "MemorySize": 128,
+            "LastModified": "2025-08-03T15:10:07.000+0000",
+            "CodeSha256": "PmgQvIgbIZhnU0crjqNA6dQMw1dN/eS0ONupvPg8WV0=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "7f4ac3aa-be52-4d7d-93d0-866be16942d8",
+            "Layers": [
+                {
+                    "Arn": "arn:aws:lambda:eu-central-1:336392948345:layer:AWSSDKPandas-Python313-Arm64:3",
+                    "CodeSize": 41401555
+                }
+            ],
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/check_vmi_file_date"
+            }
+        },
+        {
+            "FunctionName": "ikelti_registru_centro_jar_nepateikusiu_fa_duomenis",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_registru_centro_jar_nepateikusiu_fa_duomenis",
+            "Runtime": "nodejs18.x",
+            "Role": "arn:aws:iam::876391798236:role/service-role/ikelti_registru_centro_jar_nepateikusiu_fa_duomeni-role-inq4ixsf",
+            "Handler": "index.handler",
+            "CodeSize": 981,
+            "Description": "",
+            "Timeout": 63,
+            "MemorySize": 512,
+            "LastModified": "2023-10-22T14:23:33.000+0000",
+            "CodeSha256": "0vGN5ksMOClAwzoZ6fXDyt+JVZuhVej1/Zm2WRNEufI=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "DL_RAW_BUCKET": "nipc-dl-raw"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "527fb5ac-279c-45d4-a452-4c6902f6ebd8",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/ikelti_registru_centro_jar_nepateikusiu_fa_duomenis"
+            }
+        },
+        {
+            "FunctionName": "aciujums-dev-AciujumsnextjsImageOptimizerFunction-bawzwebk",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:aciujums-dev-AciujumsnextjsImageOptimizerFunction-bawzwebk",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/aciujums-dev-AciujumsnextjsImageOptimizerRole-kvxzmnck",
+            "Handler": "index.handler",
+            "CodeSize": 11991386,
+            "Description": "Aciujums-nextjs image optimizer",
+            "Timeout": 25,
+            "MemorySize": 1536,
+            "LastModified": "2025-09-09T22:44:08.000+0000",
+            "CodeSha256": "W3XIVC8ViO2oYJYYLBob14vmHW0rw2MskgulXj4dj1g=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"aciujums\",\"stage\":\"dev\"}",
+                    "BUCKET_KEY_PREFIX": "_assets",
+                    "SST_KEY": "A71lL0lzdxVgug1cTJJ7e7sFeD4K1nLbhEoNp+wTJJo=",
+                    "SST_KEY_FILE": "resource.enc",
+                    "BUCKET_NAME": "aciujums-dev-aciujumsnextjsassetsbucket-dtknwnwa"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "99a01486-be8c-4900-aeba-38a89e53370e",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/aciujums-dev-AciujumsnextjsImageOptimizerFunction-bcafxezo"
+            }
+        },
+        {
+            "FunctionName": "aci-production-AciujumsnextjsRevalidationSeederFunction-batmxrcu",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:aci-production-AciujumsnextjsRevalidationSeederFunction-batmxrcu",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/aciujum-production-AciujumsnextjsRevalidationSeederRole-hzarhbtt",
+            "Handler": "index.handler",
+            "CodeSize": 3292,
+            "Description": "Aciujums-nextjs ISR revalidation data seeder",
+            "Timeout": 900,
+            "MemorySize": 128,
+            "LastModified": "2025-06-16T20:46:56.000+0000",
+            "CodeSha256": "xkkHnrWMR6eje9ch5kzRB9yed8XNJbPA0uJy69rpdac=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"aciujums\",\"stage\":\"production\"}",
+                    "SST_KEY": "twstf1laEOpav9oe4FC67sQyB3YJetQXlp2mFtdz2dQ=",
+                    "SST_KEY_FILE": "resource.enc",
+                    "CACHE_DYNAMO_TABLE": "aciujums-production-AciujumsnextjsRevalidationTable-sbhoofto"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "788a9de6-7edc-45e8-bfba-f1eafa3508b8",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/aci-production-AciujumsnextjsRevalidationSeederFunction-wuhuokxr"
+            }
+        },
+        {
+            "FunctionName": "ikelti_registru_centro_ex_jar_duomenis",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_registru_centro_ex_jar_duomenis",
+            "Runtime": "nodejs18.x",
+            "Role": "arn:aws:iam::876391798236:role/service-role/ikelti_registru_centro_ex_jar_duomenis-role-smmie1nm",
+            "Handler": "index.handler",
+            "CodeSize": 948,
+            "Description": "",
+            "Timeout": 70,
+            "MemorySize": 512,
+            "LastModified": "2023-10-17T22:32:29.000+0000",
+            "CodeSha256": "DiivWNvy3d5xDgZ3dD+41IhHaEF3pgv5OaAvSTf6gS8=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "DL_RAW_BUCKET": "nipc-dl-raw"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "51396a0f-e403-4f78-8589-7179db051d11",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/ikelti_registru_centro_ex_jar_duomenis"
+            }
+        },
+        {
+            "FunctionName": "nvo-tarybos-app-vscode-getallyearsFunction-zkmseoxn",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-app-vscode-getallyearsFunction-zkmseoxn",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-vscode-getallyearsRole-ofaakezv",
+            "Handler": "bundle.handler",
+            "CodeSize": 200027,
+            "Description": "",
+            "Timeout": 20,
+            "MemorySize": 1024,
+            "LastModified": "2026-02-04T19:12:12.000+0000",
+            "CodeSha256": "bjB2wSJaGt4dhZfIcEogLF/Bid6xLkJOEdZkld+6Hwo=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"vscode\"}",
+                    "SST_KEY": "7Mz0S2JRvS+/lw22gBtuTATxtSpGfwP9pnXdXu661rU=",
+                    "PROJECT_ROOT": "/workspaces/ngo_tarybos",
+                    "SST_KEY_FILE": "resource.enc"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "d42cce11-b76c-48db-bb10-7805a3a5aef5",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/nvo-tarybos-app-vscode-getallyearsFunction-bdbvowcm"
+            }
+        },
+        {
+            "FunctionName": "get_index_data",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:get_index_data",
+            "Runtime": "nodejs14.x",
+            "Role": "arn:aws:iam::876391798236:role/Aciujums-Lambda-GetS3Object-Role",
+            "Handler": "index.handler",
+            "CodeSize": 452,
+            "Description": "",
+            "Timeout": 30,
+            "MemorySize": 128,
+            "LastModified": "2025-03-22T21:44:16.000+0000",
+            "CodeSha256": "YjFu/n5cA2GrafjeRpKUPpChtKTLGS05o2zna8y3AKc=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "b4313023-2914-4419-be69-cd118f613333",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/get_index_data"
+            }
+        },
+        {
+            "FunctionName": "aciujum-production-AciujumsnextjsImageOptimizerFunction-odaxobrk",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:aciujum-production-AciujumsnextjsImageOptimizerFunction-odaxobrk",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/aciujums-production-AciujumsnextjsImageOptimizerRole-zdubazcc",
+            "Handler": "index.handler",
+            "CodeSize": 11576389,
+            "Description": "Aciujums-nextjs image optimizer",
+            "Timeout": 25,
+            "MemorySize": 1536,
+            "LastModified": "2025-06-16T20:47:01.000+0000",
+            "CodeSha256": "8g6WfcaixaZhWy7n+JIV2emkeNT72AH2v0dN0YdLqYw=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"aciujums\",\"stage\":\"production\"}",
+                    "BUCKET_KEY_PREFIX": "_assets",
+                    "SST_KEY": "twstf1laEOpav9oe4FC67sQyB3YJetQXlp2mFtdz2dQ=",
+                    "SST_KEY_FILE": "resource.enc",
+                    "BUCKET_NAME": "aciujums-production-aciujumsnextjsassetsbucket-sefuvmux"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "cfd4c55f-0804-409c-84b7-c8c781d27bcc",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/aciujum-production-AciujumsnextjsImageOptimizerFunction-ouowumdx"
+            }
+        },
+        {
+            "FunctionName": "ikelti_rgistru_centro_nvo_duomenis",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_rgistru_centro_nvo_duomenis",
+            "Runtime": "nodejs18.x",
+            "Role": "arn:aws:iam::876391798236:role/service-role/ikelti_rgistru_centro_nvo_duomenis-role-5ivn5f1s",
+            "Handler": "index.handler",
+            "CodeSize": 940,
+            "Description": "",
+            "Timeout": 70,
+            "MemorySize": 512,
+            "LastModified": "2023-10-17T22:34:07.000+0000",
+            "CodeSha256": "CjdccQpcDAJWKl72/odumIniDOGQHtH+8Vc4SngZnA4=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "DL_RAW_BUCKET": "nipc-dl-raw"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "32cbde8f-8a4b-4b19-9918-7ab88c2218f7",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/ikelti_rgistru_centro_nvo_duomenis"
+            }
+        },
+        {
+            "FunctionName": "ikelti_vmi_duomenis",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_vmi_duomenis",
+            "Runtime": "nodejs22.x",
+            "Role": "arn:aws:iam::876391798236:role/service-role/ikelti_vmi_duomenis-role-w6u38vlc",
+            "Handler": "index.handler",
+            "CodeSize": 1186,
+            "Description": "",
+            "Timeout": 30,
+            "MemorySize": 128,
+            "LastModified": "2025-07-20T20:54:08.000+0000",
+            "CodeSha256": "jRn1zA28PQsZx08lZW6GUx85BL6/2mFIcKexLcjZWZ0=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "b8cfc75c-fae7-4162-bce5-2bd81d5678c9",
+            "Layers": [
+                {
+                    "Arn": "arn:aws:lambda:eu-central-1:876391798236:layer:node-layer:1",
+                    "CodeSize": 6711728
+                }
+            ],
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/ikelti_vmi_duomenis"
+            }
+        },
+        {
+            "FunctionName": "ikelti_registru_centro_paramos_gaveju_duomenis",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_registru_centro_paramos_gaveju_duomenis",
+            "Runtime": "nodejs18.x",
+            "Role": "arn:aws:iam::876391798236:role/service-role/ikelti_registru_centro_paramos_gaveju_duomenis-role-if42a3bx",
+            "Handler": "index.handler",
+            "CodeSize": 958,
+            "Description": "",
+            "Timeout": 3,
+            "MemorySize": 512,
+            "LastModified": "2023-10-17T22:36:46.000+0000",
+            "CodeSha256": "dNtKIBhAUqUYj6FQyj00Ukiq1+Vpx/oaYqf/bdq9Em0=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "DL_RAW_BUCKET": "nipc-dl-raw"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "b14ac9c3-691c-4c8b-b080-8c0d05a7d834",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/ikelti_registru_centro_paramos_gaveju_duomenis"
+            }
+        },
+        {
+            "FunctionName": "nvo-tary-vscode-nvotarybosappRevalidationSeederFunction-nwoxzvme",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tary-vscode-nvotarybosappRevalidationSeederFunction-nwoxzvme",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/nvo-tarybos--vscode-nvotarybosappRevalidationSeederRole-shrrdcra",
+            "Handler": "index.handler",
+            "CodeSize": 3206,
+            "Description": "nvo_tarybos_app ISR revalidation data seeder",
+            "Timeout": 900,
+            "MemorySize": 128,
+            "LastModified": "2026-02-05T13:38:24.000+0000",
+            "CodeSha256": "ohERClzGODfQedYoXneqI05SDycd4VRo4fruruqdpyA=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"vscode\"}",
+                    "SST_KEY": "7Mz0S2JRvS+/lw22gBtuTATxtSpGfwP9pnXdXu661rU=",
+                    "SST_KEY_FILE": "resource.enc",
+                    "CACHE_DYNAMO_TABLE": "nvo-tarybos-app-vscode-nvotarybosappRevalidationTable-kroctscu"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "45a1f263-0ca9-413e-bfbf-b1d5e306eb41",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/nvo-tary-vscode-nvotarybosappRevalidationSeederFunction-bcuxvfsd"
+            }
+        },
+        {
+            "FunctionName": "AciujumsnextjsRevalidationEventsSubscriberVrtmdtFunctio-xuoesvts",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:AciujumsnextjsRevalidationEventsSubscriberVrtmdtFunctio-xuoesvts",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/AciujumsnextjsRevalidationEventsSubscriberVrtmdtFunctio-hamfbsnv",
+            "Handler": "index.handler",
+            "CodeSize": 2892,
+            "Description": "Aciujums-nextjs ISR revalidator",
+            "Timeout": 30,
+            "MemorySize": 1024,
+            "LastModified": "2025-06-16T20:46:56.000+0000",
+            "CodeSha256": "9Ot4uSlYF/Qp6Ng1rSV8uxOVpdQWdqCI7G/rJ7E4wTg=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"aciujums\",\"stage\":\"production\"}",
+                    "SST_KEY": "twstf1laEOpav9oe4FC67sQyB3YJetQXlp2mFtdz2dQ=",
+                    "SST_KEY_FILE": "resource.enc"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "39f1c3cc-cd96-40ea-bd1a-135927916dbf",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/AciujumsnextjsRevalidationEventsSubscriberVrtmdtFunctio-kdzzbnbu"
+            }
+        },
+        {
+            "FunctionName": "AciujumsnextjsRevalidationEventsSubscriberMsfteeFunctio-sdtmzsbv",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:AciujumsnextjsRevalidationEventsSubscriberMsfteeFunctio-sdtmzsbv",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/AciujumsnextjsRevalidationEventsSubscriberMsfteeFunctio-cxzvozwo",
+            "Handler": "index.handler",
+            "CodeSize": 2894,
+            "Description": "Aciujums-nextjs ISR revalidator",
+            "Timeout": 30,
+            "MemorySize": 1024,
+            "LastModified": "2025-09-09T22:44:04.000+0000",
+            "CodeSha256": "bSewTf6cIWCvoloOmi5QATODJrGN/BUy9guvC31E5o8=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"aciujums\",\"stage\":\"dev\"}",
+                    "SST_KEY": "A71lL0lzdxVgug1cTJJ7e7sFeD4K1nLbhEoNp+wTJJo=",
+                    "SST_KEY_FILE": "resource.enc"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "a5cec96d-7e61-41bc-8913-3d964d2cc800",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/AciujumsnextjsRevalidationEventsSubscriberMsfteeFunctio-rtrctafs"
+            }
+        },
+        {
+            "FunctionName": "nvo-tarybos-app-vscode-dataprocessorFunction-nmdmtbob",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-app-vscode-dataprocessorFunction-nmdmtbob",
+            "Runtime": "python3.12",
+            "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-vscode-dataprocessorRole-ecbhxmdd",
+            "Handler": "functions/processor.handler",
+            "CodeSize": 15637972,
+            "Description": "",
+            "Timeout": 300,
+            "MemorySize": 1024,
+            "LastModified": "2026-02-04T19:58:29.000+0000",
+            "CodeSha256": "n87k3XM0K836Gc/s2a3CsS8wArFOZod0Xc1r9uupZxc=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "MY_BUCKET_NAME": "nvo-tarybos-app-vscode-nvotarybosbucketbucket-bmdotwes",
+                    "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"vscode\"}",
+                    "SST_KEY": "7Mz0S2JRvS+/lw22gBtuTATxtSpGfwP9pnXdXu661rU=",
+                    "MY_TABLE_NAME": "nvo-tarybos-app-vscode-nvomunicipalitiesTable-znudotbs",
+                    "SST_KEY_FILE": "resource.enc"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "621109de-2e4d-44b8-9215-4d0b1abc9442",
+            "Layers": [
+                {
+                    "Arn": "arn:aws:lambda:eu-central-1:336392948345:layer:AWSSDKPandas-Python312-Arm64:3",
+                    "CodeSize": 47270840
+                }
+            ],
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/nvo-tarybos-app-vscode-dataprocessorFunction-wdcmsuos"
+            }
+        },
+        {
+            "FunctionName": "nvo-tarybos-app-dev-getallyearsFunction-vrswmhur",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-app-dev-getallyearsFunction-vrswmhur",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-dev-getallyearsRole-sxcrbkfw",
+            "Handler": "bundle.handler",
+            "CodeSize": 200021,
+            "Description": "",
+            "Timeout": 20,
+            "MemorySize": 1024,
+            "LastModified": "2026-01-22T00:56:56.000+0000",
+            "CodeSha256": "amiuxZX2i5/oXTvzDu9GKtwWX8a7cw4Hz6usq6Qq+PQ=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"dev\"}",
+                    "SST_KEY": "fAIm9rdQWuiqo7Ne0xGpWAEXQtdsJzu3/5AuJ1vqQg4=",
+                    "PROJECT_ROOT": "/workspaces/ngo_tarybos",
+                    "SST_KEY_FILE": "resource.enc"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "674e97b5-a8fe-4f2a-a915-24169b67dfda",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/nvo-tarybos-app-dev-getallyearsFunction-usxhawtt"
+            }
+        },
+        {
+            "FunctionName": "aciujums-dev-AciujumsnextjsServerEucentral1Function-bbtvwsfx",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:aciujums-dev-AciujumsnextjsServerEucentral1Function-bbtvwsfx",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/aciujums-dev-AciujumsnextjsServerEucentral1Role-xrwroeub",
+            "Handler": "server-index.handler",
+            "CodeSize": 7956811,
+            "Description": "Aciujums-nextjs server",
+            "Timeout": 20,
+            "MemorySize": 1024,
+            "LastModified": "2025-09-09T22:44:10.000+0000",
+            "CodeSha256": "u9jcLyyRfRHh9KTibEVMUdSWHzBODjxJdJ3C8aK4qR8=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "CACHE_BUCKET_KEY_PREFIX": "_cache",
+                    "CACHE_BUCKET_NAME": "aciujums-dev-aciujumsnextjsassetsbucket-dtknwnwa",
+                    "REVALIDATION_QUEUE_REGION": "eu-central-1",
+                    "SST_RESOURCE_App": "{\"name\":\"aciujums\",\"stage\":\"dev\"}",
+                    "SST_KEY": "A71lL0lzdxVgug1cTJJ7e7sFeD4K1nLbhEoNp+wTJJo=",
+                    "REVALIDATION_QUEUE_URL": "https://sqs.eu-central-1.amazonaws.com/876391798236/aciujums-dev-AciujumsnextjsRevalidationEventsQueue-cswoernb.fifo",
+                    "SST_KEY_FILE": "resource.enc",
+                    "CACHE_DYNAMO_TABLE": "aciujums-dev-AciujumsnextjsRevalidationTable-srhshveo",
+                    "CACHE_BUCKET_REGION": "eu-central-1"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "9d50e9b8-2fa9-49ff-b08d-0f11da3b92ad",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/aciujums-dev-AciujumsnextjsServerEucentral1Function-bcehfzde"
+            }
+        },
+        {
+            "FunctionName": "nvotarybosappRevalidationEventsSubscriberBcebmtFunction-bhauwcku",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvotarybosappRevalidationEventsSubscriberBcebmtFunction-bhauwcku",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/nvotarybosappRevalidationEventsSubscriberBcebmtFunction-uwsrctun",
+            "Handler": "index.handler",
+            "CodeSize": 2750,
+            "Description": "nvo_tarybos_app ISR revalidator",
+            "Timeout": 30,
+            "MemorySize": 1024,
+            "LastModified": "2026-02-05T13:38:24.000+0000",
+            "CodeSha256": "/2MBOVHbiab8dLKc+Y5hPkF2VobefKADSra/qyNTEXE=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"vscode\"}",
+                    "SST_KEY": "7Mz0S2JRvS+/lw22gBtuTATxtSpGfwP9pnXdXu661rU=",
+                    "SST_KEY_FILE": "resource.enc"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "2246a0c3-7e94-48e5-8f2f-372a459fe814",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/nvotarybosappRevalidationEventsSubscriberBcebmtFunction-mxxhactw"
+            }
+        },
+        {
+            "FunctionName": "aciujums-dev-AciujumsnextjsRevalidationSeederFunction-bcthcwwt",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:aciujums-dev-AciujumsnextjsRevalidationSeederFunction-bcthcwwt",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/aciujums-dev-AciujumsnextjsRevalidationSeederRole-babuauzv",
+            "Handler": "index.handler",
+            "CodeSize": 3290,
+            "Description": "Aciujums-nextjs ISR revalidation data seeder",
+            "Timeout": 900,
+            "MemorySize": 128,
+            "LastModified": "2025-09-09T22:44:04.000+0000",
+            "CodeSha256": "+uCU2jnMk8f+36dbhRLDLhPi+bwN1MdoIIJGPObE46k=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"aciujums\",\"stage\":\"dev\"}",
+                    "SST_KEY": "A71lL0lzdxVgug1cTJJ7e7sFeD4K1nLbhEoNp+wTJJo=",
+                    "SST_KEY_FILE": "resource.enc",
+                    "CACHE_DYNAMO_TABLE": "aciujums-dev-AciujumsnextjsRevalidationTable-srhshveo"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "f9b61a69-29ed-4d9b-989b-940430cf8793",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/aciujums-dev-AciujumsnextjsRevalidationSeederFunction-bbnwcbrx"
+            }
+        },
+        {
+            "FunctionName": "get_entity_data",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:get_entity_data",
+            "Runtime": "nodejs22.x",
+            "Role": "arn:aws:iam::876391798236:role/Aciujums-Lambda-GetS3Object-Role",
+            "Handler": "index.handler",
+            "CodeSize": 753,
+            "Description": "",
+            "Timeout": 3,
+            "MemorySize": 128,
+            "LastModified": "2025-03-22T20:15:33.000+0000",
+            "CodeSha256": "hh5R6R88UfSj05OTGQ+l1dFEo+jniju4X0TBR/AK3xE=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "1da97875-bcf2-48e3-8333-920c14caf75c",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/get_entity_data"
+            }
+        },
+        {
+            "FunctionName": "vmi_duomenu_paruosimas",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:vmi_duomenu_paruosimas",
+            "Runtime": "python3.9",
+            "Role": "arn:aws:iam::876391798236:role/Aciujums-Lambda-GetS3Object-Role",
+            "Handler": "lambda_function.lambda_handler",
+            "CodeSize": 2163,
+            "Description": "",
+            "Timeout": 300,
+            "MemorySize": 1024,
+            "LastModified": "2025-08-03T00:13:35.000+0000",
+            "CodeSha256": "nnDr396mrDcbBFAsFALSzwtptjBi7FIjj/sFy8ApnB4=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "eaede434-c3cb-41b4-8099-e7b44d57fd4e",
+            "Layers": [
+                {
+                    "Arn": "arn:aws:lambda:eu-central-1:336392948345:layer:AWSSDKPandas-Python39-Arm64:28",
+                    "CodeSize": 44021120
+                }
+            ],
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/vmi_duomenu_paruosimas"
+            }
+        },
+        {
+            "FunctionName": "nvo-tarybos-dev-nvotarybosappRevalidationSeederFunction-zczodocw",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-dev-nvotarybosappRevalidationSeederFunction-zczodocw",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-dev-nvotarybosappRevalidationSeederRole-enfxuvat",
+            "Handler": "index.handler",
+            "CodeSize": 3193,
+            "Description": "nvo_tarybos_app ISR revalidation data seeder",
+            "Timeout": 900,
+            "MemorySize": 128,
+            "LastModified": "2026-02-04T19:31:17.000+0000",
+            "CodeSha256": "iXuSYAHI40fLGvzngWUTLbFsXoi4vr5NxU7nEq7BlM0=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"dev\"}",
+                    "SST_KEY": "fAIm9rdQWuiqo7Ne0xGpWAEXQtdsJzu3/5AuJ1vqQg4=",
+                    "SST_KEY_FILE": "resource.enc",
+                    "CACHE_DYNAMO_TABLE": "nvo-tarybos-app-dev-nvotarybosappRevalidationTable-mhwuvwbo"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "4031b267-59da-422b-9ab9-83bc3fe9cced",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/nvo-tarybos-dev-nvotarybosappRevalidationSeederFunction-dkkxauut"
+            }
+        },
+        {
+            "FunctionName": "nvo-tarybos-app-dev-getallmunicipalitiesbyyearFunction-deamktbk",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-app-dev-getallmunicipalitiesbyyearFunction-deamktbk",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-dev-getallmunicipalitiesbyyearRole-hhfmnaau",
+            "Handler": "bundle.handler",
+            "CodeSize": 200108,
+            "Description": "",
+            "Timeout": 20,
+            "MemorySize": 1024,
+            "LastModified": "2026-02-04T19:30:11.000+0000",
+            "CodeSha256": "YtBmFEyC7X0TYNJSCTNOwbjxSue82CrbbR4xFQKxYq0=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"dev\"}",
+                    "SST_KEY": "fAIm9rdQWuiqo7Ne0xGpWAEXQtdsJzu3/5AuJ1vqQg4=",
+                    "PROJECT_ROOT": "/workspaces/ngo_tarybos",
+                    "SST_KEY_FILE": "resource.enc"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "ccdcf69a-d5a8-4b97-b012-357e53a5e29f",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/nvo-tarybos-app-dev-getallmunicipalitiesbyyearFunction-kotzdfze"
+            }
+        },
+        {
+            "FunctionName": "nvo-tarybo-vscode-nvotarybosappServerEucentral1Function-endovntm",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybo-vscode-nvotarybosappServerEucentral1Function-endovntm",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-ap-vscode-nvotarybosappServerEucentral1Role-rkbsobvh",
+            "Handler": "server-index.handler",
+            "CodeSize": 4540982,
+            "Description": "nvo_tarybos_app server",
+            "Timeout": 20,
+            "MemorySize": 1024,
+            "LastModified": "2026-02-05T13:38:32.000+0000",
+            "CodeSha256": "xOU5LGdSSYiqe4z6+WommCOdCF0/XNkuI5G1EB4IPVo=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "CACHE_BUCKET_KEY_PREFIX": "_cache",
+                    "CACHE_BUCKET_NAME": "nvo-tarybos-app-vscode-nvotarybosappassetsbucket-cvocewsb",
+                    "REVALIDATION_QUEUE_REGION": "eu-central-1",
+                    "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"vscode\"}",
+                    "SST_KEY": "7Mz0S2JRvS+/lw22gBtuTATxtSpGfwP9pnXdXu661rU=",
+                    "REVALIDATION_QUEUE_URL": "https://sqs.eu-central-1.amazonaws.com/876391798236/nvo-tarybos-app-vscode-nvotarybosappRevalidationEventsQueue-rhteozoc.fifo",
+                    "SST_KEY_FILE": "resource.enc",
+                    "CACHE_DYNAMO_TABLE": "nvo-tarybos-app-vscode-nvotarybosappRevalidationTable-kroctscu",
+                    "CACHE_BUCKET_REGION": "eu-central-1",
+                    "NEXT_PUBLIC_API_URL": "https://n3d9c9bf6a.execute-api.eu-central-1.amazonaws.com"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "2c33a7ed-8117-43b1-abce-e9e202d65816",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/nvo-tarybo-vscode-nvotarybosappServerEucentral1Function-vncdahbt"
+            }
+        },
+        {
+            "FunctionName": "get_search_results",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:get_search_results",
+            "Runtime": "nodejs22.x",
+            "Role": "arn:aws:iam::876391798236:role/Aciujums-Lambda-GetS3Object-Role",
+            "Handler": "index.handler",
+            "CodeSize": 829,
+            "Description": "",
+            "Timeout": 3,
+            "MemorySize": 128,
+            "LastModified": "2025-03-24T23:35:09.000+0000",
+            "CodeSha256": "u7LBZxs4LgBMMY6gTC5RiiSeDUhC9XFBFMZLPYkWUeY=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "d780f76e-b137-4142-8782-c206cddbe295",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/get_search_results"
+            }
+        },
+        {
+            "FunctionName": "rc_duomenu_paruosimas",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:rc_duomenu_paruosimas",
+            "Runtime": "python3.9",
+            "Role": "arn:aws:iam::876391798236:role/Aciujums-Lambda-GetS3Object-Role",
+            "Handler": "lambda_function.lambda_handler",
+            "CodeSize": 2295,
+            "Description": "",
+            "Timeout": 600,
+            "MemorySize": 1240,
+            "LastModified": "2025-08-03T20:34:50.000+0000",
+            "CodeSha256": "21SgYTomGMKKyNSyu/By1uzklb11gWf0Lbt/Fw2lCqU=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "6a44da38-d57a-4fc4-a3e9-031a8e2d7913",
+            "Layers": [
+                {
+                    "Arn": "arn:aws:lambda:eu-central-1:336392948345:layer:AWSSDKPandas-Python39-Arm64:28",
+                    "CodeSize": 44021120
+                }
+            ],
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 1240
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/rc_duomenu_paruosimas"
+            }
+        },
+        {
+            "FunctionName": "get_municipality_data",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:get_municipality_data",
+            "Runtime": "nodejs22.x",
+            "Role": "arn:aws:iam::876391798236:role/Aciujums-Lambda-GetS3Object-Role",
+            "Handler": "index.handler",
+            "CodeSize": 728,
+            "Description": "",
+            "Timeout": 30,
+            "MemorySize": 128,
+            "LastModified": "2025-03-22T19:06:04.000+0000",
+            "CodeSha256": "rVMsHT1X/zXlCtctIr5eEn20n1hBHf4Ked/rNxsmMGw=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "49db91e3-ac3b-4571-8fb5-48fda15762bf",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/get_municipality_data"
+            }
+        },
+        {
+            "FunctionName": "aciuj-production-AciujumsnextjsServerEucentral1Function-tusvwhva",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:aciuj-production-AciujumsnextjsServerEucentral1Function-tusvwhva",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/aciujums-production-AciujumsnextjsServerEucentral1Role-fcaudhxz",
+            "Handler": "server-index.handler",
+            "CodeSize": 7976348,
+            "Description": "Aciujums-nextjs server",
+            "Timeout": 20,
+            "MemorySize": 1024,
+            "LastModified": "2025-06-16T20:47:04.000+0000",
+            "CodeSha256": "/bjJTFqgpHLuxZb4elctAxxHHcU+iuoVblo/A5BZevc=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "CACHE_BUCKET_KEY_PREFIX": "_cache",
+                    "CACHE_BUCKET_NAME": "aciujums-production-aciujumsnextjsassetsbucket-sefuvmux",
+                    "REVALIDATION_QUEUE_REGION": "eu-central-1",
+                    "SST_RESOURCE_App": "{\"name\":\"aciujums\",\"stage\":\"production\"}",
+                    "SST_KEY": "twstf1laEOpav9oe4FC67sQyB3YJetQXlp2mFtdz2dQ=",
+                    "REVALIDATION_QUEUE_URL": "https://sqs.eu-central-1.amazonaws.com/876391798236/aciujums-production-AciujumsnextjsRevalidationEventsQueue-bbccbcot.fifo",
+                    "SST_KEY_FILE": "resource.enc",
+                    "CACHE_DYNAMO_TABLE": "aciujums-production-AciujumsnextjsRevalidationTable-sbhoofto",
+                    "CACHE_BUCKET_REGION": "eu-central-1"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "ecc15095-66b3-40ac-ab19-f82bb88a5e92",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/aciuj-production-AciujumsnextjsServerEucentral1Function-bcedczab"
+            }
+        },
+        {
+            "FunctionName": "SSTBootstrap-MetadataHandlerBEE7179C-vj9EnEQppudW",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:SSTBootstrap-MetadataHandlerBEE7179C-vj9EnEQppudW",
+            "Runtime": "nodejs22.x",
+            "Role": "arn:aws:iam::876391798236:role/SSTBootstrap-MetadataHandlerServiceRole24408145-UA2x9EhQUr2j",
+            "Handler": "index.handler",
+            "CodeSize": 329897,
+            "Description": "",
+            "Timeout": 3,
+            "MemorySize": 128,
+            "LastModified": "2025-12-17T00:38:53.742+0000",
+            "CodeSha256": "H7YxZIBzT+17kSjddoC5ysU1TD7LA2kRWbWjilUTzXY=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "BUCKET_NAME": "sstbootstrap-eucentral134f82fae-oznhoehwzew1"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "64182f81-f05b-4172-9a2e-b673d71c0e8b",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/SSTBootstrap-MetadataHandlerBEE7179C-vj9EnEQppudW"
+            }
+        },
+        {
+            "FunctionName": "ikelti_registru_centro_ex_nvo_duomenis",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_registru_centro_ex_nvo_duomenis",
+            "Runtime": "nodejs18.x",
+            "Role": "arn:aws:iam::876391798236:role/service-role/ikelti_registru_centro_ex_nvo_duomenis-role-pli512g6",
+            "Handler": "index.handler",
+            "CodeSize": 943,
+            "Description": "",
+            "Timeout": 3,
+            "MemorySize": 128,
+            "LastModified": "2023-10-17T22:39:43.000+0000",
+            "CodeSha256": "f6/C7HAlrKjL8b7fjLLk9etcKafZ9wI/AmjyvKte3nw=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "DL_RAW_BUCKET": "nipc-dl-raw"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "4e645edc-f83e-43d6-9191-d732ec94cba6",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/ikelti_registru_centro_ex_nvo_duomenis"
+            }
+        },
+        {
+            "FunctionName": "nvo-tarybos-app-vscode-getmetadataFunction-rrdvczdv",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-app-vscode-getmetadataFunction-rrdvczdv",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-vscode-getmetadataRole-tvfwettk",
+            "Handler": "bundle.handler",
+            "CodeSize": 193672,
+            "Description": "",
+            "Timeout": 20,
+            "MemorySize": 1024,
+            "LastModified": "2026-02-04T19:57:47.000+0000",
+            "CodeSha256": "S0BrNOSjIAF91X6N5yZ720sYRNpEX7T9TrhMJW6JneY=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"vscode\"}",
+                    "SST_KEY": "7Mz0S2JRvS+/lw22gBtuTATxtSpGfwP9pnXdXu661rU=",
+                    "PROJECT_ROOT": "/workspaces/ngo_tarybos",
+                    "SST_KEY_FILE": "resource.enc"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "1797f83f-0443-443a-be17-0d8bd6ea7108",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/nvo-tarybos-app-vscode-getmetadataFunction-nmexdotx"
+            }
+        },
+        {
+            "FunctionName": "nvo-tarybos--vscode-nvotarybosappImageOptimizerFunction-ooercxxa",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos--vscode-nvotarybosappImageOptimizerFunction-ooercxxa",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-vscode-nvotarybosappImageOptimizerRole-msmswzmz",
+            "Handler": "index.handler",
+            "CodeSize": 12274103,
+            "Description": "nvo_tarybos_app image optimizer",
+            "Timeout": 25,
+            "MemorySize": 1536,
+            "LastModified": "2026-02-05T13:38:34.000+0000",
+            "CodeSha256": "TX6ZmK5UxId0r7i6rgZfM9jrbfNjDdZh9oHog7ZKhrs=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"vscode\"}",
+                    "BUCKET_KEY_PREFIX": "_assets",
+                    "SST_KEY": "7Mz0S2JRvS+/lw22gBtuTATxtSpGfwP9pnXdXu661rU=",
+                    "SST_KEY_FILE": "resource.enc",
+                    "BUCKET_NAME": "nvo-tarybos-app-vscode-nvotarybosappassetsbucket-cvocewsb"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "5d045020-c559-4fa0-9b8e-996aa03d4e5a",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/nvo-tarybos--vscode-nvotarybosappImageOptimizerFunction-rfwtxmaw"
+            }
+        },
+        {
+            "FunctionName": "get_app_settings",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:get_app_settings",
+            "Runtime": "nodejs14.x",
+            "Role": "arn:aws:iam::876391798236:role/Aciujums-Lambda-GetS3Object-Role",
+            "Handler": "index.handler",
+            "CodeSize": 458,
+            "Description": "",
+            "Timeout": 30,
+            "MemorySize": 128,
+            "LastModified": "2023-11-25T23:39:10.563+0000",
+            "CodeSha256": "IG7pHiX9OSib28PpzL7opmMZVAIcDK2FJYzyyLlt7Wg=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "2ff2bffd-7eae-467b-9f75-274591952d8d",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/get_app_settings"
+            }
+        },
+        {
+            "FunctionName": "nvo-tarybos-app-dev-getmetadataFunction-dmmcuoew",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-app-dev-getmetadataFunction-dmmcuoew",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-dev-getmetadataRole-vdtonwuz",
+            "Handler": "bundle.handler",
+            "CodeSize": 193743,
+            "Description": "",
+            "Timeout": 20,
+            "MemorySize": 1024,
+            "LastModified": "2026-01-22T00:04:27.000+0000",
+            "CodeSha256": "27cVzg4lfx1Rv1XQQRofHBMJMRaaWElNDwsEj0NKBtM=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"dev\"}",
+                    "SST_KEY": "fAIm9rdQWuiqo7Ne0xGpWAEXQtdsJzu3/5AuJ1vqQg4=",
+                    "PROJECT_ROOT": "/workspaces/ngo_tarybos",
+                    "SST_KEY_FILE": "resource.enc"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "e140f82d-fd0a-477f-b3f1-2954fc8089cd",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/nvo-tarybos-app-dev-getmetadataFunction-hmhvxcxm"
+            }
+        },
+        {
+            "FunctionName": "check_csv_structure",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:check_csv_structure",
+            "Runtime": "python3.13",
+            "Role": "arn:aws:iam::876391798236:role/service-role/check_csv_structure-role-c0y8msg7",
+            "Handler": "lambda_function.lambda_handler",
+            "CodeSize": 2006,
+            "Description": "",
+            "Timeout": 10,
+            "MemorySize": 512,
+            "LastModified": "2025-08-03T20:13:44.000+0000",
+            "CodeSha256": "Tb2VTF+Dp56g88gZ52KNMxP4L794bM5IsoHk48lAqIU=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "fa2f85dc-031c-4d75-a355-7393ef3c8582",
+            "Layers": [
+                {
+                    "Arn": "arn:aws:lambda:eu-central-1:336392948345:layer:AWSSDKPandas-Python313-Arm64:3",
+                    "CodeSize": 41401555
+                }
+            ],
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/check_csv_structure"
+            }
+        },
+        {
+            "FunctionName": "nvo-tarybos-app-dev-dataprocessorFunction-fwvfourr",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-app-dev-dataprocessorFunction-fwvfourr",
+            "Runtime": "python3.12",
+            "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-dev-dataprocessorRole-ofrtkmnb",
+            "Handler": "functions/processor.handler",
+            "CodeSize": 15637966,
+            "Description": "",
+            "Timeout": 300,
+            "MemorySize": 1024,
+            "LastModified": "2026-01-21T18:32:32.000+0000",
+            "CodeSha256": "7J2PjaZX5WOm6P4X2+xWEexaCjZSqiavNVUXSmiG8bk=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "MY_BUCKET_NAME": "nvo-tarybos-app-dev-nvotarybosbucketbucket-bbktdxcb",
+                    "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"dev\"}",
+                    "SST_KEY": "fAIm9rdQWuiqo7Ne0xGpWAEXQtdsJzu3/5AuJ1vqQg4=",
+                    "MY_TABLE_NAME": "nvo-tarybos-app-dev-nvomunicipalitiesTable-bcuwfazd",
+                    "SST_KEY_FILE": "resource.enc"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "767093c7-75b3-436c-89f1-cb3cf9970df5",
+            "Layers": [
+                {
+                    "Arn": "arn:aws:lambda:eu-central-1:336392948345:layer:AWSSDKPandas-Python312-Arm64:3",
+                    "CodeSize": 47270840
+                }
+            ],
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/nvo-tarybos-app-dev-dataprocessorFunction-bckkovxb"
+            }
+        },
+        {
+            "FunctionName": "nvo-tarybos-app-dev-nvotarybosappImageOptimizerFunction-teatznnz",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-app-dev-nvotarybosappImageOptimizerFunction-teatznnz",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-dev-nvotarybosappImageOptimizerRole-tncarubn",
+            "Handler": "index.handler",
+            "CodeSize": 12269681,
+            "Description": "nvo_tarybos_app image optimizer",
+            "Timeout": 25,
+            "MemorySize": 1536,
+            "LastModified": "2026-02-04T19:31:26.000+0000",
+            "CodeSha256": "8KQBGNeg5F2d5v+WyNjOo5IL44ybCwgmv+5Kpl0Q7Ow=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"dev\"}",
+                    "BUCKET_KEY_PREFIX": "_assets",
+                    "SST_KEY": "fAIm9rdQWuiqo7Ne0xGpWAEXQtdsJzu3/5AuJ1vqQg4=",
+                    "SST_KEY_FILE": "resource.enc",
+                    "BUCKET_NAME": "nvo-tarybos-app-dev-nvotarybosappassetsbucket-rzohscke"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "3074f19a-9a0a-4a79-b95b-8c5f1f4065e8",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/nvo-tarybos-app-dev-nvotarybosappImageOptimizerFunction-emaumhtm"
+            }
+        },
+        {
+            "FunctionName": "ikelti_registru_centro_ex_paramos_gaveju_duomenis",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_registru_centro_ex_paramos_gaveju_duomenis",
+            "Runtime": "nodejs18.x",
+            "Role": "arn:aws:iam::876391798236:role/service-role/ikelti_registru_centro_ex_paramos_gaveju_duomenis-role-jao85q5k",
+            "Handler": "index.handler",
+            "CodeSize": 961,
+            "Description": "",
+            "Timeout": 70,
+            "MemorySize": 512,
+            "LastModified": "2023-10-17T22:41:36.000+0000",
+            "CodeSha256": "GK5C8VeCBhzCpOr4SYJOTTxNBnm1doj5mmMnCYAsUSY=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "DL_RAW_BUCKET": "nipc-dl-raw"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "e675f658-3186-44c9-918f-3e460d4e9f42",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/ikelti_registru_centro_ex_paramos_gaveju_duomenis"
+            }
+        },
+        {
+            "FunctionName": "nvo-tarybos-a-dev-nvotarybosappServerEucentral1Function-ufehcobf",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-a-dev-nvotarybosappServerEucentral1Function-ufehcobf",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-dev-nvotarybosappServerEucentral1Role-nmttknch",
+            "Handler": "server-index.handler",
+            "CodeSize": 4529811,
+            "Description": "nvo_tarybos_app server",
+            "Timeout": 20,
+            "MemorySize": 1024,
+            "LastModified": "2026-02-04T19:31:24.000+0000",
+            "CodeSha256": "3YxlXlxBc6SwdqjLFDPDwn7lwDkHB7zvDuSW0NaQeW8=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "CACHE_BUCKET_KEY_PREFIX": "_cache",
+                    "CACHE_BUCKET_NAME": "nvo-tarybos-app-dev-nvotarybosappassetsbucket-rzohscke",
+                    "REVALIDATION_QUEUE_REGION": "eu-central-1",
+                    "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"dev\"}",
+                    "SST_KEY": "fAIm9rdQWuiqo7Ne0xGpWAEXQtdsJzu3/5AuJ1vqQg4=",
+                    "REVALIDATION_QUEUE_URL": "https://sqs.eu-central-1.amazonaws.com/876391798236/nvo-tarybos-app-dev-nvotarybosappRevalidationEventsQueue-wmsdmawh.fifo",
+                    "SST_KEY_FILE": "resource.enc",
+                    "CACHE_DYNAMO_TABLE": "nvo-tarybos-app-dev-nvotarybosappRevalidationTable-mhwuvwbo",
+                    "CACHE_BUCKET_REGION": "eu-central-1",
+                    "NEXT_PUBLIC_API_URL": "https://eq3z0i2gyj.execute-api.eu-central-1.amazonaws.com"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "c43e496d-f45a-40ea-8007-4e2d43640cb5",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/nvo-tarybos-a-dev-nvotarybosappServerEucentral1Function-tdxsabsc"
+            }
+        },
+        {
+            "FunctionName": "aciujums-vscode-AciujumsnextjsDevServerFunction-rnehzfbu",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:aciujums-vscode-AciujumsnextjsDevServerFunction-rnehzfbu",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/aciujums-vscode-AciujumsnextjsDevServerRole-moeerscb",
+            "Handler": "index.handler",
+            "CodeSize": 391,
+            "Description": "Aciujums-nextjs dev server",
+            "Timeout": 20,
+            "MemorySize": 128,
+            "LastModified": "2026-04-01T01:52:36.065+0000",
+            "CodeSha256": "2zwydnWV1SiXrsSTzdOXyOdjnFtGxk/Te0uVC8ZAdIg=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"aciujums\",\"stage\":\"vscode\"}",
+                    "SST_KEY": "9inU7eJztTkqfUpRt1Sp44wBTLSUa34WfPRoHbaHi4E=",
+                    "SST_KEY_FILE": "resource.enc"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "4fb8e57a-d9c6-4e5d-9b96-8bafec7b4d16",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/aciujums-vscode-AciujumsnextjsDevServerFunction-fuvkcken"
+            }
+        },
+        {
+            "FunctionName": "send_custom_alert",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:send_custom_alert",
+            "Runtime": "python3.13",
+            "Role": "arn:aws:iam::876391798236:role/service-role/send_custom_alert-role-btbxnfro",
+            "Handler": "lambda_function.lambda_handler",
+            "CodeSize": 593,
+            "Description": "",
+            "Timeout": 10,
+            "MemorySize": 128,
+            "LastModified": "2025-07-20T15:31:31.000+0000",
+            "CodeSha256": "/nSVhN8QaYz1BSYCdAQFQuXY/j1wRzp5pEBGt31pG7o=",
+            "Version": "$LATEST",
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "7bb69cfe-406f-4da5-bd5c-a6f172a18224",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/send_custom_alert"
+            }
+        },
+        {
+            "FunctionName": "nvo-tarybos-a-vscode-getallmunicipalitiesbyyearFunction-kxksssba",
+            "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tarybos-a-vscode-getallmunicipalitiesbyyearFunction-kxksssba",
+            "Runtime": "nodejs20.x",
+            "Role": "arn:aws:iam::876391798236:role/nvo-tarybos-app-vscode-getallmunicipalitiesbyyearRole-cfhmzneh",
+            "Handler": "bundle.handler",
+            "CodeSize": 200114,
+            "Description": "",
+            "Timeout": 20,
+            "MemorySize": 1024,
+            "LastModified": "2026-02-04T19:12:13.000+0000",
+            "CodeSha256": "hQIXkF8JORlSGUB/LeBZCle/bwvkQOESrxpiBaCkpAY=",
+            "Version": "$LATEST",
+            "Environment": {
+                "Variables": {
+                    "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"vscode\"}",
+                    "SST_KEY": "7Mz0S2JRvS+/lw22gBtuTATxtSpGfwP9pnXdXu661rU=",
+                    "PROJECT_ROOT": "/workspaces/ngo_tarybos",
+                    "SST_KEY_FILE": "resource.enc"
+                }
+            },
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "265083de-a832-4a78-bc25-17a2347f7867",
+            "PackageType": "Zip",
+            "Architectures": [
+                "arm64"
+            ],
+            "EphemeralStorage": {
+                "Size": 512
+            },
+            "SnapStart": {
+                "ApplyOn": "None",
+                "OptimizationStatus": "Off"
+            },
+            "LoggingConfig": {
+                "LogFormat": "Text",
+                "LogGroup": "/aws/lambda/nvo-tarybos-a-vscode-getallmunicipalitiesbyyearFunction-msecvhcz"
+            }
+        }
+    ]
+}

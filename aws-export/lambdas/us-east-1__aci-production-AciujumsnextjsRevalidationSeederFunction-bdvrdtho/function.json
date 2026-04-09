@@ -1,0 +1,56 @@
+{
+    "Configuration": {
+        "FunctionName": "aci-production-AciujumsnextjsRevalidationSeederFunction-bdvrdtho",
+        "FunctionArn": "arn:aws:lambda:us-east-1:876391798236:function:aci-production-AciujumsnextjsRevalidationSeederFunction-bdvrdtho",
+        "Runtime": "nodejs20.x",
+        "Role": "arn:aws:iam::876391798236:role/aciujum-production-AciujumsnextjsRevalidationSeederRole-bavcxmrb",
+        "Handler": "index.handler",
+        "CodeSize": 3290,
+        "Description": "Aciujums-nextjs ISR revalidation data seeder",
+        "Timeout": 900,
+        "MemorySize": 128,
+        "LastModified": "2025-06-16T21:14:12.000+0000",
+        "CodeSha256": "PcrXed1JJl2YR1WqukI/klAgIUx8otXBUrbfSKEDRHA=",
+        "Version": "$LATEST",
+        "Environment": {
+            "Variables": {
+                "SST_RESOURCE_App": "{\"name\":\"aciujums\",\"stage\":\"production\"}",
+                "SST_KEY": "If5N+rd4uYsHDkG5Wlfj185Ql7hy16+CHowXUCo6fjk=",
+                "SST_KEY_FILE": "resource.enc",
+                "CACHE_DYNAMO_TABLE": "aciujums-production-AciujumsnextjsRevalidationTable-cfzcbanf"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "17f8aa4d-32a7-4386-8b2e-6858a9b36b35",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:2d788b26ac416854c5eb831c9f46cb2e0a0ddcee84b1a9b114acbdfdb644c8c1"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/aci-production-AciujumsnextjsRevalidationSeederFunction-uukkbtxz"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://prod-iad-c1-djusa-tasks.s3.us-east-1.amazonaws.com/snapshots/876391798236/aci-production-AciujumsnextjsRevalidationSeederFunction-bdvrdtho-848cd519-7b12-4a9b-a3a8-6947d0782362?versionId=0ZLyZtykWuEfklMwPpR1BlOlhfYPIiP1&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIANAdsCqiOZGdCyd8Sr4bSNk7MBNwSzE7xg7wXiYcHX1AiEApNLgMyHAiGCc4x9hN9DGVR1gx9kb0qQiR8DYcRVCJZ4qiwIITxAEGgw0NzkyMzMwMjUzNzkiDLCy9oWe%2Fh7HYrImXiroAdxHiOzR5LZvMSUWcYM7XmdRZhDheCuUD7ZHjkBGgJ4SIirTBjDWS%2BsNFD1WgC4cUdvcj3SXB7XHXOJT8wnnwHkBi9l9ay866NLSHcbdVWKF8pYK10VlPHv4RlhttKdnGtaaZ701Qvxy7N5BdjojURxQ1VRF2VoLMqR4jtkspAWZpOcHLbEsxgdgkAMZvVdODryGZRocGr1IP%2BctuX9BFOXJL4utOIeFkYjxtVPn3eEtYBw3Ya6%2Fz4hDdCDFVq4lh%2FZXx4T7DQb5vySPtJvLVhGACVfj1dimAtIx46XIO8Y5DiItURQRqTkw4uqyzgY6jQH1Ht75HVUIRWk9YI8M6mGBfkGq1djWvf4zG%2FSXHOj%2FMY5oLyWxB5fCBJJXTHc0tfPynaqCnuDBlmXnq7h%2B58ZAIhGYag281%2FX7UDI4oxU0GlA1vXv4YJfWbBLLwIAxKsdMQ7cZz%2FOXlGuIYDt2xRV3dZWNRnz1qaaPXnBbBRQiz5a4xmtT15F6P4NtEvM%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T143244Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAW7FEDUVR6Y43UKWE%2F20260401%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=32a32c20f7282271f31f13c2f0031c45ebeefabd3f191b5bc8213b05aed8d28e"
+    },
+    "Tags": {
+        "sst:app": "aciujums",
+        "sst:stage": "production"
+    }
+}

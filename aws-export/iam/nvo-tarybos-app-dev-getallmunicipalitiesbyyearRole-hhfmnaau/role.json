@@ -1,0 +1,37 @@
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "nvo-tarybos-app-dev-getallmunicipalitiesbyyearRole-hhfmnaau",
+        "RoleId": "AROA4YDIFSXOBVEHTRLCK",
+        "Arn": "arn:aws:iam::876391798236:role/nvo-tarybos-app-dev-getallmunicipalitiesbyyearRole-hhfmnaau",
+        "CreateDate": "2025-12-26T00:22:42+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "lambda.amazonaws.com",
+                        "AWS": "arn:aws:iam::876391798236:root"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        },
+        "MaxSessionDuration": 3600,
+        "Tags": [
+            {
+                "Key": "sst:stage",
+                "Value": "dev"
+            },
+            {
+                "Key": "sst:app",
+                "Value": "nvo-tarybos-app"
+            }
+        ],
+        "RoleLastUsed": {
+            "LastUsedDate": "2026-03-14T21:41:03+00:00",
+            "Region": "eu-central-1"
+        }
+    }
+}

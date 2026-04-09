@@ -1,30 +1,45 @@
-'use client';
-
-import { useEffect, useState } from 'react';
-import { useParams } from 'next/navigation';
 import { newsItems } from '@/lib/newsData';
+import { readFile } from 'fs/promises';
+import path from 'path';
+import Link from 'next/link';
 
-export default function NewsArticle() {
-    const params = useParams();
-    const slug = params.slug;
+export async function generateMetadata({ params }) {
+    const { slug } = await params;
+    const article = newsItems.find((item) => item.slug === slug);
+    if (!article) return { title: 'Straipsnis' };
+    return {
+        title: article.title,
+        description: article.summary,
+        openGraph: {
+            title: article.title,
+            description: article.summary,
+            type: 'article',
+            publishedTime: article.date,
+        },
+    };
+}
 
-    const [htmlContent, setHtmlContent] = useState('');
+export default async function NewsArticlePage({ params }) {
+    const { slug } = await params;
     const article = newsItems.find((item) => item.slug === slug);
 
-    useEffect(() => {
-        if (!article) return;
+    if (!article) {
+        return <div className="container pt-10">Straipsnis nerastas</div>;
+    }
 
-        fetch(`/news-html/${article.htmlFile}`)
-            .then((res) => res.text())
-            .then(setHtmlContent);
-    }, [article]);
-
-    if (!article) return <div className="container pt-10">Straipsnis nerastas</div>;
+    let htmlContent = '';
+    try {
+        const filePath = path.join(process.cwd(), 'public', 'news-html', article.htmlFile);
+        htmlContent = await readFile(filePath, 'utf8');
+    } catch {
+        htmlContent = '<p>Turinys laikinai nepasiekiamas.</p>';
+    }
 
     return (
         <div className="container pt-10">
-            <h1 className="h1 mb-2">{article.title}</h1>
-            <span className="text-muted mb-4 d-block">{article.date}</span>
+            <Link href="/naujienos" className="text-sm mb-4 block">&larr; Naujienos</Link>
+            <h1 className="mb-2">{article.title}</h1>
+            <span className="text-gray-500 mb-6 block">{article.date}</span>
             <div
                 className="article-html"
                 dangerouslySetInnerHTML={{ __html: htmlContent }}

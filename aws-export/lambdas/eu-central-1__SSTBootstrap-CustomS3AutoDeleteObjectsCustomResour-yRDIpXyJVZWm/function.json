@@ -1,0 +1,49 @@
+{
+    "Configuration": {
+        "FunctionName": "SSTBootstrap-CustomS3AutoDeleteObjectsCustomResour-yRDIpXyJVZWm",
+        "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:SSTBootstrap-CustomS3AutoDeleteObjectsCustomResour-yRDIpXyJVZWm",
+        "Runtime": "nodejs22.x",
+        "Role": "arn:aws:iam::876391798236:role/SSTBootstrap-CustomS3AutoDeleteObjectsCustomResourc-zOpvCElX2Cgu",
+        "Handler": "index.handler",
+        "CodeSize": 2237,
+        "Description": "Lambda function for auto-deleting objects in sstbootstrap-eucentral134f82fae-oznhoehwzew1 S3 bucket.",
+        "Timeout": 900,
+        "MemorySize": 128,
+        "LastModified": "2025-12-17T00:38:35.380+0000",
+        "CodeSha256": "CmExGfRutCJNjHF3sEx3R54UZAAtK6f8UFQLjaIRpsQ=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "904e0fe9-d912-4fbe-a23f-27a903ee4029",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:d16c83c0a8a33f01d0039330bdf4f8f429ff40686e670a93d7fbf2b2d77cb783"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/SSTBootstrap-CustomS3AutoDeleteObjectsCustomResour-yRDIpXyJVZWm"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/876391798236/SSTBootstrap-CustomS3AutoDeleteObjectsCustomResour-yRDIpXyJVZWm-9d7f3e9f-085e-4b2d-8ea6-62463f651e45?versionId=58w6gnIkAwRSktR45ie7.FSWBOK8_v7k&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEI7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJGMEQCIGl0aprfIjHKI0a1liANafzn9%2F7RTIklGTQw%2FCPwwzekAiB6BWj5N5VC1SMbK39ldBlJW4l01mD9PRNTlhqgDHL16iqLAghXEAMaDDY4MDY4NjU1OTQzNCIMYWSxmGWrGJ7UtRw9KugBQqrjVTMgSVjp%2Bg6wEZ3ar4Y2wrr9qok594pzzpYt3zAA4bHOFZlkvA%2BIHqOSaXS8zgFGNAuFNk9SRg4VD2SbuwghSDvewZNvdChR425gKkZQy04%2BxF7NNysHrsQhIz%2BZijjXQBBbSJYpHl7GkkNX2yPtZGHcSBvlRB4wZkBwOomX5o9SIcT6%2F3TvhNZtK9r00hgsH9dNvqojmQDQPWzT9hC4QCABDda%2FIGvTum2MEphqCi7msVMxzt09nA3b0H60wNmgwIVVTIDgKxPcQJ3KqexSCu3a%2BXhMFpamcfYeMHNe2NH7R%2FtYfzC4wbTOBjqOAVs3i5sIfhgsV0Yn5JjQw6ZudmY8WiQTaMkU1tFVExxyheEhv3sKieSE%2BS8%2BSa83ZzkEpJgHld2yyXbe7%2FlCh5coj9vaBQT4U7dlXnoFZS2Uy%2BAENAgw4H5hrDiejdyEZhkvjOiajJtHpXEa%2BLJfCXHsjHtVT0%2BKUNFZCXi1xLDC%2FFPbSso15wIjXhtLbrk%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T142027Z&X-Amz-SignedHeaders=host&X-Amz-Expires=599&X-Amz-Credential=ASIAZ47AUUDFFLELM6NO%2F20260401%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=160c3bef94768265d30afb0b807f756d441e61c65b2742dccf1d2be3c8afea6c"
+    },
+    "Tags": {
+        "aws:cloudformation:stack-name": "SSTBootstrap",
+        "aws:cloudformation:stack-id": "arn:aws:cloudformation:eu-central-1:876391798236:stack/SSTBootstrap/ab356ca0-dae0-11f0-972c-06c66d35b2f3",
+        "aws:cloudformation:logical-id": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+    }
+}

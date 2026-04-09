@@ -1,0 +1,8 @@
+{
+    "Targets": [
+        {
+            "Id": "Target0",
+            "Arn": "arn:aws:lambda:eu-central-1:876391798236:function:SSTBootstrap-MetadataHandlerBEE7179C-vj9EnEQppudW"
+        }
+    ]
+}

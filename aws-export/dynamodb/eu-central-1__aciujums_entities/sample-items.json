@@ -1,0 +1,364 @@
+{
+    "Items": [
+        {
+            "ja_pavadinimas": {
+                "S": "Kelmės Jono Graičiūno gimnazija"
+            },
+            "formavimo_data": {
+                "S": "2025-03-21"
+            },
+            "nvo_statusas": {
+                "N": "0"
+            },
+            "stat_pavadinimas": {
+                "S": "Aktyvus"
+            },
+            "form_pavadinimas": {
+                "S": "Biudžetinė įstaiga"
+            },
+            "ja_reg_data": {
+                "S": "1995-06-02"
+            },
+            "stat_data_nuo": {
+                "S": "1995-06-02"
+            },
+            "ja_kodas": {
+                "N": "190091584"
+            },
+            "par_gav_statusas": {
+                "N": "1"
+            },
+            "atskaitingas": {
+                "N": "1"
+            },
+            "paramos_gav_nuo": {
+                "S": "2004-03-26"
+            },
+            "fa_nepateikta_uz_metus": {
+                "N": "0"
+            }
+        },
+        {
+            "ja_pavadinimas": {
+                "S": "Individuali įmonė"
+            },
+            "formavimo_data": {
+                "S": "2025-03-21"
+            },
+            "nvo_statusas": {
+                "N": "0"
+            },
+            "stat_pavadinimas": {
+                "S": "Išregistruotas"
+            },
+            "form_pavadinimas": {
+                "S": "Individuali įmonė"
+            },
+            "ja_reg_data": {
+                "S": "2002-07-18"
+            },
+            "stat_data_nuo": {
+                "S": "2003-02-24"
+            },
+            "ja_kodas": {
+                "N": "171662391"
+            },
+            "par_gav_statusas": {
+                "N": "0"
+            },
+            "atskaitingas": {
+                "N": "1"
+            },
+            "fa_nepateikta_uz_metus": {
+                "N": "0"
+            }
+        },
+        {
+            "ja_pavadinimas": {
+                "S": "Viešoji įstaiga \"AMBASADORIŲ TENISO KLUBAS\""
+            },
+            "formavimo_data": {
+                "S": "2025-03-21"
+            },
+            "nvo_statusas": {
+                "N": "0"
+            },
+            "stat_pavadinimas": {
+                "S": "Išregistruotas"
+            },
+            "form_pavadinimas": {
+                "S": "Viešoji įstaiga"
+            },
+            "ja_reg_data": {
+                "S": "1993-04-01"
+            },
+            "stat_data_nuo": {
+                "S": "2022-06-03"
+            },
+            "ja_kodas": {
+                "N": "121891081"
+            },
+            "par_gav_statusas": {
+                "N": "0"
+            },
+            "atskaitingas": {
+                "N": "1"
+            },
+            "fa_nepateikta_uz_metus": {
+                "N": "0"
+            }
+        },
+        {
+            "ja_pavadinimas": {
+                "S": "Lietuvos ir Ispanijos, Lotynų Amerikos bei Portugalijos draugija \"Alma Latina\""
+            },
+            "formavimo_data": {
+                "S": "2025-03-21"
+            },
+            "nvo_statusas": {
+                "N": "0"
+            },
+            "stat_pavadinimas": {
+                "S": "Išregistruotas"
+            },
+            "form_pavadinimas": {
+                "S": "Asociacija"
+            },
+            "ja_reg_data": {
+                "S": "1996-09-26"
+            },
+            "stat_data_nuo": {
+                "S": "2022-02-24"
+            },
+            "ja_kodas": {
+                "N": "191930434"
+            },
+            "par_gav_statusas": {
+                "N": "0"
+            },
+            "atskaitingas": {
+                "N": "1"
+            },
+            "fa_nepateikta_uz_metus": {
+                "N": "0"
+            }
+        },
+        {
+            "ja_pavadinimas": {
+                "S": "Individuali įmonė"
+            },
+            "formavimo_data": {
+                "S": "2025-03-21"
+            },
+            "nvo_statusas": {
+                "N": "0"
+            },
+            "stat_pavadinimas": {
+                "S": "Išregistruotas"
+            },
+            "form_pavadinimas": {
+                "S": "Individuali įmonė"
+            },
+            "ja_reg_data": {
+                "S": "1994-04-28"
+            },
+            "stat_data_nuo": {
+                "S": "2001-12-28"
+            },
+            "ja_kodas": {
+                "N": "175777284"
+            },
+            "par_gav_statusas": {
+                "N": "0"
+            },
+            "atskaitingas": {
+                "N": "1"
+            },
+            "fa_nepateikta_uz_metus": {
+                "N": "0"
+            }
+        },
+        {
+            "ja_pavadinimas": {
+                "S": "UAB \"Padangos visiems\""
+            },
+            "formavimo_data": {
+                "S": "2025-03-21"
+            },
+            "nvo_statusas": {
+                "N": "0"
+            },
+            "stat_pavadinimas": {
+                "S": "Aktyvus"
+            },
+            "form_pavadinimas": {
+                "S": "Uždaroji akcinė bendrovė"
+            },
+            "ja_reg_data": {
+                "S": "2015-02-23"
+            },
+            "stat_data_nuo": {
+                "S": "2015-02-23"
+            },
+            "ja_kodas": {
+                "N": "303741865"
+            },
+            "par_gav_statusas": {
+                "N": "0"
+            },
+            "atskaitingas": {
+                "N": "1"
+            },
+            "fa_nepateikta_uz_metus": {
+                "N": "0"
+            }
+        },
+        {
+            "ja_pavadinimas": {
+                "S": "Daugiabučio namo savininkų bendrija \"Gerovė\""
+            },
+            "formavimo_data": {
+                "S": "2025-03-21"
+            },
+            "nvo_statusas": {
+                "N": "0"
+            },
+            "stat_pavadinimas": {
+                "S": "Aktyvus"
+            },
+            "form_pavadinimas": {
+                "S": "Bendrija"
+            },
+            "ja_reg_data": {
+                "S": "1996-03-27"
+            },
+            "stat_data_nuo": {
+                "S": "1996-03-27"
+            },
+            "ja_kodas": {
+                "N": "252141680"
+            },
+            "par_gav_statusas": {
+                "N": "1"
+            },
+            "atskaitingas": {
+                "N": "1"
+            },
+            "paramos_gav_nuo": {
+                "S": "2015-12-04"
+            },
+            "fa_nepateikta_uz_metus": {
+                "N": "0"
+            }
+        },
+        {
+            "ja_pavadinimas": {
+                "S": "Uždaroji akcinė bendrovė \"Benediktas\""
+            },
+            "formavimo_data": {
+                "S": "2025-03-21"
+            },
+            "nvo_statusas": {
+                "N": "0"
+            },
+            "stat_pavadinimas": {
+                "S": "Išregistruotas"
+            },
+            "form_pavadinimas": {
+                "S": "Uždaroji akcinė bendrovė"
+            },
+            "ja_reg_data": {
+                "S": "1993-08-11"
+            },
+            "stat_data_nuo": {
+                "S": "2022-10-24"
+            },
+            "ja_kodas": {
+                "N": "122033153"
+            },
+            "par_gav_statusas": {
+                "N": "0"
+            },
+            "atskaitingas": {
+                "N": "1"
+            },
+            "fa_nepateikta_uz_metus": {
+                "N": "0"
+            }
+        },
+        {
+            "ja_pavadinimas": {
+                "S": "MB \"Apdaila man\""
+            },
+            "formavimo_data": {
+                "S": "2025-03-21"
+            },
+            "nvo_statusas": {
+                "N": "0"
+            },
+            "stat_pavadinimas": {
+                "S": "Aktyvus"
+            },
+            "form_pavadinimas": {
+                "S": "Mažoji bendrija"
+            },
+            "ja_reg_data": {
+                "S": "2018-08-30"
+            },
+            "stat_data_nuo": {
+                "S": "2018-08-30"
+            },
+            "ja_kodas": {
+                "N": "304909262"
+            },
+            "par_gav_statusas": {
+                "N": "0"
+            },
+            "atskaitingas": {
+                "N": "1"
+            },
+            "fa_nepateikta_uz_metus": {
+                "N": "0"
+            }
+        },
+        {
+            "ja_pavadinimas": {
+                "S": "UAB \"Paskutinė ašara\""
+            },
+            "formavimo_data": {
+                "S": "2025-03-21"
+            },
+            "nvo_statusas": {
+                "N": "0"
+            },
+            "stat_pavadinimas": {
+                "S": "Aktyvus"
+            },
+            "form_pavadinimas": {
+                "S": "Uždaroji akcinė bendrovė"
+            },
+            "ja_reg_data": {
+                "S": "2019-09-20"
+            },
+            "stat_data_nuo": {
+                "S": "2019-09-20"
+            },
+            "ja_kodas": {
+                "N": "305254379"
+            },
+            "par_gav_statusas": {
+                "N": "0"
+            },
+            "atskaitingas": {
+                "N": "1"
+            },
+            "fa_nepateikta_uz_metus": {
+                "N": "0"
+            }
+        }
+    ],
+    "Count": 4116,
+    "ScannedCount": 4116,
+    "ConsumedCapacity": null,
+    "NextToken": "eyJFeGNsdXNpdmVTdGFydEtleSI6IG51bGwsICJib3RvX3RydW5jYXRlX2Ftb3VudCI6IDEwfQ=="
+}

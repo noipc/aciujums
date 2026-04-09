@@ -1,0 +1,50 @@
+{
+    "Configuration": {
+        "FunctionName": "ikelti_vmi_duomenis",
+        "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:ikelti_vmi_duomenis",
+        "Runtime": "nodejs22.x",
+        "Role": "arn:aws:iam::876391798236:role/service-role/ikelti_vmi_duomenis-role-w6u38vlc",
+        "Handler": "index.handler",
+        "CodeSize": 1186,
+        "Description": "",
+        "Timeout": 30,
+        "MemorySize": 128,
+        "LastModified": "2025-07-20T20:54:08.000+0000",
+        "CodeSha256": "jRn1zA28PQsZx08lZW6GUx85BL6/2mFIcKexLcjZWZ0=",
+        "Version": "$LATEST",
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "b8cfc75c-fae7-4162-bce5-2bd81d5678c9",
+        "Layers": [
+            {
+                "Arn": "arn:aws:lambda:eu-central-1:876391798236:layer:node-layer:1",
+                "CodeSize": 6711728
+            }
+        ],
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "arm64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:5e3c80f22edec71979fb474ea310e6e652f1e127086be7eb20d12b0b26666cc1"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/ikelti_vmi_duomenis"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/876391798236/ikelti_vmi_duomenis-d3546e03-cc84-4ee3-9e70-a19c355e55da?versionId=h9XB.6jh.h2jHgaykmpupaMye699LWOh&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJHMEUCIQC9MP1M3wAYnqhikFoN505TAFfmKaOPN%2Bedk9TRq7uMjQIgM2pcv9AnKc7VfOUvYkHelqkCVUFiT%2FjxI2F%2BZrf4XMcqiwIISxADGgw2ODA2ODY1NTk0MzQiDIPz7KrDoYoV8VN%2FYyroARz%2B2qeyXnis202pNxkjcRxr448SP8LGhc0InmWjHilk667HRIkfsu7ABV1sIhmFdMc7B2DPOsAU3wUveZgDTfX2Y3xVCB5RnxPpsuVPLELumQffM6WB6VdzcR%2FOcHanju0HIt2SR225sv8C5cYdoqKkLbr%2B88QpgN0C64YF%2FFehxmAjE%2B3W1z94Hk4Ei7cmYdgjnBm6yqyKwiCccybDavCQj4YwmmDXsSdrGnF1twNqIV%2FcdELzbMCiUlDD6hiErazFB2z3lq98V4BK3hL2nxMe4Y6z1giOf8XoSAPAwc%2FObTW9dAqOyHcw3POxzgY6jQGOLO7jr2m1unV6z2mVSmZUfCV%2FGRxB1zSlAeN6DfHt1nOZdUNgDG7HwrRev0xL73bn0ut0UD8dKC54CjLi5I%2FFk02NYzrsZNWi9nv1uNvoiwqazW2XvyM5rxtuuUyuYjsU%2Fvx21paGf2DUOTaefNXTgfGbUWFIDZ5W%2BQdJaxKs1vm3hNSB30R0s2SYV2g%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T125301Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZ47AUUDFBV6ZBOA4%2F20260401%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=c7833d5120cf00b1b8b69e884fae0ce5f2958733959ccdbc23131cdc4cb38758"
+    }
+}

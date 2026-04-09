@@ -1,16 +1,19 @@
+'use client';
 import { useMemo, useState, useEffect } from 'react';
-import { useMunicipalityData } from '@/lib/useMunicipalityData'; // already exists
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import { useMunicipalityData } from '@/lib/useMunicipalityData';
 import CustomDropdown from '@/components/CustomDropdown';
 import LoadingSpinner from './LoadingSpinner';
 
 
 export default function EntityTable({ municipality, initialYear, availableYears }) {
 
+    const router = useRouter();
     const [currentPage, setCurrentPage] = useState(1);
     const [localYear, setLocalYear]     = useState(initialYear);
     const [filterYear, setFilterYear]   = useState(localYear);
     const itemsPerPage                  = 100;
-
 
     const { data, loading } = useMunicipalityData(municipality, localYear);
 
@@ -23,7 +26,6 @@ export default function EntityTable({ municipality, initialYear, availableYears 
         { value: 'high_low', label: 'Didž. suma → Maž. suma' },
     ];
 
-    //When filterYear changes, update the localYear to trigger re-fetch.
     useEffect(() => {
         if (filterYear) {
             setLocalYear(filterYear);
@@ -33,10 +35,7 @@ export default function EntityTable({ municipality, initialYear, availableYears 
 
     const filteredEntities = useMemo(() => {
         if (!data) return [];
-        let entities = data;
-        // Here, data is assumed to be for the selected year (localYear)
-        // Sort based on filterOrder.
-        const sortedEntities = [...entities];
+        const sortedEntities = [...data];
         if (filterOrderValue === 'a_z') {
             sortedEntities.sort((a, b) => a.entity_name.localeCompare(b.entity_name));
         } else if (filterOrderValue === 'z_a') {
@@ -46,9 +45,7 @@ export default function EntityTable({ municipality, initialYear, availableYears 
         } else if (filterOrderValue === 'high_low') {
             sortedEntities.sort((a, b) => b.total_funds - a.total_funds);
         }
-    
         return sortedEntities;
-    
     }, [data, filterOrderValue]);
 
     const paginatedEntities = useMemo(() => {
@@ -63,9 +60,9 @@ export default function EntityTable({ municipality, initialYear, availableYears 
     return (
         <div>
             <div className="filters-container">
-                <div className="filter-wrapper d-flex flex-wrap justify-content-start align-items-center mt-2 mb-2">
-                    <div className="d-inline-block mr-3 pb-1">
-                        <label className="d-inline-block"><strong>Metai:</strong></label>
+                <div className="filter-wrapper flex flex-wrap justify-start items-center mt-2 mb-2">
+                    <div className="inline-block mr-4 pb-1">
+                        <label className="inline-block"><strong>Metai:</strong></label>
                         <CustomDropdown
                             value={availableYears.map(yr => ({ value: yr, label: yr })).find(option => option.value === filterYear)}
                             options={availableYears.map((yr) => ({ value: yr, label: yr }))}
@@ -76,8 +73,8 @@ export default function EntityTable({ municipality, initialYear, availableYears 
                             listClassName="year-list"
                         />
                     </div>
-                    <div className="d-inline-block mr-3 pb-1">
-                        <label className="d-inline-block"><strong>Rikiuoti nuo:</strong></label>
+                    <div className="inline-block mr-4 pb-1">
+                        <label className="inline-block"><strong>Rikiuoti nuo:</strong></label>
                         <CustomDropdown
                             value={sortingOptions.find(option => option.value === filterOrderValue)}
                             options={sortingOptions}
@@ -88,7 +85,7 @@ export default function EntityTable({ municipality, initialYear, availableYears 
                     </div>
                 </div>
             </div>
-            <div className="table-responsive">
+            <div className="overflow-x-auto">
                 <table id="entityListTable" className="table table-striped">
                     <thead>
                         <tr>
@@ -103,10 +100,10 @@ export default function EntityTable({ municipality, initialYear, availableYears 
                             <tr
                                 key={entity.legal_id}
                                 style={{ cursor: 'pointer' }}
-                                onClick={() => window.location.href = `/organizacijos/${entity.legal_id}`}
+                                onClick={() => router.push(`/organizacijos/${entity.legal_id}`)}
                             >
                                 <td>{entity.legal_id}</td>
-                                <td>{entity.entity_name}</td>
+                                <td><Link href={`/organizacijos/${entity.legal_id}`}>{entity.entity_name}</Link></td>
                                 <td>{entity.total_funders}</td>
                                 <td>{entity.total_funds.toLocaleString('lt-LT', {
                                     minimumFractionDigits: 2,
@@ -118,12 +115,19 @@ export default function EntityTable({ municipality, initialYear, availableYears 
                 </table>
             </div>
 
-            {/* Pagination Controls */}
-            <div className="d-flex justify-content-center mb-2">
-                <div className="pagination align-items-center mt-4">
-                    <button className="btn-circle" disabled={currentPage === 1} onClick={() => setCurrentPage(currentPage - 1)}><i className="fa fa-chevron-left"></i></button>
+            <div className="flex justify-center mb-2">
+                <div className="pagination items-center mt-6">
+                    <button className="btn-circle" disabled={currentPage === 1} onClick={() => setCurrentPage(currentPage - 1)}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6z"/>
+                        </svg>
+                    </button>
                     <span className="mx-2">{currentPage} iš {totalPages}</span>
-                    <button className="btn-circle" disabled={currentPage === totalPages} onClick={() => setCurrentPage(currentPage + 1)}><i className="fa fa-chevron-right"></i></button>
+                    <button className="btn-circle" disabled={currentPage === totalPages} onClick={() => setCurrentPage(currentPage + 1)}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>

@@ -13,33 +13,30 @@ concurrency:
   group: deploy-production
   cancel-in-progress: true
 
-env:
-  PROJECT_DIR: aciujums
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: prod
-    defaults:
-      run:
-        working-directory: ${{ env.PROJECT_DIR }}
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Sanity check config is here
-        run: |
-          pwd
-          ls -la
-          test -f sst.config.ts && echo "Found sst.config.ts"
-
-      - uses: actions/setup-node@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
 
-      - name: Install deps
+      - name: Install root deps (SST)
         run: npm ci
+
+      - name: Install Next.js deps
+        working-directory: aciujums
+        run: npm ci
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v5
 
       - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
@@ -47,5 +44,22 @@ jobs:
           role-to-assume: arn:aws:iam::${{ vars.ACCOUNT_ID }}:role/aciujums-deploy-prod
           aws-region: ${{ vars.REGION }}
 
+      - name: Restore SST state
+        run: |
+          mkdir -p .sst
+          aws s3 sync s3://sst-state-stfvbzbwauro/ci-state/production/ .sst/ \
+            --exclude "platform/*" || true
+
+      - name: Install SST platform deps
+        run: npx sst install
+
       - name: Deploy SST (stage=production)
         run: npx sst deploy --stage production
+        env:
+          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
+
+      - name: Save SST state
+        if: always()
+        run: |
+          aws s3 sync .sst/ s3://sst-state-stfvbzbwauro/ci-state/production/ \
+            --exclude "platform/*"

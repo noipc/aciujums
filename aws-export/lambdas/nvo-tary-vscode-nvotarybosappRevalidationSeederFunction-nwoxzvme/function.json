@@ -1,0 +1,56 @@
+{
+    "Configuration": {
+        "FunctionName": "nvo-tary-vscode-nvotarybosappRevalidationSeederFunction-nwoxzvme",
+        "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:nvo-tary-vscode-nvotarybosappRevalidationSeederFunction-nwoxzvme",
+        "Runtime": "nodejs20.x",
+        "Role": "arn:aws:iam::876391798236:role/nvo-tarybos--vscode-nvotarybosappRevalidationSeederRole-shrrdcra",
+        "Handler": "index.handler",
+        "CodeSize": 3206,
+        "Description": "nvo_tarybos_app ISR revalidation data seeder",
+        "Timeout": 900,
+        "MemorySize": 128,
+        "LastModified": "2026-02-05T13:38:24.000+0000",
+        "CodeSha256": "ohERClzGODfQedYoXneqI05SDycd4VRo4fruruqdpyA=",
+        "Version": "$LATEST",
+        "Environment": {
+            "Variables": {
+                "SST_RESOURCE_App": "{\"name\":\"nvo-tarybos-app\",\"stage\":\"vscode\"}",
+                "SST_KEY": "7Mz0S2JRvS+/lw22gBtuTATxtSpGfwP9pnXdXu661rU=",
+                "SST_KEY_FILE": "resource.enc",
+                "CACHE_DYNAMO_TABLE": "nvo-tarybos-app-vscode-nvotarybosappRevalidationTable-kroctscu"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "45a1f263-0ca9-413e-bfbf-b1d5e306eb41",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:2d788b26ac416854c5eb831c9f46cb2e0a0ddcee84b1a9b114acbdfdb644c8c1"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/nvo-tary-vscode-nvotarybosappRevalidationSeederFunction-bcuxvfsd"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/876391798236/nvo-tary-vscode-nvotarybosappRevalidationSeederFunction-nwoxzvme-ea1d700b-dd4d-40d8-b054-865a0cf4ffba?versionId=nfzkqx0SkqIbnCC0RWgeSZJMHHkCZLPZ&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJGMEQCIC%2BJeV1jjGmntr8RySn8fGv71bjzfOfiaI5h4Dm71LMjAiAo9npDMx7ioCJhwTF6PaqSDLmgkuMPU%2FErEDVWJlANpiqLAghKEAMaDDY4MDY4NjU1OTQzNCIMWcOEJWmRPfCPgNnMKugBQPgoqN09HSLjTCfH2DvNSnlNWxLiqzG4nnQlwz0pnuiOleuGM8UFWGzDhpZ%2FVCuNXW7CfCmYFNODrcXrPhavw3QfjUEVUEEhQBlw4okYoO%2Fu0z26yLdLIU5RzQdzcAHHDKlN5Hf%2F8dvDCLd2KE7cTmm1HuIYMSb5Y0x2thLJYFU2BXvQAo8rXDNAlu2pNO4W1jzkdVCF4WQAqdhgTA2vTLhwCCE6ryf6nB%2B2iQQUIoLeSXayka2COBvH7a9XkeXP0%2BKZAcoCpnjLs0cm3x16qe6eMp28LC5A0uWSi4o%2FAAeIEDZWcaan6DDh27HOBjqOAensGdr0%2FlJ2mmc7GFmkrzH8k93k%2FWcC9luyoCItJv%2FGMvlo1huf84TWJz1FxsiTbqTNmdVxPKaU0Dk1JVsWE67B0DzeQmFlHk%2B2f%2ByC2IrTul%2BQbT6YPn8vPpHQAaNAp7XD1luDUC1%2BekBDYAvb6ORx8a8alUZbFRsoDgq4lMUouKNhFFKYGFT1udRtq%2FM%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T125324Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZ47AUUDFFFARHY24%2F20260401%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=25325c6f703660b8583c2c53aae232dd3d802f23afa0ceefde2803c455d6eb35"
+    },
+    "Tags": {
+        "sst:app": "nvo-tarybos-app",
+        "sst:stage": "vscode"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "CommonPrefixes": [
+        {
+            "Prefix": "assets/"
+        },
+        {
+            "Prefix": "sourcemap/"
+        }
+    ],
+    "RequestCharged": null,
+    "Prefix": ""
+}

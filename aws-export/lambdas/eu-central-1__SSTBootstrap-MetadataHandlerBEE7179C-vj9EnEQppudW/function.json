@@ -1,0 +1,54 @@
+{
+    "Configuration": {
+        "FunctionName": "SSTBootstrap-MetadataHandlerBEE7179C-vj9EnEQppudW",
+        "FunctionArn": "arn:aws:lambda:eu-central-1:876391798236:function:SSTBootstrap-MetadataHandlerBEE7179C-vj9EnEQppudW",
+        "Runtime": "nodejs22.x",
+        "Role": "arn:aws:iam::876391798236:role/SSTBootstrap-MetadataHandlerServiceRole24408145-UA2x9EhQUr2j",
+        "Handler": "index.handler",
+        "CodeSize": 329897,
+        "Description": "",
+        "Timeout": 3,
+        "MemorySize": 128,
+        "LastModified": "2025-12-17T00:38:53.742+0000",
+        "CodeSha256": "H7YxZIBzT+17kSjddoC5ysU1TD7LA2kRWbWjilUTzXY=",
+        "Version": "$LATEST",
+        "Environment": {
+            "Variables": {
+                "BUCKET_NAME": "sstbootstrap-eucentral134f82fae-oznhoehwzew1"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "64182f81-f05b-4172-9a2e-b673d71c0e8b",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:d16c83c0a8a33f01d0039330bdf4f8f429ff40686e670a93d7fbf2b2d77cb783"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/SSTBootstrap-MetadataHandlerBEE7179C-vj9EnEQppudW"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/876391798236/SSTBootstrap-MetadataHandlerBEE7179C-vj9EnEQppudW-f94bbbdb-306a-4504-8c44-ec99ed991c27?versionId=WCfUcqEzpfd_KOFOvtMvyJ6JvRr8iZ6k&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJHMEUCIQCJKIYJzydFc1864KyTB4XSQRh1l%2F%2F183EiYBTWm%2FuWxgIgLEnF5F9jBgN1v%2FUT7ijVmaVFvA7h8GUjl6u1xAA9%2B3sqiwIIVhADGgw2ODA2ODY1NTk0MzQiDJd%2BoYMydC5NLYzLUCroAb4Vd0P1jqmiamgJnpsxII1IyhGe5T9CO5P2Afs1pg7tWhlMoqYkn8%2Bxd6a%2FQeMswB0Kp9AAArP2IH3hw0sbNOZSRstzq33bZpBRs2GMgPOpy5TlkENAtJW82mY1vicyWS9gEq4JYgU1byrgO2AwplIY6TC9kVZ4r0jqoNPET8OZz8yu3xNWm03m4r6m2uJHOhEE42j2050ZoMVyL2BFEwlCJvXeVXbr3gZ9WsG37ncgB2alYsWrEVzI%2BuY%2ByvFLGVqyrUMmRp7gIzaiWCDo70yCRJNuVr2WvFD55F3mbzyn1PrYceqAWiMw9aq0zgY6jQGerTMT85gOcDi9eB015IiNzAfYAgRXDcWC3e5KqddQNzxciN%2FOAh3pp1WJly08saKpr3xNCEHNg4gVuZrV0V9ovZd9STIsHM9qDj5ZzI6jFbkJsz1pvI22xo7dB%2BBYibT7LiZTA%2BcYJLDktFszBsustsVsYZCkDJqV5hb%2Bh5LY1ulJuX8dWBOBzw%2Fd2pk%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260401T142755Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZ47AUUDFDDID5JVY%2F20260401%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=b774a07a2dbd9d3daa9a662bbba10dada3c882e740dbdae0b6d84d9e97141b55"
+    },
+    "Tags": {
+        "aws:cloudformation:stack-name": "SSTBootstrap",
+        "aws:cloudformation:stack-id": "arn:aws:cloudformation:eu-central-1:876391798236:stack/SSTBootstrap/ab356ca0-dae0-11f0-972c-06c66d35b2f3",
+        "aws:cloudformation:logical-id": "MetadataHandlerBEE7179C"
+    }
+}
