@@ -26,6 +26,8 @@ export default $config({
         };
     },
     async run() {
+        const { accountId } = await aws.getCallerIdentity({});
+
         // Official AWS SDK Pandas layer — python3.14 arm64 (eu-central-1)
         // Check latest version: https://aws-sdk-pandas.readthedocs.io/en/stable/layers.html
         const PANDAS_LAYER =
@@ -41,13 +43,16 @@ export default $config({
         // ─────────────────────────────────────────────
         // S3 BUCKETS
         // ─────────────────────────────────────────────
+        const rawBucketName = $app.stage === "production" ? "nipc-raw-duomenys" : "nipc-dl-raw";
         const rawBucket = new sst.aws.Bucket("RawBucket", {
-            transform: { bucket: (args, opts) => { args.bucket = "nipc-dl-raw"; args.forceDestroy = undefined; opts.import = "nipc-dl-raw"; } },
+            transform: { bucket: (args, opts) => { args.bucket = rawBucketName; args.forceDestroy = undefined; opts.import = rawBucketName; } },
         });
 
-        const analyticsBucket = new sst.aws.Bucket("AnalyticsBucket", {
-            transform: { bucket: (args, opts) => { args.bucket = "nipc-dl-analytics"; opts.import = "nipc-dl-analytics"; } },
-        });
+        const analyticsBucket = $app.stage !== "production"
+            ? new sst.aws.Bucket("AnalyticsBucket", {
+                transform: { bucket: (args, opts) => { args.bucket = "nipc-dl-analytics"; opts.import = "nipc-dl-analytics"; } },
+            })
+            : null;
 
         // ─────────────────────────────────────────────
         // DYNAMODB TABLES
@@ -107,7 +112,7 @@ export default $config({
         // SNS ALERT TOPIC
         // ─────────────────────────────────────────────
         const alertTopic = new sst.aws.SnsTopic("AlertTopic", {
-            transform: { topic: { name: "lambda-csv-errors" } },
+            transform: { topic: (args, opts) => { args.name = "lambda-csv-errors"; opts.import = `arn:aws:sns:eu-central-1:${accountId}:lambda-csv-errors`; } },
         });
 
         // ─────────────────────────────────────────────
@@ -261,11 +266,11 @@ export default $config({
                                 $interpolate`${searchTable.arn}/index/*`,
                             ],
                         },
-                        {
+                        ...(analyticsBucket ? [{
                             Effect: "Allow",
                             Action: ["s3:GetObject", "s3:ListBucket"],
                             Resource: [analyticsBucket.arn, $interpolate`${analyticsBucket.arn}/*`],
-                        },
+                        }] : []),
                     ],
                 }),
             }],
