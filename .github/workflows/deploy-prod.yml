@@ -50,6 +50,9 @@ jobs:
           aws s3 sync s3://sst-state-ruwnuchtrhtf/ci-state/production/ .sst/ \
             --exclude "platform/*" || true
 
+      - name: Fix ghost CloudFront distribution and stale locks in Pulumi state
+        run: python3 fix_state.py --scan .sst/
+
       - name: Install SST platform deps
         run: npx sst install
 
