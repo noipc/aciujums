@@ -673,8 +673,17 @@ export default $config({
             transform: {
                 cdn: (args) => {
                     args.transform = {
-                        distribution: (_distArgs, distOpts) => {
-                            if ($app.stage === "production") distOpts.import = process.env.CLOUDFRONT_DISTRIBUTION_ID!;
+                        distribution: (distArgs, distOpts) => {
+                            if ($app.stage === "production") {
+                                distOpts.import = process.env.CLOUDFRONT_DISTRIBUTION_ID!;
+                                distOpts.ignoreChanges = ["defaultCacheBehavior", "origins", "waitForDeployment"];
+                                distArgs.aliases = ["www.aciujums.lt"];
+                                distArgs.viewerCertificate = {
+                                    acmCertificateArn: `arn:aws:acm:us-east-1:${accountId}:certificate/b5e0c505-59f9-4822-8dce-ce0bb3a70a7c`,
+                                    sslSupportMethod: "sni-only",
+                                    minimumProtocolVersion: "TLSv1.2_2021",
+                                };
+                            }
                         },
                     };
                 },
