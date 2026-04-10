@@ -115,7 +115,7 @@ export default $config({
         // ─────────────────────────────────────────────
         const aciujumsBus = new aws.cloudwatch.EventBus("AciujumsBus", {
             name: "aciujums",
-        });
+        }, { import: "aciujums" });
 
         const alertEmail = process.env.ALERT_EMAIL;
         if (!alertEmail) throw new Error("ALERT_EMAIL env var is required");
