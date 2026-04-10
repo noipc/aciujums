@@ -670,6 +670,15 @@ export default $config({
             environment: {
                 NEXT_PUBLIC_API_URL: api.url,
             },
+            transform: {
+                cdn: (args) => {
+                    args.transform = {
+                        distribution: (_distArgs, distOpts) => {
+                            if ($app.stage === "production") distOpts.import = process.env.CLOUDFRONT_DISTRIBUTION_ID!;
+                        },
+                    };
+                },
+            },
         });
 
         return {

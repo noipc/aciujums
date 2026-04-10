@@ -47,7 +47,7 @@ jobs:
       - name: Restore SST state
         run: |
           mkdir -p .sst
-          aws s3 sync s3://sst-state-stfvbzbwauro/ci-state/production/ .sst/ \
+          aws s3 sync s3://sst-state-ruwnuchtrhtf/ci-state/production/ .sst/ \
             --exclude "platform/*" || true
 
       - name: Install SST platform deps
@@ -57,9 +57,10 @@ jobs:
         run: npx sst deploy --stage production
         env:
           ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
+          CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
 
       - name: Save SST state
         if: always()
         run: |
-          aws s3 sync .sst/ s3://sst-state-stfvbzbwauro/ci-state/production/ \
+          aws s3 sync .sst/ s3://sst-state-ruwnuchtrhtf/ci-state/production/ \
             --exclude "platform/*"
