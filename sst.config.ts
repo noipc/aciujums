@@ -664,34 +664,17 @@ export default $config({
         // ─────────────────────────────────────────────
         // NEXT.JS APP
         // ─────────────────────────────────────────────
-        new sst.aws.Nextjs("Aciujums-nextjs", {
+        const nextjs = new sst.aws.Nextjs("Aciujums-nextjs", {
             path: "aciujums",
             server: { architecture: "arm64" },
             environment: {
                 NEXT_PUBLIC_API_URL: api.url,
             },
-            transform: {
-                cdn: (args) => {
-                    args.transform = {
-                        distribution: (distArgs, distOpts) => {
-                            if ($app.stage === "production") {
-                                distOpts.import = process.env.CLOUDFRONT_DISTRIBUTION_ID!;
-                                distOpts.ignoreChanges = ["defaultCacheBehavior", "origins", "waitForDeployment"];
-                                distArgs.aliases = ["www.aciujums.lt"];
-                                distArgs.viewerCertificate = {
-                                    acmCertificateArn: `arn:aws:acm:us-east-1:${accountId}:certificate/b5e0c505-59f9-4822-8dce-ce0bb3a70a7c`,
-                                    sslSupportMethod: "sni-only",
-                                    minimumProtocolVersion: "TLSv1.2_2021",
-                                };
-                            }
-                        },
-                    };
-                },
-            },
         });
 
         return {
             apiUrl: api.url,
+            nextjsUrl: nextjs.url,
         };
     },
 });

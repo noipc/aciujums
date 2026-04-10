@@ -2,8 +2,16 @@ import json
 import os
 import sys
 
+# Ghost distribution that no longer exists in AWS
 GHOST_ID = "E1NNH1VVJ60360"
-REAL_ID = "E1Q42BJXF05FIL"
+# Old distribution tied to www.aciujums.lt — remove from Pulumi state so it
+# is no longer managed by SST. SST will create a fresh distribution instead.
+# The old distribution stays in AWS and will be reconfigured as a proxy.
+OLD_IMPORTED_ID = "E1Q42BJXF05FIL"
+
+CF_DISTRIBUTION_TYPE = "aws:cloudfront/distribution:Distribution"
+CF_WAITER_TYPE = "sst:aws:DistributionDeploymentWaiter"
+CF_INVALIDATION_TYPE = "sst:aws:DistributionInvalidation"
 
 
 def fix_state_file(path: str) -> bool:
@@ -21,22 +29,35 @@ def fix_state_file(path: str) -> bool:
     changed = False
 
     for r in resources:
-        if (
-            r.get("type") == "aws:cloudfront/distribution:Distribution"
-            and r.get("id") == GHOST_ID
-        ):
+        r_type = r.get("type", "")
+        r_id = r.get("id", "")
+        r_str = json.dumps(r)
+
+        # Remove ghost distribution (never existed / was deleted in AWS)
+        if r_type == CF_DISTRIBUTION_TYPE and r_id == GHOST_ID:
             print(f"  Removed ghost distribution (delete={r.get('delete')})")
             changed = True
             continue
-        r_str = json.dumps(r)
-        if GHOST_ID in r_str:
-            print(f"  Updated reference in: {r.get('urn', '').split('::')[-1]}")
-            r = json.loads(r_str.replace(GHOST_ID, REAL_ID))
+
+        # Remove old imported distribution — SST will create a fresh one.
+        # The physical distribution in AWS is NOT deleted; Pulumi just stops tracking it.
+        if r_type == CF_DISTRIBUTION_TYPE and r_id == OLD_IMPORTED_ID:
+            print(f"  Removed old imported distribution from state")
             changed = True
+            continue
+
+        # Remove waiter/invalidation resources that reference either old distribution.
+        # They will be recreated against the new distribution on the next deploy.
+        if r_type in (CF_WAITER_TYPE, CF_INVALIDATION_TYPE):
+            if GHOST_ID in r_str or OLD_IMPORTED_ID in r_str:
+                print(f"  Removed stale CF resource: {r_type.split(':')[-1]}")
+                changed = True
+                continue
+
         fixed.append(r)
 
     if not changed:
-        print(f"  No ghost distribution found")
+        print(f"  No changes needed")
         return False
 
     state["checkpoint"]["latest"]["resources"] = fixed
@@ -49,7 +70,7 @@ def fix_state_file(path: str) -> bool:
 
 
 def remove_locks(root: str):
-    for dirpath, dirnames, filenames in os.walk(root):
+    for dirpath, _, filenames in os.walk(root):
         if ".pulumi" in dirpath and "locks" in dirpath:
             for fname in filenames:
                 lock_path = os.path.join(dirpath, fname)
@@ -60,7 +81,7 @@ def remove_locks(root: str):
 def scan_and_fix(root: str):
     print(f"Scanning {root} for Pulumi state files...")
     fixed_count = 0
-    for dirpath, dirnames, filenames in os.walk(root):
+    for dirpath, _, filenames in os.walk(root):
         for fname in filenames:
             if fname == "production.json":
                 path = os.path.join(dirpath, fname)
@@ -73,17 +94,15 @@ def scan_and_fix(root: str):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) == 3 and sys.argv[1] != "--scan":
-        # Legacy: fix_state.py <input> <output>
-        input_file = sys.argv[1]
-        output_file = sys.argv[2]
-        import shutil
-        shutil.copy2(input_file, output_file)
-        fix_state_file(output_file)
-    elif len(sys.argv) == 3 and sys.argv[1] == "--scan":
+    if len(sys.argv) == 3 and sys.argv[1] == "--scan":
         scan_and_fix(sys.argv[2])
+    elif len(sys.argv) == 3:
+        # Legacy single-file mode: fix_state.py <input> <output>
+        import shutil
+        shutil.copy2(sys.argv[1], sys.argv[2])
+        fix_state_file(sys.argv[2])
     else:
         print("Usage:")
-        print("  fix_state.py --scan <root_dir>       # scan and fix all production.json files")
-        print("  fix_state.py <input> <output>        # fix a single file")
+        print("  fix_state.py --scan <root_dir>  # scan and fix all production.json files")
+        print("  fix_state.py <input> <output>   # fix a single file")
         sys.exit(1)
