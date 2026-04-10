@@ -53,6 +53,9 @@ jobs:
       - name: Install SST platform deps
         run: npx sst install
 
+      - name: Unlock SST state
+        run: npx sst unlock --stage production || true
+
       - name: Deploy SST (stage=production)
         run: npx sst deploy --stage production
         env:
