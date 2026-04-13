@@ -424,7 +424,8 @@ export default $config({
         // VALIDATOR LAMBDAS (python3.14, arm64, Pandas layer)
         // ─────────────────────────────────────────────
         const checkCsvStructure = new sst.aws.Function("CheckCsvStructure", {
-            handler: "functions/validators/check-csv-structure/lambda_function.lambda_handler",
+            handler: "lambda_function.lambda_handler",
+            bundle: "functions/validators/check-csv-structure",
             runtime: "python3.12",
             architecture: "arm64",
             layers: [PANDAS_LAYER],
@@ -434,7 +435,8 @@ export default $config({
         });
 
         const checkVmiFileDate = new sst.aws.Function("CheckVmiFileDate", {
-            handler: "functions/validators/check-vmi-file-date/lambda_function.lambda_handler",
+            handler: "lambda_function.lambda_handler",
+            bundle: "functions/validators/check-vmi-file-date",
             runtime: "python3.12",
             architecture: "arm64",
             layers: [PANDAS_LAYER],
@@ -447,7 +449,8 @@ export default $config({
         // PROCESSOR LAMBDAS (python3.14, arm64, Pandas layer)
         // ─────────────────────────────────────────────
         const rcProcessor = new sst.aws.Function("RcProcessor", {
-            handler: "functions/processors/rc-processor/lambda_function.lambda_handler",
+            handler: "lambda_function.lambda_handler",
+            bundle: "functions/processors/rc-processor",
             runtime: "python3.12",
             architecture: "arm64",
             layers: [PANDAS_LAYER],
@@ -458,7 +461,8 @@ export default $config({
         });
 
         const vmiProcessor = new sst.aws.Function("VmiProcessor", {
-            handler: "functions/processors/vmi-processor/lambda_function.lambda_handler",
+            handler: "lambda_function.lambda_handler",
+            bundle: "functions/processors/vmi-processor",
             runtime: "python3.12",
             architecture: "arm64",
             layers: [PANDAS_LAYER],
@@ -472,7 +476,8 @@ export default $config({
         // ALERT LAMBDA (python3.14, arm64)
         // ─────────────────────────────────────────────
         const sendAlert = new sst.aws.Function("SendAlert", {
-            handler: "functions/alerts/send-alert/lambda_function.lambda_handler",
+            handler: "lambda_function.lambda_handler",
+            bundle: "functions/alerts/send-alert",
             runtime: "python3.12",
             architecture: "arm64",
             timeout: "10 seconds",
