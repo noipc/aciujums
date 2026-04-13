@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, useId } from 'react';
 import { useRouter } from 'next/navigation';
-import { initDB, getSearchIndexWithCache, getAllSearchEntries, searchEntitiesByNamePrefix } from '@/lib/indexedDB';
+import { initDB, getSearchIndexWithCache, getAllSearchEntries } from '@/lib/indexedDB';
 
 export default function SearchDropdown() {
     const router = useRouter();
@@ -32,26 +32,18 @@ export default function SearchDropdown() {
         let cancelled = false;
         if (query.trim().length < 3) { setSuggestions([]); setActiveIndex(-1); return; }
 
-        const debounce = setTimeout(async () => {
+        const debounce = setTimeout(() => {
             const prefix = query.trim();
-            try {
-                let results;
-                if (/^\d+$/.test(prefix)) {
-                    // Numeric: filter in-memory list (fast, short list)
-                    results = searchEntries.filter((e) => String(e.legal_id).startsWith(prefix)).slice(0, 5);
-                } else {
-                    // Name: use IndexedDB cursor (memory-efficient)
-                    results = await searchEntitiesByNamePrefix(prefix, 5);
-                    // Fall back to substring filter if prefix search returns nothing
-                    if (results.length === 0) {
-                        const lower = prefix.toLowerCase().normalize('NFC');
-                        results = searchEntries.filter((e) => e.entity_name.toLowerCase().normalize('NFC').includes(lower)).slice(0, 5);
-                    }
-                }
-                if (!cancelled) { setSuggestions(results); setActiveIndex(-1); }
-            } catch {
-                if (!cancelled) { setSuggestions([]); setActiveIndex(-1); }
+            const lower = prefix.toLowerCase().normalize('NFC');
+            let results;
+            if (/^\d+$/.test(prefix)) {
+                results = searchEntries.filter((e) => String(e.legal_id).startsWith(prefix)).slice(0, 5);
+            } else {
+                results = searchEntries
+                    .filter((e) => e.entity_name.toLowerCase().normalize('NFC').startsWith(lower))
+                    .slice(0, 5);
             }
+            if (!cancelled) { setSuggestions(results); setActiveIndex(-1); }
         }, 200);
 
         return () => { cancelled = true; clearTimeout(debounce); };
