@@ -1,0 +1,8 @@
+[project]
+name = "check-csv-structure"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.setuptools]
+py-modules = ["lambda_function"]
