@@ -1,3 +1,4 @@
+import os
 import json
 import gzip
 import base64
@@ -5,7 +6,7 @@ import boto3
 import re
 
 sns_client = boto3.client('sns')
-TOPIC_ARN = "arn:aws:sns:eu-central-1:876391798236:lambda-csv-errors"
+TOPIC_ARN = os.environ["SNS_TOPIC_ARN"]
 
 def lambda_handler(event, context):
     data = gzip.decompress(base64.b64decode(event['awslogs']['data']))

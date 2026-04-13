@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import boto3
 import math
@@ -5,6 +6,8 @@ from io import StringIO
 from datetime import datetime
 from decimal import Decimal
 from botocore.exceptions import ClientError
+
+BUCKET_NAME = os.environ["DL_RAW_BUCKET"]
 
 def convert_value(value):
     if isinstance(value, float):
@@ -21,8 +24,6 @@ def prepare_data(s3_client):
     month = datetime.now().strftime("%m")
     day = datetime.now().strftime("%d")
     previous_year = year - 1
-    bucket_name = "nipc-dl-raw"
-
     jar              = f"registru_centras/jar/year={year}/month={month}/JAR_IREGISTRUOTI.csv"
     ex_jar           = f"registru_centras/ex_jar/year={year}/month={month}/JAR_ISREGISTRUOTI.csv"
     nvo              = f"registru_centras/nvo/year={year}/month={month}/JAR_NVO_NUO.csv"
@@ -30,11 +31,11 @@ def prepare_data(s3_client):
     jar_nepateike_fa = f"registru_centras/jar_nepateike_finansiniu_ataskaitu/year={year}/month={month}/JAR_NEPATEIKE_FA_UZ_PRAEJUSIUS.csv"
 
     try:
-        file_jar        = s3_client.get_object(Bucket=bucket_name, Key=jar)["Body"].read().decode('utf-8')
-        file_ex_jar     = s3_client.get_object(Bucket=bucket_name, Key=ex_jar)["Body"].read().decode('utf-8')
-        file_nvo        = s3_client.get_object(Bucket=bucket_name, Key=nvo)["Body"].read().decode('utf-8')
-        file_par_gav    = s3_client.get_object(Bucket=bucket_name, Key=par_gav)["Body"].read().decode('utf-8')
-        file_no_fa      = s3_client.get_object(Bucket=bucket_name, Key=jar_nepateike_fa)["Body"].read().decode('utf-8')
+        file_jar        = s3_client.get_object(Bucket=BUCKET_NAME, Key=jar)["Body"].read().decode('utf-8')
+        file_ex_jar     = s3_client.get_object(Bucket=BUCKET_NAME, Key=ex_jar)["Body"].read().decode('utf-8')
+        file_nvo        = s3_client.get_object(Bucket=BUCKET_NAME, Key=nvo)["Body"].read().decode('utf-8')
+        file_par_gav    = s3_client.get_object(Bucket=BUCKET_NAME, Key=par_gav)["Body"].read().decode('utf-8')
+        file_no_fa      = s3_client.get_object(Bucket=BUCKET_NAME, Key=jar_nepateike_fa)["Body"].read().decode('utf-8')
 
         jar_df        = pd.read_csv(StringIO(file_jar), sep='|', usecols=["ja_kodas", "ja_pavadinimas", "ja_reg_data", "form_pavadinimas", "stat_pavadinimas", "stat_data_nuo"])
         ex_jar_df     = pd.read_csv(StringIO(file_ex_jar), sep='|', usecols=["ja_kodas", "ja_pavadinimas", "ja_reg_data", "form_pavadinimas", "isreg_data"])

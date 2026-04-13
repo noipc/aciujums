@@ -13,3 +13,7 @@ links.json
 map.html
 text.html
 vmi.ipynb
+pulumi_stack_files/
+production.json
+stack_file.json
+stack_file_fixed.json

@@ -372,6 +372,55 @@ export default $config({
         });
 
         // ─────────────────────────────────────────────
+        // MASTER SYNC — invokes all downloaders on demand
+        // ─────────────────────────────────────────────
+        const masterSyncRole = new aws.iam.Role("MasterSyncRole", {
+            name: $interpolate`aciujums-master-sync-${$app.stage}`,
+            assumeRolePolicy: lambdaAssumePolicy,
+            managedPolicyArns: BASE_POLICIES,
+            inlinePolicies: [{
+                name: "invoke-downloaders",
+                policy: $jsonStringify({
+                    Version: "2012-10-17",
+                    Statement: [{
+                        Effect: "Allow",
+                        Action: ["lambda:InvokeFunction"],
+                        Resource: [
+                            rcJar.arn,
+                            rcExJar.arn,
+                            rcNvo.arn,
+                            rcParamosGavejai.arn,
+                            rcJarNoFa.arn,
+                            rcExNvo.arn,
+                            rcExParamosGavejai.arn,
+                            vmiDownloader.arn,
+                        ],
+                    }],
+                }),
+            }],
+        });
+
+        new sst.aws.Function("MasterSync", {
+            handler: "functions/sync/index.handler",
+            runtime: "nodejs22.x",
+            architecture: "arm64",
+            timeout: "120 seconds",
+            memory: "128 MB",
+            role: masterSyncRole.arn,
+            nodejs: { esbuild: { external: ["@aws-sdk/client-lambda"] } },
+            environment: {
+                DOWNLOADER_RC_JAR:                rcJar.name,
+                DOWNLOADER_RC_EX_JAR:             rcExJar.name,
+                DOWNLOADER_RC_NVO:                rcNvo.name,
+                DOWNLOADER_RC_PARAMOS_GAVEJAI:    rcParamosGavejai.name,
+                DOWNLOADER_RC_JAR_NO_FA:          rcJarNoFa.name,
+                DOWNLOADER_RC_EX_NVO:             rcExNvo.name,
+                DOWNLOADER_RC_EX_PARAMOS_GAVEJAI: rcExParamosGavejai.name,
+                DOWNLOADER_VMI:                   vmiDownloader.name,
+            },
+        });
+
+        // ─────────────────────────────────────────────
         // VALIDATOR LAMBDAS (python3.14, arm64, Pandas layer)
         // ─────────────────────────────────────────────
         const checkCsvStructure = new sst.aws.Function("CheckCsvStructure", {
@@ -404,6 +453,7 @@ export default $config({
             layers: [PANDAS_LAYER],
             timeout: "600 seconds",
             memory: "1240 MB",
+            environment: { DL_RAW_BUCKET: rawBucket.name },
             role: processorRole.arn,
         });
 
@@ -414,6 +464,7 @@ export default $config({
             layers: [PANDAS_LAYER],
             timeout: "300 seconds",
             memory: "1024 MB",
+            environment: { DL_RAW_BUCKET: rawBucket.name },
             role: processorRole.arn,
         });
 
@@ -426,6 +477,7 @@ export default $config({
             architecture: "arm64",
             timeout: "10 seconds",
             memory: "128 MB",
+            environment: { SNS_TOPIC_ARN: alertTopic.arn },
             role: alertRole.arn,
         });
 
@@ -647,6 +699,7 @@ export default $config({
             architecture: "arm64",
             timeout: "30 seconds",
             memory: "128 MB",
+            environment: analyticsBucket ? { ANALYTICS_BUCKET: analyticsBucket.name } : {},
             role: apiRole.arn,
             nodejs: apiNodejs,
         });

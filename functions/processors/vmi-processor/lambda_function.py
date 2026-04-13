@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import boto3
 import math
@@ -11,6 +12,8 @@ from botocore.exceptions import ClientError
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
+
+BUCKET_NAME = os.environ["DL_RAW_BUCKET"]
 
 def extract_year(sheet_name):
     match = re.search(r"\b\d{4}\b", sheet_name)
@@ -40,10 +43,8 @@ def convert_value(value):
     return value
 
 def prepare_data(s3_client, filename):
-    bucket_name = "nipc-dl-raw"
-
     try:
-        vmi_file = s3_client.get_object(Bucket=bucket_name, Key=filename)['Body'].read()
+        vmi_file = s3_client.get_object(Bucket=BUCKET_NAME, Key=filename)['Body'].read()
         excel_file = pd.ExcelFile(BytesIO(vmi_file), engine='openpyxl')
 
         sheets_with_years = [(sheet, extract_year(sheet)) for sheet in excel_file.sheet_names if sheet.startswith("Apskaičiuota")]
@@ -71,7 +72,7 @@ def prepare_data(s3_client, filename):
         return final_df
 
     except ClientError as e:
-        print(e)
+        logger.error(e)
         raise e
 
 def create_summary(df):
@@ -82,7 +83,7 @@ def create_summary(df):
     }).reset_index()
 
     summary_df = summary_df.rename(columns={'legal_id': 'total_recipients'})
-    summary_df["record_dt"] = df["record_dt"]
+    summary_df["record_dt"] = df["record_dt"].iat[0]
 
     return summary_df
 
@@ -92,7 +93,7 @@ def load_excluded_legal_ids(s3_client):
     month = datetime.now().strftime("%m")
     jar_key = f"registru_centras/jar/year={year}/month={month}/JAR_IREGISTRUOTI.csv"
     try:
-        file_jar = s3_client.get_object(Bucket="nipc-dl-raw", Key=jar_key)["Body"].read().decode("utf-8")
+        file_jar = s3_client.get_object(Bucket=BUCKET_NAME, Key=jar_key)["Body"].read().decode("utf-8")
         jar_df = pd.read_csv(StringIO(file_jar), sep="|", usecols=["ja_kodas", "form_pavadinimas"])
         excluded = jar_df[jar_df["form_pavadinimas"].str.contains("Politin", case=False, na=False)]["ja_kodas"]
         logger.info(f"Loaded {len(excluded)} Politinė partija IDs to exclude")
@@ -124,7 +125,7 @@ def insert_data(dynamodb_resource, table_name, df):
                     item[key] = convert_value(value)
                 batch.put_item(Item=item)
     except ClientError as e:
-        print(e)
+        logger.error(e)
         raise e
 
 def insert_summary_data(dynamodb_resource, table_name, df):
@@ -144,7 +145,7 @@ def insert_summary_data(dynamodb_resource, table_name, df):
                     item[key] = convert_value(value)
                 batch.put_item(Item=item)
     except ClientError as e:
-        print(e)
+        logger.error(e)
         raise e
 
 def insert_index_data(dynamodb_resource, table_name, df):
@@ -160,7 +161,7 @@ def insert_index_data(dynamodb_resource, table_name, df):
                     item[key] = convert_value(value)
                 batch.put_item(Item=item)
     except ClientError as e:
-        print(e)
+        logger.error(e)
         raise e
 
 def lambda_handler(event, context):
@@ -188,5 +189,5 @@ def lambda_handler(event, context):
         insert_summary_data(dynamodb_resource, summary_table_name, summary_df)
         insert_index_data(dynamodb_resource, index_table_name, index_df)
     except ClientError as e:
-        print(e)
+        logger.error(e)
         raise e

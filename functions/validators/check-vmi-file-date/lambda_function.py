@@ -72,9 +72,9 @@ def lambda_handler(event, context):
                 }
             )
             logger.info(f"Updated last_processed_date to {file_date}")
+            send_event(eventbridge, {"filename": key})
         else:
             logger.info(f"No update needed. Existing date: {existing_date}, File date: {file_date}")
-            send_event(eventbridge, {"filename": key})
 
         return {
             'statusCode': 200,

@@ -29,7 +29,7 @@ export const handler = async (event) => {
         };
 
         const data = await client.send(new QueryCommand(params));
-        const items = data.Items.map((item) => unmarshall(item));
+        const items = (data.Items || []).map((item) => unmarshall(item));
 
         return {
             statusCode: 200,

@@ -1,11 +1,19 @@
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
 
 const s3 = new S3Client({});
+const ANALYTICS_BUCKET = process.env.ANALYTICS_BUCKET;
 
 export const handler = async (event) => {
+    if (!ANALYTICS_BUCKET) {
+        return {
+            statusCode: 200,
+            body: JSON.stringify({}),
+        };
+    }
+
     try {
         const response = await s3.send(new GetObjectCommand({
-            Bucket: 'nipc-dl-analytics',
+            Bucket: ANALYTICS_BUCKET,
             Key: 'aciujums/app-settings.json',
         }));
 
