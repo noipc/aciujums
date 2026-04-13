@@ -1,10 +1,9 @@
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
-import { QueryCommand, GetCommand, DynamoDBDocumentClient } from '@aws-sdk/lib-dynamodb';
+import { ScanCommand, GetCommand, DynamoDBDocumentClient } from '@aws-sdk/lib-dynamodb';
 
 const client = DynamoDBDocumentClient.from(new DynamoDBClient({ region: 'eu-central-1' }));
 
 const TABLE_NAME = 'aciujums_search';
-const ENTITY_NAME_GSI = 'entity_name-index';
 
 const HEADERS = {
     'Content-Type': 'application/json',
@@ -32,16 +31,19 @@ export const handler = async (event) => {
             }));
             if (result.Item) items.push(result.Item);
         } else {
-            const result = await client.send(new QueryCommand({
-                TableName: TABLE_NAME,
-                IndexName: ENTITY_NAME_GSI,
-                KeyConditionExpression: 'begins_with(entity_name, :val)',
-                ExpressionAttributeValues: {
-                    ':val': query,
-                },
-                Limit: 20,
-            }));
-            items = result.Items || [];
+            let lastKey;
+            do {
+                const result = await client.send(new ScanCommand({
+                    TableName: TABLE_NAME,
+                    FilterExpression: 'begins_with(entity_name, :val)',
+                    ExpressionAttributeValues: { ':val': query },
+                    ...(lastKey && { ExclusiveStartKey: lastKey }),
+                }));
+                items.push(...(result.Items || []));
+                lastKey = result.LastEvaluatedKey;
+                if (items.length >= 20) break;
+            } while (lastKey);
+            items = items.slice(0, 20);
         }
 
         return {
