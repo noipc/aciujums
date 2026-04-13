@@ -245,11 +245,14 @@ export async function getSearchIndexWithCache({ force = false, maxAgeDays = 30 }
 
     if (fresh) {
         const all = await db.getAll('searchIndex');
-        const result = {};
-        for (const row of all) {
-            if (row?.legal_id != null) result[row.legal_id] = row.entity_name;
+        if (all.length > 0) {
+            const result = {};
+            for (const row of all) {
+                if (row?.legal_id != null) result[row.legal_id] = row.entity_name;
+            }
+            return result;
         }
-        return result;
+        // Store is empty despite fresh meta — data was cached before population; force refresh
     }
 
     return await fetchAndStoreSearchIndex();
