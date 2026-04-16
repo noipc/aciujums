@@ -42,7 +42,7 @@ export default function EntityClient({ initialData = null }) {
         );
     }
 
-    if (!data) {
+    if (!data || !data.info?.[0]) {
         return (
             <div className="container pt-12 mt-10">
                 <p>Organizacija nerasta arba duomenys laikinai nepasiekiami.</p>
