@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState, useId } from 'react';
 import { useRouter } from 'next/navigation';
-import { initDB, getSearchIndexWithCache, getAllSearchEntries } from '@/lib/indexedDB';
+import { initDB, getAllSearchEntries } from '@/lib/indexedDB';
+import { getMiniSearch, searchEntities } from '@/lib/miniSearchClient';
 
 export default function SearchDropdown() {
     const router = useRouter();
@@ -21,8 +22,9 @@ export default function SearchDropdown() {
     const isOpen = suggestions.length > 0 || history.length > 0 || query.trim().length >= 3;
 
     useEffect(() => {
-        // Pre-warm the search index cache; keep full list only for numeric-ID searches
-        getSearchIndexWithCache()
+        // Pre-warm the MiniSearch index (also refreshes IndexedDB monthly).
+        // Keep the raw entry list around only for numeric legal_id searches.
+        getMiniSearch()
             .then(() => getAllSearchEntries())
             .then(setSearchEntries)
             .catch(() => {});
@@ -32,18 +34,21 @@ export default function SearchDropdown() {
         let cancelled = false;
         if (query.trim().length < 3) { setSuggestions([]); setActiveIndex(-1); return; }
 
-        const debounce = setTimeout(() => {
+        const debounce = setTimeout(async () => {
             const prefix = query.trim();
-            const lower = prefix.toLowerCase().normalize('NFC');
-            let results;
-            if (/^\d+$/.test(prefix)) {
-                results = searchEntries.filter((e) => String(e.legal_id).startsWith(prefix)).slice(0, 5);
-            } else {
-                results = searchEntries
-                    .filter((e) => e.entity_name.toLowerCase().normalize('NFC').startsWith(lower))
-                    .slice(0, 5);
+            try {
+                let results;
+                if (/^\d+$/.test(prefix)) {
+                    results = searchEntries
+                        .filter((e) => String(e.legal_id).startsWith(prefix))
+                        .slice(0, 5);
+                } else {
+                    results = await searchEntities(prefix, 5);
+                }
+                if (!cancelled) { setSuggestions(results); setActiveIndex(-1); }
+            } catch {
+                if (!cancelled) { setSuggestions([]); setActiveIndex(-1); }
             }
-            if (!cancelled) { setSuggestions(results); setActiveIndex(-1); }
         }, 200);
 
         return () => { cancelled = true; clearTimeout(debounce); };

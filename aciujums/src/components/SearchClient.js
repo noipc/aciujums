@@ -1,9 +1,8 @@
 'use client';
 import Link from 'next/link';
-
-const API_BASE = (process.env.NEXT_PUBLIC_API_URL ?? 'https://gplb8fov1k.execute-api.eu-central-1.amazonaws.com/api').replace(/\/$/, '');
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { searchEntities } from '@/lib/miniSearchClient';
 
 export default function SearchClient() {
     const searchParams = useSearchParams();
@@ -12,7 +11,7 @@ export default function SearchClient() {
     const [meta, setMeta] = useState('');
 
     useEffect(() => {
-        if (!searchTerm) return;
+        if (!searchTerm) { setResults([]); setMeta(''); return; }
 
         function getRezultatasWord(count) {
             const mod10 = count % 10;
@@ -22,20 +21,31 @@ export default function SearchClient() {
             return 'rezultatų';
         }
 
-        async function fetchResults() {
+        let cancelled = false;
+
+        async function runSearch() {
+            // Respect the 3-character threshold.
+            if (searchTerm.length < 3) {
+                setResults([]);
+                setMeta('Įveskite bent 3 simbolius');
+                return;
+            }
             try {
-                const res = await fetch(`${API_BASE}/search?q=${encodeURIComponent(searchTerm)}`);
-                const data = await res.json();
+                // Higher limit for the dedicated results page.
+                const data = await searchEntities(searchTerm, 100);
+                if (cancelled) return;
                 setResults(data);
                 setMeta(`${data.length} ${getRezultatasWord(data.length)} pagal užklausą: "${searchTerm}"`);
             } catch (err) {
+                if (cancelled) return;
                 console.error('Search failed', err);
                 setMeta('Klaida vykdant paiešką');
                 setResults([]);
             }
         }
 
-        fetchResults();
+        runSearch();
+        return () => { cancelled = true; };
     }, [searchTerm]);
 
     return (

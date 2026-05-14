@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState, useId } from 'react';
 import { useRouter } from 'next/navigation';
-import { initDB, getAllSearchEntries, getSearchIndexWithCache, searchEntitiesByNamePrefix } from '@/lib/indexedDB';
+import { initDB, getAllSearchEntries } from '@/lib/indexedDB';
+import { getMiniSearch, searchEntities } from '@/lib/miniSearchClient';
 
 export default function MobileSearchOverlay({ onClose }) {
     const router = useRouter();
@@ -20,7 +21,7 @@ export default function MobileSearchOverlay({ onClose }) {
     useEffect(() => {
         inputRef.current?.focus();
         loadSearchHistory();
-        getSearchIndexWithCache()
+        getMiniSearch()
             .then(() => getAllSearchEntries())
             .then(setSearchEntries)
             .catch(() => {});
@@ -35,13 +36,11 @@ export default function MobileSearchOverlay({ onClose }) {
             try {
                 let results;
                 if (/^\d+$/.test(prefix)) {
-                    results = searchEntries.filter((e) => String(e.legal_id).startsWith(prefix)).slice(0, 5);
+                    results = searchEntries
+                        .filter((e) => String(e.legal_id).startsWith(prefix))
+                        .slice(0, 5);
                 } else {
-                    results = await searchEntitiesByNamePrefix(prefix, 5);
-                    if (results.length === 0) {
-                        const lower = prefix.toLowerCase().normalize('NFC');
-                        results = searchEntries.filter((e) => e.entity_name.toLowerCase().normalize('NFC').includes(lower)).slice(0, 5);
-                    }
+                    results = await searchEntities(prefix, 5);
                 }
                 if (!cancelled) { setSuggestions(results); setActiveIndex(-1); }
             } catch {
