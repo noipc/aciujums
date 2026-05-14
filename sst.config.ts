@@ -688,15 +688,20 @@ export default $config({
             nodejs: apiNodejs,
         });
 
-        api.route("GET /search", {
-            handler: "functions/api/get-search-results/index.handler",
-            runtime: "nodejs22.x",
-            architecture: "arm64",
-            timeout: "3 seconds",
-            memory: "128 MB",
-            role: apiRole.arn,
-            nodejs: apiNodejs,
-        });
+        // NOTE: The GET /search route (backed by get-search-results) has been
+        // decommissioned. Search now runs entirely client-side via MiniSearch,
+        // backed by the dataset returned from GET /search_index. The handler
+        // sources in functions/api/get-search-results can be deleted along
+        // with this commented block on the next deployment.
+        // api.route("GET /search", {
+        //     handler: "functions/api/get-search-results/index.handler",
+        //     runtime: "nodejs22.x",
+        //     architecture: "arm64",
+        //     timeout: "3 seconds",
+        //     memory: "128 MB",
+        //     role: apiRole.arn,
+        //     nodejs: apiNodejs,
+        // });
 
         api.route("GET /app_settings", {
             handler: "functions/api/get-app-settings/index.handler",

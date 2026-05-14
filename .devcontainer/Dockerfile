@@ -1,13 +1,14 @@
-FROM python:3.9
+FROM python:3.9-bookworm
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates \
     curl \
     gnupg \
     nano \
     git \
     zip \
-    systemctl \
-    software-properties-common \
+    unzip \
+    sudo \
     && rm -rf /var/lib/apt/lists/*
 
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
@@ -31,7 +32,8 @@ RUN pip install --no-cache-dir \
     openpyxl 
 
 # Install React and other JS dependencies globally
-RUN npm install -g create-react-app
+RUN npm install -g create-react-app @earendil-works/pi-coding-agent
+
 
 ARG USERNAME=vscode
 ARG USER_UID=1000

@@ -3,7 +3,7 @@ import pandas as pd
 import boto3
 import math
 from io import StringIO
-from datetime import datetime
+from datetime import datetime, date
 from decimal import Decimal
 from botocore.exceptions import ClientError
 
@@ -19,11 +19,40 @@ def convert_value(value):
 def clean_item(item):
     return {k: v for k, v in item.items() if v is not None}
 
+def _compute_required_year(today):
+    """Statutory deadline is May 30 of the current year.
+    On or before May 30 -> required year is year-2; after May 30 -> year-1.
+    """
+    deadline = date(today.year, 5, 30)
+    if today <= deadline:
+        return today.year - 2
+    return today.year - 1
+
+
+def _compute_atskaitingas(missed_years, required_year):
+    """Apply Rule A (missed required_year) and Rule B (any two consecutive
+    missed years in history). Returns 0 if delinquent, 1 if compliant.
+    """
+    if not missed_years:
+        return 1
+    years_set = set(int(y) for y in missed_years)
+    # Rule A
+    if required_year in years_set:
+        return 0
+    # Rule B
+    sorted_years = sorted(years_set)
+    for i in range(len(sorted_years) - 1):
+        if sorted_years[i + 1] - sorted_years[i] == 1:
+            return 0
+    return 1
+
+
 def prepare_data(s3_client):
-    year = datetime.now().year
-    month = datetime.now().strftime("%m")
-    day = datetime.now().strftime("%d")
-    previous_year = year - 1
+    today = date.today()
+    year = today.year
+    month = f"{today.month:02d}"
+    day = f"{today.day:02d}"
+    required_year = _compute_required_year(today)
     jar              = f"registru_centras/jar/year={year}/month={month}/JAR_IREGISTRUOTI.csv"
     ex_jar           = f"registru_centras/ex_jar/year={year}/month={month}/JAR_ISREGISTRUOTI.csv"
     nvo              = f"registru_centras/nvo/year={year}/month={month}/JAR_NVO_NUO.csv"
@@ -57,19 +86,30 @@ def prepare_data(s3_client):
         jar_df["stat_pavadinimas"] = jar_df["stat_pavadinimas"].replace("Teisinis stat neįregistruotas", "Aktyvus")
         nvo_df["nvo_statusas"] = 1
         par_gav_df["par_gav_statusas"] = 1
-        no_fa_df = no_fa_df[no_fa_df["fa_nepateikta_uz_metus"] == previous_year]
-        no_fa_df["atskaitingas"] = 0
+
+        # Group all missed reporting years per entity and evaluate compliance.
+        no_fa_df["fa_nepateikta_uz_metus"] = no_fa_df["fa_nepateikta_uz_metus"].astype(int)
+        no_fa_grouped = (
+            no_fa_df.groupby("ja_kodas")["fa_nepateikta_uz_metus"]
+            .apply(lambda s: sorted({int(y) for y in s}))
+            .reset_index()
+        )
+        no_fa_grouped["atskaitingas"] = no_fa_grouped["fa_nepateikta_uz_metus"].apply(
+            lambda years: _compute_atskaitingas(years, required_year)
+        )
 
         jar_concat = pd.concat([jar_df, ex_jar_df], ignore_index=True)
 
         df_merged = jar_concat.merge(nvo_df, on="ja_kodas", how="left")
         df_merged = df_merged.merge(par_gav_df, on="ja_kodas", how="left")
-        df_merged = df_merged.merge(no_fa_df, on="ja_kodas", how="left")
+        df_merged = df_merged.merge(no_fa_grouped, on="ja_kodas", how="left")
         df_merged["atskaitingas"] = df_merged["atskaitingas"].fillna(1).astype(int)
 
         df_merged["nvo_statusas"] = df_merged["nvo_statusas"].fillna(0).astype(int)
         df_merged["par_gav_statusas"] = df_merged["par_gav_statusas"].fillna(0).astype(int)
-        df_merged["fa_nepateikta_uz_metus"] = df_merged["fa_nepateikta_uz_metus"].fillna(0).astype(int)
+        df_merged["fa_nepateikta_uz_metus"] = df_merged["fa_nepateikta_uz_metus"].apply(
+            lambda v: v if isinstance(v, list) else []
+        )
 
         df_merged = df_merged.fillna({"nvo_nuo": "", "paramos_gav_nuo": ""})
 
@@ -136,7 +176,8 @@ def insert_data(dynamo_resource, table_name, df):
                     'nvo_statusas': int(row['nvo_statusas']),
                     'paramos_gav_nuo': row['paramos_gav_nuo'] if pd.notna(row['paramos_gav_nuo']) else None,
                     'par_gav_statusas': int(row['par_gav_statusas']),
-                    'fa_nepateikta_uz_metus': int(row['fa_nepateikta_uz_metus']),
+                    # Safely handle the list of missed years
+                    'fa_nepateikta_uz_metus': [int(y) for y in row['fa_nepateikta_uz_metus']] if isinstance(row['fa_nepateikta_uz_metus'], list) else [],
                     'atskaitingas': int(row['atskaitingas']),
                     'formavimo_data': row['formavimo_data']
                 }
