@@ -64,16 +64,22 @@ export default function EntityClient({ initialData = null }) {
                     <span id="tooltip-nvo" role="tooltip" className="tooltip">Juridiniam asmeniui yra suteiktas nevyriausybinės organizacijos statusas</span>
                 </div>
             )}
-            {info.par_gav_statusas === 1 && (
-                <div className="tooltip-wrapper">
-                    <button type="button" className="badge badge-pill badge-secondary tooltip-anchor" aria-describedby="tooltip-par">Paramos gavėjas</button>
-                    <span id="tooltip-par" role="tooltip" className="tooltip">Juridiniam asmeniui yra suteiktas paramos gavėjo statusas</span>
-                </div>
-            )}
             {info.atskaitingas === 1 && (
                 <div className="tooltip-wrapper">
                     <button type="button" className="badge badge-pill badge-success tooltip-anchor" aria-describedby="tooltip-ats">Atskaitingas</button>
                     <span id="tooltip-ats" role="tooltip" className="tooltip">Juridinis asmuo pateikė visus privalomus finansinius dokumentus už praėjusius finansinius metus</span>
+                </div>
+            )}
+            {info.atskaitingas === 0 && (
+                <div className="tooltip-wrapper">
+                    <button type="button" className="badge badge-pill badge-danger tooltip-anchor" aria-describedby="tooltip-ats">Neatskaitingas</button>
+                    <span id="tooltip-ats" role="tooltip" className="tooltip">Juridinis asmuo nepateikė visus privalomus finansinius dokumentus už du praėjusius finansinius metus</span>
+                </div>
+            )}
+            {info.par_gav_statusas === 1 && (
+                <div className="tooltip-wrapper">
+                    <button type="button" className="badge badge-pill badge-secondary tooltip-anchor" aria-describedby="tooltip-par">Paramos gavėjas</button>
+                    <span id="tooltip-par" role="tooltip" className="tooltip">Juridiniam asmeniui yra suteiktas paramos gavėjo statusas</span>
                 </div>
             )}
             {info.par_gav_statusas === 0 && (
