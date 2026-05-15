@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import SearchDropdown from './SearchDropdown';
 
@@ -10,6 +11,12 @@ export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [searchOpen, setSearchOpen] = useState(false);
     const menuRef = useRef(null);
+    const pathname = usePathname();
+
+    useEffect(() => {
+        setMenuOpen(false);
+        setSearchOpen(false);
+    }, [pathname]);
 
     function toggleMenu() { setMenuOpen((v) => !v); }
     function openSearch() { setMenuOpen(false); setSearchOpen(true); }
