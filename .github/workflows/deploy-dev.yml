@@ -55,6 +55,7 @@ jobs:
 
       - name: Deploy SST (stage=dev)
         run: npx sst deploy --stage dev
+        timeout-minutes: 15  # Fail fast if stuck
         env:
           ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
 

@@ -549,7 +549,7 @@ export default $config({
         //    Routes through MasterSync so it can stamp the current execution month
         //    onto every downloader payload.
         const monthlyRcRule = new aws.cloudwatch.EventRule("MonthlyRcTrigger", {
-            name: "monthly-trigger",
+            name: "monthly-trigger-v2",
             scheduleExpression: "cron(0 6 5W * ? *)",
         });
 
@@ -568,7 +568,7 @@ export default $config({
         // 2. Monthly VMI download — nearest weekday to the 5th at 06:00 UTC (separate rule)
         //    Also routes through MasterSync.
         const monthlyVmiRule = new aws.cloudwatch.EventRule("MonthlyVmiTrigger", {
-            name: "monthly-trigger-2",
+            name: "monthly-trigger-2-v2",
             scheduleExpression: "cron(0 6 5W * ? *)",
         });
 
