@@ -1,7 +1,7 @@
-import dynamic from 'next/dynamic';
+import nextDynamic from 'next/dynamic';
 import { municipalityMap } from '@/lib/municipalityMap';
 
-const MunicipalityClient = dynamic(() => import('./MunicipalityClient'));
+const MunicipalityClient = nextDynamic(() => import('./MunicipalityClient'));
 
 const API_BASE = (process.env.NEXT_PUBLIC_API_URL ?? 'https://gplb8fov1k.execute-api.eu-central-1.amazonaws.com/api').replace(/\/$/, '');
 
