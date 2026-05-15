@@ -12,7 +12,6 @@ import {
     initDB,
     getSearchIndexWithCache,
     getAllSearchEntries,
-    isStale,
 } from './indexedDB';
 
 const MINI_SEARCH_OPTIONS = {
@@ -36,8 +35,10 @@ async function loadSerializedIndex() {
         const serialized = await db.get('meta', 'miniSearchIndex');
         if (!meta?.cachedAt || !serialized?.value) return null;
         // The serialized index must be at least as new as the underlying data.
+        // Underlying `meta.searchIndex` is bumped whenever the RC/VMI server
+        // stamps advance (see indexedDB.fetchAndStoreSearchIndex), so this
+        // comparison transitively respects dual-source invalidation.
         if (serialized.cachedAt < meta.cachedAt) return null;
-        if (isStale(serialized.cachedAt, 30)) return null;
         return serialized.value;
     } catch {
         return null;

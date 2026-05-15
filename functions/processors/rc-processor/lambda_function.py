@@ -1,4 +1,5 @@
 import os
+import time
 import pandas as pd
 import boto3
 import math
@@ -6,6 +7,21 @@ from io import StringIO
 from datetime import datetime, date
 from decimal import Decimal
 from botocore.exceptions import ClientError
+
+METADATA_TABLE = "aciujums_metadata"
+
+
+def stamp_metadata(dynamodb, source_name):
+    """Write a freshness stamp for the given data source to the metadata table.
+
+    The metadata table uses `key` as its partition key. Each call writes the
+    current epoch in milliseconds for the named source (e.g. "rc", "vmi").
+    """
+    table = dynamodb.Table(METADATA_TABLE)
+    table.put_item(Item={
+        "key": source_name,
+        "updated_at": int(time.time() * 1000),
+    })
 
 BUCKET_NAME = os.environ["DL_RAW_BUCKET"]
 
@@ -202,6 +218,7 @@ def lambda_handler(event, context):
         delete_table_if_exists(dynamodb_client, table_name)
         create_table(dynamodb_client, table_name)
         insert_data(dynamodb_resource, table_name, df_merged)
+        stamp_metadata(dynamodb_resource, "rc")
     except Exception as e:
         print(e)
         raise e

@@ -5,9 +5,11 @@ const MunicipalityClient = dynamic(() => import('./MunicipalityClient'));
 
 const API_BASE = (process.env.NEXT_PUBLIC_API_URL ?? 'https://gplb8fov1k.execute-api.eu-central-1.amazonaws.com/api').replace(/\/$/, '');
 
+export const dynamic = 'force-dynamic';
+
 async function fetchMunicipalitySummary(municipality) {
     try {
-        const res = await fetch(`${API_BASE}/municipality_data?municipality=${municipality}`, { next: { revalidate: 3600 } });
+        const res = await fetch(`${API_BASE}/municipality_data?municipality=${municipality}`, { cache: 'no-store' });
         if (!res.ok) return null;
         return res.json();
     } catch {

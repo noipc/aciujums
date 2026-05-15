@@ -1,11 +1,13 @@
 const API_BASE = (process.env.NEXT_PUBLIC_API_URL ?? 'https://gplb8fov1k.execute-api.eu-central-1.amazonaws.com/api').replace(/\/$/, '');
 import EntityClient from './EntityClient';
 
+export const dynamic = 'force-dynamic';
+
 async function fetchEntityData(legal_id) {
     try {
         const res = await fetch(
             `${API_BASE}/entity_data?legal_id=${legal_id}`,
-            { next: { revalidate: 3600 } }
+            { cache: 'no-store' }
         );
         if (!res.ok) return null;
         return res.json();

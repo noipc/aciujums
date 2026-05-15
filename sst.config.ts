@@ -100,6 +100,14 @@ export default $config({
             },
         });
 
+        const metadataTable = new sst.aws.Dynamo("MetadataTable", {
+            fields: { key: "string" },
+            primaryIndex: { hashKey: "key" },
+            transform: {
+                table: (args, opts) => { args.name = "aciujums_metadata"; args.billingMode = "PAY_PER_REQUEST"; args.pointInTimeRecovery = { "enabled": false }; },
+            },
+        });
+
         const logsTable = new sst.aws.Dynamo("LogsTable", {
             fields: { batch_id: "string", filename: "string" },
             primaryIndex: { hashKey: "batch_id", rangeKey: "filename" },
@@ -223,6 +231,11 @@ export default $config({
                             Action: ["dynamodb:PutItem", "dynamodb:BatchWriteItem"],
                             Resource: [financesTable.arn, summaryTable.arn, searchTable.arn],
                         },
+                        {
+                            Effect: "Allow",
+                            Action: ["dynamodb:PutItem"],
+                            Resource: metadataTable.arn,
+                        },
                     ],
                 }),
             }],
@@ -262,6 +275,7 @@ export default $config({
                                 financesTable.arn,
                                 summaryTable.arn,
                                 searchTable.arn,
+                                metadataTable.arn,
                                 $interpolate`${financesTable.arn}/index/*`,
                                 $interpolate`${searchTable.arn}/index/*`,
                             ],
@@ -693,6 +707,16 @@ export default $config({
             timeout: "30 seconds",
             memory: "128 MB",
             environment: analyticsBucket ? { ANALYTICS_BUCKET: analyticsBucket.name } : {},
+            role: apiRole.arn,
+            nodejs: apiNodejs,
+        });
+
+        api.route("GET /metadata", {
+            handler: "functions/api/get-metadata/index.handler",
+            runtime: "nodejs22.x",
+            architecture: "arm64",
+            timeout: "3 seconds",
+            memory: "128 MB",
             role: apiRole.arn,
             nodejs: apiNodejs,
         });

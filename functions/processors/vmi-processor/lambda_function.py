@@ -1,4 +1,5 @@
 import os
+import time
 import pandas as pd
 import boto3
 import math
@@ -14,6 +15,20 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 BUCKET_NAME = os.environ["DL_RAW_BUCKET"]
+METADATA_TABLE = "aciujums_metadata"
+
+
+def stamp_metadata(dynamodb, source_name):
+    """Write a freshness stamp for the given data source to the metadata table.
+
+    The metadata table uses `key` as its partition key. Each call writes the
+    current epoch in milliseconds for the named source (e.g. "rc", "vmi").
+    """
+    table = dynamodb.Table(METADATA_TABLE)
+    table.put_item(Item={
+        "key": source_name,
+        "updated_at": int(time.time() * 1000),
+    })
 
 def extract_year(sheet_name):
     match = re.search(r"\b\d{4}\b", sheet_name)
@@ -188,6 +203,7 @@ def lambda_handler(event, context):
         insert_data(dynamodb_resource, table_name, df)
         insert_summary_data(dynamodb_resource, summary_table_name, summary_df)
         insert_index_data(dynamodb_resource, index_table_name, index_df)
+        stamp_metadata(dynamodb_resource, "vmi")
     except ClientError as e:
         logger.error(e)
         raise e
