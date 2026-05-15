@@ -3,7 +3,7 @@ import { S3Client, PutObjectCommand } from '@aws-sdk/client-s3';
 const s3 = new S3Client({ region: 'eu-central-1' });
 const BUCKET_NAME = process.env.DL_RAW_BUCKET;
 
-export const handler = async () => {
+export const handler = async (event = {}) => {
     const baseUrl = 'https://www.vmi.lt';
     const targetUrl = `${baseUrl}/evmi/paramos-statistika`;
 
@@ -41,10 +41,11 @@ export const handler = async () => {
         if (!fileRes.ok) throw new Error(`File download failed: ${fileRes.status}`);
         const fileBuffer = Buffer.from(await fileRes.arrayBuffer());
 
-        // Build S3 key with current year/month
+        // Build S3 key with the year/month passed by MasterSync; fall back
+        // to today only for local/manual testing.
         const now = new Date();
-        const year = now.getFullYear();
-        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const year = event?.target_year ?? now.getUTCFullYear();
+        const month = String(event?.target_month ?? (now.getUTCMonth() + 1)).padStart(2, '0');
         const key = `vmi/paramos_apskaiciavimo_statistika/year=${year}/month=${month}/paramos_statistika.xlsx`;
 
         await s3.send(new PutObjectCommand({

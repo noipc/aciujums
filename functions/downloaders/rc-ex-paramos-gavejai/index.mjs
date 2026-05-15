@@ -6,9 +6,11 @@ const fileName = 'JAR_PARAMOS_GAV_IKI.csv';
 
 export const handler = async (event, context) => {
   try {
-    const dateParts = new Date().toISOString().split('T')[0].split('-');
-    const year = dateParts[0];
-    const month = dateParts[1];
+    // Prefer the year/month explicitly passed by MasterSync; fall back to
+    // today only for local/manual testing.
+    const now = new Date();
+    const year = String(event?.target_year ?? now.getUTCFullYear());
+    const month = String(event?.target_month ?? (now.getUTCMonth() + 1)).padStart(2, '0');
 
     const objectKey = `registru_centras/ex_paramos_gavejai/year=${year}/month=${month}/${fileName}`;
 

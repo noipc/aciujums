@@ -400,7 +400,7 @@ export default $config({
             }],
         });
 
-        new sst.aws.Function("MasterSync", {
+        const masterSync = new sst.aws.Function("MasterSync", {
             handler: "functions/sync/index.handler",
             runtime: "nodejs22.x",
             architecture: "arm64",
@@ -545,61 +545,44 @@ export default $config({
         // EVENTBRIDGE RULES
         // ─────────────────────────────────────────────
 
-        // 1. Monthly RC download — 3rd of every month at 06:00 UTC
+        // 1. Monthly RC download — nearest weekday to the 5th at 06:00 UTC
+        //    Routes through MasterSync so it can stamp the current execution month
+        //    onto every downloader payload.
         const monthlyRcRule = new aws.cloudwatch.EventRule("MonthlyRcTrigger", {
             name: "monthly-trigger",
-            scheduleExpression: "cron(0 6 3 1-12 ? *)",
+            scheduleExpression: "cron(0 6 5W * ? *)",
         });
 
-        new aws.cloudwatch.EventTarget("MonthlyRcJarTarget", {
+        new aws.cloudwatch.EventTarget("MonthlyRcMasterSyncTarget", {
             rule: monthlyRcRule.name,
-            arn: rcJar.arn,
-            input: JSON.stringify({
-                file_name: "JAR_IREGISTRUOTI.csv",
-                host: "www.registrucentras.lt",
-                object_key: "registru_centras/jar",
-            }),
+            arn: masterSync.arn,
         });
-        new aws.cloudwatch.EventTarget("MonthlyRcExJarTarget", { rule: monthlyRcRule.name, arn: rcExJar.arn });
-        new aws.cloudwatch.EventTarget("MonthlyRcNvoTarget", { rule: monthlyRcRule.name, arn: rcNvo.arn });
-        new aws.cloudwatch.EventTarget("MonthlyRcParamosGavejaiTarget", { rule: monthlyRcRule.name, arn: rcParamosGavejai.arn });
-        new aws.cloudwatch.EventTarget("MonthlyRcJarNoFaTarget", { rule: monthlyRcRule.name, arn: rcJarNoFa.arn });
 
-        for (const { name, fn } of [
-            { name: "RcJar", fn: rcJar },
-            { name: "RcExJar", fn: rcExJar },
-            { name: "RcNvo", fn: rcNvo },
-            { name: "RcParamosGavejai", fn: rcParamosGavejai },
-            { name: "RcJarNoFa", fn: rcJarNoFa },
-        ]) {
-            new aws.lambda.Permission(`MonthlyRc${name}EbPermission`, {
-                action: "lambda:InvokeFunction",
-                function: fn.arn,
-                principal: "events.amazonaws.com",
-                sourceArn: monthlyRcRule.arn,
-            });
-        }
+        new aws.lambda.Permission("MonthlyRcMasterSyncEbPermission", {
+            action: "lambda:InvokeFunction",
+            function: masterSync.arn,
+            principal: "events.amazonaws.com",
+            sourceArn: monthlyRcRule.arn,
+        });
 
-        // 2. Monthly VMI download — 3rd of every month at 06:00 UTC (separate rule)
+        // 2. Monthly VMI download — nearest weekday to the 5th at 06:00 UTC (separate rule)
+        //    Also routes through MasterSync.
         const monthlyVmiRule = new aws.cloudwatch.EventRule("MonthlyVmiTrigger", {
             name: "monthly-trigger-2",
-            scheduleExpression: "cron(0 6 3 1-12 ? *)",
+            scheduleExpression: "cron(0 6 5W * ? *)",
         });
 
-        new aws.cloudwatch.EventTarget("MonthlyRcExNvoTarget", { rule: monthlyVmiRule.name, arn: rcExNvo.arn });
-        new aws.cloudwatch.EventTarget("MonthlyRcExParamosGavejaiTarget", { rule: monthlyVmiRule.name, arn: rcExParamosGavejai.arn });
+        new aws.cloudwatch.EventTarget("MonthlyVmiMasterSyncTarget", {
+            rule: monthlyVmiRule.name,
+            arn: masterSync.arn,
+        });
 
-        for (const { name, fn } of [
-            { name: "RcExNvo", fn: rcExNvo },
-            { name: "RcExParamosGavejai", fn: rcExParamosGavejai },
-        ]) {
-            new aws.lambda.Permission(`MonthlyVmi${name}EbPermission`, {
-                action: "lambda:InvokeFunction",
-                function: fn.arn,
-                principal: "events.amazonaws.com",
-                sourceArn: monthlyVmiRule.arn,
-            });
-        }
+        new aws.lambda.Permission("MonthlyVmiMasterSyncEbPermission", {
+            action: "lambda:InvokeFunction",
+            function: masterSync.arn,
+            principal: "events.amazonaws.com",
+            sourceArn: monthlyVmiRule.arn,
+        });
 
         // 3. RC processing — triggered via the "aciujums" custom bus
         const rcProcessingRule = new aws.cloudwatch.EventRule("RcProcessingTrigger", {
