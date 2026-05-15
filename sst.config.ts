@@ -61,7 +61,7 @@ export default $config({
             fields: { ja_kodas: "number" },
             primaryIndex: { hashKey: "ja_kodas" },
             transform: {
-                table: (args, opts) => { args.name = "aciujums_entities"; args.billingMode = "PAY_PER_REQUEST"; args.pointInTimeRecovery = { "__defaults": [], "enabled": false }; opts.import = "aciujums_entities"; },
+                table: (args, opts) => { args.name = "aciujums_entities"; args.billingMode = "PAY_PER_REQUEST"; args.pointInTimeRecovery = { "enabled": false }; opts.import = "aciujums_entities"; },
             },
         });
 
@@ -77,7 +77,7 @@ export default $config({
                 "municipality-year-index": { hashKey: "municipality", rangeKey: "year" },
             },
             transform: {
-                table: (args, opts) => { args.name = "aciujums_finances"; args.billingMode = "PAY_PER_REQUEST"; args.pointInTimeRecovery = { "__defaults": [], "enabled": false }; opts.import = "aciujums_finances"; },
+                table: (args, opts) => { args.name = "aciujums_finances"; args.billingMode = "PAY_PER_REQUEST"; args.pointInTimeRecovery = { "enabled": false }; opts.import = "aciujums_finances"; },
             },
         });
 
@@ -85,7 +85,7 @@ export default $config({
             fields: { municipality: "string", year: "number" },
             primaryIndex: { hashKey: "municipality", rangeKey: "year" },
             transform: {
-                table: (args, opts) => { args.name = "aciujums_summary"; args.billingMode = "PAY_PER_REQUEST"; args.pointInTimeRecovery = { "__defaults": [], "enabled": false }; opts.import = "aciujums_summary"; },
+                table: (args, opts) => { args.name = "aciujums_summary"; args.billingMode = "PAY_PER_REQUEST"; args.pointInTimeRecovery = { "enabled": false }; opts.import = "aciujums_summary"; },
             },
         });
 
@@ -96,7 +96,7 @@ export default $config({
                 "entity_name-index": { hashKey: "entity_name" },
             },
             transform: {
-                table: (args, opts) => { args.name = "aciujums_search"; args.billingMode = "PAY_PER_REQUEST"; args.pointInTimeRecovery = { "__defaults": [], "enabled": false }; opts.import = "aciujums_search"; },
+                table: (args, opts) => { args.name = "aciujums_search"; args.billingMode = "PAY_PER_REQUEST"; args.pointInTimeRecovery = { "enabled": false }; opts.import = "aciujums_search"; },
             },
         });
 
@@ -104,7 +104,7 @@ export default $config({
             fields: { batch_id: "string", filename: "string" },
             primaryIndex: { hashKey: "batch_id", rangeKey: "filename" },
             transform: {
-                table: (args, opts) => { args.name = "aciujums_logs"; args.billingMode = "PAY_PER_REQUEST"; args.pointInTimeRecovery = { "__defaults": [], "enabled": false }; opts.import = "aciujums_logs"; },
+                table: (args, opts) => { args.name = "aciujums_logs"; args.billingMode = "PAY_PER_REQUEST"; args.pointInTimeRecovery = { "enabled": false }; opts.import = "aciujums_logs"; },
             },
         });
 
