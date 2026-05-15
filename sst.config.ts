@@ -203,7 +203,7 @@ export default $config({
                     Statement: [
                         {
                             Effect: "Allow",
-                            Action: ["s3:GetObject"],
+                            Action: ["s3:GetObject", "s3:ListBucket"],
                             Resource: $interpolate`${rawBucket.arn}/*`,
                         },
                         {

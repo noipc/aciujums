@@ -37,6 +37,10 @@ export default function AboutUs() {
                             Šios atviros NVO duomenų bazės sukūrimas – dar vienas svarbus žingsnis siekiant didesnio sektoriaus atvirumo. Platformoje pateikiami duomenys leidžia visuomenei lengviau rasti informaciją apie organizacijas, analizuoti jų veiklą ir priimti informuotus sprendimus skiriant paramą.
                         </p>
 
+                        <p>
+                            Platformoje pateikiami duomenys yra periodiškai ir automatiškai atnaujinami, sinchronizuojant viešai prieinamus Registrų centro ir Valstybinės mokesčių inspekcijos duomenų šaltinius
+                        </p>
+
                         <h2 id="komanda">Komanda</h2>
                         <ul>
                             <li>Jolita Petraitienė Vadovė <a href="mailto:jolita@nisc.lt">jolita@nisc.lt</a></li>
